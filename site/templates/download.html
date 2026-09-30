@@ -1,0 +1,16 @@
+<div class="download-card">
+  <div class="eyebrow"><span class="dot"></span> LOCALLY FORMAT-VERIFIED · HISTORICAL REFERENCE</div>
+  <h1>{% if page == 'guide' %}Your GeoTIFF.<br>Your upload checklist.{% else %}Download the<br>audited fault map.{% endif %}</h1>
+  <p class="lead">A ready-to-download, single-band prediction for the GEMS prize. <strong>This is unchanged H19-4</strong> — not a newly validated improvement.</p>
+  <a class="button primary" href="{{ primary.href }}" download="{{ primary.name }}" data-verified-download="{{ primary.name }}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>Download submission .tif <span>{{ '%.2f'|format(primary.bytes/1000000) }} MB</span></a>
+  <p class="download-status" aria-live="polite" data-download-status>With JavaScript: SHA-256 checked before saving · no sign-in required</p>
+  <div class="file-label"><span class="kicker">UNIQUE FILENAME</span><code>{{ primary.name }}</code></div>
+  <details class="alternatives"><summary>ZIP, all-finite fallback &amp; direct download</summary><div>
+    <p>The ZIP contains exactly one TIFF. The masked-zero fallback has identical footprint predictions and all raw values in [0,1], with outside pixels marked null by an internal GDAL mask. <strong>Platform acceptance of that fallback is untested.</strong></p>
+    {% for file in sub.files %}{% if file.role != 'primary' %}<a class="text-download" href="{{ file.href }}" download="{{ file.name }}" data-verified-download="{{ file.name }}">{{ file.role|capitalize }} · {{ '%.2f'|format(file.bytes/1000000) }} MB ↓</a>{% endif %}{% endfor %}
+    <a class="text-download" href="{{ primary.href }}" download="{{ primary.name }}">Direct TIFF link (without browser hash check) ↓</a>
+    <p>Every published TIFF passed strict Python validation. Direct links still work without JavaScript; inspect the <a href="data/submission-validation.json">hash/format report</a> if needed.</p>
+  </div></details>
+  <div class="note-box"><label for="submission-note">SHORT SUBMISSION NOTE</label><div><input id="submission-note" type="text" readonly value="{{ sub.note }}"><button type="button" class="copy" data-copy="{{ sub.note }}" aria-label="Copy submission note">Copy</button></div><span class="copy-status" aria-live="polite"></span></div>
+  <p class="warning"><b>Protect your weekly slot.</b> Do not re-upload this file if you already scored H19-4. Its bytes are identical; a new name cannot improve its score.</p>
+</div>

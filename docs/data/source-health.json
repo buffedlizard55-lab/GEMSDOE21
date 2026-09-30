@@ -1,0 +1,279 @@
+{
+  "kind": "permitted-source-health-only",
+  "generated_utc": "2026-09-30T22:37:49+00:00",
+  "drivendata_requests": 0,
+  "competition_uploads": 0,
+  "sources": [
+    {
+      "id": "S05",
+      "title": "GEMS Official Rules, September 2026",
+      "url": "https://docs.nlr.gov/docs/fy26osti/96647.pdf",
+      "scope": "transport/metadata health only; NOT usable-data or geological validation",
+      "status": "unreachable from this runner",
+      "error": "HTTPSConnectionPool(host='docs.nlr.gov', port=443): Max retries exceeded with url: /docs/fy26osti/96647.pdf (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:992)')))",
+      "not_evidence_of_global_unavailability": true
+    },
+    {
+      "id": "S08",
+      "title": "INGENIOUS regional datasets (DOI 10.15121/1881483)",
+      "url": "https://gdr.openei.org/submissions/1391",
+      "scope": "transport/metadata health only; NOT usable-data or geological validation",
+      "status": "unreachable from this runner",
+      "error": "HTTPSConnectionPool(host='gdr.openei.org', port=443): Max retries exceeded with url: /submissions/1391 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:992)')))",
+      "not_evidence_of_global_unavailability": true
+    },
+    {
+      "id": "S09",
+      "title": "GeoDAWN official magnetic/radiometric surveys",
+      "url": "https://www.sciencebase.gov/catalog/item/657e1d85d34e23d3533209f7?format=json",
+      "scope": "transport/metadata health only; NOT usable-data or geological validation",
+      "status": "unreachable from this runner",
+      "error": "HTTPSConnectionPool(host='www.sciencebase.gov', port=443): Max retries exceeded with url: /catalog/item/657e1d85d34e23d3533209f7?format=json (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:992)')))",
+      "not_evidence_of_global_unavailability": true
+    },
+    {
+      "id": "S10",
+      "title": "Regional gravity, magnetics, depth-to-basement",
+      "url": "https://www.sciencebase.gov/catalog/item/628d4fabd34ef70cdba3c4a4?format=json",
+      "scope": "transport/metadata health only; NOT usable-data or geological validation",
+      "status": "unreachable from this runner",
+      "error": "HTTPSConnectionPool(host='www.sciencebase.gov', port=443): Max retries exceeded with url: /catalog/item/628d4fabd34ef70cdba3c4a4?format=json (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:992)')))",
+      "not_evidence_of_global_unavailability": true
+    },
+    {
+      "id": "S11",
+      "title": "Joint geophysical imaging of geothermal systems",
+      "url": "https://www.osti.gov/servlets/purl/1724108",
+      "scope": "transport/metadata health only; NOT usable-data or geological validation",
+      "status": "unreachable from this runner",
+      "error": "HTTPSConnectionPool(host='www.osti.gov', port=443): Max retries exceeded with url: /servlets/purl/1724108 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:992)')))",
+      "not_evidence_of_global_unavailability": true
+    },
+    {
+      "id": "S12",
+      "title": "Access NHDPlus HR hydrography products",
+      "url": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer?f=pjson",
+      "scope": "transport/metadata health only; NOT usable-data or geological validation",
+      "status": "unreachable from this runner",
+      "error": "HTTPSConnectionPool(host='hydro.nationalmap.gov', port=443): Max retries exceeded with url: /arcgis/rest/services/NHDPlus_HR/MapServer?f=pjson (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:992)')))",
+      "not_evidence_of_global_unavailability": true
+    },
+    {
+      "id": "S13",
+      "title": "2026 GeMS version of SGMC",
+      "url": "https://mrdata.usgs.gov/geology/state/shp/NV.zip",
+      "scope": "transport/metadata health only; NOT usable-data or geological validation",
+      "status": "unreachable from this runner",
+      "error": "HTTPSConnectionPool(host='mrdata.usgs.gov', port=443): Max retries exceeded with url: /geology/state/shp/NV.zip (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:992)')))",
+      "not_evidence_of_global_unavailability": true
+    },
+    {
+      "id": "S14",
+      "title": "Conductive heat flow and residual point data",
+      "url": "https://www.sciencebase.gov/catalog/item/6297d2fad34ec53d276c5b28?format=json",
+      "scope": "transport/metadata health only; NOT usable-data or geological validation",
+      "status": "unreachable from this runner",
+      "error": "HTTPSConnectionPool(host='www.sciencebase.gov', port=443): Max retries exceeded with url: /catalog/item/6297d2fad34ec53d276c5b28?format=json (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:992)')))",
+      "not_evidence_of_global_unavailability": true
+    },
+    {
+      "id": "S15",
+      "title": "Thermal conductivity measurement/source quality",
+      "url": "https://gdr.openei.org/files/1390/INGENIOUSThermKMeasureSource_GDRUploadFinal-27June2022.xlsx",
+      "scope": "transport/metadata health only; NOT usable-data or geological validation",
+      "status": "unreachable from this runner",
+      "error": "HTTPSConnectionPool(host='gdr.openei.org', port=443): Max retries exceeded with url: /files/1390/INGENIOUSThermKMeasureSource_GDRUploadFinal-27June2022.xlsx (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:992)')))",
+      "not_evidence_of_global_unavailability": true
+    },
+    {
+      "id": "S17",
+      "title": "USGS 3DEP seamless 1/3 arc-second (~10m) DEM",
+      "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/current/n39w119/USGS_13_n39w119.tif",
+      "scope": "transport/metadata health only; NOT usable-data or geological validation",
+      "status": "unreachable from this runner",
+      "error": "HTTPSConnectionPool(host='prd-tnm.s3.amazonaws.com', port=443): Max retries exceeded with url: /StagedProducts/Elevation/13/TIFF/current/n39w119/USGS_13_n39w119.tif (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:992)')))",
+      "not_evidence_of_global_unavailability": true
+    },
+    {
+      "id": "S21",
+      "title": "Blind geothermal-system play fairways",
+      "url": "https://www.usgs.gov/publications/discovering-blind-geothermal-systems-great-basin-region-integrated-geologic-and",
+      "scope": "transport/metadata health only; NOT usable-data or geological validation",
+      "status": "unreachable from this runner",
+      "error": "HTTPSConnectionPool(host='www.usgs.gov', port=443): Max retries exceeded with url: /publications/discovering-blind-geothermal-systems-great-basin-region-integrated-geologic-and (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:992)')))",
+      "not_evidence_of_global_unavailability": true
+    }
+  ],
+  "repositories": [
+    {
+      "repository": "GEMSDOE",
+      "status": "reachable",
+      "head": "c0c06ac82178f26b94fce3397036ef8f12a2f3a0",
+      "committed_utc": "2026-09-28T14:01:23Z",
+      "url": "https://github.com/buffedlizard55-lab/GEMSDOE/commit/c0c06ac82178f26b94fce3397036ef8f12a2f3a0",
+      "message": "verify(sources): rules quotes + catalog links re-checked [skip ci]"
+    },
+    {
+      "repository": "GEMSDOE2",
+      "status": "reachable",
+      "head": "47ca6957575628697e30f092491cbaa717178fd9",
+      "committed_utc": "2026-09-28T13:53:19Z",
+      "url": "https://github.com/buffedlizard55-lab/GEMSDOE2/commit/47ca6957575628697e30f092491cbaa717178fd9",
+      "message": "verify(sources): rules quotes + catalog links re-checked [skip ci]"
+    },
+    {
+      "repository": "GEMSDOE3",
+      "status": "reachable",
+      "head": "512371de5d30162813803cdccbd4931ceeb065c7",
+      "committed_utc": "2026-09-25T17:36:00Z",
+      "url": "https://github.com/buffedlizard55-lab/GEMSDOE3/commit/512371de5d30162813803cdccbd4931ceeb065c7",
+      "message": "Refresh the preflight evidence after restoring the data bridge (#10)"
+    },
+    {
+      "repository": "GEMSDOE4",
+      "status": "reachable",
+      "head": "198a121aef68c3fb59f1d08a4e58d04109446c8e",
+      "committed_utc": "2026-09-28T14:02:07Z",
+      "url": "https://github.com/buffedlizard55-lab/GEMSDOE4/commit/198a121aef68c3fb59f1d08a4e58d04109446c8e",
+      "message": "verify(sources): rules quotes + catalog links re-checked [skip ci]"
+    },
+    {
+      "repository": "5GEMSDOE",
+      "status": "reachable",
+      "head": "652558861cd3ebe307cf14f20cd5da0334f8aa7e",
+      "committed_utc": "2026-09-28T14:04:32Z",
+      "url": "https://github.com/buffedlizard55-lab/5GEMSDOE/commit/652558861cd3ebe307cf14f20cd5da0334f8aa7e",
+      "message": "verify(sources): rules quotes + catalog links re-checked [skip ci]"
+    },
+    {
+      "repository": "6GEMSDOE",
+      "status": "reachable",
+      "head": "e2fe3f41c6f5dd2dcb2fc91958ee67698f114ada",
+      "committed_utc": "2026-09-26T04:28:31Z",
+      "url": "https://github.com/buffedlizard55-lab/6GEMSDOE/commit/e2fe3f41c6f5dd2dcb2fc91958ee67698f114ada",
+      "message": "Merge pull request #7 from buffedlizard55-lab/arena/01a0dbf1-6gemsdoe"
+    },
+    {
+      "repository": "7GEMSDOE",
+      "status": "reachable",
+      "head": "9d8b5d55b674629f7b0e0e486269917c0fa2dade",
+      "committed_utc": "2026-09-27T00:03:30Z",
+      "url": "https://github.com/buffedlizard55-lab/7GEMSDOE/commit/9d8b5d55b674629f7b0e0e486269917c0fa2dade",
+      "message": "Merge PR #10: Record passing hosted browser verification"
+    },
+    {
+      "repository": "8GEMSDOE",
+      "status": "reachable",
+      "head": "e24abefab237115d67e0afb2acfde01c6304783f",
+      "committed_utc": "2026-09-26T23:21:37Z",
+      "url": "https://github.com/buffedlizard55-lab/8GEMSDOE/commit/e24abefab237115d67e0afb2acfde01c6304783f",
+      "message": "Merge pull request #9 from buffedlizard55-lab/arena/01a0df77-8gemsdoe"
+    },
+    {
+      "repository": "GEMSDOE9",
+      "status": "reachable",
+      "head": "1fdfddcefd291889e618adf8c42922e4893d514d",
+      "committed_utc": "2026-09-27T05:06:19Z",
+      "url": "https://github.com/buffedlizard55-lab/GEMSDOE9/commit/1fdfddcefd291889e618adf8c42922e4893d514d",
+      "message": "Merge pull request #5 from buffedlizard55-lab/arena/01a0e111-gemsdoe9"
+    },
+    {
+      "repository": "GEMSDOE10",
+      "status": "reachable",
+      "head": "4d08f51aa59bf57b4041474ff1463c9e737c8090",
+      "committed_utc": "2026-09-28T02:23:46Z",
+      "url": "https://github.com/buffedlizard55-lab/GEMSDOE10/commit/4d08f51aa59bf57b4041474ff1463c9e737c8090",
+      "message": "Merge pull request #10 from buffedlizard55-lab/arena/01a0e57e-gemsdoe10"
+    },
+    {
+      "repository": "11GEMSDOE",
+      "status": "reachable",
+      "head": "7d8133c69cb39363f394fc2d4a6d4919112c4270",
+      "committed_utc": "2026-09-27T04:49:12Z",
+      "url": "https://github.com/buffedlizard55-lab/11GEMSDOE/commit/7d8133c69cb39363f394fc2d4a6d4919112c4270",
+      "message": "Close the data blocker, verify the metric, and publish a validated submission (#4)"
+    },
+    {
+      "repository": "12GEMSDOE",
+      "status": "reachable",
+      "head": "32866f279d89f44dca2f3b71e289d5952aa88ade",
+      "committed_utc": "2026-09-30T21:25:16Z",
+      "url": "https://github.com/buffedlizard55-lab/12GEMSDOE/commit/32866f279d89f44dca2f3b71e289d5952aa88ade",
+      "message": "leaderboard feed: 2026-09-30T21:25Z [skip ci]"
+    },
+    {
+      "repository": "13GEMSDOE",
+      "status": "reachable",
+      "head": "08ed86465ef94e7a0cc49fa9de47150fc8a7c7c5",
+      "committed_utc": "2026-09-30T22:25:13Z",
+      "url": "https://github.com/buffedlizard55-lab/13GEMSDOE/commit/08ed86465ef94e7a0cc49fa9de47150fc8a7c7c5",
+      "message": "Merge pull request #14 from buffedlizard55-lab/arena/01a0f445-13gemsdoe"
+    },
+    {
+      "repository": "14GEMSDOE",
+      "status": "reachable",
+      "head": "88dd365dc7469c316f0f7c3bdd18fd90c5825a07",
+      "committed_utc": "2026-09-29T18:14:11Z",
+      "url": "https://github.com/buffedlizard55-lab/14GEMSDOE/commit/88dd365dc7469c316f0f7c3bdd18fd90c5825a07",
+      "message": "Merge pull request #12 from buffedlizard55-lab/arena/01a0ee55-14gemsdoe"
+    },
+    {
+      "repository": "15GEMSDOE",
+      "status": "reachable",
+      "head": "8c94b0f83f22999032ba8a29c523af7ae6cf5e76",
+      "committed_utc": "2026-09-29T15:46:55Z",
+      "url": "https://github.com/buffedlizard55-lab/15GEMSDOE/commit/8c94b0f83f22999032ba8a29c523af7ae6cf5e76",
+      "message": "\ud83d\ude80 MAJOR MILESTONE: First candidate promoted and ready for submission (#4)"
+    },
+    {
+      "repository": "16GEMSDOE",
+      "status": "reachable",
+      "head": "962587af0d16a50d45e32a80a3c90436435cb9d8",
+      "committed_utc": "2026-09-30T11:23:30Z",
+      "url": "https://github.com/buffedlizard55-lab/16GEMSDOE/commit/962587af0d16a50d45e32a80a3c90436435cb9d8",
+      "message": "chore: daily group-repo scan [skip ci]"
+    },
+    {
+      "repository": "17GEMSDOE",
+      "status": "reachable",
+      "head": "6fc71d19d49dca4960d5434bd81b6dd06fcc030a",
+      "committed_utc": "2026-09-30T05:10:00Z",
+      "url": "https://github.com/buffedlizard55-lab/17GEMSDOE/commit/6fc71d19d49dca4960d5434bd81b6dd06fcc030a",
+      "message": "Merge pull request #5 from buffedlizard55-lab/arena/01a0f090-17gemsdoe"
+    },
+    {
+      "repository": "18GEMSDOE",
+      "status": "reachable",
+      "head": "809482f4634e49eb552547554f0682cdcbb4d467",
+      "committed_utc": "2026-09-30T21:33:47Z",
+      "url": "https://github.com/buffedlizard55-lab/18GEMSDOE/commit/809482f4634e49eb552547554f0682cdcbb4d467",
+      "message": "Merge PR #5: render the evidence tables"
+    },
+    {
+      "repository": "19GEMSDOE",
+      "status": "reachable",
+      "head": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "committed_utc": "2026-09-30T21:55:23Z",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/commit/a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "message": "Merge pull request #1 from buffedlizard55-lab/arena/01a0f3d1-19gemsdoe"
+    },
+    {
+      "repository": "20GEMSDOE",
+      "status": "reachable",
+      "head": "1e75ac15474a01dc502b7cc964bdade385f18f84",
+      "committed_utc": "2026-09-29T21:23:36Z",
+      "url": "https://github.com/buffedlizard55-lab/20GEMSDOE/commit/1e75ac15474a01dc502b7cc964bdade385f18f84",
+      "message": "Initial commit"
+    },
+    {
+      "repository": "GEMSDOE21",
+      "status": "reachable",
+      "head": "ad4b3b9bd55b90c40bdb8959fbb1f2391387503c",
+      "committed_utc": "2026-09-30T19:49:43Z",
+      "url": "https://github.com/buffedlizard55-lab/GEMSDOE21/commit/ad4b3b9bd55b90c40bdb8959fbb1f2391387503c",
+      "message": "Initial commit"
+    }
+  ],
+  "warning": "Health probes verify response headers/sample bytes ONLY; not full-file hashes, coverage, licenses, science or scores.",
+  "leaderboard": "Dated static snapshot; never automatically fetched."
+}

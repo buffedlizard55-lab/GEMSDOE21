@@ -1,0 +1,45 @@
+name: Permitted source health feed (no DrivenData)
+on:
+  schedule:
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main, arena/01a0f45d-gemsdoe21]
+    paths:
+      - registry/sources.json
+      - scripts/refresh_sources.py
+      - .github/workflows/source-feed.yml
+permissions:
+  contents: write
+concurrency:
+  group: permitted-source-feed
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests==2.32.5
+      - name: Check approved official data and GitHub endpoints only
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/refresh_sources.py --output source-health.json
+      - name: Publish JSON in a fixed release body, never push a bot commit to main
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view source-feed --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release edit source-feed --repo "$GITHUB_REPOSITORY" --notes-file source-health.json --title "Permitted source health — not leaderboard scores"
+          else
+            gh release create source-feed --repo "$GITHUB_REPOSITORY" --target arena/01a0f45d-gemsdoe21 --notes-file source-health.json --title "Permitted source health — not leaderboard scores" --prerelease
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: permitted-source-health
+          path: source-health.json
+          retention-days: 30

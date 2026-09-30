@@ -1,0 +1,75 @@
+{
+  "generated_utc": "2026-09-30T23:14:14+00:00",
+  "status": "THREE LOCAL REVIEW PASSES COMPLETE; remote PR/merge/deployment receipt separate",
+  "passes": [
+    {
+      "pass": 1,
+      "status": "DONE",
+      "scope": "Implementation/preparation/registered CPU attempt/historical download/site",
+      "evidence": [
+        "h21-1-results.json",
+        "submission-validation.json",
+        "upstream-audit.json"
+      ],
+      "first_pre_result_tests": "30 passed / 1 future-file skip",
+      "scientific_outcome": "Rejected; no weekly slots; no new qualified entry"
+    },
+    {
+      "pass": 2,
+      "status": "DONE",
+      "scope": "Bug/assumption/edge-case review and repairs",
+      "fixes": [
+        "Preserve first outcome/audit and uniquely store replication masks",
+        "Independent core/mask/support/feature/first-result binding",
+        "Re-fetch unpinned metadata at immutable commit, cache large bytes only on digest",
+        "Safe one-TIFF ZIP, all-footprint range/grid checks",
+        "Browser rejects corrupt/truncated/HTTP failures and unknown arbitrary files",
+        "Permit-only source probes reject forbidden redirects before request",
+        "Separate strict NMS/physical-strength helper; original flawed attempt NOT retroactively rescored",
+        "Flag wrong-origin GEMSDOE14 artifact and exact historical duplicates"
+      ],
+      "tests": "57 passed; 16 upstream Affine pending-deprecation warnings",
+      "browser": {
+        "passed": true,
+        "scenarios": [
+          "desktop: index.html",
+          "desktop: executive-summary.html",
+          "desktop: research.html",
+          "desktop: sources.html",
+          "source feed rendering + ledger search",
+          "real SHA-verified download + Python preflight + clipboard",
+          "local file recognizes known bytes; rejects corrupt/unknown",
+          "fail-closed truncated/HTTP-error downloads",
+          "mobile: index.html",
+          "mobile: executive-summary.html",
+          "mobile: research.html",
+          "mobile: sources.html",
+          "legacy Pages root/base assets",
+          "no-JavaScript direct download fallback"
+        ],
+        "javascript_errors": [],
+        "browser": "Chromium"
+      }
+    },
+    {
+      "pass": 3,
+      "status": "DONE FOR LOCAL QUALITY/REQUEST AUDIT",
+      "scope": "Entire original brief rechecked, documentation/site/static/replication improved",
+      "evidence": [
+        "request-audit.json",
+        "fixed-replication.json",
+        "prepared-lineage-audit.json"
+      ],
+      "checks": {
+        "passed": true,
+        "pages": 5,
+        "local_links": 105,
+        "downloads": 3,
+        "prompt_unchanged": true
+      },
+      "first_prompt_and_result": "unchanged",
+      "remaining_goals": "Current-best provenance/fresh compliant scientific improvement and authorized final entry not achieved; do not claim otherwise",
+      "remote_delivery": "Final actual receipt in delivery-status.json after PR/merge/Pages verification"
+    }
+  ]
+}

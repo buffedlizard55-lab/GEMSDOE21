@@ -1,0 +1,13 @@
+{
+  "generated_utc": "2026-09-30T23:07:23+00:00",
+  "passed": true,
+  "same_fixed_parameters": true,
+  "first_result_preserved": true,
+  "summary_gate_block_test_exact_equal": true,
+  "oof_masks_pixel_exact_equal": true,
+  "replication_report_ignored": "data/research/H21-1-replication-20260930T230459027279Z.json",
+  "source_inputs_regenerated_hash_equal": true,
+  "scientific_protocol": "unchanged original soft-NMS implementation; strict repair NOT activated",
+  "new_hypotheses_tested": 0,
+  "weekly_slots_spent": 0
+}
