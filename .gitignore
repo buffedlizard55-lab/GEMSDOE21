@@ -4,7 +4,7 @@
 .ruff_cache/
 __pycache__/
 *.py[cod]
-data/
+/data
 node_modules/
 test-results/
 playwright-report/
