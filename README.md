@@ -10,7 +10,7 @@
 
 Short note: `GEMS21 | H19-4 historical reference | id 691e4dfa | same predictions, not a new experiment`
 
-The site offers SHA-verified browser downloads, a deterministic one-TIFF ZIP and an **all-finite / internal-null-mask fallback** with identical footprint predictions. Fallback platform acceptance is untested. Exact cause of the user's old range-error file is unknown; the new files are strictly preflighted rather than silently clipped. The final live Pages/build receipt is recorded separately; a planned URL alone is not deployment evidence.
+The site offers SHA-verified browser downloads, a deterministic one-TIFF ZIP and an **all-finite / internal-null-mask fallback** with identical footprint predictions. Fallback platform acceptance is untested. Exact cause of the user's old range-error file is unknown; the new files are strictly preflighted rather than silently clipped. **Live deployment verified:** PR [#1](https://github.com/buffedlizard55-lab/GEMSDOE21/pull/1) merged; native Pages build succeeded; GitHub-hosted checks downloaded the actually served TIFF/ZIP and verified full bytes plus range/grid. [Dated receipt](evidence/delivery-status.json) · [latest live check](https://github.com/buffedlizard55-lab/GEMSDOE21/releases/tag/delivery-verification). This is not a competition acceptance or score receipt.
 
 ## Own the Outcome · Maximize P(Win)
 
@@ -89,7 +89,7 @@ Browser setup: `.venv/bin/python -m playwright install --with-deps chromium`. Th
 
 Final submission/eligibility/slot availability and AI-disclosure certification require the entrant's own authorized account; no credentials are requested. The all-finite fallback's server acceptance and the old range-error cause are not verified. Hidden labels/selection/coverage and private score are unavailable. Competition targets fault candidates, not confirmed vents or drillable reservoirs.
 
-[Next-session handoff](research/next-session.md) · [PR/merge/deployment receipt](evidence/delivery-status.json). The final remote receipt must be verified after merge; local tests or a planned URL are not proof of deployment.
+[Next-session handoff](research/next-session.md) · [PR/merge/deployment receipt](evidence/delivery-status.json). Initial merged core delivery and actual live downloads are verified. The fixed delivery-verification release carries the latest dated check; local screenshots alone are not proof. Receipt/code follow-up: [PR #2](https://github.com/buffedlizard55-lab/GEMSDOE21/pull/2).
 
 ## Full original user prompt (verbatim session brief)
 

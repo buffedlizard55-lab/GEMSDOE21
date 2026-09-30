@@ -1,14 +1,44 @@
 {
-  "status": "LOCAL DELIVERY VERIFIED; PR/MERGE/LIVE BUILD PENDING",
+  "status": "VERIFIED: merged core delivery, successful Pages build and actual live-download preflight",
+  "verified_utc": "2026-09-30T23:30:20+00:00",
   "site": "https://buffedlizard55-lab.github.io/GEMSDOE21/",
-  "pages_configuration_observed": {
-    "build_type": "legacy",
-    "branch": "main",
-    "path": "/"
+  "initial_delivery_pr": {
+    "number": 1,
+    "url": "https://github.com/buffedlizard55-lab/GEMSDOE21/pull/1",
+    "state": "MERGED",
+    "main_merge_commit": "27f930e5900e4c5328981b04a2dcc6e2531cff80"
   },
-  "local_tests": "57 passed; 16 dependency pending-deprecation warnings",
-  "local_browser": "14 real Chromium scenarios passed; 0 JavaScript errors",
-  "local_reference": "historical H19-4, byte-identical and format-verified; no new hypothesis promoted",
-  "remote_deployment_verified": false,
-  "note": "Do not confuse the pre-existing Pages built status or local preview with deployment of this change. Final receipt will replace this after actual verification."
+  "receipt_followup_pr": "https://github.com/buffedlizard55-lab/GEMSDOE21/pull/2",
+  "pages_build": {
+    "run_id": 36791057732,
+    "conclusion": "success",
+    "main_commit": "27f930e5900e4c5328981b04a2dcc6e2531cff80"
+  },
+  "remote_ci": [
+    "https://github.com/buffedlizard55-lab/GEMSDOE21/actions/runs/36790822372",
+    "https://github.com/buffedlizard55-lab/GEMSDOE21/actions/runs/36790906753"
+  ],
+  "live_download_check": {
+    "run_id": 36791384129,
+    "conclusion": "success",
+    "snapshot": "evidence/live-verification.json",
+    "latest_receipt": "https://github.com/buffedlizard55-lab/GEMSDOE21/releases/tag/delivery-verification"
+  },
+  "remote_deployment_verified": true,
+  "actual_served_bytes_and_geo_preflight_verified": true,
+  "local_tests": "57 passed; 16 upstream Affine pending-deprecation warnings",
+  "local_browser": "14 real Chromium scenarios; 0 JavaScript errors",
+  "primary_tiff_sha256": "89109a3bd2cd3b12e7a0f388113c519843acfc9c4f46825affefc3e63dd99b22",
+  "source_feed": {
+    "run_id": 36791059313,
+    "conclusion": "success",
+    "release": "https://github.com/buffedlizard55-lab/GEMSDOE21/releases/tag/source-feed",
+    "data_endpoints_reachable": 9,
+    "data_endpoints_probed": 11,
+    "drivendata_requests": 0
+  },
+  "github_auth_interruption": "Expired credentials blocked first push; user reconnected in Arena; subsequent push/PR/merge/actions succeeded.",
+  "scope": "Dated verification of initial core delivery. Latest release carries subsequent live receipts; not a competition acceptance, score or eligibility certification.",
+  "new_hypothesis_promoted": false,
+  "weekly_slots_spent": 0
 }

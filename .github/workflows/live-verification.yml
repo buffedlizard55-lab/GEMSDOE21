@@ -1,0 +1,41 @@
+name: Verify actual live Pages downloads
+on:
+  workflow_dispatch:
+  push:
+    branches: [arena/01a0f45d-gemsdoe21]
+    paths:
+      - scripts/verify_live.py
+      - .github/workflows/live-verification.yml
+permissions:
+  contents: write
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - name: Fetch actual served content and validate the downloaded GeoTIFFs and ZIP
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          export LIVE_MAIN_COMMIT=$(gh api "repos/$GITHUB_REPOSITORY/commits/main" --jq .sha)
+          python scripts/verify_live.py
+      - name: Preserve live receipt in public release metadata, not a bot main commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view delivery-verification --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release edit delivery-verification --repo "$GITHUB_REPOSITORY" --notes-file live-verification.json --title "Verified live Pages downloads — not a competition score"
+          else
+            gh release create delivery-verification --repo "$GITHUB_REPOSITORY" --target arena/01a0f45d-gemsdoe21 --notes-file live-verification.json --title "Verified live Pages downloads — not a competition score" --prerelease
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: actual-live-download-verification
+          path: live-verification.json
+          retention-days: 30

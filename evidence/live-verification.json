@@ -1,0 +1,245 @@
+{
+  "kind": "owned-pages-live-download-verification",
+  "generated_utc": "2026-09-30T23:30:20+00:00",
+  "passed": true,
+  "site": "https://buffedlizard55-lab.github.io/GEMSDOE21/",
+  "records": [
+    {
+      "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/",
+      "http_status": 200,
+      "bytes": 13169,
+      "sha256": "2a1d86bd0c28e4d3f4edbe45ff44e5a0d310e4b0e878470f089aa5dd61ea31af",
+      "expected_bytes_equal": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/index.html",
+      "http_status": 200,
+      "bytes": 13147,
+      "sha256": "f6809fda1a6d69f5c345f143b9b840f4d3fd9e0d9a5b8f598d17aa160fe6d68c",
+      "expected_bytes_equal": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/executive-summary.html",
+      "http_status": 200,
+      "bytes": 14356,
+      "sha256": "555038466e31e1be95f9ba6bae4f5a6a2f740ae745c0edaffe6ed1bbeebf8848",
+      "expected_bytes_equal": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/research.html",
+      "http_status": 200,
+      "bytes": 22237,
+      "sha256": "e58e28b1d62f17c586be9ff6ed7acd535bf5db70fb4d0c5428c864e45c21e148",
+      "expected_bytes_equal": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/sources.html",
+      "http_status": 200,
+      "bytes": 57057,
+      "sha256": "ef67d7e7a785b82c641bacc644e4d56551d75156f9f949f0ab59f80cf693ffbd",
+      "expected_bytes_equal": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/assets/site.css",
+      "http_status": 200,
+      "bytes": 15044,
+      "sha256": "0fb8bdd5623177bc413132c0713579cef776f541b44888dae4d85c7ebaf07507",
+      "expected_bytes_equal": true,
+      "content_type": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/assets/site.js",
+      "http_status": 200,
+      "bytes": 7613,
+      "sha256": "6405f106cddf1128a87a51ab0ac2bd3c08981a086b9311d0d1e504efcf9be5f8",
+      "expected_bytes_equal": true,
+      "content_type": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/data/submissions.json",
+      "http_status": 200,
+      "bytes": 4501,
+      "sha256": "b4c5fb5aa6df3be125b1fde5fa270cd5b51bc7d5cd855e48cc20e36e573a1fed",
+      "expected_bytes_equal": true,
+      "content_type": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/data/template-mask.tif",
+      "http_status": 200,
+      "bytes": 268367,
+      "sha256": "c467bbdff23d2585b4e444cb239bbd45bc6d6372cff713aa8f7670ec86908697",
+      "expected_bytes_equal": true,
+      "content_type": "image/tiff"
+    },
+    {
+      "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/downloads/gems21-h19-4-reference-20260930-691e4dfa.tif",
+      "http_status": 200,
+      "bytes": 1716768,
+      "sha256": "89109a3bd2cd3b12e7a0f388113c519843acfc9c4f46825affefc3e63dd99b22",
+      "expected_bytes_equal": true,
+      "content_type": "image/tiff"
+    },
+    {
+      "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/downloads/gems21-h19-4-reference-20260930-691e4dfa.zip",
+      "http_status": 200,
+      "bytes": 503887,
+      "sha256": "0a4106d8cd4d77f9439b03b7137252798df92ef695bd9a6c6a50255a4979c9ee",
+      "expected_bytes_equal": true,
+      "content_type": "application/x-zip-compressed"
+    },
+    {
+      "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/downloads/gems21-h19-4-reference-20260930-691e4dfa-masked-zero.tif",
+      "http_status": 200,
+      "bytes": 720122,
+      "sha256": "356f833c09900fc41f2cc75278c6c91feb398deee09acd45c55303d07cd59e3a",
+      "expected_bytes_equal": true,
+      "content_type": "image/tiff"
+    },
+    {
+      "file": "gems21-h19-4-reference-20260930-691e4dfa.tif",
+      "live_preflight": {
+        "passed": true,
+        "checks": {
+          "single_band": true,
+          "float32": true,
+          "crs_exact": true,
+          "shape_exact": true,
+          "geotransform_exact": true,
+          "no_masked_footprint_pixels": true,
+          "footprint_finite": true,
+          "footprint_range_0_1": true,
+          "outside_null_or_nan": true,
+          "all_finite_values_in_range": true,
+          "no_infinity_anywhere": true,
+          "expected_sha256": true
+        },
+        "sha256": "89109a3bd2cd3b12e7a0f388113c519843acfc9c4f46825affefc3e63dd99b22",
+        "bytes": 1716768,
+        "shape": [
+          3730,
+          3292
+        ],
+        "crs": "EPSG:32611",
+        "transform": [
+          100.0,
+          0.0,
+          243350.0,
+          0.0,
+          -100.0,
+          4508550.0
+        ],
+        "footprint_pixels": 5167373,
+        "outside_pixels": 7111787,
+        "footprint_nan_inf": 0,
+        "footprint_out_of_range": 0,
+        "footprint_min": 0.0,
+        "footprint_max": 1.0,
+        "raw_all_pixels_finite": false,
+        "positive_footprint_pixels": 123779,
+        "validator_scope": "local official-format checks; not platform acceptance or score verification"
+      }
+    },
+    {
+      "file": "gems21-h19-4-reference-20260930-691e4dfa.zip",
+      "live_preflight": {
+        "passed": true,
+        "checks": {
+          "single_band": true,
+          "float32": true,
+          "crs_exact": true,
+          "shape_exact": true,
+          "geotransform_exact": true,
+          "no_masked_footprint_pixels": true,
+          "footprint_finite": true,
+          "footprint_range_0_1": true,
+          "outside_null_or_nan": true,
+          "all_finite_values_in_range": true,
+          "no_infinity_anywhere": true
+        },
+        "sha256": "89109a3bd2cd3b12e7a0f388113c519843acfc9c4f46825affefc3e63dd99b22",
+        "bytes": 1716768,
+        "shape": [
+          3730,
+          3292
+        ],
+        "crs": "EPSG:32611",
+        "transform": [
+          100.0,
+          0.0,
+          243350.0,
+          0.0,
+          -100.0,
+          4508550.0
+        ],
+        "footprint_pixels": 5167373,
+        "outside_pixels": 7111787,
+        "footprint_nan_inf": 0,
+        "footprint_out_of_range": 0,
+        "footprint_min": 0.0,
+        "footprint_max": 1.0,
+        "raw_all_pixels_finite": false,
+        "positive_footprint_pixels": 123779,
+        "validator_scope": "local official-format checks; not platform acceptance or score verification",
+        "archive_sha256": "0a4106d8cd4d77f9439b03b7137252798df92ef695bd9a6c6a50255a4979c9ee",
+        "zip_member": "gems21-h19-4-reference-20260930-691e4dfa.tif",
+        "zip_single_member": true
+      }
+    },
+    {
+      "file": "gems21-h19-4-reference-20260930-691e4dfa-masked-zero.tif",
+      "live_preflight": {
+        "passed": true,
+        "checks": {
+          "single_band": true,
+          "float32": true,
+          "crs_exact": true,
+          "shape_exact": true,
+          "geotransform_exact": true,
+          "no_masked_footprint_pixels": true,
+          "footprint_finite": true,
+          "footprint_range_0_1": true,
+          "outside_null_or_nan": true,
+          "all_finite_values_in_range": true,
+          "no_infinity_anywhere": true,
+          "expected_sha256": true
+        },
+        "sha256": "356f833c09900fc41f2cc75278c6c91feb398deee09acd45c55303d07cd59e3a",
+        "bytes": 720122,
+        "shape": [
+          3730,
+          3292
+        ],
+        "crs": "EPSG:32611",
+        "transform": [
+          100.0,
+          0.0,
+          243350.0,
+          0.0,
+          -100.0,
+          4508550.0
+        ],
+        "footprint_pixels": 5167373,
+        "outside_pixels": 7111787,
+        "footprint_nan_inf": 0,
+        "footprint_out_of_range": 0,
+        "footprint_min": 0.0,
+        "footprint_max": 1.0,
+        "raw_all_pixels_finite": true,
+        "positive_footprint_pixels": 123779,
+        "validator_scope": "local official-format checks; not platform acceptance or score verification"
+      }
+    }
+  ],
+  "main_commit_at_check": "27f930e5900e4c5328981b04a2dcc6e2531cff80",
+  "verification_code_commit": "e2f01e30d8da4bc7739f5732e94a829be9db650c",
+  "actions_run_id": "36791384129",
+  "drivendata_requests": 0,
+  "platform_submission": false,
+  "score_verified": false,
+  "scope": "Our actually served Pages content, hashes and downloaded GeoTIFF/ZIP format. NOT competition acceptance or score."
+}
