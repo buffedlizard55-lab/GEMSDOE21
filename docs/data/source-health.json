@@ -1,6 +1,6 @@
 {
   "kind": "permitted-source-health-only",
-  "generated_utc": "2026-09-30T22:37:49+00:00",
+  "generated_utc": "2026-09-30T23:26:27+00:00",
   "drivendata_requests": 0,
   "competition_uploads": 0,
   "sources": [
@@ -9,90 +9,146 @@
       "title": "GEMS Official Rules, September 2026",
       "url": "https://docs.nlr.gov/docs/fy26osti/96647.pdf",
       "scope": "transport/metadata health only; NOT usable-data or geological validation",
-      "status": "unreachable from this runner",
-      "error": "HTTPSConnectionPool(host='docs.nlr.gov', port=443): Max retries exceeded with url: /docs/fy26osti/96647.pdf (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:992)')))",
-      "not_evidence_of_global_unavailability": true
+      "final_url": "https://docs.nlr.gov/docs/fy26osti/96647.pdf",
+      "http_status": 206,
+      "status": "reachable",
+      "sampled_bytes": 65536,
+      "content_type": "application/pdf",
+      "advertised_content_length": "65536",
+      "last_modified": "Wed, 09 Sep 2026 21:37:58 GMT",
+      "magic": "PDF"
     },
     {
       "id": "S08",
       "title": "INGENIOUS regional datasets (DOI 10.15121/1881483)",
       "url": "https://gdr.openei.org/submissions/1391",
       "scope": "transport/metadata health only; NOT usable-data or geological validation",
-      "status": "unreachable from this runner",
-      "error": "HTTPSConnectionPool(host='gdr.openei.org', port=443): Max retries exceeded with url: /submissions/1391 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:992)')))",
-      "not_evidence_of_global_unavailability": true
+      "final_url": "https://gdr.openei.org/submissions/1391",
+      "http_status": 206,
+      "status": "reachable",
+      "sampled_bytes": 65536,
+      "content_type": "text/html; charset=UTF-8",
+      "advertised_content_length": "32127",
+      "last_modified": null,
+      "magic": "text/other"
     },
     {
       "id": "S09",
       "title": "GeoDAWN official magnetic/radiometric surveys",
       "url": "https://www.sciencebase.gov/catalog/item/657e1d85d34e23d3533209f7?format=json",
       "scope": "transport/metadata health only; NOT usable-data or geological validation",
-      "status": "unreachable from this runner",
-      "error": "HTTPSConnectionPool(host='www.sciencebase.gov', port=443): Max retries exceeded with url: /catalog/item/657e1d85d34e23d3533209f7?format=json (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:992)')))",
-      "not_evidence_of_global_unavailability": true
+      "final_url": "https://www.sciencebase.gov/catalog/item/657e1d85d34e23d3533209f7?format=json",
+      "http_status": 200,
+      "status": "reachable",
+      "sampled_bytes": 50497,
+      "content_type": "application/json;charset=UTF-8",
+      "advertised_content_length": null,
+      "last_modified": "Thu, 01 Jan 1970 00:00:00 GMT",
+      "magic": "text/other",
+      "json_parsed": true,
+      "api_error": false
     },
     {
       "id": "S10",
       "title": "Regional gravity, magnetics, depth-to-basement",
       "url": "https://www.sciencebase.gov/catalog/item/628d4fabd34ef70cdba3c4a4?format=json",
       "scope": "transport/metadata health only; NOT usable-data or geological validation",
-      "status": "unreachable from this runner",
-      "error": "HTTPSConnectionPool(host='www.sciencebase.gov', port=443): Max retries exceeded with url: /catalog/item/628d4fabd34ef70cdba3c4a4?format=json (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:992)')))",
-      "not_evidence_of_global_unavailability": true
+      "final_url": "https://www.sciencebase.gov/catalog/item/628d4fabd34ef70cdba3c4a4?format=json",
+      "http_status": 200,
+      "status": "reachable",
+      "sampled_bytes": 18225,
+      "content_type": "application/json;charset=UTF-8",
+      "advertised_content_length": null,
+      "last_modified": "Thu, 01 Jan 1970 00:00:00 GMT",
+      "magic": "text/other",
+      "json_parsed": true,
+      "api_error": false
     },
     {
       "id": "S11",
       "title": "Joint geophysical imaging of geothermal systems",
       "url": "https://www.osti.gov/servlets/purl/1724108",
       "scope": "transport/metadata health only; NOT usable-data or geological validation",
-      "status": "unreachable from this runner",
-      "error": "HTTPSConnectionPool(host='www.osti.gov', port=443): Max retries exceeded with url: /servlets/purl/1724108 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:992)')))",
-      "not_evidence_of_global_unavailability": true
+      "final_url": "https://www.osti.gov/servlets/purl/1724108",
+      "http_status": 206,
+      "status": "reachable",
+      "sampled_bytes": 65536,
+      "content_type": "application/pdf",
+      "advertised_content_length": "65536",
+      "last_modified": null,
+      "magic": "PDF"
     },
     {
       "id": "S12",
       "title": "Access NHDPlus HR hydrography products",
       "url": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer?f=pjson",
       "scope": "transport/metadata health only; NOT usable-data or geological validation",
-      "status": "unreachable from this runner",
-      "error": "HTTPSConnectionPool(host='hydro.nationalmap.gov', port=443): Max retries exceeded with url: /arcgis/rest/services/NHDPlus_HR/MapServer?f=pjson (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:992)')))",
-      "not_evidence_of_global_unavailability": true
+      "final_url": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer?f=pjson",
+      "http_status": 200,
+      "status": "reachable",
+      "sampled_bytes": 12683,
+      "content_type": "text/plain;charset=UTF-8",
+      "advertised_content_length": null,
+      "last_modified": null,
+      "magic": "text/other"
     },
     {
       "id": "S13",
       "title": "2026 GeMS version of SGMC",
       "url": "https://mrdata.usgs.gov/geology/state/shp/NV.zip",
       "scope": "transport/metadata health only; NOT usable-data or geological validation",
-      "status": "unreachable from this runner",
-      "error": "HTTPSConnectionPool(host='mrdata.usgs.gov', port=443): Max retries exceeded with url: /geology/state/shp/NV.zip (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:992)')))",
-      "not_evidence_of_global_unavailability": true
+      "final_url": "https://mrdata.usgs.gov/geology/state/shp/NV.zip",
+      "http_status": 206,
+      "status": "reachable",
+      "sampled_bytes": 65536,
+      "content_type": "application/zip",
+      "advertised_content_length": "65536",
+      "last_modified": "Wed, 12 Jan 2022 20:02:42 GMT",
+      "magic": "ZIP/XLSX"
     },
     {
       "id": "S14",
       "title": "Conductive heat flow and residual point data",
       "url": "https://www.sciencebase.gov/catalog/item/6297d2fad34ec53d276c5b28?format=json",
       "scope": "transport/metadata health only; NOT usable-data or geological validation",
-      "status": "unreachable from this runner",
-      "error": "HTTPSConnectionPool(host='www.sciencebase.gov', port=443): Max retries exceeded with url: /catalog/item/6297d2fad34ec53d276c5b28?format=json (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:992)')))",
-      "not_evidence_of_global_unavailability": true
+      "final_url": "https://www.sciencebase.gov/catalog/item/6297d2fad34ec53d276c5b28?format=json",
+      "http_status": 200,
+      "status": "reachable",
+      "sampled_bytes": 17360,
+      "content_type": "application/json;charset=UTF-8",
+      "advertised_content_length": null,
+      "last_modified": "Thu, 01 Jan 1970 00:00:00 GMT",
+      "magic": "text/other",
+      "json_parsed": true,
+      "api_error": false
     },
     {
       "id": "S15",
       "title": "Thermal conductivity measurement/source quality",
       "url": "https://gdr.openei.org/files/1390/INGENIOUSThermKMeasureSource_GDRUploadFinal-27June2022.xlsx",
       "scope": "transport/metadata health only; NOT usable-data or geological validation",
-      "status": "unreachable from this runner",
-      "error": "HTTPSConnectionPool(host='gdr.openei.org', port=443): Max retries exceeded with url: /files/1390/INGENIOUSThermKMeasureSource_GDRUploadFinal-27June2022.xlsx (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:992)')))",
-      "not_evidence_of_global_unavailability": true
+      "final_url": "https://gdr.openei.org/files/1390/INGENIOUSThermKMeasureSource_GDRUploadFinal-27June2022.xlsx",
+      "http_status": 206,
+      "status": "reachable",
+      "sampled_bytes": 65536,
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "advertised_content_length": "65536",
+      "last_modified": "Tue, 28 Jun 2022 17:25:07 GMT",
+      "magic": "ZIP/XLSX"
     },
     {
       "id": "S17",
       "title": "USGS 3DEP seamless 1/3 arc-second (~10m) DEM",
       "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/current/n39w119/USGS_13_n39w119.tif",
       "scope": "transport/metadata health only; NOT usable-data or geological validation",
-      "status": "unreachable from this runner",
-      "error": "HTTPSConnectionPool(host='prd-tnm.s3.amazonaws.com', port=443): Max retries exceeded with url: /StagedProducts/Elevation/13/TIFF/current/n39w119/USGS_13_n39w119.tif (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:992)')))",
-      "not_evidence_of_global_unavailability": true
+      "final_url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/current/n39w119/USGS_13_n39w119.tif",
+      "http_status": 206,
+      "status": "reachable",
+      "sampled_bytes": 65536,
+      "content_type": "image/tiff",
+      "advertised_content_length": "65536",
+      "last_modified": "Thu, 15 May 2025 18:38:40 GMT",
+      "magic": "TIFF"
     },
     {
       "id": "S21",
@@ -100,7 +156,7 @@
       "url": "https://www.usgs.gov/publications/discovering-blind-geothermal-systems-great-basin-region-integrated-geologic-and",
       "scope": "transport/metadata health only; NOT usable-data or geological validation",
       "status": "unreachable from this runner",
-      "error": "HTTPSConnectionPool(host='www.usgs.gov', port=443): Max retries exceeded with url: /publications/discovering-blind-geothermal-systems-great-basin-region-integrated-geologic-and (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:992)')))",
+      "error": "HTTPSConnectionPool(host='www.usgs.gov', port=443): Read timed out. (read timeout=12)",
       "not_evidence_of_global_unavailability": true
     }
   ],
@@ -268,10 +324,10 @@
     {
       "repository": "GEMSDOE21",
       "status": "reachable",
-      "head": "ad4b3b9bd55b90c40bdb8959fbb1f2391387503c",
-      "committed_utc": "2026-09-30T19:49:43Z",
-      "url": "https://github.com/buffedlizard55-lab/GEMSDOE21/commit/ad4b3b9bd55b90c40bdb8959fbb1f2391387503c",
-      "message": "Initial commit"
+      "head": "27f930e5900e4c5328981b04a2dcc6e2531cff80",
+      "committed_utc": "2026-09-30T23:26:01Z",
+      "url": "https://github.com/buffedlizard55-lab/GEMSDOE21/commit/27f930e5900e4c5328981b04a2dcc6e2531cff80",
+      "message": "Merge pull request #1 from buffedlizard55-lab/arena/01a0f45d-gemsdoe21"
     }
   ],
   "warning": "Health probes verify response headers/sample bytes ONLY; not full-file hashes, coverage, licenses, science or scores.",

@@ -83,6 +83,8 @@ def static_checks():
             assert soup.select_one("#submission-note").get("value") == manifest["note"]
         embedded = json.loads(soup.select_one("#submission-manifest").text)
         assert embedded == manifest
+    for asset in (ROOT / "site/assets").iterdir():
+        assert sha256(asset) == sha256(docs / "assets" / asset.name), f"Stale compiled asset: {asset.name}"
     assert (ROOT / ".nojekyll").exists() and (docs / ".nojekyll").exists()
     assert BeautifulSoup((ROOT / "index.html").read_text(), "html.parser").find("base")["href"] == "docs/"
     if shutil.which("node"):

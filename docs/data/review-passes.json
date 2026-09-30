@@ -1,6 +1,6 @@
 {
   "generated_utc": "2026-09-30T23:14:14+00:00",
-  "status": "THREE LOCAL REVIEW PASSES COMPLETE; remote PR/merge/deployment receipt separate",
+  "status": "THREE PASSES COMPLETE; initial merged live delivery independently verified",
   "passes": [
     {
       "pass": 1,
@@ -53,7 +53,7 @@
     },
     {
       "pass": 3,
-      "status": "DONE FOR LOCAL QUALITY/REQUEST AUDIT",
+      "status": "DONE",
       "scope": "Entire original brief rechecked, documentation/site/static/replication improved",
       "evidence": [
         "request-audit.json",
@@ -63,13 +63,18 @@
       "checks": {
         "passed": true,
         "pages": 5,
-        "local_links": 105,
+        "local_links": 106,
         "downloads": 3,
         "prompt_unchanged": true
       },
       "first_prompt_and_result": "unchanged",
       "remaining_goals": "Current-best provenance/fresh compliant scientific improvement and authorized final entry not achieved; do not claim otherwise",
-      "remote_delivery": "Final actual receipt in delivery-status.json after PR/merge/Pages verification"
+      "remote_delivery": {
+        "PR_1": "MERGED",
+        "Pages_build": "success / 36791057732",
+        "served_bytes_and_downloads": "passed / 36791384129",
+        "latest_receipt": "https://github.com/buffedlizard55-lab/GEMSDOE21/releases/tag/delivery-verification"
+      }
     }
   ]
 }

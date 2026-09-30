@@ -115,6 +115,7 @@ def main():
             "request-audit.json",
             "fixed-replication.json",
             "delivery-status.json",
+            "live-verification.json",
         ],
     }.items():
         for file in files:

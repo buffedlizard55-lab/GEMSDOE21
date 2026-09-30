@@ -5,6 +5,7 @@
 __pycache__/
 *.py[cod]
 /data
+/live-verification.json
 node_modules/
 test-results/
 playwright-report/
