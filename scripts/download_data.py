@@ -53,7 +53,9 @@ H19_SHA = "89109a3bd2cd3b12e7a0f388113c519843acfc9c4f46825affefc3e63dd99b22"
 def fetch(source: tuple[str, str], remote: str, dest: Path, expected: str | None = None) -> dict:
     repo, ref = source
     dest.parent.mkdir(parents=True, exist_ok=True)
-    cached = dest.is_file() and (expected is None or sha256(dest) == expected)
+    # Never trust an unversioned local metadata cache when no expected content digest exists.
+    # Those small files are refetched at the immutable commit; large hash-pinned rasters can resume.
+    cached = expected is not None and dest.is_file() and sha256(dest) == expected
     if not cached:
         tmp = dest.with_name(dest.name + ".partial")
         last_error = ""

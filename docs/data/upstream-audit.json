@@ -1,0 +1,118 @@
+{
+  "generated_utc": "2026-09-30T23:06:53+00:00",
+  "source_repository": "buffedlizard55-lab/19GEMSDOE",
+  "source_commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+  "tracked_python_files_inspected": 34,
+  "source_sha256": {
+    "src/gems/hypotheses.py": "70e8a0761bb9f891d89c611d1b6255f759027966b8f8bc96ffc679fc27a6b0ea",
+    "src/gems/holdout.py": "63de4569f410d38305ee110ee9513ae6737bf42e1794ed6ff74dcdb90b8d59b4",
+    "src/gems/metric.py": "cc439ec785f41fc0121a5f82bafe06f95f6f02047a1b920dd02fd010ff16535b",
+    "scripts/run_spatial_holdout_and_build.py": "9d71d0628e15cd924bc1b7cee9a4ed034a254ae5d06d5d9713addc9b3c3977b9",
+    "scripts/evaluate_h19_and_build_submissions.py": "def1ee96cecf43905c742910b20d002d139818212b65b690a69ae002e97e7bc1",
+    "README.md": "fd959a5ecbb6242d577627a516709d62695919dc91f7f3f94c46f671ff43eb71"
+  },
+  "line_findings": [
+    {
+      "id": "A01",
+      "status": "VERIFIED CODE",
+      "file": "src/gems/hypotheses.py",
+      "line": 321,
+      "excerpt": "0.57 * L3_open + 0.35 * L4_anti + 0.04 * L1_pop + 0.04 * L2_therm,",
+      "finding": "L3 and L4 scarp experts total 92% of lidar-regime blend, not four equal lines.",
+      "source": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/src/gems/hypotheses.py#L321"
+    },
+    {
+      "id": "A02",
+      "status": "VERIFIED CODE",
+      "file": "src/gems/hypotheses.py",
+      "line": 322,
+      "excerpt": "0.506 * L3_open + 0.35 * L4_anti + 0.072 * L1_pop + 0.072 * L2_therm,",
+      "finding": "Scarp experts total 85.6% of gap-regime blend before quantile/gate.",
+      "source": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/src/gems/hypotheses.py#L322"
+    },
+    {
+      "id": "A03",
+      "status": "VERIFIED CODE",
+      "file": "src/gems/hypotheses.py",
+      "line": 317,
+      "excerpt": "L4_anti = (0.95 * p_scarp_anti_16 + 0.05 * p_h19_3_anti).astype(np.float32)",
+      "finding": "The arm called L4 is a scarp/terrain-geophysics expert, not an independent pure geopotential measurement.",
+      "source": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/src/gems/hypotheses.py#L317"
+    },
+    {
+      "id": "A04",
+      "status": "VERIFIED CODE",
+      "file": "src/gems/hypotheses.py",
+      "line": 338,
+      "excerpt": "single_layer_gate = np.clip(second_best / 0.18, 0.35, 1.0).astype(np.float32)",
+      "finding": "Gate attenuates to 35%; it does not completely discard all single-layer matches.",
+      "source": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/src/gems/hypotheses.py#L338"
+    },
+    {
+      "id": "A05",
+      "status": "VERIFIED CODE",
+      "file": "scripts/run_spatial_holdout_and_build.py",
+      "line": 399,
+      "excerpt": "y_tr = np.r_[np.ones(len(sel_pos), dtype=np.int8), np.zeros(len(sel_neg), dtype=np.int8)]",
+      "finding": "Uncatalogued samples are assigned binary-negative targets, not nnPU risk.",
+      "source": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/scripts/run_spatial_holdout_and_build.py#L399"
+    },
+    {
+      "id": "A06",
+      "status": "VERIFIED CODE",
+      "file": "scripts/run_spatial_holdout_and_build.py",
+      "line": 314,
+      "excerpt": "near_cat_2d = binary_dilation(labels, iterations=3)",
+      "finding": "Negative-sampling collar derives from the full catalogue, including held-out labels.",
+      "source": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/scripts/run_spatial_holdout_and_build.py#L314"
+    },
+    {
+      "id": "A07",
+      "status": "VERIFIED CODE",
+      "file": "src/gems/holdout.py",
+      "line": 117,
+      "excerpt": "def score_quadrant(self, pred: np.ndarray, f_id: int, mode: str, mask_predictions: bool = False) -> float:",
+      "finding": "Sparse scoring default can retain TP credit from known masked predictions.",
+      "source": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/src/gems/holdout.py#L117"
+    },
+    {
+      "id": "A08",
+      "status": "VERIFIED CODE",
+      "file": "scripts/evaluate_h19_and_build_submissions.py",
+      "line": 220,
+      "excerpt": "oof_19 = np.load(DATA_DIR / \"cache\" / \"oof_probs_h19_arms.npz\")",
+      "finding": "H19 exporter requires a prediction cache absent from the pinned repository tree.",
+      "source": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/scripts/evaluate_h19_and_build_submissions.py#L220"
+    }
+  ],
+  "h19_cache_references": [
+    {
+      "file": "scripts/evaluate_h19_and_build_submissions.py",
+      "line": 220,
+      "text": "oof_19 = np.load(DATA_DIR / \"cache\" / \"oof_probs_h19_arms.npz\")"
+    }
+  ],
+  "h19_cache_tracked": false,
+  "historical_mask_comparison": {
+    "h16_scored_positive_pixels": 123939,
+    "h19_scored_positive_pixels": 123779,
+    "intersection": 103626,
+    "union": 144092,
+    "jaccard": 0.7191655331316104,
+    "added_pixels": 20153,
+    "removed_pixels": 20313,
+    "h19_known_pixel_positives": 0,
+    "h19_scored_content_id": "691e4dfa"
+  },
+  "thermal_csv_audit": {
+    "records": 27092,
+    "unique_100m_cells": 12570,
+    "contains_full_catalogue_distance": true,
+    "contains_well_depth": false,
+    "model_used_this_csv": false,
+    "warning": "Joined chemistry/sample rows are not independent site counts. A hot observation does not prove a local unmapped fault."
+  },
+  "score_difference_user_reported": 0.0039000000000000146,
+  "causal_attribution": "UNIDENTIFIED: different predictions, no controlled component ablation on hidden labels",
+  "not_a_holdout_evaluation": true
+}

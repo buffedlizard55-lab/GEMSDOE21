@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="hero">
+  {% include 'download.html' %}
+  <aside class="field-panel" aria-label="Historical prediction overview">
+    <div class="panel-heading"><span>FIELD RECORD / 001</span><span>100 m grid</span></div>
+    <figure><img src="assets/historical-map.png" alt="Downsampled historical H19-4 predictions in green, known catalogue in gray, on the irregular study footprint. Predictions are unverified fault candidates." width="412" height="467"><figcaption><span><i class="legend green"></i>H19-4 predictions</span><span><i class="legend gray"></i>Known catalogue</span></figcaption></figure>
+    <div class="field-stats"><div><b>{{ '{:,}'.format(sub.files[0].preflight.positive_footprint_pixels) }}</b><span>predicted pixels</span></div><div><b>0.1894<span class="dagger">†</span></b><span>reported historical score</span></div></div>
+    <p class="caption">† User-reported file association. The public account best agrees, but does not identify the file. This map is not geological validation.</p>
+  </aside>
+</section>
+<section class="decision-bar" aria-labelledby="decision-title"><span class="tag reject">NOT PROMOTED</span><div><h2 id="decision-title">One hypothesis tested. Zero leaderboard slots spent.</h2><p>H21-1 missed its registered forecast, reduced recovery and did not beat the clean PU control. The current-best H19 refit is also blocked.</p></div><a href="research.html">Read the result <span aria-hidden="true">→</span></a></section>
+<section class="section" aria-labelledby="results-title">
+  <div class="section-heading"><div><span class="eyebrow">01 / MEASURED, NOT PROMISED</span><h2 id="results-title">What the experiment found</h2></div><a href="data/h21-1-results.json">Raw result JSON ↗</a></div>
+  <div class="metric-grid">
+    <article class="metric-card"><span>Mean dense holdout DTI</span><div>{{ '%.5f'|format(control.mean_dense_dti) }} <small>→</small> {{ '%.5f'|format(candidate.mean_dense_dti) }}</div><p class="negative">{{ '%+.5f'|format(result.gate.delta_dense) }} observed · +0.008 forecast</p></article>
+    <article class="metric-card"><span>Mean sparse-reference DTI</span><div>{{ '%.5f'|format(control.mean_sparse_dti) }} <small>→</small> {{ '%.5f'|format(candidate.mean_sparse_dti) }}</div><p class="negative">{{ '%+.5f'|format(result.gate.delta_sparse) }} observed · +0.004 forecast</p></article>
+    <article class="metric-card"><span>Submission promotion gate</span><div class="word-value">Blocked</div><p>0/4 dense fold wins · adjusted p=1.0 · 2/4 folds converged</p></article>
+  </div>
+  <p class="caption">These are local whole-segment hide/recover scores, not leaderboard predictions. Sparse scoring changes reference completeness, not training or emitted predictions. Uncatalogued pixels remain unlabeled. The score forecast failed; nonconvergence and a post-result soft-NMS/evidence-guard deviation further limit interpretation. A corrected helper is tested, but no new holdout or score was claimed.</p>
+</section>
+<section class="section two-col">
+  <article class="paper"><span class="eyebrow">02 / THE HISTORICAL BEST</span><h2>Why study H19-4?</h2><p>The reported rise from 0.1855 to 0.1894 is <b>+0.0039</b>. Code inspection and fresh pixel comparisons expose what changed — not which change caused the hidden-score gain.</p><dl class="facts"><div><dt>Scarp-arm blend weight</dt><dd>92% lidar / 85.6% gap</dd></div><div><dt>H16 ↔ H19 scored-mask overlap</dt><dd>{{ '%.2f'|format(upstream.historical_mask_comparison.jaccard*100) }}% Jaccard</dd></div><div><dt>Added / removed selected pixels</dt><dd>20,153 / 20,313</dd></div><div><dt>Corroboration gate</dt><dd>Attenuates to 35%; not hard rejection</dd></div></dl><p class="caption">Shared predictors mean the four arms are not independent evidence. Full-catalogue thermal-distance flags cannot be used in the new holdout.</p><a href="research.html#historical">See the source-line audit →</a></article>
+  <article class="paper"><span class="eyebrow">03 / RESEARCH STANDARD</span><h2>A useful negative result</h2><ul class="check-list"><li>Whole connected known traces hidden, including cross-boundary parts</li><li>1.5 km Euclidean training purge; label-free physical features</li><li>Non-negative positive–unlabeled risk; no confirmed-negative targets</li><li>Exact known-pixel mask; official 0.2 FP / 0.8 FN decomposition</li><li>Locked forecast, four-candidate correction, no post-result tuning</li></ul><p class="caption">Raster-connected traces are a known-segment proxy, not original geological fault IDs. SCAR/prior assumptions and spatial dependence are explicit limitations.</p><a href="research.html#protocol">Inspect protocol and limitations →</a></article>
+</section>
+<section class="section ledger-strip"><div><span class="eyebrow">04 / AUDITABLE &amp; REUSABLE</span><h2>Follow the evidence, not the narrative.</h2><p>{{ sources|length }} source records. {{ flags|length }} irregularities. Historical group results, duplicate-field checks and a permitted-source health feed.</p></div><a class="button secondary" href="sources.html">Open source ledger →</a></section>
+{% endblock %}

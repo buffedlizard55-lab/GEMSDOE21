@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <base href="docs/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Audited GEMS fault-discovery research. Download a format-verified historical GeoTIFF, inspect the registered negative result and review official sources.">
+  <title>Download &amp; evidence · GEMSDOE21</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script defer src="assets/site.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+  <a class="brand" href="index.html" aria-label="GEMSDOE21 home"><span class="mark" aria-hidden="true">G<span>21</span></span><span>GEMSDOE21<small>FAULT DISCOVERY / RESEARCH RECORD</small></span></a>
+  <nav aria-label="Main navigation">
+    <a href="executive-summary.html" >Submission guide</a>
+    <a href="research.html" >Research</a>
+    <a href="sources.html" >Sources &amp; feed</a>
+    <a href="https://github.com/buffedlizard55-lab/GEMSDOE21" class="code-link">Code <span aria-hidden="true">↗</span></a>
+  </nav>
+</header>
+<main id="main" class="shell">
+
+<section class="hero">
+  <div class="download-card">
+  <div class="eyebrow"><span class="dot"></span> LOCALLY FORMAT-VERIFIED · HISTORICAL REFERENCE</div>
+  <h1>Download the<br>audited fault map.</h1>
+  <p class="lead">A ready-to-download, single-band prediction for the GEMS prize. <strong>This is unchanged H19-4</strong> — not a newly validated improvement.</p>
+  <a class="button primary" href="downloads/gems21-h19-4-reference-20260930-691e4dfa.tif" download="gems21-h19-4-reference-20260930-691e4dfa.tif" data-verified-download="gems21-h19-4-reference-20260930-691e4dfa.tif"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>Download submission .tif <span>1.72 MB</span></a>
+  <p class="download-status" aria-live="polite" data-download-status>With JavaScript: SHA-256 checked before saving · no sign-in required</p>
+  <div class="file-label"><span class="kicker">UNIQUE FILENAME</span><code>gems21-h19-4-reference-20260930-691e4dfa.tif</code></div>
+  <details class="alternatives"><summary>ZIP, all-finite fallback &amp; direct download</summary><div>
+    <p>The ZIP contains exactly one TIFF. The masked-zero fallback has identical footprint predictions and all raw values in [0,1], with outside pixels marked null by an internal GDAL mask. <strong>Platform acceptance of that fallback is untested.</strong></p>
+    <a class="text-download" href="downloads/gems21-h19-4-reference-20260930-691e4dfa.zip" download="gems21-h19-4-reference-20260930-691e4dfa.zip" data-verified-download="gems21-h19-4-reference-20260930-691e4dfa.zip">Zip · 0.50 MB ↓</a><a class="text-download" href="downloads/gems21-h19-4-reference-20260930-691e4dfa-masked-zero.tif" download="gems21-h19-4-reference-20260930-691e4dfa-masked-zero.tif" data-verified-download="gems21-h19-4-reference-20260930-691e4dfa-masked-zero.tif">Masked-zero fallback · 0.72 MB ↓</a>
+    <a class="text-download" href="downloads/gems21-h19-4-reference-20260930-691e4dfa.tif" download="gems21-h19-4-reference-20260930-691e4dfa.tif">Direct TIFF link (without browser hash check) ↓</a>
+    <p>Every published TIFF passed strict Python validation. Direct links still work without JavaScript; inspect the <a href="data/submission-validation.json">hash/format report</a> if needed.</p>
+  </div></details>
+  <div class="note-box"><label for="submission-note">SHORT SUBMISSION NOTE</label><div><input id="submission-note" type="text" readonly value="GEMS21 | H19-4 historical reference | id 691e4dfa | same predictions, not a new experiment"><button type="button" class="copy" data-copy="GEMS21 | H19-4 historical reference | id 691e4dfa | same predictions, not a new experiment" aria-label="Copy submission note">Copy</button></div><span class="copy-status" aria-live="polite"></span></div>
+  <p class="warning"><b>Protect your weekly slot.</b> Do not re-upload this file if you already scored H19-4. Its bytes are identical; a new name cannot improve its score.</p>
+</div>
+  <aside class="field-panel" aria-label="Historical prediction overview">
+    <div class="panel-heading"><span>FIELD RECORD / 001</span><span>100 m grid</span></div>
+    <figure><img src="assets/historical-map.png" alt="Downsampled historical H19-4 predictions in green, known catalogue in gray, on the irregular study footprint. Predictions are unverified fault candidates." width="412" height="467"><figcaption><span><i class="legend green"></i>H19-4 predictions</span><span><i class="legend gray"></i>Known catalogue</span></figcaption></figure>
+    <div class="field-stats"><div><b>123,779</b><span>predicted pixels</span></div><div><b>0.1894<span class="dagger">†</span></b><span>reported historical score</span></div></div>
+    <p class="caption">† User-reported file association. The public account best agrees, but does not identify the file. This map is not geological validation.</p>
+  </aside>
+</section>
+<section class="decision-bar" aria-labelledby="decision-title"><span class="tag reject">NOT PROMOTED</span><div><h2 id="decision-title">One hypothesis tested. Zero leaderboard slots spent.</h2><p>H21-1 missed its registered forecast, reduced recovery and did not beat the clean PU control. The current-best H19 refit is also blocked.</p></div><a href="research.html">Read the result <span aria-hidden="true">→</span></a></section>
+<section class="section" aria-labelledby="results-title">
+  <div class="section-heading"><div><span class="eyebrow">01 / MEASURED, NOT PROMISED</span><h2 id="results-title">What the experiment found</h2></div><a href="data/h21-1-results.json">Raw result JSON ↗</a></div>
+  <div class="metric-grid">
+    <article class="metric-card"><span>Mean dense holdout DTI</span><div>0.19920 <small>→</small> 0.19780</div><p class="negative">-0.00141 observed · +0.008 forecast</p></article>
+    <article class="metric-card"><span>Mean sparse-reference DTI</span><div>0.07550 <small>→</small> 0.07445</div><p class="negative">-0.00104 observed · +0.004 forecast</p></article>
+    <article class="metric-card"><span>Submission promotion gate</span><div class="word-value">Blocked</div><p>0/4 dense fold wins · adjusted p=1.0 · 2/4 folds converged</p></article>
+  </div>
+  <p class="caption">These are local whole-segment hide/recover scores, not leaderboard predictions. Sparse scoring changes reference completeness, not training or emitted predictions. Uncatalogued pixels remain unlabeled. The score forecast failed; nonconvergence and a post-result soft-NMS/evidence-guard deviation further limit interpretation. A corrected helper is tested, but no new holdout or score was claimed.</p>
+</section>
+<section class="section two-col">
+  <article class="paper"><span class="eyebrow">02 / THE HISTORICAL BEST</span><h2>Why study H19-4?</h2><p>The reported rise from 0.1855 to 0.1894 is <b>+0.0039</b>. Code inspection and fresh pixel comparisons expose what changed — not which change caused the hidden-score gain.</p><dl class="facts"><div><dt>Scarp-arm blend weight</dt><dd>92% lidar / 85.6% gap</dd></div><div><dt>H16 ↔ H19 scored-mask overlap</dt><dd>71.92% Jaccard</dd></div><div><dt>Added / removed selected pixels</dt><dd>20,153 / 20,313</dd></div><div><dt>Corroboration gate</dt><dd>Attenuates to 35%; not hard rejection</dd></div></dl><p class="caption">Shared predictors mean the four arms are not independent evidence. Full-catalogue thermal-distance flags cannot be used in the new holdout.</p><a href="research.html#historical">See the source-line audit →</a></article>
+  <article class="paper"><span class="eyebrow">03 / RESEARCH STANDARD</span><h2>A useful negative result</h2><ul class="check-list"><li>Whole connected known traces hidden, including cross-boundary parts</li><li>1.5 km Euclidean training purge; label-free physical features</li><li>Non-negative positive–unlabeled risk; no confirmed-negative targets</li><li>Exact known-pixel mask; official 0.2 FP / 0.8 FN decomposition</li><li>Locked forecast, four-candidate correction, no post-result tuning</li></ul><p class="caption">Raster-connected traces are a known-segment proxy, not original geological fault IDs. SCAR/prior assumptions and spatial dependence are explicit limitations.</p><a href="research.html#protocol">Inspect protocol and limitations →</a></article>
+</section>
+<section class="section ledger-strip"><div><span class="eyebrow">04 / AUDITABLE &amp; REUSABLE</span><h2>Follow the evidence, not the narrative.</h2><p>22 source records. 19 irregularities. Historical group results, duplicate-field checks and a permitted-source health feed.</p></div><a class="button secondary" href="sources.html">Open source ledger →</a></section>
+
+</main>
+<footer class="shell footer">
+  <div><b>Maximize P(Win). Own the Outcome.</b><p>Evidence over leaderboard probing. One research program, one account, no unsupported score claims.</p></div>
+  <div><a href="data/submission-validation.json">Format audit</a> · <a href="data/h21-1-results.json">First experiment</a> · <a href="https://github.com/buffedlizard55-lab/GEMSDOE21/blob/main/README.md">Full brief</a><p>Research snapshot: 30 September 2026 · GEMS competition #306</p></div>
+</footer>
+<script type="application/json" id="submission-manifest">{"generated_utc": "2026-09-30T23:07:20+00:00", "role": "historical reference; NOT a novel hypothesis or new score", "content_id": "691e4dfa", "source_repository": "buffedlizard55-lab/19GEMSDOE", "source_commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15", "source_filename": "gems19-h19-4-multiline-corroborated-openness-thermal-pop-20260930-691e4dfa-nan.tif", "source_sha256": "89109a3bd2cd3b12e7a0f388113c519843acfc9c4f46825affefc3e63dd99b22", "byte_identical_to_h19_4": true, "score": 0.1894, "score_status": "USER-REPORTED file association; visible account best independently agrees", "note": "GEMS21 | H19-4 historical reference | id 691e4dfa | same predictions, not a new experiment", "files": [{"role": "primary", "name": "gems21-h19-4-reference-20260930-691e4dfa.tif", "href": "downloads/gems21-h19-4-reference-20260930-691e4dfa.tif", "bytes": 1716768, "sha256": "89109a3bd2cd3b12e7a0f388113c519843acfc9c4f46825affefc3e63dd99b22", "preflight": {"passed": true, "checks": {"single_band": true, "float32": true, "crs_exact": true, "shape_exact": true, "geotransform_exact": true, "no_masked_footprint_pixels": true, "footprint_finite": true, "footprint_range_0_1": true, "outside_null_or_nan": true, "all_finite_values_in_range": true, "no_infinity_anywhere": true}, "sha256": "89109a3bd2cd3b12e7a0f388113c519843acfc9c4f46825affefc3e63dd99b22", "bytes": 1716768, "shape": [3730, 3292], "crs": "EPSG:32611", "transform": [100.0, 0.0, 243350.0, 0.0, -100.0, 4508550.0], "footprint_pixels": 5167373, "outside_pixels": 7111787, "footprint_nan_inf": 0, "footprint_out_of_range": 0, "footprint_min": 0.0, "footprint_max": 1.0, "raw_all_pixels_finite": false, "positive_footprint_pixels": 123779, "validator_scope": "local official-format checks; not platform acceptance or score verification"}}, {"role": "zip", "name": "gems21-h19-4-reference-20260930-691e4dfa.zip", "href": "downloads/gems21-h19-4-reference-20260930-691e4dfa.zip", "bytes": 503887, "sha256": "0a4106d8cd4d77f9439b03b7137252798df92ef695bd9a6c6a50255a4979c9ee"}, {"role": "masked-zero fallback", "name": "gems21-h19-4-reference-20260930-691e4dfa-masked-zero.tif", "href": "downloads/gems21-h19-4-reference-20260930-691e4dfa-masked-zero.tif", "bytes": 720122, "sha256": "356f833c09900fc41f2cc75278c6c91feb398deee09acd45c55303d07cd59e3a", "preflight": {"passed": true, "checks": {"single_band": true, "float32": true, "crs_exact": true, "shape_exact": true, "geotransform_exact": true, "no_masked_footprint_pixels": true, "footprint_finite": true, "footprint_range_0_1": true, "outside_null_or_nan": true, "all_finite_values_in_range": true, "no_infinity_anywhere": true}, "sha256": "356f833c09900fc41f2cc75278c6c91feb398deee09acd45c55303d07cd59e3a", "bytes": 720122, "shape": [3730, 3292], "crs": "EPSG:32611", "transform": [100.0, 0.0, 243350.0, 0.0, -100.0, 4508550.0], "footprint_pixels": 5167373, "outside_pixels": 7111787, "footprint_nan_inf": 0, "footprint_out_of_range": 0, "footprint_min": 0.0, "footprint_max": 1.0, "raw_all_pixels_finite": true, "positive_footprint_pixels": 123779, "validator_scope": "local official-format checks; not platform acceptance or score verification"}}], "template_mask_sha256": "c467bbdff23d2585b4e444cb239bbd45bc6d6372cff713aa8f7670ec86908697", "prediction_inside_footprint_equal_across_variants": true, "known_pixels_predicted": 0, "new_submission_recommended": false, "warning": "Do not spend a slot re-uploading an existing scored field. A filename change cannot improve DTI.", "fallback_caveat": "All raw values finite [0,1]; outside marked null using internal GDAL mask. Platform acceptance untested."}</script>
+</body>
+</html>

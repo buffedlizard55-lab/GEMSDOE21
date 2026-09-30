@@ -26,6 +26,23 @@ from gems.statistics import promotion, sign_flip  # noqa: E402
 
 
 def main():
+    import argparse
+
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--replication-output", type=Path, help="Ignored data/research/ output; never overwrite first result"
+    )
+    args = parser.parse_args()
+    output = ROOT / "evidence/h21-1-results.json"
+    if args.replication_output:
+        output = args.replication_output.resolve()
+        if not output.is_relative_to(data_dir() / "research"):
+            raise ValueError("Replications must stay in ignored data/research/")
+    if output.exists():
+        raise ValueError(f"Refusing to overwrite preserved outcome: {output}")
+    from verify_prepared import verify
+
+    verify()
     t0 = time.monotonic()
     data = data_dir()
     vec = data / "prepared"
@@ -182,9 +199,17 @@ def main():
     research = data / "research"
     research.mkdir(exist_ok=True)
     # Experimental masks stay ignored, cannot be mistaken for a released recommendation.
+    mask_directory = output.with_suffix("") if args.replication_output else research
+    mask_directory.mkdir(parents=True, exist_ok=True)
     for name, pred in pooled.items():
-        np.savez_compressed(research / f"{name}-oof-mask.npz", pred=pred)
-    write_json(ROOT / "evidence/h21-1-results.json", report)
+        mask_path = mask_directory / f"{name}-oof-mask.npz"
+        if mask_path.exists():
+            raise ValueError(f"Refusing to overwrite preserved prediction cache: {mask_path}")
+        np.savez_compressed(mask_path, pred=pred)
+    if args.replication_output:
+        report["replication_only"] = True
+        report["does_not_replace_first_result"] = True
+    write_json(output, report)
     print(
         f"{report['disposition']}; submission eligible={report['gate']['submission_eligible']}; "
         f"elapsed {report['elapsed_seconds']}s",

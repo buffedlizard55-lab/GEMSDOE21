@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Audited GEMS fault-discovery research. Download a format-verified historical GeoTIFF, inspect the registered negative result and review official sources.">
+  <title>{{ title }} · GEMSDOE21</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script defer src="assets/site.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+  <a class="brand" href="index.html" aria-label="GEMSDOE21 home"><span class="mark" aria-hidden="true">G<span>21</span></span><span>GEMSDOE21<small>FAULT DISCOVERY / RESEARCH RECORD</small></span></a>
+  <nav aria-label="Main navigation">
+    <a href="executive-summary.html" {% if page == 'guide' %}aria-current="page"{% endif %}>Submission guide</a>
+    <a href="research.html" {% if page == 'research' %}aria-current="page"{% endif %}>Research</a>
+    <a href="sources.html" {% if page == 'sources' %}aria-current="page"{% endif %}>Sources &amp; feed</a>
+    <a href="https://github.com/buffedlizard55-lab/GEMSDOE21" class="code-link">Code <span aria-hidden="true">↗</span></a>
+  </nav>
+</header>
+<main id="main" class="shell">
+{% block content %}{% endblock %}
+</main>
+<footer class="shell footer">
+  <div><b>Maximize P(Win). Own the Outcome.</b><p>Evidence over leaderboard probing. One research program, one account, no unsupported score claims.</p></div>
+  <div><a href="data/submission-validation.json">Format audit</a> · <a href="data/h21-1-results.json">First experiment</a> · <a href="https://github.com/buffedlizard55-lab/GEMSDOE21/blob/main/README.md">Full brief</a><p>Research snapshot: 30 September 2026 · GEMS competition #306</p></div>
+</footer>
+<script type="application/json" id="submission-manifest">{{ submission_json|safe }}</script>
+</body>
+</html>

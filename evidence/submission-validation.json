@@ -1,0 +1,122 @@
+{
+  "generated_utc": "2026-09-30T23:07:20+00:00",
+  "role": "historical reference; NOT a novel hypothesis or new score",
+  "content_id": "691e4dfa",
+  "source_repository": "buffedlizard55-lab/19GEMSDOE",
+  "source_commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+  "source_filename": "gems19-h19-4-multiline-corroborated-openness-thermal-pop-20260930-691e4dfa-nan.tif",
+  "source_sha256": "89109a3bd2cd3b12e7a0f388113c519843acfc9c4f46825affefc3e63dd99b22",
+  "byte_identical_to_h19_4": true,
+  "score": 0.1894,
+  "score_status": "USER-REPORTED file association; visible account best independently agrees",
+  "note": "GEMS21 | H19-4 historical reference | id 691e4dfa | same predictions, not a new experiment",
+  "files": [
+    {
+      "role": "primary",
+      "name": "gems21-h19-4-reference-20260930-691e4dfa.tif",
+      "href": "downloads/gems21-h19-4-reference-20260930-691e4dfa.tif",
+      "bytes": 1716768,
+      "sha256": "89109a3bd2cd3b12e7a0f388113c519843acfc9c4f46825affefc3e63dd99b22",
+      "preflight": {
+        "passed": true,
+        "checks": {
+          "single_band": true,
+          "float32": true,
+          "crs_exact": true,
+          "shape_exact": true,
+          "geotransform_exact": true,
+          "no_masked_footprint_pixels": true,
+          "footprint_finite": true,
+          "footprint_range_0_1": true,
+          "outside_null_or_nan": true,
+          "all_finite_values_in_range": true,
+          "no_infinity_anywhere": true
+        },
+        "sha256": "89109a3bd2cd3b12e7a0f388113c519843acfc9c4f46825affefc3e63dd99b22",
+        "bytes": 1716768,
+        "shape": [
+          3730,
+          3292
+        ],
+        "crs": "EPSG:32611",
+        "transform": [
+          100.0,
+          0.0,
+          243350.0,
+          0.0,
+          -100.0,
+          4508550.0
+        ],
+        "footprint_pixels": 5167373,
+        "outside_pixels": 7111787,
+        "footprint_nan_inf": 0,
+        "footprint_out_of_range": 0,
+        "footprint_min": 0.0,
+        "footprint_max": 1.0,
+        "raw_all_pixels_finite": false,
+        "positive_footprint_pixels": 123779,
+        "validator_scope": "local official-format checks; not platform acceptance or score verification"
+      }
+    },
+    {
+      "role": "zip",
+      "name": "gems21-h19-4-reference-20260930-691e4dfa.zip",
+      "href": "downloads/gems21-h19-4-reference-20260930-691e4dfa.zip",
+      "bytes": 503887,
+      "sha256": "0a4106d8cd4d77f9439b03b7137252798df92ef695bd9a6c6a50255a4979c9ee"
+    },
+    {
+      "role": "masked-zero fallback",
+      "name": "gems21-h19-4-reference-20260930-691e4dfa-masked-zero.tif",
+      "href": "downloads/gems21-h19-4-reference-20260930-691e4dfa-masked-zero.tif",
+      "bytes": 720122,
+      "sha256": "356f833c09900fc41f2cc75278c6c91feb398deee09acd45c55303d07cd59e3a",
+      "preflight": {
+        "passed": true,
+        "checks": {
+          "single_band": true,
+          "float32": true,
+          "crs_exact": true,
+          "shape_exact": true,
+          "geotransform_exact": true,
+          "no_masked_footprint_pixels": true,
+          "footprint_finite": true,
+          "footprint_range_0_1": true,
+          "outside_null_or_nan": true,
+          "all_finite_values_in_range": true,
+          "no_infinity_anywhere": true
+        },
+        "sha256": "356f833c09900fc41f2cc75278c6c91feb398deee09acd45c55303d07cd59e3a",
+        "bytes": 720122,
+        "shape": [
+          3730,
+          3292
+        ],
+        "crs": "EPSG:32611",
+        "transform": [
+          100.0,
+          0.0,
+          243350.0,
+          0.0,
+          -100.0,
+          4508550.0
+        ],
+        "footprint_pixels": 5167373,
+        "outside_pixels": 7111787,
+        "footprint_nan_inf": 0,
+        "footprint_out_of_range": 0,
+        "footprint_min": 0.0,
+        "footprint_max": 1.0,
+        "raw_all_pixels_finite": true,
+        "positive_footprint_pixels": 123779,
+        "validator_scope": "local official-format checks; not platform acceptance or score verification"
+      }
+    }
+  ],
+  "template_mask_sha256": "c467bbdff23d2585b4e444cb239bbd45bc6d6372cff713aa8f7670ec86908697",
+  "prediction_inside_footprint_equal_across_variants": true,
+  "known_pixels_predicted": 0,
+  "new_submission_recommended": false,
+  "warning": "Do not spend a slot re-uploading an existing scored field. A filename change cannot improve DTI.",
+  "fallback_caveat": "All raw values finite [0,1]; outside marked null using internal GDAL mask. Platform acceptance untested."
+}

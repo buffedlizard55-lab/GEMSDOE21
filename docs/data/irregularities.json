@@ -1,0 +1,176 @@
+{
+  "reviewed_utc_date": "2026-09-30",
+  "flags": [
+    {
+      "id": "F01",
+      "severity": "high",
+      "title": "The checkout did not contain the claimed existing pipeline",
+      "status": "RESOLVED BY BOOTSTRAP",
+      "finding": "Starting checkout contained only an 11-byte README. There were no previous-session next-step files here.",
+      "evidence": "Initial git tree ad4b3b9",
+      "action": "Built a new reproducible CPU research/export/validation/site pipeline. Do not say a GPU model was trained."
+    },
+    {
+      "id": "F02",
+      "severity": "high",
+      "title": "H19 best comparator is not fully reproducible from its source snapshot",
+      "status": "BLOCKS NEW SUBMISSION PROMOTION",
+      "finding": "Exporter reads oof_probs_h19_arms.npz. Its pinned tree lacks that cache, and committed Python only reads it, not generates it.",
+      "evidence": "evidence/upstream-audit.json A08",
+      "action": "Recover original arm-generation source/provenance, then refit without hidden labels before claiming improvement over H19-4."
+    },
+    {
+      "id": "F03",
+      "severity": "high",
+      "title": "Prior sampling treats uncatalogued pixels as negatives",
+      "status": "FIXED IN H21 RESEARCH",
+      "finding": "Upstream y_tr concatenates positive ones with sampled-negative zeros. Its collar is derived from all labels, including holdout labels.",
+      "evidence": "evidence/upstream-audit.json A05/A06",
+      "action": "H21 uses nnPU risk on sampled P/U; no full-catalogue sampling collar. Do not call previous holdout scores comparable."
+    },
+    {
+      "id": "F04",
+      "severity": "high",
+      "title": "Prior sparse mask can give TP credit to masked predictions",
+      "status": "FIXED IN H21 EVALUATOR",
+      "finding": "Upstream defaults mask_predictions=False. Staff says known pixels are excluded from evaluation and proximity to known faults does not earn new-label credit.",
+      "evidence": "evidence/upstream-audit.json A07; tests/test_metric.py",
+      "action": "Remove known pixels from predictions and truth before all max/distance terms; scoring mask remains pixel-exact."
+    },
+    {
+      "id": "F05",
+      "severity": "medium",
+      "title": "An all-absence sample description differs from supplied template",
+      "status": "OPEN PROVENANCE ISSUE",
+      "finding": "Official page describes an absence sample; mirror template's positive mask equals supplied catalogue. Its CRS/mask/grid are usable, but official-login provenance is not independently verified.",
+      "evidence": "evidence/data-verification.json",
+      "action": "Use only finite footprint and grid from template. Never expose positive template values to model. Obtain organizer-authenticated reference through authorized means if available."
+    },
+    {
+      "id": "F06",
+      "severity": "high",
+      "title": "Original out-of-range upload cannot be diagnosed without its exact bytes",
+      "status": "NEW DOWNLOADS FORMAT-VERIFIED",
+      "finding": "Source feature sentinel values can be extremely negative; NaN within footprint/logits/255 encodings are other possible causes. None is established as the cause of the user's past error.",
+      "evidence": "evidence/data-verification.json; evidence/submission-validation.json",
+      "action": "Strictly reject nonfinite/out-of-range predictions; validate every emitted pixel and grid. Offer an all-finite internally masked fallback, with acceptance explicitly untested."
+    },
+    {
+      "id": "F07",
+      "severity": "medium",
+      "title": "Band metadata is not unambiguous geology",
+      "status": "MITIGATED",
+      "finding": "Upstream band 6 tc is labelled tilt/curvature but earlier numerical audit supports radiometric total counts. depth_to_base_surf is described by the official competition as conductive-base depth, not necessarily sedimentary basement.",
+      "evidence": "19GEMSDOE evidence/feature_profile.json; official task source S01",
+      "action": "H21 does not use tc as tilt or depth_to_base_surf as basement. Preserve ambiguous identities rather than infer units/mechanisms."
+    },
+    {
+      "id": "F08",
+      "severity": "medium",
+      "title": "Four model arms are not independent physical measurements",
+      "status": "CORRECTED INTERPRETATION",
+      "finding": "H19 L4 is a scarp expert; arms share terrain and geophysics; L3+L4 carry 92% or 85.6% of pre-gate blend weight. Gate clips to .35, rather than discarding all single-line matches.",
+      "evidence": "evidence/upstream-audit.json A01-A04",
+      "action": "Describe correlated evidence families and attenuation. Do not claim four statistically independent proofs or hard single-layer rejection."
+    },
+    {
+      "id": "F09",
+      "severity": "medium",
+      "title": "Thermal records do not count unique independent sites",
+      "status": "AUDITED; NOT A MODEL INPUT",
+      "finding": "The well/spring export includes multiple joined chemistry/sample rows at the same 100m cell and full-catalogue fault distances. It omits well depth.",
+      "evidence": "evidence/upstream-audit.json thermal_csv_audit",
+      "action": "Deduplicate with actual site/measurement keys and review metadata before H21-4. No assertion that every orphan anomaly proves a local fault."
+    },
+    {
+      "id": "F10",
+      "severity": "high",
+      "title": "Known-fault hide/recover is not the hidden expert catalogue",
+      "status": "ONGOING SCIENTIFIC LIMITATION",
+      "finding": "Experts do not disclose test data sources/types/coverage. Raster-connected components are our documented known-segment proxy, not proof of named geological fault-system IDs.",
+      "evidence": "research/preregistration-h21.md; S07",
+      "action": "Retain whole connected segments and purge buffers now; extend to original vector fault IDs for next protocol. Do not infer a .3168 leaderboard score from local DTI."
+    },
+    {
+      "id": "F11",
+      "severity": "medium",
+      "title": "PU prior and mapping propensity are assumptions",
+      "status": "OPEN",
+      "finding": "pi=.03 and SCAR are fixed registered modelling assumptions, not measured regional fault prevalence; catalogues preferentially record conspicuous features.",
+      "evidence": "research/preregistration-h21.md; src/gems/pu.py",
+      "action": "Do not claim calibrated fault probabilities. Register prior/propensity sensitivity on fresh development folds before testing it."
+    },
+    {
+      "id": "F12",
+      "severity": "medium",
+      "title": "Statistical power and spatial dependence limit significance",
+      "status": "REPORTED IN RESULTS",
+      "finding": "Four quadrants alone have limited sign-flip resolution; 16 sub-blocks may be spatially correlated. A Bonferroni-corrected block p-value cannot overcome this limitation.",
+      "evidence": "evidence/h21-1-results.json",
+      "action": "Report both quadrant and block tests; no submission gate without a reproducible current best. Do not tune after observing a negative result."
+    },
+    {
+      "id": "F13",
+      "severity": "high",
+      "title": "A renamed H19 artifact is not a new model",
+      "status": "EXPLICITLY LABELLED",
+      "finding": "Main GEMSDOE21 download is byte-identical to historical H19-4. The file-to-.1894 relationship is user-reported; visible account-best alone does not establish file identity.",
+      "evidence": "evidence/submission-validation.json; registry/leaderboard-snapshot.json",
+      "action": "Do not upload again to seek improvement or evade a weekly limit. Keep as a usable format-verified reference."
+    },
+    {
+      "id": "F14",
+      "severity": "medium",
+      "title": "Leaderboard feed automation is prohibited by published Terms",
+      "status": "NO AUTOMATED DRIVENDATA ACCESS",
+      "finding": "Terms prohibit robots/automatic monitoring; there is no authorized session/API here. .3049 from prompt is older than the inspected .3168 account-best snapshot.",
+      "evidence": "S06; registry/leaderboard-snapshot.json",
+      "action": "Automate permitted official-data/GitHub source health only; explicitly date and stale-mark leaderboard snapshots. Final upload requires the entrant's own registered session."
+    },
+    {
+      "id": "F15",
+      "severity": "medium",
+      "title": "Official PDF and competition page use inconsistent deadline wording",
+      "status": "FLAGGED FOR ENTRANT REVIEW",
+      "finding": "Competition page says Dec 3 2026 23:59 UTC. Rules A.1 has generic 5pm ET and Word/PDF wording, whereas section 3.2 and problem page require a GeoTIFF.",
+      "evidence": "S02; S05 sections 3.2 and A.1",
+      "action": "Site directs to current platform instructions and a GeoTIFF; do not silently resolve legal deadline eligibility. Entrant should follow organizer clarification if issued."
+    },
+    {
+      "id": "F16",
+      "severity": "medium",
+      "title": "Free external-data availability is not complete validation",
+      "status": "CHECKED VIA PERMITTED SOURCE FEED",
+      "finding": "Sandbox direct network access to GDR/USGS can fail even while research reader or GitHub-hosted runner reaches them. NHD is retired; GeMS/SGMC coarse maps require exact-version review.",
+      "evidence": "docs/data/source-health.json; S12-S15",
+      "action": "Only propose H21-2/3 as conditional until actual product and footprint checks pass; keep H21-4 blocked pending depth/quality matching."
+    },
+    {
+      "id": "F17",
+      "severity": "medium",
+      "title": "GPU model, hidden score and prize eligibility are not verified",
+      "status": "LIMITATION",
+      "finding": "CPU-only environment; no hidden labels or authorized competition upload; entrant eligibility/US-based activity/AI disclosure cannot be certified by the agent.",
+      "evidence": "S05; research/next-session.md",
+      "action": "Provide code/data lineage and honest CPU test evidence, not an invented training/submission/prize claim."
+    },
+    {
+      "id": "F18",
+      "severity": "high",
+      "title": "Historical GEMSDOE14 artifact has the wrong origin",
+      "status": "FLAGGED; NOT A H21 INPUT",
+      "finding": "The SHA-verified artifact referenced by the inherited registry has correct shape/CRS but origin (500000,4500000), not the supplied (243350,4508550). User score .0020 does not authenticate which file was submitted.",
+      "evidence": "registry/group-results.json:14GEMSDOE; independent rasterio read of git blob 7c12ed8a4164ce549fc8c3114eb30eb7f898af09",
+      "action": "Never reuse this artifact as grid-aligned input; preserve source-file identity and require a submission receipt before associating the score with this exact file."
+    },
+    {
+      "id": "F19",
+      "severity": "high",
+      "title": "First emitter soft-prioritizes NMS rather than strictly excluding non-ridges",
+      "status": "REPAIRED HELPER; NOT RETESTED OR PROMOTED",
+      "finding": "Pre-result emit() boosts ridge ranks but fills the budget from other positive scores. Its evidence mask is data support, not an explicit positive physical-amplitude check; a constant prior score can emit pixels in a toy flat field. This is weaker than the registered strict-NMS/nonzero-evidence wording.",
+      "evidence": "src/gems/inference.py@fc809c8; tests/test_emission_guard.py; research/protocol-review.md",
+      "action": "Preserve first results/legacy emitter for exact replication; corrected strict_emit() requires physical signal strength and returns only NMS ridges with no padding. Register its use on fresh validation data before any new score or entry. Do not reinterpret the first result as fully confirmatory."
+    }
+  ]
+}

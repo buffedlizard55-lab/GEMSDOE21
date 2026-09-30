@@ -1,0 +1,12 @@
+{
+  "as_of_utc_date": "2026-09-30",
+  "time_of_day_verified": false,
+  "source": "https://www.drivendata.org/competitions/306/competition-doe-gems/leaderboard/",
+  "verification": "Research page read during this session; NOT an automated polling feed or submission receipt",
+  "leader": {"account": "DARD", "score": 0.3168, "rank": 1},
+  "account_bests": [{"account": "smrtdoog5", "score": 0.1894, "rank": 22}, {"account": "extradr19", "score": 0.1855, "rank": 23}],
+  "file_score_association": "USER-REPORTED: H19-4 = .1894, H16-1 = .1855. Public account best does not identify the submitted file.",
+  "prompt_snapshot_leader": 0.3049,
+  "auto_refresh": false,
+  "reason": "DrivenData Terms of Use prohibit automated website monitoring; no authorized leaderboard API has been established."
+}

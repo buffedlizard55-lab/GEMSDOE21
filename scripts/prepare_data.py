@@ -146,7 +146,16 @@ def main():
         ],
     )
     write_json(vec / "manifest.json", report)
-    write_json(ROOT / "evidence/data-verification.json", report)
+    evidence_path = ROOT / "evidence/data-verification.json"
+    # Preserve the first audit. Replications may change time only, not scientific inputs.
+    if evidence_path.exists():
+        first = json.loads(evidence_path.read_text())
+        if {k: v for k, v in first.items() if k != "generated_utc"} != {
+            k: v for k, v in report.items() if k != "generated_utc"
+        }:
+            raise ValueError("Preparation differs from first audit; register a separate protocol")
+    else:
+        write_json(evidence_path, report)
     print(
         f"Prepared {len(base_cols)} control and {len(extra_cols)} candidate channels; "
         f"footprint={report['footprint_pixels']:,}, known={report['known_pixels']:,}",

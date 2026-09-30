@@ -1,0 +1,13 @@
+{
+  "registration_commit": "2dfc5de",
+  "implementation_before_results_commit": "fc809c8",
+  "decisions": [
+    {"id": "D01", "candidate": "H21-1", "decision": "REJECTED FOR PROMOTION", "evidence": "evidence/h21-1-results.json", "reason": "Dense −.00140662 and sparse −.00104483, 0/4 dense fold wins, recovery decreased, adjusted p=1; NW/NE unconverged.", "weekly_slots_spent": 0, "post_result_tuning": false},
+    {"id": "D02", "candidate": "H21-2", "decision": "DEFERRED / UNTESTED", "reason": "Need specific accessible footprint-covering hydrography/terrain and network-offset implementation; no slot or holdout outcome used."},
+    {"id": "D03", "candidate": "H21-3", "decision": "DEFERRED / UNTESTED", "reason": "Need exact licensed GeMS/SGMC version and polygons; official landing page alone does not establish a usable predictor."},
+    {"id": "D04", "candidate": "H21-4", "decision": "BLOCKED / UNTESTED", "reason": "Exported thermal CSV lacks required depth/quality metadata and includes repeated records/full-catalogue distances; do not substitute absolute-temperature smoothing."},
+    {"id": "D05", "candidate": "H19-4 clean comparator", "decision": "BLOCKED", "reason": "Pinned upstream Python does not generate the required H19 OOF cache; old sampling and scoring differ. Historical full-catalogue predictions forbidden as a holdout control."},
+    {"id": "D06", "candidate": "Historical H19-4 download", "decision": "PUBLISH AS REFERENCE ONLY", "reason": "Locally grid/range/hash-validated exact historical bytes; usable deliverable without inventing an improved model. Renaming is not novelty; do not spend a slot re-uploading.", "evidence": "evidence/submission-validation.json"},
+    {"id": "D07", "candidate": "Live DrivenData automation", "decision": "DO NOT IMPLEMENT", "reason": "Published Terms prohibit automated monitoring; no authorized API/session. Refresh allowed official-source/GitHub health separately and date leaderboard snapshots."}
+  ]
+}

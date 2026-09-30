@@ -1,0 +1,17 @@
+{
+  "generated_utc": "2026-09-30T23:04:58+00:00",
+  "passed": true,
+  "core_hashes": {
+    "training_features.tif": "4371c82e3b8339b807bdffcf4ef59a225520fe2988d521be208ae33743123bc5",
+    "labels.tif": "7ba308ccdc4418b31a178f4f1ef21aaa6e152e4028f2f6f64b01f7eb25ae4093",
+    "sample_submission.tif": "2176d08e485aa2cd2860ce8df539db4faf4d76163b38a4dd8c30a40454d35cbc"
+  },
+  "catalogue_sha256": "d77fa88ad58d0a268b736b3c1d6a8939fd237d5955369944bd2b299194b2555d",
+  "footprint_sha256": "c446094771775c00802862e9ec58846fd1b278b4e608303e68811a2404dfd246",
+  "physical_support_sha256": "a5e1c5d97f5816b536388d408bcf4ae5abaf4f35d04165b3b3c3a974c0c0ed63",
+  "independent_catalogue_and_footprint_equal": true,
+  "features_verified": 34,
+  "first_result_sha256": "ee3a52c471720dd5d6692a9fb849d21979111de2c3ecf57d6130f8dab66c6c67",
+  "first_result_modified": false,
+  "scope": "Data/hash/mask audit only, no holdout re-test or geological success claim"
+}

@@ -1,45 +1,95 @@
 # GEMSDOE21 — audited fault-discovery research & submission hub
 
-**Start here every session: read this whole README, including the full original prompt below.**
+**Read this entire README, including the full original user prompt below, at the start of every session.**
 
-## Submission first
+## Download the submission TIFF first
 
-The project will publish a locally range/grid/hash-verified **historical H19-4 GeoTIFF** at the very top of its GitHub Pages site, with a unique transport filename, a copyable short note, and an [executive submission guide](docs/executive-summary.html). This is the file the user associates with **0.1894**, not a newly validated improvement. Renaming the same predictions does not create a new experiment and does not justify another weekly slot.
+**[Download the locally format-verified historical H19-4 TIFF](https://buffedlizard55-lab.github.io/GEMSDOE21/docs/downloads/gems21-h19-4-reference-20260930-691e4dfa.tif)** · [Executive upload guide](https://buffedlizard55-lab.github.io/GEMSDOE21/docs/executive-summary.html) · [Research & evidence hub](https://buffedlizard55-lab.github.io/GEMSDOE21/)
 
-Site: https://buffedlizard55-lab.github.io/GEMSDOE21/ . Do not claim this deployment is live until its build is verified.
+`gems21-h19-4-reference-20260930-691e4dfa.tif` is **byte-identical to H19-4**, the file the user associates with **0.1894**. It is not a newly validated model. **Do not spend a slot re-uploading the same predictions.** The file has 1 float32 band, 3730×3292 shape, EPSG:32611, exact 100m reference geotransform, [0,1] finite values, zero NaN/Inf inside the footprint, and NaN outside. [Local format/hash evidence](evidence/submission-validation.json) is not an official acceptance receipt.
 
-## Research standard and core values
+Short note: `GEMS21 | H19-4 historical reference | id 691e4dfa | same predictions, not a new experiment`
 
-**Maximize P(Win):** prefer reproducible geological discovery, falsifiable hypotheses, whole-segment buffered validation, exact official scoring, multiplicity correction and honest negative results over public-leaderboard probing. The goal is to compete for the top prize; no score or prize is guaranteed.
+The site offers SHA-verified browser downloads, a deterministic one-TIFF ZIP and an **all-finite / internal-null-mask fallback** with identical footprint predictions. Fallback platform acceptance is untested. Exact cause of the user's old range-error file is unknown; the new files are strictly preflighted rather than silently clipped. The final live Pages/build receipt is recorded separately; a planned URL alone is not deployment evidence.
 
-**Own the Outcome:** download/prepare data autonomously where authorized, deliver an obvious usable `.tif`, protect format/provenance integrity, execute three real review passes, and report any blocker instead of inventing success. Keep a reusable source/knowledge registry with precise official links and a dated, permitted-source feed. Do not evade rules using multiple accounts.
+## Own the Outcome · Maximize P(Win)
 
-## Initial audit (2026-09-30)
+**Maximize P(Win):** build a reproducible geological research program, not a leaderboard-probing machine. Name the mechanism and non-fault confounders, register forecasts before scores, hide whole known segments with purges, use positive–unlabeled risk and the exact official metric, and retain negative results. No score or prize guarantee.
 
-* This checkout starts with an 11-byte README and no code, tests, data, site or prior-session notes. The statement that an existing GPU pipeline has only a data-placement blocker does **not** describe this checkout.
-* Inspected 19GEMSDOE main @ `a3aca62fdb2be428f4245e22570cbc54082b2c15`. Its H19 exporter needs an untracked H19 arm-prediction cache, and the snapshot does not contain the code that generates it. Prior claims of full reproducibility must be qualified.
-* Its training script assigns sampled uncatalogued pixels negative targets; its default sparse scorer removes known-pixel FP penalties but can still award TP recovery from masked known predictions. These are not the requested PU/exact-mask validation assumptions.
-* Competition target is **fault traces indicative of geothermal resources**, not confirmed vents/reservoirs. A hot well or aligned magnetic edge is not proof of an unmapped permeable fault.
-* Current inspected leaderboard snapshot: DARD **0.3168**, smrtdoog5 **0.1894**, extradr19 **0.1855**. Source: https://www.drivendata.org/competitions/306/competition-doe-gems/leaderboard/ . Account best does not identify a submission file; all prompt file-to-score associations remain USER-REPORTED unless separately established.
-* Official metric: `DTI = TP_w / (TP_w + 0.2 FP_w + 0.8 FN_w + epsilon)`, triangular 300m support. Known faults are masked **pixel-exactly**, not buffered; only NEW ground truth earns distance credit. https://www.drivendata.org/competitions/306/competition-doe-gems/page/967/ and https://community.drivendata.org/t/scoring-clarification-are-known-usgs-ingenious-faults-masked-when-scoring-and-are-they-in-the-final-round-label-set/11516/4 .
-* A genuinely automatic DrivenData leaderboard/upload feed is not implemented: its Terms prohibit automatic monitoring, and there is no authorized DrivenData session. https://www.drivendata.org/termsofuse/ . Scheduled updates will target permitted official data/GitHub only; label the leaderboard as a snapshot.
+**Own the Outcome:** complete authorized data placement, CPU training/inference, validation, reference delivery and a usable site; execute three real review passes; flag defects and genuine access limits. Protect submission budget. One research program/account; no multi-account evasion. Keep source/knowledge/decision registries reusable for expert review.
 
-## Locked candidate plan, before code/results
+## What actually ran
 
-See [research/preregistration-h21.md](research/preregistration-h21.md), which defines mechanisms, confounders, layers, exact fixed parameters, expected metric decomposition, whole-component holdout, nnPU risk and four-member Bonferroni family.
+* Initial checkout had an 11-byte README and **no** pipeline, site, tests or previous-session next-step notes. The prompt's inherited “GPU pipeline ready; only data placement missing” did not describe this checkout.
+* Preregistration committed/pushed **`2dfc5de` before implementation/results**. First implementation/test commit **`fc809c8` before results**. Four hypotheses were ranked, not selected by the live leaderboard.
+* Pinned transport downloaded and verified core rasters, physical derivatives and 13 DEM channels. Direct authenticated organizer provenance is not verified. The supplied template positive mask equals the known catalogue despite the official all-absence description; only its grid/finite footprint is used.
+* Preparation produced 31 label-free control + 3 candidate channels; 5,167,373 footprint pixels, 60,988 known pixels. Global whole 8-connected components are hidden with 1.5km Euclidean training purges. This is a segment proxy, not verified original geological fault IDs.
+* First CPU nnPU experiment: **H21-1 REJECTED for promotion**. Mean dense DTI **0.199205→0.197798 (−.00140662)**; sparse-reference **0.075496→0.074451 (−.00104483)**. Recovery fell; FP mass rose .03264%; 0/4 dense wins; family-corrected p=1.0. NW/NE both hit the fixed optimizer cap.
+* Second-pass review found the original emitter **soft-prioritizes NMS, rather than restricting to ridges**, and its evidence mask is data support rather than an explicit positive-amplitude guard. Therefore those numbers are a failed implementation attempt, not a fully compliant confirmatory strict-NMS test. A separate corrected helper is unit-tested but **not** activated/retested on this observed holdout. [Protocol review](research/protocol-review.md).
+* Independent re-preparation reproduced all feature hashes. Fixed-parameter replication of the **original** implementation reproduced exact summaries/gates/block test/prediction masks, without changing the first result. [Replication evidence](evidence/fixed-replication.json). No tuning or weekly slots used.
+* Local checks: **57 tests passed**, static hash/grid/link audit passed, real Chromium desktop/mobile/file/clipboard/failure/no-JS checks passed. Three-pass details and original-request coverage: [review record](evidence/review-passes.json), [request audit](evidence/request-audit.json).
 
-| Rank | Hypothesis | Expected local ΔDTI (not a leaderboard forecast) | Cost / viability |
+First outcome and expert-review rationale: [research/h21-1-outcome.md](research/h21-1-outcome.md), [raw JSON](evidence/h21-1-results.json). The primary outcome SHA is `ee3a52c471720dd5d6692a9fb849d21979111de2c3ecf57d6130f8dab66c6c67`. Never overwrite it to rescue a forecast.
+
+## H19-4 audit: what changed, what is not established
+
+H19-4 is scarp-dominant: L3+L4 have 92% of lidar-regime and 85.6% of gap-regime pre-gate weight. L4 is not a pure independent geophysics measurement. The second-best gate attenuates to 35%, not hard rejection. H19 vs H16 has **20,153 added / 20,313 removed** scored selected pixels and **71.92% Jaccard**. This documents a changed map, **not causal attribution** of the reported +.0039 hidden-score difference.
+
+The pinned H19 exporter requires an untracked OOF arm cache; an all-committed-Python search found readers but no generator. Old sampling assigns unknown pixels negative targets and derives a collar from the full catalogue; sparse masking defaults differ. **Current-best clean comparison is blocked.** A historical full-catalogue map or .1894 score cannot substitute. [Source-line audit](evidence/upstream-line-audit.csv) · [computed audit](evidence/upstream-audit.json).
+
+[Group registry](registry/group-results.json) preserves the prompt's reported scores and blanks, separately audits 29 artifact identities, and exposes exact scored-confidence duplicates (GEMSDOE/5/8/17-A; 12 NaN/all-finite). Filename suffixes alone are not proof of equality. GEMSDOE14's referenced artifact has the wrong origin; its reported score is not an authenticated file receipt.
+
+## Locked ranked research plan
+
+[Immutable registration](research/preregistration-h21.md) — mechanisms, confounders, transforms, fixed parameters and four-member correction:
+
+| Rank | Hypothesis | Expected local ΔDTI, not hidden-score forecast | Cost / disposition |
 |---|---|---:|---|
-| 1 | H21-1: co-oriented gravity/RTP edges persistent across 100–300m smoothing scales | +0.008 dense; +0.004 sparse | Low–medium; test first, existing physical data |
-| 2 | H21-2: repeated consistent drainage offsets across a scarp | +0.005 | High; official NHDPlus HR product retrieval/extent check required |
-| 3 | H21-3: unit-interior versus lithologic-contact contextual discrimination | +0.004 | Medium; official SGMC/GeMS version/file retrieval required |
-| 4 | H21-4: well-depth/background-conduction-corrected thermal residual | +0.003 | Medium–high; blocked by missing depth/measurement metadata |
+| 1 | H21-1 co-oriented, scale-persistent gravity/RTP edges | +.008 dense / +.004 sparse | Low–medium; first attempt rejected; emission review above |
+| 2 | H21-2 repeated drainage offsets across label-free scarps | +.005 | High; exact official hydrography/terrain retrieval and coverage required |
+| 3 | H21-3 unit-interior versus lithologic-contact context | +.004 | Medium; exact GeMS/SGMC polygon version/extent required |
+| 4 | H21-4 depth/conduction-corrected thermal residual | +.003 | Medium–high; missing depth/quality matching blocks viability |
 
-**No new candidate recommendation unless it beats a reproducible clean current-best comparator on the same registered holdout.** Missing H19 generation provenance blocks that claim; frozen full-catalogue predictions are not a holdout comparator.
+External-dependent ideas remain **conditional/untested**, not viable just because a landing page exists. Source registry names the specific free official USGS/GDR resources and their limitations. Thermal CSV has 27,092 records but only 12,570 distinct 100m cells; it lacks well depth and contains prohibited full-catalogue distances. It was not a model input. No thermal anomaly alone proves a new fault or a reservoir.
 
-## Limitations and next work
+## Exact scoring and qualified sources
 
-No GPU is exposed here; a CPU-only PU experiment does not need one. Data mirrors supplied by the user are transport, not independent official verification. The template mirror reportedly contains known positives although the official description says an all-absence sample; recheck locally and flag the mismatch. Current hidden labels, expert mapping coverage and private score are unavailable. Eligibility, official registration, final upload and AI-use disclosure remain the entrant's responsibility, not agent-verifiable facts. See [research/next-session.md](research/next-session.md) for the actual end-of-session handoff once generated.
+`DTI = TP_w / (TP_w + .2 FP_w + .8 FN_w + epsilon)` uses the maximum probability×300m triangular kernel, not convolution. Remove known pixels from predictions **and truth before all terms**, pixel-exactly, with no scoring buffer or wrong-label credit. Unlabelled is not confirmed negative; official FP mass is the penalty against an incomplete reference, not geological proof of absence.
+
+* [Official task/math/format](https://www.drivendata.org/competitions/306/competition-doe-gems/page/967/)
+* [Staff exact known mask](https://community.drivendata.org/t/scoring-clarification-are-known-usgs-ingenious-faults-masked-when-scoring-and-are-they-in-the-final-round-label-set/11516/4)
+* [Staff undisclosed new-label selection](https://community.drivendata.org/t/how-were-the-new-test-faults-identified-data-sources-and-fault-types/11527/7)
+* [Official rules, reproducibility, AI-use disclosure](https://docs.nlr.gov/docs/fy26osti/96647.pdf)
+* [22 qualified source records](registry/sources.json) · [19 irregularities](registry/irregularities.json) · [all rejected/deferred decisions](registry/decisions.json)
+
+Inspected public snapshot on **2026-09-30**: DARD .3168, smrtdoog5 .1894, extradr19 .1855. [Official leaderboard](https://www.drivendata.org/competitions/306/competition-doe-gems/leaderboard/). Account best does not identify a file; prompt file-score associations remain **USER-REPORTED**. .3049 from the brief is older. This snapshot is **not a live feed**.
+
+[Terms](https://www.drivendata.org/termsofuse/) prohibit automatic website monitoring; no authorized DrivenData API/session is established. No code polls/signs into/uploads to DrivenData. A daily permitted-source workflow instead refreshes USGS/DOE transport health and GitHub heads, publishing JSON in fixed release `source-feed` without bot pushes to main. The site reads public release metadata, dates/stale-marks it and falls back safely to a saved snapshot. Probes establish response/sample-byte health, **not** full-file coverage/licensing/geological validity. Direct sandbox TLS to official data hosts failed despite research-reader access; do not call that global unavailability.
+
+## Reproduce end to end
+
+```bash
+python -m venv .venv
+.venv/bin/pip install -r requirements-dev.txt
+.venv/bin/python scripts/run_pipeline.py
+# Repeat SAME registered original implementation, never replace first outcome:
+.venv/bin/python scripts/run_pipeline.py --replicate
+.venv/bin/python scripts/validate_submission.py path/to/prediction.tif
+.venv/bin/python -m pytest -q
+.venv/bin/python scripts/check_site.py --browser
+```
+
+The wrapper downloads pinned authorized GitHub transport, prepares if needed, verifies independent lineage, preserves or explicitly replicates the locked experiment, audits upstream/group artifacts, emits compliant historical files and builds/checks the site. Large data/OOF masks live in ignored `data/` (default `.cache/data/` symlink). Two CPU cores/~3.8GiB RAM/no GPU: sequential preparation and chunked inference completed; peak RAM was not measured. No organizer GPU U-Net is claimed trained.
+
+Browser setup: `.venv/bin/python -m playwright install --with-deps chromium`. This sandbox's Microsoft CDN TLS was blocked; real Chromium tests used pinned `@sparticuz/chromium@140.0.0` with its packaged libraries. See the handoff for regenerable setup. The static site works without a browser dependency or JavaScript; arbitrary TIFF validation remains Python fail-closed.
+
+## Limitations and next-session priority
+
+**No new validated score improvement or top-prize guarantee.** Recover/audit H19 arm generation, get original vector fault IDs, and lock fresh development/test/convergence/strict-emission protocols before another candidate. Establish exact external-byte/schema/coverage provenance; retain this failed forecast and all confounders for Phase 2. No reused shared-holdout tuning.
+
+Final submission/eligibility/slot availability and AI-disclosure certification require the entrant's own authorized account; no credentials are requested. The all-finite fallback's server acceptance and the old range-error cause are not verified. Hidden labels/selection/coverage and private score are unavailable. Competition targets fault candidates, not confirmed vents or drillable reservoirs.
+
+[Next-session handoff](research/next-session.md) · [PR/merge/deployment receipt](evidence/delivery-status.json). The final remote receipt must be verified after merge; local tests or a planned URL are not proof of deployment.
 
 ## Full original user prompt (verbatim session brief)
 
