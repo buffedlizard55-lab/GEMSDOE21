@@ -1,6 +1,9 @@
 name: Verify actual live Pages downloads
 on:
   workflow_dispatch:
+  workflow_run:
+    workflows: ['pages build and deployment', 'pages-build-deployment']
+    types: [completed]
   push:
     branches: [arena/01a0f45d-gemsdoe21]
     paths:
@@ -10,10 +13,19 @@ permissions:
   contents: write
 jobs:
   live:
+    # workflow_run has write scope: accept ONLY our own successful main Pages deployment.
+    # Never check out/run a fork's code under this release-writing token.
+    if: >-
+      github.event_name != 'workflow_run' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.head_branch == 'main' &&
+       github.event.workflow_run.head_repository.full_name == github.repository)
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
