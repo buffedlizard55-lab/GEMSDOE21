@@ -1,0 +1,13 @@
+{
+  "experiment_id": "H21-5-signed-step-system-holdout-exploratory-v1",
+  "registration_commit": "452c21c",
+  "implementation_before_results_commit": "48f17c7",
+  "pre_result_tests": "81 passed; synthetic profile invariants, metric conservation, system leakage and submission gates verified",
+  "fixed_attempt": 1,
+  "geography_is_fresh": false,
+  "current_best_comparator_reproducible": false,
+  "new_submission_authorized": false,
+  "weekly_slots_to_spend": 0,
+  "run_location": "GitHub-hosted runner because sandbox official-source/archive TLS is blocked",
+  "no_post_result_tuning": true
+}
