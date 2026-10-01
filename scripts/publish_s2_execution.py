@@ -6,6 +6,7 @@ and token-like material are redacted before publication. Never changes a first o
 
 from __future__ import annotations
 
+import json
 import os
 from pathlib import Path
 import re
@@ -30,6 +31,8 @@ def main():
         "actions_run_id": os.environ.get("GITHUB_RUN_ID"),
         "code_commit": os.environ.get("GITHUB_SHA"),
         "job_status": os.environ.get("S2_JOB_STATUS"),
+        "model_started": (ROOT / ".cache/s2-model-started").exists(),
+        "partial_score_line_seen": "dense=" in log.read_text(errors="replace") if log.exists() else False,
         "scientific_result_present": result.exists(),
         "first_result_sha256": sha256(result) if result.exists() else None,
         "setup_tail_redacted": redact(log.read_text(errors="replace")[-16000:])
@@ -45,6 +48,29 @@ def main():
     exists = (
         subprocess.run(["gh", "release", "view", tag, "--repo", repo], capture_output=True).returncode == 0
     )
+    if exists:
+        prior = json.loads(
+            subprocess.check_output(
+                [
+                    "gh",
+                    "release",
+                    "view",
+                    tag,
+                    "--repo",
+                    repo,
+                    "--json",
+                    "body",
+                    "--jq",
+                    ".body",
+                ],
+                text=True,
+            )
+        )
+        if (prior.get("model_started") or prior.get("scientific_result_present")) and prior.get(
+            "actions_run_id"
+        ) != report["actions_run_id"]:
+            print("Preserved first model invocation diagnostic; later blocked run cannot erase it")
+            return
     command = [
         "gh",
         "release",

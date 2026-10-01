@@ -97,6 +97,9 @@ def main():
     code_paths = sorted((ROOT / "src/gems").glob("*.py")) + [
         ROOT / "scripts/evaluate_s2.py",
         ROOT / "scripts/prepare_s2.py",
+        ROOT / "scripts/prepare_s2_base.py",
+        ROOT / "scripts/prepare_data.py",
+        ROOT / "scripts/verify_prepared.py",
     ]
     report = {
         "experiment_id": "H21-5-signed-step-system-holdout-exploratory-v1",
@@ -118,6 +121,9 @@ def main():
         "fresh_evaluation": False,
         "first_h21_1_preserved_sha256": sha256(ROOT / "evidence/h21-1-results.json"),
         "source_preparation_sha256": sha256(extra / "manifest.json"),
+        "base_preparation_sha256": sha256(base / "manifest.json"),
+        "base_feature_sha256": {n: original["features"][n]["sha256"] for n in base_cols},
+        "base_input_verification": prepared["base_input_verification"],
         "input_and_output_sha256": prepared["output_sha256"],
         "official_vector_sha256": prepared["official_vector_sha256"],
         "grouping_audit": prepared["grouping_audit"],

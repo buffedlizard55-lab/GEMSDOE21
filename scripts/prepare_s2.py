@@ -28,7 +28,9 @@ from verify_prepared import verify  # noqa: E402
 
 def prepare():
     verify_file(ROOT, "research/preregistration-h21-s2.md")
-    verify()
+    base_verification = verify(s2_base_only=True)
+    if base_verification["features_verified"] != 31:
+        raise ValueError("S2 requires the original exact 31 consumed columns")
     data = data_dir()
     source = data / "official-s2/qfaults-v2.zip"
     if not source.is_file() or sha256(source) != VECTOR_SHA:
@@ -58,6 +60,7 @@ def prepare():
         "grouping_code_sha256": sha256(ROOT / "src/gems/system_holdout.py"),
         "official_vector_sha256": VECTOR_SHA,
         "predictor_catalogue_usage": False,
+        "base_input_verification": base_verification,
         "candidate_columns": [],
         "feature_audit": {},
         "output_sha256": {},

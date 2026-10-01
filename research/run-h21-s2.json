@@ -2,7 +2,7 @@
   "experiment_id": "H21-5-signed-step-system-holdout-exploratory-v1",
   "registration_commit": "452c21c",
   "implementation_before_results_commit": "48f17c7",
-  "pre_result_tests": "81 passed; synthetic profile invariants, metric conservation, system leakage and submission gates verified",
+  "pre_result_tests": "86 passed; all consumed input hashes/masks remain locked; unused H21-1 hash fields have no effect on either S2 arm",
   "fixed_attempt": 1,
   "geography_is_fresh": false,
   "current_best_comparator_reproducible": false,
@@ -10,7 +10,9 @@
   "weekly_slots_to_spend": 0,
   "run_location": "GitHub-hosted runner because sandbox official-source/archive TLS is blocked",
   "no_post_result_tuning": true,
-  "setup_attempt": 2,
+  "setup_attempt": 3,
   "transport_amendment": "research/transport-amendment-s2.md",
-  "scientific_outcomes_observed_before_setup_retry": 0
+  "scientific_outcomes_observed_before_setup_retry": 0,
+  "input_compatibility_amendment": "research/input-compatibility-amendment-s2.md",
+  "input_only_probe_run": "36801268774"
 }

@@ -1,0 +1,351 @@
+{
+  "generated_utc": "2026-10-01T01:29:53+00:00",
+  "kind": "INPUT-ONLY diagnostic; ZERO model fits/scores",
+  "original_prepare_error": "Preparation differs from first audit; register a separate protocol",
+  "model_fits": 0,
+  "scores_observed": 0,
+  "drivendata_requests": 0,
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "rasterio_fiona_gdal": "3.9.2"
+  },
+  "manifest_differences": [
+    {
+      "path": "/features/joint_orientation_100m/sha256",
+      "first": "f0428e6fe8cb9cf88d70c8ef77ed1370c9619c4a5a6123a3e2faa66efc4650cb",
+      "hosted": "fea8a13b68206e0df6cf0d967e97e0a1134f410f663884caf151309dd16d464c"
+    },
+    {
+      "path": "/features/joint_orientation_300m/sha256",
+      "first": "e6a6459177eca82dce209944d30dcf622c3ab7e6ea21b9c46270b25fef479cb3",
+      "hosted": "7318912f06661d9fed3252eb38397a17676b6d1aacf01406c51886d947be237c"
+    },
+    {
+      "path": "/features/joint_orientation_multiscale/sha256",
+      "first": "8245041453a651fc5db8a55965f5ee593b3e35ef9b97ac382575beef888f77d7",
+      "hosted": "66ca08bfaaae99b2b7aafac7b9d4853fd1c2f9e733085565706f1ed92cb38fd2"
+    }
+  ],
+  "current_preparation_sha256": "d1ac17c4bcf335be7b2d62e9f726a0bb7c9c9a886b0fd99a3823207d719d5ab8",
+  "feature_descriptions": {
+    "mag_gradient_100m": {
+      "minimum": 0.0,
+      "maximum": 8.309738159179688,
+      "mean": 0.13195387467257028,
+      "sha256": "edec6829ce40189f3c2fb70065c4bf1b71de8de77beafce1eee7f8efce42aafc",
+      "count": 5167373,
+      "finite": true
+    },
+    "grav_gradient_100m": {
+      "minimum": 0.0,
+      "maximum": 0.020388120785355568,
+      "mean": 0.002139131826473125,
+      "sha256": "e89a7192cdbbcaeae4b1ba63dea1b23a7272060ed86614b518db130c9fb9b13a",
+      "count": 5167373,
+      "finite": true
+    },
+    "mag_gradient_300m": {
+      "minimum": 0.0,
+      "maximum": 3.8771345615386963,
+      "mean": 0.09350131197366933,
+      "sha256": "41c1827d1958c0d0ba49a14c0b231396cdc8509f8779cbef59344e35f6eccbbd",
+      "count": 5167373,
+      "finite": true
+    },
+    "grav_gradient_300m": {
+      "minimum": 0.0,
+      "maximum": 0.015899531543254852,
+      "mean": 0.002093706723270452,
+      "sha256": "e523ad8b54bf262441c6ed4f66890516158b94f8ecf065d5ad6e54c9c1bcab4d",
+      "count": 5167373,
+      "finite": true
+    },
+    "rtp_local15": {
+      "minimum": -1023.214111328125,
+      "maximum": 3181.203369140625,
+      "mean": -0.002425810046845892,
+      "sha256": "8a93ccee484c7aa6409545b7807a51e85e99571b5fdea14f294c332422bcd8b0",
+      "count": 5167373,
+      "finite": true
+    },
+    "grav_local15": {
+      "minimum": -4.5946364402771,
+      "maximum": 7.950072288513184,
+      "mean": 0.0011364582348900429,
+      "sha256": "a2a0a24d9121bd5a2b4e3e02601d6370baad303eeff58ec2b400be40325058c6",
+      "count": 5167373,
+      "finite": true
+    },
+    "det_elev_local15": {
+      "minimum": -206.5491943359375,
+      "maximum": 294.6192932128906,
+      "mean": -0.013923992958956652,
+      "sha256": "0cd3e546ae1c5b56d0223f83f0afee9e439c55c74b256f506665e978ae2d579f",
+      "count": 5167373,
+      "finite": true
+    },
+    "conductivity_local15": {
+      "minimum": -0.5698273181915283,
+      "maximum": 0.6651866436004639,
+      "mean": 1.5084161997429568e-05,
+      "sha256": "e61834b75b6cf6a71207a466c902e16de591927c4e086bab55c6b09f874b2de3",
+      "count": 5167373,
+      "finite": true
+    },
+    "det_elev_slope": {
+      "minimum": 0.0,
+      "maximum": 62.64591598510742,
+      "mean": 7.406391248425684,
+      "sha256": "6615f55d145509d90eb6ac3968807ceb6fdfdb47d2c98ea07d329de60e1293fa",
+      "count": 5167373,
+      "finite": true
+    },
+    "lidar_ex_max": {
+      "minimum": 0.0,
+      "maximum": 1.5,
+      "mean": 0.15894453980548087,
+      "sha256": "cb9a3af7a1692b3fa5ce52f740be9c00ab160fb2556ce875a310e25066c5e224",
+      "count": 5167373,
+      "finite": true
+    },
+    "lidar_step_max": {
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "mean": 0.08018985855490583,
+      "sha256": "c8945c67d24b9321896379cb39a0d12766780dcbab6306640cb7fd4cd2bda800",
+      "count": 5167373,
+      "finite": true
+    },
+    "lidar_coh100": {
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "mean": 0.46770903546095194,
+      "sha256": "75ede4efd2d2a6c0a7eb6be70d39e42fb1ac091ce62eebe0e6c779b630e1f83a",
+      "count": 5167373,
+      "finite": true
+    },
+    "lidar_relief": {
+      "minimum": 0.0,
+      "maximum": 218.96429443359375,
+      "mean": 13.106656095247528,
+      "sha256": "4f96d52664c5697eada60f8c03da76cc5e8f13624629e2a0b21641a6fb483eb7",
+      "count": 5167373,
+      "finite": true
+    },
+    "lidar_valid": {
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "mean": 0.7533725550681168,
+      "sha256": "8fd1781e0f795f893c5c863a0c7d5c21f4f09dc1479a2f97f51a674c9c493407",
+      "count": 5167373,
+      "finite": true
+    },
+    "lidar_dipole": {
+      "minimum": 0.0,
+      "maximum": 0.05000000074505806,
+      "mean": 0.005848883821993831,
+      "sha256": "497443d9ac39ff228d7b97e51ab5f051d00b4e136e5102f7e16c4584db35e98f",
+      "count": 5167373,
+      "finite": true
+    },
+    "lidar_tect_fluvial": {
+      "minimum": 0.0,
+      "maximum": 6.700304985046387,
+      "mean": 0.2541344843754317,
+      "sha256": "65377efdab909f4775876552c59ebb458ff9666ce4ff51a3540eaa735dc2395c",
+      "count": 5167373,
+      "finite": true
+    },
+    "lidar_antislope": {
+      "minimum": 0.0,
+      "maximum": 3.8960673809051514,
+      "mean": 0.1357723559043084,
+      "sha256": "7ee9f7f1a9483a8fdb19d85ab65128fa8f958c27a96f4393a749fb75c682bb59",
+      "count": 5167373,
+      "finite": true
+    },
+    "lidar_piedmont": {
+      "minimum": 0.0,
+      "maximum": 0.19303102791309357,
+      "mean": 0.013538923060557588,
+      "sha256": "f48323d0a5b69f367669bea80bbf2e50a2c76a410deeb9b888046e10414effc8",
+      "count": 5167373,
+      "finite": true
+    },
+    "dem10_slope_max": {
+      "minimum": 0.0,
+      "maximum": 80.2000961303711,
+      "mean": 12.811806618405466,
+      "sha256": "fd46738e9a58a6f40c130c3c70f645525dbfc12d27b6ed149e596e6a379cbfaa",
+      "count": 5167373,
+      "finite": true
+    },
+    "dem10_slope_mean": {
+      "minimum": 0.0,
+      "maximum": 60.830406188964844,
+      "mean": 8.35374929748531,
+      "sha256": "338b443c441db61120faf36437ec61dfcccaa569c41aa3099ed3accef5a35f95",
+      "count": 5167373,
+      "finite": true
+    },
+    "dem10_slope_std": {
+      "minimum": 0.0,
+      "maximum": 25.518115997314453,
+      "mean": 2.0273326456274328,
+      "sha256": "9c15e0e760d8255eb0473821a07cc09e4fe4b40746e6e37278e691f615c0f642",
+      "count": 5167373,
+      "finite": true
+    },
+    "dem10_hgm20_max": {
+      "minimum": 0.0,
+      "maximum": 2.490656614303589,
+      "mean": 0.18801454907502735,
+      "sha256": "f58df86b0be3b3dc54affc60dc7d77a95db3dafb9c1267eac4912c5d8e57526b",
+      "count": 5167373,
+      "finite": true
+    },
+    "dem10_hgm50_max": {
+      "minimum": 0.0,
+      "maximum": 1.369678258895874,
+      "mean": 0.14496542740154547,
+      "sha256": "1cca42538ec0c91951b578136893eb5d90cd1414c45257d2a72ebe80b29f0f40",
+      "count": 5167373,
+      "finite": true
+    },
+    "dem10_hgm200_mean": {
+      "minimum": 0.0,
+      "maximum": 0.7439606189727783,
+      "mean": 0.07870003460074941,
+      "sha256": "9328f889f4d607f8530840da138741b7431da49d2432b0ab2da110a82984102b",
+      "count": 5167373,
+      "finite": true
+    },
+    "dem10_steep_ratio_max": {
+      "minimum": 0.0,
+      "maximum": 79.3355941772461,
+      "mean": 1.9138101416897269,
+      "sha256": "eaf3d5e24c6769ffb98665e75c9665dbaa16bdb79708900217dca955031e6828",
+      "count": 5167373,
+      "finite": true
+    },
+    "dem10_resid_std": {
+      "minimum": 0.0,
+      "maximum": 40.53256607055664,
+      "mean": 2.245939850884284,
+      "sha256": "50db8caa815cb09cc695ec230f15f41e8e04cd9bef5fc09b07b06aeadd44a86e",
+      "count": 5167373,
+      "finite": true
+    },
+    "dem10_resid_range": {
+      "minimum": 0.0,
+      "maximum": 138.75927734375,
+      "mean": 8.767097422169916,
+      "sha256": "bbcf8a462ace31a80964ba8a7ab76fcbcb347deb4f4d2919166b3eda5c721b0c",
+      "count": 5167373,
+      "finite": true
+    },
+    "dem10_curv_absmax": {
+      "minimum": 0.0,
+      "maximum": 0.05859985202550888,
+      "mean": 0.003193130850177817,
+      "sha256": "58e82f1301032b46b10344b9299b83e6ce5bed1ca83e320f078fa57321bff632",
+      "count": 5167373,
+      "finite": true
+    },
+    "dem10_onesided": {
+      "minimum": 0.0,
+      "maximum": 0.9999997019767761,
+      "mean": 0.7460301599185799,
+      "sha256": "02d1d241de9534d307f314d0b2f8a857ceb1ce0d099fd7dee8872a83bd0271f8",
+      "count": 5167373,
+      "finite": true
+    },
+    "dem10_onesided3": {
+      "minimum": 0.0,
+      "maximum": 0.9999977350234985,
+      "mean": 0.40628080646493586,
+      "sha256": "bca9faf8e0c572ecb1e77b6c94b0cb96c41e824873cb7747e0ece28b531598d2",
+      "count": 5167373,
+      "finite": true
+    },
+    "dem10_valid_frac": {
+      "minimum": 1.0,
+      "maximum": 1.0,
+      "mean": 1.0,
+      "sha256": "35d7ef0719bfed93f9aed927afd8c51882283fc7316cab0f8c219c9302b92122",
+      "count": 5167373,
+      "finite": true
+    },
+    "joint_orientation_100m": {
+      "minimum": 0.0,
+      "maximum": 0.10648001730442047,
+      "mean": 0.006143678766304931,
+      "sha256": "fea8a13b68206e0df6cf0d967e97e0a1134f410f663884caf151309dd16d464c",
+      "count": 5167373,
+      "finite": true
+    },
+    "joint_orientation_300m": {
+      "minimum": 0.0,
+      "maximum": 0.072165846824646,
+      "mean": 0.005411314883198348,
+      "sha256": "7318912f06661d9fed3252eb38397a17676b6d1aacf01406c51886d947be237c",
+      "count": 5167373,
+      "finite": true
+    },
+    "joint_orientation_multiscale": {
+      "minimum": 0.0,
+      "maximum": 0.08397922664880753,
+      "mean": 0.005562325773000586,
+      "sha256": "66ca08bfaaae99b2b7aafac7b9d4853fd1c2f9e733085565706f1ed92cb38fd2",
+      "count": 5167373,
+      "finite": true
+    }
+  },
+  "frozen_original_preserved": "e4b27401fac136dcf05effbf202cfb38da140579f3a8eeb6372d812de7de21ef",
+  "actual_official_zip_layers": [
+    "qfaults_ingenious_nad83conus117_2023-06-27"
+  ],
+  "actual_official_zip_sha256": "c7b091c9ac8bca140ad89ee6bb2bd63dd3ac12e3013acbfd8373d11c9faee59d",
+  "actual_official_schema": {
+    "properties": {
+      "NAME": "str:80",
+      "NUM": "str:6",
+      "DIPDIRECT": "str:254",
+      "SLIPDIRECT": "str:5",
+      "SLIPSENSE": "str:254",
+      "SECONDARY": "str:5",
+      "SLIPRT2023": "str:50",
+      "SLIPRTNUM": "float:13.11",
+      "REC2023": "str:50",
+      "RECNUM": "int:10",
+      "CODE2023": "int:10",
+      "FCODE2023": "int:10",
+      "RCODE2023": "int:10",
+      "SCODE2023": "int:10",
+      "FTYPE_": "str:254",
+      "MAPSCALE": "str:8",
+      "SLIPINFO": "str:254",
+      "RECINFO": "str:254",
+      "COMMENTS": "str:254",
+      "GEOCOMM": "str:254",
+      "Shape_Leng": "float:19.11"
+    },
+    "geometry": "LineString"
+  },
+  "actual_official_crs_wkt": "PROJCS[\"NAD_1983_Contiguous_USA_Albers_117\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Albers_Conic_Equal_Area\"],PARAMETER[\"latitude_of_center\",23],PARAMETER[\"longitude_of_center\",-117],PARAMETER[\"standard_parallel_1\",29.5],PARAMETER[\"standard_parallel_2\",45.5],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+  "actual_official_rows": 22956,
+  "actual_geometry_types": {
+    "MultiLineString": 1886,
+    "LineString": 21070
+  },
+  "missing_NUM_rows": 3508,
+  "distinct_nonmissing_NUM": 876,
+  "NUM_name_conflicts": 39,
+  "actual_field_definitions": {
+    "README_fielddefinitions_qfaults_ingenious_nad83conus117_2023-06-27.txt": "Field definitions for columns in qfaults_ingenious_nad83conus117_2023-06-27.shp\r\n\r\nFID\r\nFeature identifier ascribed by GIS software.\r\n\r\nShape\r\nFeature geometry ascribed by GIS software.\r\n\r\nNAME\r\nName of the geologic structure, includes section name and other modifiers.\r\n\r\nNUM\r\nUnique number for each fault or fold. A letter is added to the end of the number for faults that have clearly defined sections.\r\n\r\nDIPDIRECT\r\nDip direction for the ENTIRE FAULT OR FAULT SECTION, in cases where a single structure is known to have back thrusts and forethrusts, the dip direction is specific to the line segment record.\r\n\r\nSLIPDIRECT\r\nCardinal direction of slip.\r\n\r\nSLIPSENSE\r\nType of relative fault or fold movement.\r\nValue\tDefinition\r\nNULL\tempty value, slip-sense is not applicable to the structure\r\nunk\tslip-sense is unknown\r\nN\tnormal\r\nR\treverse\r\nSS\tstrike slip\r\nT\tthrust\r\n\r\nSECONDARY\r\nSecondary slip.\r\nValue\tDefinition\r\nNULL\tvalue is unknown or not applicable\r\nSS\tstrike-slip\r\nT\tthrust\r\nR\treverse\r\n\r\nSLIPRT2023\r\nThe assigned slip rate in mm/year.\r\n\r\nSLIPRTNUM\r\nNumeric portion of SLIPRT2023.\r\n\r\nREC2023\r\nThe upper bounding time (years) of the most recent surface-deforming earthquake.\r\n\r\nRECNUM\r\nNumeric portion of REC2023.\r\n\r\nCODE2023\r\nA three-integer field that defines certainty or reliability of field mapping.\r\nConsists of: certainty or reliability of field mapping (FCODE, integer one), time of most recent movement (RCODE, integer two), and amount or rate of slip (SLIPCODE, integer three). CODE is used for setting line type (fault trace) to be plotted.\r\n\r\nFCODE2023\r\nThe first integer in CODE2023; defines how well the fault is located and expressed in the landscape.\r\nValue\tDefinition\r\n1\tfault landforms are more continuous than discontinuous and mapping is accurate at given \"MAPSCALE\" value\r\n2\tfault landforms are more discontinuous than continuous and mapping is accurate at given \"MAPSCALE\" value\r\n3\tlocation of fault is inferred\r\n4\tundefined\r\n\r\nRCODE2023\r\nThe second integer in CODE2023; defines the upper bounding time of the most recent surface-deforming earthquake. \r\nValue\tDefinition\r\n1\thistoric (0 <= RECNUM <= 150)\r\n2\tpost glacial (150 < RECNUM <= 15,000)\r\n3\tlate Quaternary (15,000 < RECNUM <= 130,000)\r\n4\tmiddle and late Quaternary (130,000 < RECNUM <= 750,000)\r\n5\tQuaternary (750,000 < RECNUM <= 1,600,000)\r\n6\tTertiary (select faults included for coverage; RECNUM > 1,600,000)\r\n\r\nSCODE2023\r\nSCODE is the third integer in CODE2023 and defines the assigned slip rate category. \r\nValue\tDefinition\r\n1\tSLIPRTNUM > 5\r\n2\t1 < SLIPRTNUM <= 5\r\n3\t0.2 < SLIPRTNUM <= 1\r\n4\t0 < SLIPRTNUM <= 0.2\r\n\r\nFTYPE_\r\nDefines how well the fault is located and expressed in the landscape.\r\nValue\t\t\tDefinition\r\nWell Constrained\tfault landforms are more continuous than discontinuous and mapping is accurate at given \"MAPPEDSCALE\" value\r\nModerately Constrained\tfault landforms are more discontinuous than continuous and mapping is accurate at given \"MAPPEDSCALE\" value\r\nInferred\t\tlocation of fault is inferred\r\n\t\t\r\nMAPSCALE\r\nMapped scale can control visualization of the fault at various scales. \r\nValue\tDefinition\r\n24\t1:24,000, fault should be more continuous than discontinuous and mapping is accurate at >10,000 scale.\r\n63\t1:63,360, fault should be more continuous than discontinuous and mapping is accurate at >24,000 scale.\r\n100\t1:100,000, fault could be more discontinuous than continuous and mapping is accurate at >50,000 scale.\r\n250\t1:250,000, fault could be more discontinuous than continuous and mapping is accurate at >1:125,000 scale.\r\n316\t1:316,000, fault could be more discontinuous than continuous and mapping is accurate at >1:158,000 scale.\r\n500\t1:500,000, fault could be more discontinuous than continuous and mapping is accurate at >1:250,000 scale.\r\n\r\nSLIPINFO\r\nSlip rate information source.\r\n\r\nRECINFO\r\nRecency information source.\r\n\r\nCOMMENTS\r\nGeneral comments.\r\n\r\nGEOCOMM\r\nComments on fault geometry.\r\n\r\nShape_Length\r\nLine length ascribed by GIS software (meters).\r\n\r\n"
+  }
+}
+
