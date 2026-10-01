@@ -38,9 +38,8 @@ jobs:
           python -m pytest -q
       - name: Restore exact pinned physical inputs (no competition requests)
         run: |
-          bash scripts/download_competition_data.sh
-          python scripts/prepare_data.py
-          python scripts/verify_prepared.py
+          mkdir -p .cache
+          { bash scripts/download_competition_data.sh && python scripts/prepare_data.py && python scripts/verify_prepared.py; } 2>&1 | tee .cache/s2-setup.log
       - name: Retrieve official vector bytes and verify hash
         run: python scripts/fetch_research_inputs.py
       - name: Run ONE preregistered candidate, never tune after looking
@@ -50,6 +49,11 @@ jobs:
           tar -czf .cache/h21-5-research-caches.tar.gz -C .cache/data prepared-s2 research/H21-5-first-masks
           gh release create h21-5-first-result --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --title 'H21-5 first exploratory result — not a competition entry' --notes-file evidence/h21-5-results.json --prerelease
           gh release upload h21-5-first-result evidence/h21-5-results.json .cache/h21-5-research-caches.tar.gz --repo "$GITHUB_REPOSITORY"
+      - name: Publish redacted setup status even on pre-score failure
+        if: always()
+        env:
+          S2_JOB_STATUS: ${{ job.status }}
+        run: python scripts/publish_s2_execution.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:

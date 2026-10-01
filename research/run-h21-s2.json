@@ -9,5 +9,8 @@
   "new_submission_authorized": false,
   "weekly_slots_to_spend": 0,
   "run_location": "GitHub-hosted runner because sandbox official-source/archive TLS is blocked",
-  "no_post_result_tuning": true
+  "no_post_result_tuning": true,
+  "setup_attempt": 2,
+  "transport_amendment": "research/transport-amendment-s2.md",
+  "scientific_outcomes_observed_before_setup_retry": 0
 }
