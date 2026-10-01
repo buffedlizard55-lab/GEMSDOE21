@@ -8,9 +8,9 @@
 * Both results/registrations/full brief/frozen original preparation have history-independent SHA locks. `evaluate_s2.py` refuses existing result/mask paths. Hosted guard refuses a second invocation if result release or published model-start status exists; later blocked jobs cannot erase that status.
 * Primary TIFF remains exact historical H19-4: `docs/downloads/gems21-h19-4-reference-20260930-691e4dfa.tif`, SHA **89109a3bd2cd3b12e7a0f388113c519843acfc9c4f46825affefc3e63dd99b22**. Unique note and download-first guide stay prominent. No new qualified artifact or slot; do not re-upload an already scored field.
 
-## Finish publication FIRST after restoring GitHub connection
+## Publication resumed — PR #4 pending checks/merge/deployment
 
-The updated site and all scientific/review files are locally complete, but GraphQL and REST PR/pages calls returned HTTP401 Bad credentials. Reconnect GitHub **in Arena**, not via credentials in chat. Source-result release already exists from the successful scientific run. Commit9d43aa8 contains the full implementation/review/site; its push also failed with unavailable GitHub credentials. Push/create PR/checks/merge main from the session branch; do not delete it. Native Pages completion then triggers the owned live verifier, including the new scientific JSON/knowledge evidence plus full TIFF/ZIP bytes. Current updated preview is local only; do not claim new Pages publication or receipt. Preserve dated older verified delivery nested in `evidence/delivery-status.json`.
+GitHub connection is restored. Saved commits through d375c77 were pushed successfully, and [PR #4](https://github.com/buffedlizard55-lab/GEMSDOE21/pull/4) is open. Await checks and merge into main without deleting the session branch. Native Pages completion triggers the owned live verifier, including the scientific JSON/knowledge evidence plus full TIFF/ZIP bytes. Actual new Pages publication/served-byte verification remains pending. Earlier authentication/push failures and historical successful delivery are preserved in `evidence/delivery-status.json`; do not reclassify them as scientific failures or rerun a model for publication.
 
 ## Priority 1: comparison and fresh-data bottleneck
 

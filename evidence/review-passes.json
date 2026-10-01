@@ -1,6 +1,6 @@
 {
   "generated_utc": "2026-09-30T23:14:14+00:00",
-  "status": "All local three-pass reviews complete; requested PR/merge/new remote delivery blocked by GitHub authentication",
+  "status": "All local three-pass reviews complete; PR4 open, GitHub connection restored; merge/deployment pending",
   "passes": [
     {
       "pass": 1,
@@ -154,7 +154,7 @@
           "historical_group_rows": 37
         },
         "remaining_goals": "No clean current-best refit, fresh confirmation, improved hidden score or newly eligible competition TIFF; no hallucinated success",
-        "remote_delivery": "BLOCKED: actual gh GraphQL and REST HTTP401 Bad credentials. New main/site/served evidence not verified; reconnect GitHub in Arena and finish PR/main Pages checks."
+        "remote_delivery": "PR4 created and saved work pushed after GitHub connection restored; actual merge, Pages and served-byte checks pending."
       }
     ]
   }
