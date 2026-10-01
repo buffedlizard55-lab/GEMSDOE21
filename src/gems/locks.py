@@ -13,6 +13,7 @@ from pathlib import Path
 LOCKED_FILES = {
     "research/preregistration-h21.md": "63618210601d87197a9cc88f17c7f70c103a8c224ac7cbde5e559ece312555fa",
     "research/preregistration-h21-s2.md": "e919a3fa18272b3a3162c8d04bb7c3242b6283bb5593e63e538d50ac6ae998bd",
+    "research/preregistration-h21-s3.md": "7353bfbdabe48637bdd549722cbefaa70da1bb5ca62f4c1ee80332c23e9145a8",
     "evidence/h21-1-results.json": "ee3a52c471720dd5d6692a9fb849d21979111de2c3ecf57d6130f8dab66c6c67",
     "evidence/h21-5-results.json": "8979d1b93ba33bfb5fd0712198bc5953b97850baac42572b56a1d384a764e75d",
     "evidence/data-verification.json": "e4b27401fac136dcf05effbf202cfb38da140579f3a8eeb6372d812de7de21ef",

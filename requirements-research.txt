@@ -1,0 +1,3 @@
+-r requirements.txt
+# Input-only official 7z raster acquisition; not needed to download the site TIFF.
+py7zr==1.0.0

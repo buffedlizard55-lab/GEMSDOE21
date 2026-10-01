@@ -33,6 +33,7 @@ PERMITTED_EXACT = {
     "downloadsb.usgs.gov",
     "data.usgs.gov",
     "earthquake.usgs.gov",
+    "www.conservation.ca.gov",
 }
 
 
