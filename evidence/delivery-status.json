@@ -1,12 +1,12 @@
 {
-  "generated_utc": "2026-10-01T02:59:49+00:00",
-  "status": "PR 4 OPEN: GitHub connection restored; merge/deployment/live verification pending",
+  "generated_utc": "2026-10-01T03:07:47.916023+00:00",
+  "status": "VERIFIED: PR4 MERGED; native main Pages deployment and actual served-byte/download-format checks passed",
   "session_branch": "arena/01a0f4ee-gemsdoe21",
   "local_research_implementation_review_complete": true,
   "requested_PR_created": true,
-  "requested_merge_complete": false,
-  "new_site_main_published": false,
-  "new_site_live_bytes_verified": false,
+  "requested_merge_complete": true,
+  "new_site_main_published": true,
+  "new_site_live_bytes_verified": true,
   "preview": "Local updated website served on port3000, 0.0.0.0; not proof of new Pages deployment",
   "checks": {
     "pytest_passed": 92,
@@ -24,9 +24,8 @@
   },
   "blocker": null,
   "next_actions": [
-    "Await checks on PR4 and merge into main without deleting the session branch",
-    "Await main Pages deployment and owned-site actual served-byte verification",
-    "Record actual PR/merge/deployment receipts; never rerun scientific models for publication"
+    "Scientific bottlenecks: recover clean original H19 comparator provenance and acquire genuinely fresh confirmation before any new registered test",
+    "Use latest delivery-verification release for current receipt-only follow-up deployments; never rerun scientific models for publication"
   ],
   "historical_verified_delivery": {
     "status": "VERIFIED: merged core delivery, successful Pages build and actual live-download preflight",
@@ -51,7 +50,7 @@
     "live_download_check": {
       "run_id": 36791384129,
       "conclusion": "success",
-      "snapshot": "evidence/live-verification.json",
+      "snapshot": "evidence/live-verification-s1.json",
       "latest_receipt": "https://github.com/buffedlizard55-lab/GEMSDOE21/releases/tag/delivery-verification"
     },
     "remote_deployment_verified": true,
@@ -160,5 +159,41 @@
   "github_auth_restored_utc": "2026-10-01T02:59:49+00:00",
   "pull_request_number": 4,
   "pull_request_url": "https://github.com/buffedlizard55-lab/GEMSDOE21/pull/4",
-  "last_pushed_publication_head": "d375c77"
+  "last_pushed_publication_head": "e289eced6022027bf4d2b258c2cd5dc24816bcb7",
+  "publication": {
+    "pull_request": 4,
+    "pull_request_url": "https://github.com/buffedlizard55-lab/GEMSDOE21/pull/4",
+    "state": "MERGED",
+    "merged_utc": "2026-10-01T03:02:37Z",
+    "merged_head": "e289eced6022027bf4d2b258c2cd5dc24816bcb7",
+    "main_merge_commit": "cdc8b8d8f3167117ca4f4e343b055b800c79bce6",
+    "pages_build": {
+      "conclusion": "success",
+      "head_sha": "cdc8b8d8f3167117ca4f4e343b055b800c79bce6",
+      "html_url": "https://github.com/buffedlizard55-lab/GEMSDOE21/actions/runs/36808667511",
+      "id": 36808667511,
+      "name": "pages build and deployment",
+      "status": "completed"
+    },
+    "live_download_check": {
+      "conclusion": "success",
+      "head_sha": "cdc8b8d8f3167117ca4f4e343b055b800c79bce6",
+      "html_url": "https://github.com/buffedlizard55-lab/GEMSDOE21/actions/runs/36808713031",
+      "id": 36808713031,
+      "name": "Verify actual live Pages downloads",
+      "status": "completed"
+    },
+    "snapshot": "evidence/live-verification.json",
+    "snapshot_sha256": "da823904291a8cac2b824806ccf252a24329403ae4a1bb0894ee18b0422747d5",
+    "served_files_full_byte_equal": 17,
+    "download_format_checks_passed": 3,
+    "pr_ci": "https://github.com/buffedlizard55-lab/GEMSDOE21/actions/runs/36808480532",
+    "push_ci": "https://github.com/buffedlizard55-lab/GEMSDOE21/actions/runs/36808477435",
+    "main_ci": "https://github.com/buffedlizard55-lab/GEMSDOE21/actions/runs/36808668479",
+    "latest_receipt": "https://github.com/buffedlizard55-lab/GEMSDOE21/releases/tag/delivery-verification",
+    "scope": "Dated verification of PR4 scientific/site publication at its actual merge commit. Receipt-only follow-ups have their own native Pages/live check in the latest release; no recursive bot commits. Not platform acceptance, hidden score or entrant certification.",
+    "scientific_reruns": 0,
+    "weekly_slots_spent": 0
+  },
+  "historical_live_receipt_archive": "evidence/live-verification-s1.json"
 }

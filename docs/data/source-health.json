@@ -1,6 +1,6 @@
 {
   "kind": "permitted-source-health-only",
-  "generated_utc": "2026-09-30T23:26:27+00:00",
+  "generated_utc": "2026-10-01T03:02:52+00:00",
   "drivendata_requests": 0,
   "competition_uploads": 0,
   "sources": [
@@ -28,7 +28,7 @@
       "status": "reachable",
       "sampled_bytes": 65536,
       "content_type": "text/html; charset=UTF-8",
-      "advertised_content_length": "32127",
+      "advertised_content_length": "32123",
       "last_modified": null,
       "magic": "text/other"
     },
@@ -155,9 +155,70 @@
       "title": "Blind geothermal-system play fairways",
       "url": "https://www.usgs.gov/publications/discovering-blind-geothermal-systems-great-basin-region-integrated-geologic-and",
       "scope": "transport/metadata health only; NOT usable-data or geological validation",
-      "status": "unreachable from this runner",
-      "error": "HTTPSConnectionPool(host='www.usgs.gov', port=443): Read timed out. (read timeout=12)",
-      "not_evidence_of_global_unavailability": true
+      "final_url": "https://www.usgs.gov/publications/discovering-blind-geothermal-systems-great-basin-region-integrated-geologic-and",
+      "http_status": 206,
+      "status": "reachable",
+      "sampled_bytes": 65536,
+      "content_type": "text/html; charset=utf-8",
+      "advertised_content_length": "15095",
+      "last_modified": "Thu, 01 Oct 2026 02:58:40 GMT",
+      "magic": "text/other"
+    },
+    {
+      "id": "S23",
+      "title": "Gravity versus magnetics over basin-fill faults",
+      "url": "https://pubs.usgs.gov/publication/ofr01502",
+      "scope": "transport/metadata health only; NOT usable-data or geological validation",
+      "final_url": "https://pubs.usgs.gov/publication/ofr01502",
+      "http_status": 200,
+      "status": "reachable",
+      "sampled_bytes": 53561,
+      "content_type": "text/html; charset=utf-8",
+      "advertised_content_length": null,
+      "last_modified": null,
+      "magic": "text/other"
+    },
+    {
+      "id": "S24",
+      "title": "Aeromagnetic expressions of concealed faults",
+      "url": "https://www.usgs.gov/publications/guides-understanding-aeromagnetic-expression-faults-sedimentary-basins-lessons-learned",
+      "scope": "transport/metadata health only; NOT usable-data or geological validation",
+      "final_url": "https://www.usgs.gov/publications/guides-understanding-aeromagnetic-expression-faults-sedimentary-basins-lessons-learned",
+      "http_status": 206,
+      "status": "reachable",
+      "sampled_bytes": 65536,
+      "content_type": "text/html; charset=utf-8",
+      "advertised_content_length": "13900",
+      "last_modified": "Thu, 01 Oct 2026 02:58:39 GMT",
+      "magic": "text/other"
+    },
+    {
+      "id": "S25",
+      "title": "Radiometric interpretation and survey-boundary confounders",
+      "url": "https://pubs.usgs.gov/of/1999/ofr-99-0016/map_info.html",
+      "scope": "transport/metadata health only; NOT usable-data or geological validation",
+      "final_url": "https://pubs.usgs.gov/of/1999/ofr-99-0016/map_info.html",
+      "http_status": 206,
+      "status": "reachable",
+      "sampled_bytes": 9770,
+      "content_type": "text/html",
+      "advertised_content_length": null,
+      "last_modified": null,
+      "magic": "text/other"
+    },
+    {
+      "id": "S26",
+      "title": "USGS ComCat event API and uncertainty-aware event data",
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/version",
+      "scope": "transport/metadata health only; NOT usable-data or geological validation",
+      "final_url": "https://earthquake.usgs.gov/fdsnws/event/1/version",
+      "http_status": 206,
+      "status": "reachable",
+      "sampled_bytes": 5,
+      "content_type": "text/plain;charset=UTF-8",
+      "advertised_content_length": "5",
+      "last_modified": "Thu, 01 Oct 2026 03:02:49 GMT",
+      "magic": "text/other"
     }
   ],
   "repositories": [
@@ -260,10 +321,10 @@
     {
       "repository": "13GEMSDOE",
       "status": "reachable",
-      "head": "08ed86465ef94e7a0cc49fa9de47150fc8a7c7c5",
-      "committed_utc": "2026-09-30T22:25:13Z",
-      "url": "https://github.com/buffedlizard55-lab/13GEMSDOE/commit/08ed86465ef94e7a0cc49fa9de47150fc8a7c7c5",
-      "message": "Merge pull request #14 from buffedlizard55-lab/arena/01a0f445-13gemsdoe"
+      "head": "498180b13a07470557dbaf99c7b0475d3b1cbb76",
+      "committed_utc": "2026-10-01T02:57:56Z",
+      "url": "https://github.com/buffedlizard55-lab/13GEMSDOE/commit/498180b13a07470557dbaf99c7b0475d3b1cbb76",
+      "message": "Merge pull request #17 from buffedlizard55-lab/arena/01a0f510-13gemsdoe"
     },
     {
       "repository": "14GEMSDOE",
@@ -316,18 +377,18 @@
     {
       "repository": "20GEMSDOE",
       "status": "reachable",
-      "head": "1e75ac15474a01dc502b7cc964bdade385f18f84",
-      "committed_utc": "2026-09-29T21:23:36Z",
-      "url": "https://github.com/buffedlizard55-lab/20GEMSDOE/commit/1e75ac15474a01dc502b7cc964bdade385f18f84",
-      "message": "Initial commit"
+      "head": "9034cd2d64e8db213a50993cc8a006409482089f",
+      "committed_utc": "2026-10-01T02:36:21Z",
+      "url": "https://github.com/buffedlizard55-lab/20GEMSDOE/commit/9034cd2d64e8db213a50993cc8a006409482089f",
+      "message": "Audit H20 evidence and test H21 spatial transfer"
     },
     {
       "repository": "GEMSDOE21",
       "status": "reachable",
-      "head": "27f930e5900e4c5328981b04a2dcc6e2531cff80",
-      "committed_utc": "2026-09-30T23:26:01Z",
-      "url": "https://github.com/buffedlizard55-lab/GEMSDOE21/commit/27f930e5900e4c5328981b04a2dcc6e2531cff80",
-      "message": "Merge pull request #1 from buffedlizard55-lab/arena/01a0f45d-gemsdoe21"
+      "head": "cdc8b8d8f3167117ca4f4e343b055b800c79bce6",
+      "committed_utc": "2026-10-01T03:02:37Z",
+      "url": "https://github.com/buffedlizard55-lab/GEMSDOE21/commit/cdc8b8d8f3167117ca4f4e343b055b800c79bce6",
+      "message": "Merge pull request #4 from buffedlizard55-lab/arena/01a0f4ee-gemsdoe21"
     }
   ],
   "warning": "Health probes verify response headers/sample bytes ONLY; not full-file hashes, coverage, licenses, science or scores.",
