@@ -182,8 +182,7 @@
     "not_completed": [
       "Clean current-best/fresh top-candidate geological validation",
       "New validated winning/eligible TIFF",
-      "Competition upload/acceptance/hidden-score certification",
-      "New PR/merge/Pages live publication while GitHub auth is blocked"
+      "Competition upload/acceptance/hidden-score certification"
     ],
     "publication_auth_diagnostic": "gh GraphQL and REST401 Bad credentials; git ls-remote failed credential lookup; no credentials requested or stored"
   },
@@ -192,7 +191,41 @@
     "pr": 6,
     "push_successful": true,
     "github_read_write_access_restored": true,
-    "merge_or_live_not_yet_claimed": true,
-    "scope": "User requested PR/merge only; no new scientific experiment"
+    "merge_or_live_not_yet_claimed": false,
+    "scope": "User requested PR/merge only; no new scientific experiment",
+    "requested_pr_merged": true,
+    "main_pages_verified": true,
+    "served_bytes_verified": true,
+    "remote_delivery": {
+      "pull_request": 6,
+      "pull_request_url": "https://github.com/buffedlizard55-lab/GEMSDOE21/pull/6",
+      "state": "MERGED",
+      "merged_utc": "2026-10-01T14:01:36Z",
+      "merged_head": "e8f7e75de3f2fda575e7bc735ea899532cc7a00d",
+      "main_merge_commit": "917afce6c2b8dfb654e4f9d234b9ffecbfd0a360",
+      "pages_build": {
+        "run_id": 36873124526,
+        "conclusion": "success",
+        "head_sha": "917afce6c2b8dfb654e4f9d234b9ffecbfd0a360",
+        "url": "https://github.com/buffedlizard55-lab/GEMSDOE21/actions/runs/36873124526"
+      },
+      "main_ci": {
+        "run_id": 36873126551,
+        "conclusion": "success",
+        "head_sha": "917afce6c2b8dfb654e4f9d234b9ffecbfd0a360"
+      },
+      "live_download_check": {
+        "run_id": 36873272537,
+        "conclusion": "success",
+        "head_sha": "917afce6c2b8dfb654e4f9d234b9ffecbfd0a360",
+        "url": "https://github.com/buffedlizard55-lab/GEMSDOE21/actions/runs/36873272537",
+        "verified_utc": "2026-10-01T14:03:21+00:00",
+        "served_content_routes": 28,
+        "full_download_preflights": 3
+      },
+      "snapshot": "evidence/live-verification.json",
+      "snapshot_sha256": "66ec9e828207a13bba23f907a015f4b5c6b3168003462106a016f26e248afa17",
+      "scope": "Dated PR6 core publication and actually served bytes. Fixed delivery-verification release independently checks subsequent receipt-only deployments; not a competition acceptance or score."
+    }
   }
 }
