@@ -10,7 +10,7 @@
 
 ## Finish publication FIRST after restoring GitHub connection
 
-The updated site and all scientific/review files are locally complete, but GraphQL and REST PR/pages calls returned HTTP401 Bad credentials. Reconnect GitHub **in Arena**, not via credentials in chat. Source-result release already exists from the successful scientific run. Push/create PR/checks/merge main from the session branch; do not delete it. Native Pages completion then triggers the owned live verifier, including the new scientific JSON/knowledge evidence plus full TIFF/ZIP bytes. Current updated preview is local only; do not claim new Pages publication or receipt. Preserve dated older verified delivery nested in `evidence/delivery-status.json`.
+The updated site and all scientific/review files are locally complete, but GraphQL and REST PR/pages calls returned HTTP401 Bad credentials. Reconnect GitHub **in Arena**, not via credentials in chat. Source-result release already exists from the successful scientific run. Commit9d43aa8 contains the full implementation/review/site; its push also failed with unavailable GitHub credentials. Push/create PR/checks/merge main from the session branch; do not delete it. Native Pages completion then triggers the owned live verifier, including the new scientific JSON/knowledge evidence plus full TIFF/ZIP bytes. Current updated preview is local only; do not claim new Pages publication or receipt. Preserve dated older verified delivery nested in `evidence/delivery-status.json`.
 
 ## Priority 1: comparison and fresh-data bottleneck
 
