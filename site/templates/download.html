@@ -2,7 +2,7 @@
   <div class="eyebrow"><span class="dot"></span> LOCALLY FORMAT-VERIFIED · HISTORICAL REFERENCE</div>
   <h1>{% if page == 'guide' %}Your GeoTIFF.<br>Your upload checklist.{% else %}Download the<br>audited fault map.{% endif %}</h1>
   <p class="lead">A ready-to-download, single-band prediction for the GEMS prize. <strong>This is unchanged H19-4</strong> — not a newly validated improvement.</p>
-  <a class="button primary" href="{{ primary.href }}" download="{{ primary.name }}" data-verified-download="{{ primary.name }}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>Download submission .tif <span>{{ '%.2f'|format(primary.bytes/1000000) }} MB</span></a>
+  <a class="button primary" href="{{ primary.href }}" download="{{ primary.name }}" data-verified-download="{{ primary.name }}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>Download reference .tif <span>{{ '%.2f'|format(primary.bytes/1000000) }} MB</span></a>
   <p class="download-status" aria-live="polite" data-download-status>With JavaScript: SHA-256 checked before saving · no sign-in required</p>
   <div class="file-label"><span class="kicker">UNIQUE FILENAME</span><code>{{ primary.name }}</code></div>
   <details class="alternatives"><summary>ZIP, all-finite fallback &amp; direct download</summary><div>

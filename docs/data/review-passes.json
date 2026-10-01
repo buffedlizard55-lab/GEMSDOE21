@@ -1,6 +1,6 @@
 {
   "generated_utc": "2026-09-30T23:14:14+00:00",
-  "status": "THREE PASSES COMPLETE; initial merged live delivery independently verified",
+  "status": "All local three-pass reviews complete; PR4 open, GitHub connection restored; merge/deployment pending",
   "passes": [
     {
       "pass": 1,
@@ -76,5 +76,86 @@
         "latest_receipt": "https://github.com/buffedlizard55-lab/GEMSDOE21/releases/tag/delivery-verification"
       }
     }
-  ]
+  ],
+  "session_2": {
+    "generated_utc": "2026-10-01T02:26:29+00:00",
+    "new_fit_invocations_after_first_outcome": 0,
+    "first_h21_1_unchanged": true,
+    "first_h21_5_sha256": "8979d1b93ba33bfb5fd0712198bc5953b97850baac42572b56a1d384a764e75d",
+    "passes": [
+      {
+        "pass": 1,
+        "status": "DONE",
+        "scope": "Preregister four distinct physical hypotheses; source retrieval; exact consumed input placement/preparation; ONE paired 31/37 CPU test",
+        "evidence": [
+          "research/preregistration-h21-s2.md",
+          "evidence/official-inputs-s2.json",
+          "evidence/h21-s2-input-only-probe.json",
+          "evidence/h21-5-results.json"
+        ],
+        "pre_result_tests": "86 passed",
+        "source_implementation": "69fdde6 / hosted36801939888",
+        "outcome": "Forecasts all fail; all8 fits converge; promotion rejected; zero slots"
+      },
+      {
+        "pass": 2,
+        "status": "DONE",
+        "scope": "Actual bug/assumption/edge-case review and future-only repairs",
+        "fixes": [
+          "History-independent locks preserve both first outcomes and prompt",
+          "Pre-score discarded-feature mismatch isolated; all31 consumed hashes remain exact",
+          "Explicit pipefail prevents tee from masking preparation failure; invocation marker never erased by later blocked jobs",
+          "Full originating-fold block kernels conserve official scorer; NUM aliases and two unnamed groups retained",
+          "SW one-pixel round/max deviation disclosed, future floor regression test, NO rescoring",
+          "Delivery-only mode cannot prepare/fit/score or request replication; cached data never pushed to Git",
+          "Source/claim joins and actual asset digest checked; direct/binary transport limits not global unavailability"
+        ],
+        "tests": "92 passed;17 upstream rasterio Affine warnings"
+      },
+      {
+        "pass": 3,
+        "status": "DONE",
+        "scope": "Entire original request, source-backed typed knowledge, first-result metrics, honest download, browser/mobile/no-JS, handoff and deployment plan rechecked",
+        "checks": {
+          "generated_utc": "2026-10-01T02:26:15+00:00",
+          "static": {
+            "passed": true,
+            "pages": 5,
+            "local_links": 158,
+            "downloads": 3,
+            "prompt_unchanged": true
+          },
+          "browser": {
+            "passed": true,
+            "scenarios": [
+              "desktop: index.html",
+              "desktop: executive-summary.html",
+              "desktop: research.html",
+              "desktop: sources.html",
+              "source feed rendering + ledger search",
+              "real SHA-verified download + Python preflight + clipboard",
+              "local file recognizes known bytes; rejects corrupt/unknown",
+              "fail-closed truncated/HTTP-error downloads",
+              "mobile: index.html",
+              "mobile: executive-summary.html",
+              "mobile: research.html",
+              "mobile: sources.html",
+              "legacy Pages root/base assets",
+              "no-JavaScript direct download fallback"
+            ],
+            "javascript_errors": [],
+            "browser": "Chromium"
+          }
+        },
+        "knowledge": {
+          "typed_claims": 17,
+          "source_records": 28,
+          "flags": 25,
+          "historical_group_rows": 37
+        },
+        "remaining_goals": "No clean current-best refit, fresh confirmation, improved hidden score or newly eligible competition TIFF; no hallucinated success",
+        "remote_delivery": "PR4 created and saved work pushed after GitHub connection restored; actual merge, Pages and served-byte checks pending."
+      }
+    ]
+  }
 }

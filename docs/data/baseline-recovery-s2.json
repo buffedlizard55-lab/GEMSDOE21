@@ -1,0 +1,90 @@
+{
+  "generated_utc": "2026-10-01T01:13:08+00:00",
+  "repository": "buffedlizard55-lab/19GEMSDOE",
+  "current_main": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+  "pinned_main": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+  "original_PR_head": "1a8624961dc4de630ab239321832611fcb3fbd71",
+  "current_main_equals_audited_pin": true,
+  "main_and_original_PR_python_differences": [],
+  "python_files_inspected": 34,
+  "source_sha256": {
+    "scripts/build_footprint_payload.py": "08f1bf301e31ea465eb8982db313b8eb7bf119eebadb33aeb4ffaed5edec4ab4",
+    "scripts/build_site.py": "aa3d31dff53447385b86f9ee29a78f31ab59d184870bae2121118e6bb2c32906",
+    "scripts/calibrate_proxies_vs_lb.py": "947876549920622a71cde4feb9ae7c355763d1d354f27b37e334ba23c924839f",
+    "scripts/check_site.py": "6bdf695d83527709dcd7ba9ce6eb8838215421ddac909a16e78609c9bbc5ae97",
+    "scripts/ci_external_verify.py": "1777acae024d480a19031a115db13e3e083f34f232e2dab5cc5c50c2dade6fd4",
+    "scripts/evaluate_h19_and_build_submissions.py": "def1ee96cecf43905c742910b20d002d139818212b65b690a69ae002e97e7bc1",
+    "scripts/fetch_dem10.py": "f67fac655d8d90ba4032b5e7cee5271d92f9847ba89b984ffb41c3f9c350e6f5",
+    "scripts/forensic_audit.py": "d92c60b7ee6f25f1905676e6a52c8b96c0363e4f93fdd77392d662b9f9c2bff0",
+    "scripts/lb_signal_attribution.py": "29ca96ad7c8ef3b5a340dd416d02cbfcbababcead55266ae7119098fe0ccea19",
+    "scripts/prepare_data.py": "cab7ac8bc7033e734a77a3b136327a39eb149ec43f0584c4a4d59efb0daa0439",
+    "scripts/profile_features.py": "e998593eaa35d4bdeef3814214c1b25bc0ecd4f22e2a94e7c7c43dd0248a4b68",
+    "scripts/record_score.py": "ac1064d86906a10387dd76383d76fc111e8bfc740075ff744a6bb89f5da9e487",
+    "scripts/run_spatial_holdout_and_build.py": "9d71d0628e15cd924bc1b7cee9a4ed034a254ae5d06d5d9713addc9b3c3977b9",
+    "scripts/scan_group_repos.py": "6d581da648810d159ba00b95c7dc37e32d63795deaec06ca4bcc15d982dc729a",
+    "scripts/source_health.py": "0b458b83ad65d052e0fb8c7bec8bdc31d8592e158ef69ebd7e6927b7e484ab47",
+    "src/gems/__init__.py": "6c6276031e9a9f4785f0f96628fe30db660d55f16e66631c1320a42356c65cf9",
+    "src/gems/footprint.py": "a7370693cb0576c84cb164830410c5dab1941c84a66e2ac7d1b8283fd1f2d803",
+    "src/gems/forensics.py": "2dd85e5fb19253bd882c769e4fc50d74a4ff6a6a0839fd54969593f514dc34b9",
+    "src/gems/holdout.py": "63de4569f410d38305ee110ee9513ae6737bf42e1794ed6ff74dcdb90b8d59b4",
+    "src/gems/hypotheses.py": "70e8a0761bb9f891d89c611d1b6255f759027966b8f8bc96ffc679fc27a6b0ea",
+    "src/gems/metric.py": "cc439ec785f41fc0121a5f82bafe06f95f6f02047a1b920dd02fd010ff16535b",
+    "src/gems/paths.py": "acf2f79756506b26f8e61b605fd4652c6985ab6c2335402784fed5d6ebcbd380",
+    "src/gems/submission.py": "d3d145e3ea4eb04f6e4bc65b0c24867a149e1976ebcfcfdf1f3675ad1ddbb1a4",
+    "src/gems/validator.py": "32e062897a9ad97b58acbbeb9732617ac87df03022b9d41222809c27f6430db7",
+    "tests/conftest.py": "928047d0e7b6d077dfc99a8025308a005a8969238bc84d6b4fe68ad418fa1cc2",
+    "tests/test_footprint.py": "e05d6d85d5c9175a810f8eac14a8e76fa260b3435577544ed89d499443b58fc3",
+    "tests/test_forensics.py": "c754979b8005e479d6a660533fe2c26a62b02c50386ce40abc3241e3d450c64c",
+    "tests/test_h19_corroboration.py": "040d844d6df6cfad837b655795310c68868426fdafae2b18fda44d207fdc0821",
+    "tests/test_holdout.py": "b97a9712a62a94882b8cc85948816355ba3396cccfafc84b0c757150b3b171a1",
+    "tests/test_metric.py": "98fa1a49eebaf5d7bd87bbb308a30e3a615a4ddffb78145969a8ffff8d74ce69",
+    "tests/test_scan_group_repos.py": "4ba9c98764780ba0c6a2205f54378b6725fb81cb01107ccf6242309cdbef1a43",
+    "tests/test_site_integrity.py": "72c38e53fae14d804201060ed58c5009b0dca6e85490c5743de576d86160366c",
+    "tests/test_site_js.py": "baac7bafdd12131db07beda61f72bcc49d57d63a90847c705088378c7c02240b",
+    "tests/test_submission.py": "5230366b7e5432bbaf58f0587c8f01a5783eec1e1ba6cd5948cfafa8cf8b9110"
+  },
+  "cache_filename_references": [
+    {
+      "file": "scripts/evaluate_h19_and_build_submissions.py",
+      "line": 220,
+      "excerpt": "oof_19 = np.load(DATA_DIR / \"cache\" / \"oof_probs_h19_arms.npz\")",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/scripts/evaluate_h19_and_build_submissions.py#L220"
+    }
+  ],
+  "tracked_cache_present": false,
+  "listed_actions_artifacts": [
+    {
+      "id": 11127658607,
+      "name": "github-pages",
+      "expired": false,
+      "size_in_bytes": 10254367
+    }
+  ],
+  "reproducible_H19_current_best": false,
+  "disposition": "BLOCKED: obtainable source has the cache reader, not its original generator",
+  "scope": "Audited pinned public Python, original PR-head comparison and listed artifacts only; private/untracked/expired data may exist but are not available here",
+  "score_causality": "UNIDENTIFIED; source mechanics and changed pixels do not prove which change caused .1894",
+  "code_novelty_anchors": [
+    {
+      "candidate": "H21-5",
+      "prior": "H19 compute_strike_worm_feature integrates magnitude along/flanking lines; H21-1 axial_agreement compares field directions; neither computes the new signed normal-curvature step contract",
+      "paths": [
+        "scripts/run_spatial_holdout_and_build.py",
+        "src/gems/hypotheses.py"
+      ],
+      "claim_scope": "relative to inspected source, not worldwide or private-group novelty"
+    },
+    {
+      "candidate": "H21-6",
+      "prior": "H19 k_th_anom is a local ratio residual; proposed directional cross-scarp compositional jumps remain unimplemented"
+    },
+    {
+      "candidate": "H21-7",
+      "prior": "H19 clay-conduit/demagnetization features use local amplitude products, not the proposed signed edge sidedness"
+    },
+    {
+      "candidate": "H21-8",
+      "prior": "H19 uses seismic_ieq_log and strain summary rasters, not ComCat uncertainty/depth/time-plane geometry"
+    }
+  ]
+}

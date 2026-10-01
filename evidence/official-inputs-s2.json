@@ -1,0 +1,80 @@
+{
+  "generated_utc": "2026-10-01T01:01:33+00:00",
+  "code_commit": "c751d309cc9abfee80723f91b1e1127d1678fdad",
+  "actions_run_id": "36799046263",
+  "drivendata_requests": 0,
+  "sources": {
+    "fault_vectors": {
+      "status": "VERIFIED TRANSPORT",
+      "url": "https://gdr.openei.org/files/1391/qfaults_ingenious_nad83conus117_2023-06-27.zip",
+      "bytes": 6131182,
+      "sha256": "c7b091c9ac8bca140ad89ee6bb2bd63dd3ac12e3013acbfd8373d11c9faee59d",
+      "http_status": 200,
+      "archive_members": [
+        "qfaults_ingenious_nad83conus117_2023-06-27.cpg",
+        "qfaults_ingenious_nad83conus117_2023-06-27.dbf",
+        "qfaults_ingenious_nad83conus117_2023-06-27.prj",
+        "qfaults_ingenious_nad83conus117_2023-06-27.sbn",
+        "qfaults_ingenious_nad83conus117_2023-06-27.sbx",
+        "qfaults_ingenious_nad83conus117_2023-06-27.shp",
+        "qfaults_ingenious_nad83conus117_2023-06-27.shp.xml",
+        "qfaults_ingenious_nad83conus117_2023-06-27.shx",
+        "README_fielddefinitions_qfaults_ingenious_nad83conus117_2023-06-27.txt"
+      ],
+      "license": "CC BY 4.0; attribution INGENIOUS DOI 10.15121/1881483"
+    },
+    "comcat": {
+      "status": "LIMITED SCHEMA PROBE OBTAINABLE",
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2000-01-01&endtime=2026-09-29T23%3A59%3A59&minlatitude=37.33119286569775&maxlatitude=40.72787799633184&minlongitude=-120.03717095080793&maxlongitude=-116.14092181157623&eventtype=earthquake&minmagnitude=2&orderby=time-asc&limit=100",
+      "bytes": 19066,
+      "sha256": "6bd3833fe96052816714abd753ba84166477fe704fe739e2dbe1d866bbf09dde",
+      "http_status": 200,
+      "rows": 100,
+      "fields": [
+        "time",
+        "latitude",
+        "longitude",
+        "depth",
+        "mag",
+        "magType",
+        "nst",
+        "gap",
+        "dmin",
+        "rms",
+        "net",
+        "id",
+        "updated",
+        "place",
+        "type",
+        "horizontalError",
+        "depthError",
+        "magError",
+        "magNst",
+        "status",
+        "locationSource",
+        "magSource"
+      ],
+      "query": {
+        "format": "csv",
+        "starttime": "2000-01-01",
+        "endtime": "2026-09-29T23:59:59",
+        "minlatitude": 37.33119286569775,
+        "maxlatitude": 40.72787799633184,
+        "minlongitude": -120.03717095080793,
+        "maxlongitude": -116.14092181157623,
+        "eventtype": "earthquake",
+        "minmagnitude": 2,
+        "orderby": "time-asc",
+        "limit": 100
+      },
+      "missing_depth_error": 0,
+      "missing_horizontal_error": 54,
+      "footprint_scope": "outer reference-grid rectangle, NOT clipped to irregular study footprint",
+      "complete_catalogue": false,
+      "candidate_viable": false,
+      "limitation": "First 100 magnitude>=2 events only; completeness/coverage and uncertainty audit still required"
+    }
+  },
+  "scope": "Official transport and schema checks; NOT model validation or a complete ComCat catalogue"
+}
+

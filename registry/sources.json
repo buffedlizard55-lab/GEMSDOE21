@@ -12,7 +12,8 @@
       "supports": "False-positive and false-negative weights; 300m triangular kernel; max probability-kernel TP; EPSG:32611/100m/single-band float32/[0,1]/null-or-NaN outside.",
       "limits": "Does not publish test labels, exact public/private geometry, or an absolute expected score.",
       "verification": "Read both chunks of the official page.",
-      "locator_is_verbatim": false
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-10-01"
     },
     {
       "id": "S02",
@@ -25,7 +26,8 @@
       "limits": "Fault discovery is not proof of vents or a drillable geothermal reservoir; eligibility and final entry require entrant certification.",
       "verification": "Read competition overview.",
       "monitor_url": null,
-      "locator_is_verbatim": false
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-10-01"
     },
     {
       "id": "S03",
@@ -37,7 +39,8 @@
       "supports": "Only new-fault ground truth scores; proximity to a known trace gives no wrong-label exemption; new labels may be within 300m of known traces.",
       "limits": "The public website's full server evaluator is not released; our implementation matches published math and staff-confirmed mask behavior.",
       "verification": "Read staff post #4, not just a participant interpretation.",
-      "locator_is_verbatim": false
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-10-01"
     },
     {
       "id": "S04",
@@ -49,7 +52,8 @@
       "supports": "Rolling window; three submissions per week comes from rules sections 3.2/3.4.",
       "limits": "This project does not know your account's already-used slots.",
       "verification": "Read staff response and official rules.",
-      "locator_is_verbatim": false
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-09-30"
     },
     {
       "id": "S05",
@@ -62,20 +66,22 @@
       "limits": "Appendix A has generic deadline/document wording not fully consistent with competition-page time/file instructions; flag rather than silently harmonize.",
       "verification": "Read all seven returned chunks through the end of the 19-page rules.",
       "monitor_url": "https://docs.nlr.gov/docs/fy26osti/96647.pdf",
-      "locator_is_verbatim": false
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-10-01"
     },
     {
       "id": "S06",
-      "title": "DrivenData Terms of Use \u2014 prohibited automatic monitoring",
+      "title": "DrivenData Terms of Use — prohibited automatic monitoring",
       "authority": "DrivenData",
       "kind": "OFFICIAL",
       "url": "https://www.drivendata.org/termsofuse/",
       "excerpt": "Use any robot, spider or other automatic device, process or means to access the Website for any purpose, including monitoring or copying",
       "supports": "No autonomous leaderboard polling, credential sharing, or uploads in our code.",
       "limits": "An authorized API or written permission could change the available integration; neither has been established here.",
-      "verification": "Read Prohibited Uses and Account Security.",
+      "verification": "Read all four returned chunks this session; Prohibited Uses and Account Security; no site polling implemented.",
       "monitor_url": null,
-      "locator_is_verbatim": false
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-10-01"
     },
     {
       "id": "S07",
@@ -87,7 +93,8 @@
       "supports": "Do not assume experts used only lidar, sampled all locations equally, or mapped only surface scarps.",
       "limits": "Known-fault hide/recover cannot reproduce the hidden catalogue selection distribution.",
       "verification": "Read staff post #7.",
-      "locator_is_verbatim": false
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-09-30"
     },
     {
       "id": "S08",
@@ -100,7 +107,8 @@
       "limits": "Joined observations are not independent sites; anomalies are not proof of a local unknown fault. Full-catalogue orphan distances cannot enter a hide/recover model.",
       "verification": "Read dataset description, resources and terms; derived transport CSV audited locally.",
       "monitor_url": "https://gdr.openei.org/submissions/1391",
-      "locator_is_verbatim": false
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-10-01"
     },
     {
       "id": "S09",
@@ -113,7 +121,8 @@
       "limits": "Geophysical edges may reflect lithology, magnetization or acquisition seams, not displacement.",
       "verification": "Read official ScienceBase release at 657e1d85d34e23d3533209f7, including summary and attached-file table; official rules citation also matches.",
       "monitor_url": "https://www.sciencebase.gov/catalog/item/657e1d85d34e23d3533209f7?format=json",
-      "locator_is_verbatim": false
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-09-30"
     },
     {
       "id": "S10",
@@ -126,7 +135,8 @@
       "limits": "Regional resolution/interpolation cannot locate every small fault to 100m; depth-to-basement is not the same as the MT depth-to-conductive-base variable.",
       "verification": "Read ScienceBase release at 628d4fabd34ef70cdba3c4a4.",
       "monitor_url": "https://www.sciencebase.gov/catalog/item/628d4fabd34ef70cdba3c4a4?format=json",
-      "locator_is_verbatim": false
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-09-30"
     },
     {
       "id": "S11",
@@ -139,7 +149,8 @@
       "limits": "No claim that our transform or coefficients are in this paper; those are registered research proposals.",
       "verification": "Read abstract/introduction and specific Great Basin discussion.",
       "monitor_url": "https://www.osti.gov/servlets/purl/1724108",
-      "locator_is_verbatim": false
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-10-01"
     },
     {
       "id": "S12",
@@ -152,7 +163,8 @@
       "limits": "A catalogue landing page is not proof of obtaining a footprint-covering flowline file. No H21-2 validation yet.",
       "verification": "Read download directories and retirement notice.",
       "monitor_url": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer?f=pjson",
-      "locator_is_verbatim": false
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-09-30"
     },
     {
       "id": "S13",
@@ -165,7 +177,8 @@
       "limits": "Coarse scale, imperfect boundary reconciliation; do not use fault-line layer as a held-out model input. Exact downloaded version needs a hash.",
       "verification": "Read NGMDB product 119417 and ScienceBase recommendation to use the 2026 release.",
       "monitor_url": "https://mrdata.usgs.gov/geology/state/shp/NV.zip",
-      "locator_is_verbatim": false
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-09-30"
     },
     {
       "id": "S14",
@@ -178,7 +191,8 @@
       "limits": "Residual does not uniquely diagnose local fault-mediated advection; not downloaded/used in H21-1.",
       "verification": "Read official data release description.",
       "monitor_url": "https://www.sciencebase.gov/catalog/item/6297d2fad34ec53d276c5b28?format=json",
-      "locator_is_verbatim": false
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-09-30"
     },
     {
       "id": "S15",
@@ -191,11 +205,12 @@
       "limits": "Do not treat assumed conductivity as measured; well-depth/temperature matching still required for H21-4.",
       "verification": "Read official resource and measurement-quality definitions.",
       "monitor_url": "https://gdr.openei.org/files/1390/INGENIOUSThermKMeasureSource_GDRUploadFinal-27June2022.xlsx",
-      "locator_is_verbatim": true
+      "locator_is_verbatim": true,
+      "reviewed_utc_date": "2026-09-30"
     },
     {
       "id": "S16",
-      "title": "Non-negative positive\u2013unlabeled risk estimator",
+      "title": "Non-negative positive–unlabeled risk estimator",
       "authority": "Kiryo, Niu, du Plessis, Sugiyama; NIPS 2017 primary research",
       "kind": "PRIMARY RESEARCH, NOT GOVERNMENT",
       "url": "https://arxiv.org/abs/1703.00593",
@@ -203,7 +218,8 @@
       "supports": "Learning with positives/unlabeled samples without assuming absent labels are negative.",
       "limits": "Our fixed prior .03 and SCAR assumptions are unverified for biased fault catalogues. No calibrated probability claim.",
       "verification": "Read authors' camera-ready abstract; numerical gradient tested independently.",
-      "locator_is_verbatim": false
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-09-30"
     },
     {
       "id": "S17",
@@ -216,7 +232,8 @@
       "limits": "This session uses verified derivatives, not a new raw 1m/10m survey; original processing coverage and quantization limits apply.",
       "verification": "Hash verified all 13 arrays against upstream manifest; source tile list preserved in data/dem10/manifest.json.",
       "monitor_url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/current/n39w119/USGS_13_n39w119.tif",
-      "locator_is_verbatim": false
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-09-30"
     },
     {
       "id": "S18",
@@ -227,8 +244,9 @@
       "excerpt": "H19-4 source snapshot and serialized prediction",
       "supports": "Observed blend weights, missing H19 cache generator, training/metric assumptions; exact SHA of the artifact.",
       "limits": "Published reasoning is not independent geological verification or a DrivenData submission receipt.",
-      "verification": "Read README/code/site; line anchors and numerical comparison in evidence/upstream-audit.json.",
-      "locator_is_verbatim": false
+      "verification": "Pinned public main and original PR head Python audited; current main unchanged. See evidence/baseline-recovery-s2.json.",
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-10-01"
     },
     {
       "id": "S19",
@@ -240,7 +258,8 @@
       "supports": "SHA-verified H16/H19 scored-pixel overlap; NOT a clean model-comparison holdout.",
       "limits": "File-to-.1855 score association is user-reported.",
       "verification": "Byte/hash and pixel comparison locally.",
-      "locator_is_verbatim": false
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-09-30"
     },
     {
       "id": "S20",
@@ -248,12 +267,13 @@
       "authority": "DrivenData",
       "kind": "OFFICIAL SNAPSHOT",
       "url": "https://www.drivendata.org/competitions/306/competition-doe-gems/leaderboard/",
-      "excerpt": "DARD 0.3168; smrtdoog5 0.1894; extradr19 0.1855",
+      "excerpt": "2026-10-01: DARD .3168 (#1), smrtdoog5 .1894 (#23), extradr19 .1855 (#25).",
       "supports": "Dated visible account-best scores, not file receipts.",
       "limits": "Not a current live feed; time-of-day not claimed; user prompt's .3049 is stale relative to this read.",
-      "verification": "Research page read on 2026-09-30; snapshot in registry/leaderboard-snapshot.json.",
+      "verification": "One-time research read of both leaderboard chunks; not a live automated feed.",
       "monitor_url": null,
-      "locator_is_verbatim": false
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-10-01"
     },
     {
       "id": "S21",
@@ -266,7 +286,8 @@
       "limits": "Does not prove every orphan thermal record needs a fault within a selected kernel radius.",
       "verification": "Read full official report summary and reported drilling validation.",
       "monitor_url": "https://www.usgs.gov/publications/discovering-blind-geothermal-systems-great-basin-region-integrated-geologic-and",
-      "locator_is_verbatim": false
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-09-30"
     },
     {
       "id": "S22",
@@ -278,7 +299,93 @@
       "supports": "A starting implementation linked by the official challenge, not an already-installed pipeline in this empty checkout.",
       "limits": "We have not trained its GPU U-Net here; our executed model is the registered CPU nnPU experiment.",
       "verification": "Official challenge link and inspected repository file tree.",
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-09-30"
+    },
+    {
+      "id": "S23",
+      "title": "Gravity versus magnetics over basin-fill faults",
+      "authority": "U.S. Geological Survey / Baldyga 2001",
+      "kind": "OFFICIAL PUBLICATION",
+      "url": "https://pubs.usgs.gov/publication/ofr01502",
+      "excerpt": "The aeromagnetic data did not provide any insight into the response of the minor faults but rather served to verify the regional response of the whole profile.",
+      "supports": "Gravity/magnetic responses need not both resolve a minor fault; supports testing independent per-field signed profiles rather than requiring magnetic corroboration.",
+      "limits": "Arizona case study, not a Great Basin validation or proof that our curvature transform improves DTI.",
+      "verification": "Read complete USGS publication abstract and bibliographic record on 2026-10-01.",
+      "monitor_url": "https://pubs.usgs.gov/publication/ofr01502",
+      "locator_is_verbatim": true,
+      "reviewed_utc_date": "2026-10-01"
+    },
+    {
+      "id": "S24",
+      "title": "Aeromagnetic expressions of concealed faults",
+      "authority": "USGS / Grauch and Hudson 2007",
+      "kind": "OFFICIAL PUBLICATION RECORD",
+      "url": "https://www.usgs.gov/publications/guides-understanding-aeromagnetic-expression-faults-sedimentary-basins-lessons-learned",
+      "excerpt": "The horizontal gradient method applied to reduced-to-pole aeromagnetic data is particularly effective in mapping fault locations, especially at regional scales.",
+      "supports": "Juxtaposed differing strata can produce magnetic fault signatures; anomaly shape varies with depth/thickness/susceptibility; RTP gradients can aid interpretation.",
+      "limits": "Rio Grande rift examples; nonfault contacts, remanence and topography remain competing explanations. Does not establish our forecast or pinpoint blind faults here.",
+      "verification": "Read complete official USGS record on 2026-10-01; DOI 10.1130/GES00128.1.",
+      "monitor_url": "https://www.usgs.gov/publications/guides-understanding-aeromagnetic-expression-faults-sedimentary-basins-lessons-learned",
+      "locator_is_verbatim": true,
+      "reviewed_utc_date": "2026-10-01"
+    },
+    {
+      "id": "S25",
+      "title": "Radiometric interpretation and survey-boundary confounders",
+      "authority": "U.S. Geological Survey, OFR 99-16",
+      "kind": "OFFICIAL METHODOLOGY",
+      "url": "https://pubs.usgs.gov/of/1999/ofr-99-0016/map_info.html",
+      "excerpt": "Care should be taken when interpreting the patterns on these maps to avoid attaching geologic significance to boundaries between surveys.",
+      "supports": "Radiometric composition/ratios may indicate lithology, alteration or weathering; survey-boundary offsets are a non-geological competing explanation.",
+      "limits": "Alaska NURE, not GeoDAWN. Its flight spacing, penetration/resolution and typical ratio figures are NOT adopted as GeoDAWN metadata. Pinned uint8 channel ranks do not recover physical K/Th units.",
+      "verification": "Read data-processing and utility sections on 2026-10-01.",
+      "monitor_url": "https://pubs.usgs.gov/of/1999/ofr-99-0016/map_info.html",
+      "locator_is_verbatim": true,
+      "reviewed_utc_date": "2026-10-01"
+    },
+    {
+      "id": "S26",
+      "title": "USGS ComCat event API and uncertainty-aware event data",
+      "authority": "U.S. Geological Survey",
+      "kind": "OFFICIAL DATA API",
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "excerpt": "Limit the results to the specified number of events.",
+      "supports": "Time/bounding-box/event-type/depth query parameters; 20,000 maximum events per query. Hosted 100-event historical schema probe succeeded.",
+      "limits": "LIMITED probe is not a complete/footprint-clipped event catalogue; 54/100 sampled records lack horizontal error, so uncertainty/depth-plane hypothesis remains conditional. No 100m surface trace is inferred.",
+      "verification": "Read both official documentation chunks; actual source receipt evidence/official-inputs-s2.json, run 36799046263.",
+      "monitor_url": "https://earthquake.usgs.gov/fdsnws/event/1/version",
+      "locator_is_verbatim": true,
+      "reviewed_utc_date": "2026-10-01"
+    },
+    {
+      "id": "S27",
+      "title": "Direct official-source hosted acquisition receipt",
+      "authority": "GEMSDOE21 computation, using official INGENIOUS/USGS endpoints",
+      "kind": "COMPUTED PROVENANCE (NOT OFFICIAL ENDORSEMENT)",
+      "url": "https://github.com/buffedlizard55-lab/GEMSDOE21/releases/tag/research-inputs-h21-s2",
+      "excerpt": "INGENIOUS v2: 6,131,182 bytes, SHA256 c7b091c9ac8bca140ad89ee6bb2bd63dd3ac12e3013acbfd8373d11c9faee59d.",
+      "supports": "Hosted direct GDR download verified full pinned bytes/ZIP CRC; ComCat limited query returned required schema. Official vector metadata can strengthen whole-segment purges.",
+      "limits": "Sandbox cannot fetch official/archive assets directly. A receipt is transport evidence, not geological validation, complete event coverage or an authenticated competition template. Data assets live outside Git with CC BY attribution.",
+      "verification": "GitHub run 36799046263 successful; full JSON receipt copied through release metadata, model run must independently verify bytes before use.",
+      "monitor_url": null,
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-10-01"
+    },
+    {
+      "id": "S28",
+      "title": "Exact first H21-5 exploratory result and uploaded digest",
+      "authority": "GEMSDOE21 hosted computation at 69fdde6, run 36801939888",
+      "kind": "COMPUTED EXPERIMENT (NOT OFFICIAL SCORE)",
+      "url": "https://github.com/buffedlizard55-lab/GEMSDOE21/releases/tag/h21-5-first-result",
+      "excerpt": "Mean dense 0.1947428073 → 0.1947844706; sparse 0.0965993835 → 0.0963859342; adjusted p=1.0.",
+      "supports": "One locked 31/37-channel paired experiment, eight converged fits, full source/mask/grouping/sample/prediction hashes; exact 65,266-byte JSON recovered through release body and verified against uploaded asset digest.",
+      "limits": "Previously observed geography, no clean current-best H19 producer, source NUM aliases/unnamed traces and one-pixel SW rounded-quota deviation. No submission, new qualified TIFF, fresh confirmation or hidden-score gain.",
+      "verification": "Byte size and SHA256 8979d1b93ba33bfb5fd0712198bc5953b97850baac42572b56a1d384a764e75d match GitHub asset digest; check_knowledge verifies input bindings/metric terms/gates. Original result immutable.",
+      "monitor_url": null,
+      "reviewed_utc_date": "2026-10-01",
       "locator_is_verbatim": false
     }
-  ]
+  ],
+  "last_updated_utc_date": "2026-10-01"
 }

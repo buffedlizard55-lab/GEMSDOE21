@@ -76,6 +76,11 @@ def main():
         "assets/site.js",
         "data/submissions.json",
         "data/template-mask.tif",
+        "data/h21-5-results.json",
+        "data/h21-5-protocol-review.json",
+        "data/hypotheses-s2.json",
+        "data/knowledge-s2.json",
+        "data/sources.json",
     ]:
         routes["docs/" + path] = docs / path
     for spec in manifest["files"]:

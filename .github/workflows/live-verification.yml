@@ -4,11 +4,6 @@ on:
   workflow_run:
     workflows: ['pages build and deployment', 'pages-build-deployment']
     types: [completed]
-  push:
-    branches: [arena/01a0f45d-gemsdoe21]
-    paths:
-      - scripts/verify_live.py
-      - .github/workflows/live-verification.yml
 permissions:
   contents: write
 jobs:
@@ -43,7 +38,7 @@ jobs:
           if gh release view delivery-verification --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
             gh release edit delivery-verification --repo "$GITHUB_REPOSITORY" --notes-file live-verification.json --title "Verified live Pages downloads — not a competition score"
           else
-            gh release create delivery-verification --repo "$GITHUB_REPOSITORY" --target arena/01a0f45d-gemsdoe21 --notes-file live-verification.json --title "Verified live Pages downloads — not a competition score" --prerelease
+            gh release create delivery-verification --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --notes-file live-verification.json --title "Verified live Pages downloads — not a competition score" --prerelease
           fi
       - uses: actions/upload-artifact@v4
         if: always()

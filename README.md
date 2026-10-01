@@ -12,22 +12,35 @@ Short note: `GEMS21 | H19-4 historical reference | id 691e4dfa | same prediction
 
 The site offers SHA-verified browser downloads, a deterministic one-TIFF ZIP and an **all-finite / internal-null-mask fallback** with identical footprint predictions. Fallback platform acceptance is untested. Exact cause of the user's old range-error file is unknown; the new files are strictly preflighted rather than silently clipped. **Live deployment verified:** PR [#1](https://github.com/buffedlizard55-lab/GEMSDOE21/pull/1) merged; native Pages build succeeded; GitHub-hosted checks downloaded the actually served TIFF/ZIP and verified full bytes plus range/grid. [Dated receipt](evidence/delivery-status.json) · [latest live check](https://github.com/buffedlizard55-lab/GEMSDOE21/releases/tag/delivery-verification). This is not a competition acceptance or score receipt.
 
+## Latest session — 1 October 2026
+
+**H21-5 REJECTED FOR PROMOTION.** The single registered 31/37-channel PU comparison completed on a GitHub-hosted CPU. Mean dense DTI **.19474281→.19478447 (Δ+.00004166)**; sparse **.09659938→.09638593 (Δ−.00021345)**. All eight fits converge (101–194 iterations), but all four forecasts miss, only 2/4 dense folds win and eight-family adjusted p=1.0. These are exploratory proxy scores, **not .1894 comparators or hidden scores**; clean-current-best and fresh-confirmation gates remain false. **Zero submissions, no new eligible TIFF.**
+
+* [Locked Session 2 registration](research/preregistration-h21-s2.md) at **452c21c** preceded implementation 48f17c7. Scientific run [36801939888](https://github.com/buffedlizard55-lab/GEMSDOE21/actions/runs/36801939888) used **69fdde6**. [First outcome/rationale](research/h21-5-outcome.md) · [exact result](evidence/h21-5-results.json). Its SHA256 **8979d1b93ba33bfb5fd0712198bc5953b97850baac42572b56a1d384a764e75d** matches the uploaded 65,266-byte asset, not just a parsed summary.
+* Actual official INGENIOUS ZIP transport/hash/CRC/Fiona schema was verified hosted. Original full geometry links **3,199 raster pieces into 149 conservative groups**, with all 60,988 labels within one cell and zero unlinked components. Two linked groups have unnamed trace IDs; four NUM/name conflicts remain. Full group/vector/label geometry receives 1.5km Euclidean training purges; actual audits show zero hidden visibility/buffer leaks. IDs are split metadata, not predictors.
+* Two **prefit** failures and one **input-only** diagnostic preceded the sole scientific invocation. Exactly three discarded H21-1 hashes differed on the hosted image; all 31 **consumed** control hashes matched the original. Full legacy locks remain strict; no H21-1 rescue, used-input substitution or tolerance widening. [Compatibility repair](research/input-compatibility-amendment-s2.md) · [genuine probe](evidence/h21-s2-input-only-probe.json).
+* **Pass-2 protocol caveat:** original SW rounded quota exceeds a literal 2.5% maximum by one pixel per arm (2.50002275%). A future `floor()` regression fix is tested; **first scores/masks are unchanged**, not retroactively corrected. [Separate audit](evidence/h21-5-protocol-review.json). Source69fdde6, not the later helper, defines the first computation.
+* Four new hypotheses were ranked before code: **H21-5** signed within-field step profiles (+.006 dense; rejected), **H21-6** cross-scarp compositional continuity (+.004; quantized-unit limit), **H21-7** conductive-sidedness (+.003; untested), **H21-8** time/depth-coherent event planes (+.002; conditional). [Complete mechanisms/transforms/confounders/cost/forecasts](registry/hypotheses-s2.json). The 100-event official ComCat schema probe succeeds, but 54 missing horizontal errors and incomplete coverage do not establish a viable event-plane dataset.
+* [28 source records](registry/sources.json), [17 typed knowledge claims](registry/knowledge-s2.json), [25 irregularities](registry/irregularities.json) and retained historical group/decision tables are reusable and source-linked. Consistency checks are **not universal fact or hidden-score certification**. The current H19 public main/original PR Python still lack the original arm-cache producer; no causal explanation of +.0039 has been established.
+
+Latest implementation/review checks: **92 tests passed**, including both immutable results, exact input bindings, full-context metric conservation, whole-group purges, no-promotion even for a perfect exploratory gain, safe transport and future literal-budget floor. Actual browser/deployment checks are recorded in the [three-pass record](evidence/review-passes.json) and [delivery receipt](evidence/delivery-status.json), with dated historical receipts distinguished from current remote checks. Do not infer live verification from a local build. **Publication resumed:** GitHub connection restored and [PR #4](https://github.com/buffedlizard55-lab/GEMSDOE21/pull/4) opened. Checks, main merge and updated Pages served-byte verification are pending; do not treat the new site as deployed yet. The previous authentication failure remains a dated diagnostic.
+
 ## Own the Outcome · Maximize P(Win)
 
 **Maximize P(Win):** build a reproducible geological research program, not a leaderboard-probing machine. Name the mechanism and non-fault confounders, register forecasts before scores, hide whole known segments with purges, use positive–unlabeled risk and the exact official metric, and retain negative results. No score or prize guarantee.
 
 **Own the Outcome:** complete authorized data placement, CPU training/inference, validation, reference delivery and a usable site; execute three real review passes; flag defects and genuine access limits. Protect submission budget. One research program/account; no multi-account evasion. Keep source/knowledge/decision registries reusable for expert review.
 
-## What actually ran
+## Session 1 — preserved original implementation attempt
 
 * Initial checkout had an 11-byte README and **no** pipeline, site, tests or previous-session next-step notes. The prompt's inherited “GPU pipeline ready; only data placement missing” did not describe this checkout.
 * Preregistration committed/pushed **`2dfc5de` before implementation/results**. First implementation/test commit **`fc809c8` before results**. Four hypotheses were ranked, not selected by the live leaderboard.
 * Pinned transport downloaded and verified core rasters, physical derivatives and 13 DEM channels. Direct authenticated organizer provenance is not verified. The supplied template positive mask equals the known catalogue despite the official all-absence description; only its grid/finite footprint is used.
 * Preparation produced 31 label-free control + 3 candidate channels; 5,167,373 footprint pixels, 60,988 known pixels. Global whole 8-connected components are hidden with 1.5km Euclidean training purges. This is a segment proxy, not verified original geological fault IDs.
 * First CPU nnPU experiment: **H21-1 REJECTED for promotion**. Mean dense DTI **0.199205→0.197798 (−.00140662)**; sparse-reference **0.075496→0.074451 (−.00104483)**. Recovery fell; FP mass rose .03264%; 0/4 dense wins; family-corrected p=1.0. NW/NE both hit the fixed optimizer cap.
-* Second-pass review found the original emitter **soft-prioritizes NMS, rather than restricting to ridges**, and its evidence mask is data support rather than an explicit positive-amplitude guard. Therefore those numbers are a failed implementation attempt, not a fully compliant confirmatory strict-NMS test. A separate corrected helper is unit-tested but **not** activated/retested on this observed holdout. [Protocol review](research/protocol-review.md).
+* Second-pass review found the original emitter **soft-prioritizes NMS, rather than restricting to ridges**, and its evidence mask is data support rather than an explicit positive-amplitude guard. Therefore those numbers are a failed implementation attempt, not a fully compliant confirmatory strict-NMS test. A separate corrected helper is unit-tested but **not** swapped into or used to rescore H21-1. Separately registered exploratory H21-5 is described above. [Protocol review](research/protocol-review.md).
 * Independent re-preparation reproduced all feature hashes. Fixed-parameter replication of the **original** implementation reproduced exact summaries/gates/block test/prediction masks, without changing the first result. [Replication evidence](evidence/fixed-replication.json). No tuning or weekly slots used.
-* Local checks: **57 tests passed**, static hash/grid/link audit passed, real Chromium desktop/mobile/file/clipboard/failure/no-JS checks passed. Three-pass details and original-request coverage: [review record](evidence/review-passes.json), [request audit](evidence/request-audit.json).
+* Initial Session 1 checks: **57 tests passed**, static hash/grid/link audit passed, real Chromium desktop/mobile/file/clipboard/failure/no-JS checks passed. Three-pass details and original-request coverage: [review record](evidence/review-passes.json), [request audit](evidence/request-audit.json).
 
 First outcome and expert-review rationale: [research/h21-1-outcome.md](research/h21-1-outcome.md), [raw JSON](evidence/h21-1-results.json). The primary outcome SHA is `ee3a52c471720dd5d6692a9fb849d21979111de2c3ecf57d6130f8dab66c6c67`. Never overwrite it to rescue a forecast.
 
@@ -39,7 +52,7 @@ The pinned H19 exporter requires an untracked OOF arm cache; an all-committed-Py
 
 [Group registry](registry/group-results.json) preserves the prompt's reported scores and blanks, separately audits 29 artifact identities, and exposes exact scored-confidence duplicates (GEMSDOE/5/8/17-A; 12 NaN/all-finite). Filename suffixes alone are not proof of equality. GEMSDOE14's referenced artifact has the wrong origin; its reported score is not an authenticated file receipt.
 
-## Locked ranked research plan
+## Archived Session 1 ranked plan
 
 [Immutable registration](research/preregistration-h21.md) — mechanisms, confounders, transforms, fixed parameters and four-member correction:
 
@@ -60,9 +73,9 @@ External-dependent ideas remain **conditional/untested**, not viable just becaus
 * [Staff exact known mask](https://community.drivendata.org/t/scoring-clarification-are-known-usgs-ingenious-faults-masked-when-scoring-and-are-they-in-the-final-round-label-set/11516/4)
 * [Staff undisclosed new-label selection](https://community.drivendata.org/t/how-were-the-new-test-faults-identified-data-sources-and-fault-types/11527/7)
 * [Official rules, reproducibility, AI-use disclosure](https://docs.nlr.gov/docs/fy26osti/96647.pdf)
-* [22 qualified source records](registry/sources.json) · [19 irregularities](registry/irregularities.json) · [all rejected/deferred decisions](registry/decisions.json)
+* [28 qualified source records](registry/sources.json) · [25 irregularities](registry/irregularities.json) · [all rejected/deferred decisions](registry/decisions.json)
 
-Inspected public snapshot on **2026-09-30**: DARD .3168, smrtdoog5 .1894, extradr19 .1855. [Official leaderboard](https://www.drivendata.org/competitions/306/competition-doe-gems/leaderboard/). Account best does not identify a file; prompt file-score associations remain **USER-REPORTED**. .3049 from the brief is older. This snapshot is **not a live feed**.
+Inspected public snapshot on **2026-10-01**: DARD .3168, smrtdoog5 .1894, extradr19 .1855. [Official leaderboard](https://www.drivendata.org/competitions/306/competition-doe-gems/leaderboard/). Account best does not identify a file; prompt file-score associations remain **USER-REPORTED**. .3049 from the brief is older. This snapshot is **not a live feed**.
 
 [Terms](https://www.drivendata.org/termsofuse/) prohibit automatic website monitoring; no authorized DrivenData API/session is established. No code polls/signs into/uploads to DrivenData. A daily permitted-source workflow instead refreshes USGS/DOE transport health and GitHub heads, publishing JSON in fixed release `source-feed` without bot pushes to main. The site reads public release metadata, dates/stale-marks it and falls back safely to a saved snapshot. Probes establish response/sample-byte health, **not** full-file coverage/licensing/geological validity. Direct sandbox TLS to official data hosts failed despite research-reader access; do not call that global unavailability.
 
@@ -71,21 +84,23 @@ Inspected public snapshot on **2026-09-30**: DARD .3168, smrtdoog5 .1894, extrad
 ```bash
 python -m venv .venv
 .venv/bin/pip install -r requirements-dev.txt
-.venv/bin/python scripts/run_pipeline.py
-# Repeat SAME registered original implementation, never replace first outcome:
+# Safe delivery rebuild; never prepares/refits/scores a model:
+.venv/bin/python scripts/run_pipeline.py --delivery-only
+# Optional SAME original H21-1 replication; full locks may reject platform drift:
+# Not needed for delivery; never force the locks or rescue its result:
 .venv/bin/python scripts/run_pipeline.py --replicate
 .venv/bin/python scripts/validate_submission.py path/to/prediction.tif
 .venv/bin/python -m pytest -q
 .venv/bin/python scripts/check_site.py --browser
 ```
 
-The wrapper downloads pinned authorized GitHub transport, prepares if needed, verifies independent lineage, preserves or explicitly replicates the locked experiment, audits upstream/group artifacts, emits compliant historical files and builds/checks the site. Large data/OOF masks live in ignored `data/` (default `.cache/data/` symlink). Two CPU cores/~3.8GiB RAM/no GPU: sequential preparation and chunked inference completed; peak RAM was not measured. No organizer GPU U-Net is claimed trained.
+The delivery-only wrapper downloads pinned transport, audits upstream/group artifacts, emits the exact compliant historical reference and builds/checks the site, **without new fits or scores**. Original scientific replication remains a separate, complete-lock operation; it can reject a different hosted image’s discarded-field hashes. First S2 outputs and exact pre-score code69fdde6 are retained in the release/lineage records, not rerun by delivery. Large data/OOF masks live in ignored `data/` (default `.cache/data/` symlink). Two CPU cores/~3.8GiB RAM/no GPU: sequential preparation and chunked inference completed; peak RAM was not measured. No organizer GPU U-Net is claimed trained.
 
 Browser setup: `.venv/bin/python -m playwright install --with-deps chromium`. This sandbox's Microsoft CDN TLS was blocked; real Chromium tests used pinned `@sparticuz/chromium@140.0.0` with its packaged libraries. See the handoff for regenerable setup. The static site works without a browser dependency or JavaScript; arbitrary TIFF validation remains Python fail-closed.
 
 ## Limitations and next-session priority
 
-**No new validated score improvement or top-prize guarantee.** Recover/audit H19 arm generation, get original vector fault IDs, and lock fresh development/test/convergence/strict-emission protocols before another candidate. Establish exact external-byte/schema/coverage provenance; retain this failed forecast and all confounders for Phase 2. No reused shared-holdout tuning.
+**No new validated score improvement or top-prize guarantee.** Original vector grouping and convergence-safe exploratory execution are now complete. Recover/audit H19 arm generation and acquire genuinely unobserved labels/geography before another candidate; the scored footprint cannot become fresh through resampling. Keep both failed forecasts and the quota caveat. Establish exact external-byte/schema/coverage provenance; retain this failed forecast and all confounders for Phase 2. No reused shared-holdout tuning.
 
 Final submission/eligibility/slot availability and AI-disclosure certification require the entrant's own authorized account; no credentials are requested. The all-finite fallback's server acceptance and the old range-error cause are not verified. Hidden labels/selection/coverage and private score are unavailable. Competition targets fault candidates, not confirmed vents or drillable reservoirs.
 

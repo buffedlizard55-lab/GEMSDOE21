@@ -1,0 +1,74 @@
+name: Locked H21-5 exploratory hide-and-recover (no upload)
+on:
+  push:
+    branches: ['arena/**']
+    paths: [research/run-h21-s2.json]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: h21-5-first-outcome
+  cancel-in-progress: false
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    env:
+      OPENBLAS_NUM_THREADS: '2'
+      OMP_NUM_THREADS: '2'
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Fail closed if a first outcome already exists
+        run: |
+          if gh release view h21-5-first-result --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo 'First result preserved. This workflow may not select a second attempt.'
+            exit 1
+          fi
+          if gh release view h21-5-execution-status --repo "$GITHUB_REPOSITORY" --json body --jq .body > /tmp/prior-s2-status.json 2>/dev/null; then
+            python -c 'import json; r=json.load(open("/tmp/prior-s2-status.json")); assert not (r.get("model_started") or r.get("scientific_result_present")), "A model invocation already occurred; no automatic second test"'
+          fi
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements-dev.txt
+      - name: Check all synthetic/metric/leakage invariants BEFORE any new score
+        run: |
+          ruff check src scripts tests
+          ruff format --check src scripts tests
+          python -m pytest -q
+      - name: Restore exact pinned physical inputs (no competition requests)
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p .cache
+          { bash scripts/download_competition_data.sh && python scripts/prepare_s2_base.py; } 2>&1 | tee .cache/s2-setup.log
+      - name: Retrieve official vector bytes and verify hash
+        run: python scripts/fetch_research_inputs.py
+      - name: Run ONE preregistered candidate, never tune after looking
+        shell: bash
+        run: |
+          set -euo pipefail
+          { python scripts/prepare_s2.py && touch .cache/s2-model-started && python scripts/evaluate_s2.py; } 2>&1 | tee -a .cache/s2-setup.log
+      - name: Preserve immutable first result in release metadata and ignored caches as assets
+        run: |
+          tar -czf .cache/h21-5-research-caches.tar.gz -C .cache/data prepared-s2 research/H21-5-first-masks
+          gh release create h21-5-first-result --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --title 'H21-5 first exploratory result — not a competition entry' --notes-file evidence/h21-5-results.json --prerelease
+          gh release upload h21-5-first-result evidence/h21-5-results.json .cache/h21-5-research-caches.tar.gz --repo "$GITHUB_REPOSITORY"
+      - name: Publish redacted setup status even on pre-score failure
+        if: always()
+        env:
+          S2_JOB_STATUS: ${{ job.status }}
+        run: python scripts/publish_s2_execution.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: h21-5-first-result-and-lineage
+          path: |
+            evidence/h21-5-results.json
+            .cache/data/prepared-s2/manifest.json
+            .cache/data/official-s2/receipt.json
+          retention-days: 30
+          if-no-files-found: warn

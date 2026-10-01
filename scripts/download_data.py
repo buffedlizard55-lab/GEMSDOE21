@@ -76,7 +76,39 @@ def fetch(source: tuple[str, str], remote: str, dest: Path, expected: str | None
             if result.returncode == 0 and (expected is None or sha256(tmp) == expected):
                 tmp.replace(dest)
                 break
-            last_error = result.stderr.decode(errors="replace")[-500:]
+            last_error = (
+                result.stderr.decode(errors="replace")[-500:]
+                + f"; received_bytes={tmp.stat().st_size}; received_sha256={sha256(tmp)}"
+            )
+            # Public, immutable RAW fallback uses no token. Some hosted runners cannot
+            # retrieve large raw contents through gh's API route. Identical pinned hash
+            # is still required; changing transport never changes scientific inputs.
+            if source in (BRIDGE, G7, DEM, G19):
+                import requests
+
+                try:
+                    with requests.get(
+                        f"https://raw.githubusercontent.com/{repo}/{ref}/{remote}",
+                        timeout=(10, 90),
+                        stream=True,
+                        allow_redirects=False,
+                    ) as response:
+                        response.raise_for_status()
+                        if response.status_code != 200:
+                            raise ValueError("Public mirror fallback must be a direct HTTP 200")
+                        n = 0
+                        with tmp.open("wb") as out:
+                            for chunk in response.iter_content(1 << 16):
+                                n += len(chunk)
+                                if n > 128 * (1 << 20):
+                                    raise ValueError("Public mirror part exceeds size cap")
+                                out.write(chunk)
+                    if n > 0 and (expected is None or sha256(tmp) == expected):
+                        tmp.replace(dest)
+                        break
+                    last_error += "; public RAW bytes differ from pinned hash"
+                except (requests.RequestException, ValueError) as exc:
+                    last_error += f"; public RAW fallback: {str(exc)[:200]}"
             tmp.unlink(missing_ok=True)
             time.sleep(attempt + 1)
         else:

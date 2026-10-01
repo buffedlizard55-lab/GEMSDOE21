@@ -1,0 +1,187 @@
+{
+  "reviewed_utc_date": "2026-10-01",
+  "scope": "Reusable claim-by-claim ledger. Official facts, computation, user reports and forecasts are deliberately separated. This cannot authenticate hidden scores or every underlying external assertion.",
+  "claims": [
+    {
+      "id": "K01",
+      "kind": "OFFICIAL FACT",
+      "claim": "The task predicts fault candidates that can inform geothermal exploration; a predicted fault is not a proven geothermal vent or drillable reservoir.",
+      "source_ids": [
+        "S01",
+        "S02"
+      ],
+      "evidence": null,
+      "boundary": "No reservoir, permeability or prize guarantee."
+    },
+    {
+      "id": "K02",
+      "kind": "OFFICIAL FACT + IMPLEMENTATION CHECK",
+      "claim": "DTI uses max triangular 300m probability-weighted contributions, alpha .2 and beta .8. FP is the official incomplete-reference penalty, not confirmed geological absence.",
+      "source_ids": [
+        "S01"
+      ],
+      "evidence": "tests/test_metric.py",
+      "boundary": "PU training does not replace official FP scoring."
+    },
+    {
+      "id": "K03",
+      "kind": "ORGANIZER CLARIFICATION + IMPLEMENTATION CHECK",
+      "claim": "Remove exact known raster pixels from predictions and truth before all metric terms/distances; proximity to a wrong known label earns no new-fault credit.",
+      "source_ids": [
+        "S03"
+      ],
+      "evidence": "tests/test_metric.py",
+      "boundary": "1.5km training purges and one-cell vector linkage tolerance are NOT scoring exemptions."
+    },
+    {
+      "id": "K04",
+      "kind": "COMPUTED SOURCE MECHANICS",
+      "claim": "H19 pre-gate scarp-arm weights are 92% in lidar and 85.6% in the gap regime; the corroboration gate attenuates to .35 rather than hard rejection. Shared predictors do not provide four independent measurements.",
+      "source_ids": [
+        "S18"
+      ],
+      "evidence": "evidence/upstream-line-audit.csv",
+      "boundary": "These mechanics do not identify the cause of a hidden-score change."
+    },
+    {
+      "id": "K05",
+      "kind": "USER-REPORTED + COMPUTED DIFFERENCE",
+      "claim": "Reported H19 .1894 versus H16 .1855 is +.0039. Computed selected-mask changes are 20,153 additions/20,313 removals with 71.92% Jaccard; score causality is unidentified.",
+      "source_ids": [
+        "S18",
+        "S19",
+        "S20"
+      ],
+      "evidence": "evidence/upstream-audit.json",
+      "boundary": "Account best is not an authenticated file-score receipt or controlled ablation."
+    },
+    {
+      "id": "K06",
+      "kind": "DATED RESEARCH SNAPSHOT",
+      "claim": "The 2026-10-01 inspected leaderboard leader was DARD .3168; the group accounts showed .1894/.1855. The prompt's .3049 is an older figure.",
+      "source_ids": [
+        "S20"
+      ],
+      "evidence": "registry/leaderboard-snapshot.json",
+      "boundary": "No live polling; no newly achieved score claimed."
+    },
+    {
+      "id": "K07",
+      "kind": "PHYSICAL MECHANISM / CONDITIONAL TRANSFER",
+      "claim": "Density/magnetic contrasts can mark displaced strata; one Arizona study resolved some minor faults better with gravity than magnetics. Within-field signed steps need not require both fields to respond.",
+      "source_ids": [
+        "S23",
+        "S24"
+      ],
+      "evidence": "research/preregistration-h21-s2.md",
+      "boundary": "Different-region examples motivate H21-5; they do not validate its transform or effect size here."
+    },
+    {
+      "id": "K08",
+      "kind": "PHYSICAL MECHANISM + DATA LIMIT",
+      "claim": "Radiometric ratios may reflect lithology, alteration or weathering, and survey boundaries can imitate geological discontinuities. The pinned independently quantized uint8 channels do not preserve physical composition/log-ratio units.",
+      "source_ids": [
+        "S09",
+        "S25"
+      ],
+      "evidence": "evidence/radiometric-units-s2.json",
+      "boundary": "Do not assign Alaska NURE specifications to GeoDAWN; H21-6 remains deferred."
+    },
+    {
+      "id": "K09",
+      "kind": "PHYSICAL MECHANISM / ALTERNATIVE EXPLANATION",
+      "claim": "Conductive sidedness near density/magnetic contrasts is plausible but cold saline sediments and clays are competing explanations; it does not directly prove a fault or permeability.",
+      "source_ids": [
+        "S11"
+      ],
+      "evidence": "research/preregistration-h21-s2.md",
+      "boundary": "H21-7 untested; conductive-base depth is not sedimentary basement."
+    },
+    {
+      "id": "K10",
+      "kind": "ACTUAL OFFICIAL-SOURCE INSPECTION",
+      "claim": "The hash-verified 22,956-row official vector ZIP has NUM str:6 and NAME str:80; its field definitions describe NUM as a fault/fold number with possible section letter. It has 3,508 missing NUM rows and 39 NUM/name conflicts globally.",
+      "source_ids": [
+        "S08",
+        "S27"
+      ],
+      "evidence": "evidence/h21-s2-input-only-probe.json",
+      "boundary": "These are whole-archive counts, not in-footprint counts or perfect physical-system truth; missing/unlinked groups are explicitly flagged proxies."
+    },
+    {
+      "id": "K11",
+      "kind": "COMPUTED INPUT-COMPATIBILITY CHECK",
+      "claim": "All 31 channels consumed by both S2 arms match original frozen hashes. Three discarded H21-1 candidate hashes differ on the hosted platform, and neither S2 model reads them.",
+      "source_ids": [
+        "S27"
+      ],
+      "evidence": "evidence/h21-s2-input-only-probe.json",
+      "boundary": "Original full H21-1 guard stays strict; no H21-1 rescue or blanket tolerance of used-feature drift."
+    },
+    {
+      "id": "K12",
+      "kind": "ACTUAL OBTAINABILITY PROBE, NOT COMPLETE DATA",
+      "claim": "USGS ComCat returned 100 historical earthquake rows with expected schema; 54 lack horizontal error, none lack depth error. This is a limited rectangular probe, not a full irregular-footprint catalogue.",
+      "source_ids": [
+        "S26",
+        "S27"
+      ],
+      "evidence": "evidence/official-inputs-s2.json",
+      "boundary": "H21-8 viability/completeness/100m surface-trace localization remains conditional."
+    },
+    {
+      "id": "K13",
+      "kind": "PREREGISTERED FORECAST + INFERENTIAL LIMIT",
+      "claim": "H21-5 forecasts dense +.006, sparse +.002, recovery +.008 and FP -2%; Bonferroni family size 8 includes both sessions. Previously scored geography and correlated adjacent blocks make diagnostics exploratory, not fresh confirmation.",
+      "source_ids": [
+        "S01",
+        "S03"
+      ],
+      "evidence": "research/preregistration-h21-s2.md",
+      "boundary": "Both clean-current-best and fresh-confirmation gates are false even for an excellent exploratory score."
+    },
+    {
+      "id": "K14",
+      "kind": "LOCAL FORMAT / BYTE CHECK",
+      "claim": "The published primary TIFF is single-band float32, 3730×3292, EPSG32611 with the exact reference transform, all footprint predictions in [0,1] and null outside; it is byte-identical to historical H19-4.",
+      "source_ids": [
+        "S01",
+        "S18"
+      ],
+      "evidence": "evidence/submission-validation.json",
+      "boundary": "Not a new improved entry, server acceptance or diagnosis of the unknown earlier range-error bytes."
+    },
+    {
+      "id": "K15",
+      "kind": "PUBLISHED TERMS + IMPLEMENTATION BOUNDARY",
+      "claim": "No code automatically accesses, logs into or uploads to DrivenData. The daily feed checks only explicitly permitted official hosts and GitHub repository/release metadata.",
+      "source_ids": [
+        "S06"
+      ],
+      "evidence": "tests/test_delivery.py",
+      "boundary": "Feed health is not data completeness, science validation or a live leaderboard."
+    },
+    {
+      "id": "K16",
+      "kind": "OBTAINABLE PUBLIC SOURCE / CAUSAL LIMIT",
+      "claim": "The inspected current H19 main and original PR-head Python are identical; the obtainable exporter reads an untracked OOF cache, with no public generator found. A .1894 map cannot be used as an out-of-fold comparator.",
+      "source_ids": [
+        "S18"
+      ],
+      "evidence": "evidence/baseline-recovery-s2.json",
+      "boundary": "Scoped public-source/artifact search; private or expired material may exist but is unavailable here."
+    },
+    {
+      "id": "K17",
+      "kind": "COMPUTED FIRST OUTCOME, WITH PROTOCOL CAVEAT",
+      "claim": "H21-5 dense Δ+.00004166 and sparse Δ−.00021345 miss the +.006/+.002 forecasts; recovery +.00003291 and FP +.0089695% also miss. All eight fits converge; 2/4 dense wins; eight-family adjusted p=1.0. No promotion or slot.",
+      "source_ids": [
+        "S01",
+        "S03",
+        "S28"
+      ],
+      "evidence": "evidence/h21-5-results.json",
+      "boundary": "Not a hidden score or fresh confirmation; the original SW quota is one pixel above a literal 2.5% maximum. Post-result review is separate; first scores remain unchanged."
+    }
+  ]
+}

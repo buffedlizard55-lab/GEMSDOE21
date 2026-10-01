@@ -1,0 +1,12 @@
+{
+  "generated_utc": "2026-10-01T01:18:24+00:00",
+  "actions_run_id": "36800344273",
+  "code_commit": "d7f6473d7508505f320822197b45b55541252bde",
+  "job_status": "failure",
+  "scientific_result_present": false,
+  "first_result_sha256": null,
+  "setup_tail_redacted": "Verified training_features.tif\nVerified labels.tif\nVerified sample_submission.tif\nVerified external/lidar_scarp_features_u8.tif\nVerified external/lidar_scarp_features.json\nVerified external/geodawn_rad_u8.tif\nVerified external/geodawn_rad.json\nVerified external/geodawn_extensions_u8.tif\nVerified external/geodawn_extensions.json\nVerified dem10_slope_max\nVerified dem10_slope_mean\nVerified dem10_slope_std\nVerified dem10_hgm20_max\nVerified dem10_hgm50_max\nVerified dem10_hgm200_mean\nVerified dem10_steep_ratio_max\nVerified dem10_resid_std\nVerified dem10_resid_range\nVerified dem10_curv_absmax\nVerified dem10_onesided\nVerified dem10_onesided3\nVerified dem10_valid_frac\nData ready at /home/runner/work/GEMSDOE21/GEMSDOE21/.cache/data. Run python scripts/prepare_data.py\nBuilding registered co-orientation signature (no labels)...\nTraceback (most recent call last):\n  File \"/home/runner/work/GEMSDOE21/GEMSDOE21/scripts/prepare_data.py\", line 167, in <module>\n    main()\n  File \"/home/runner/work/GEMSDOE21/GEMSDOE21/scripts/prepare_data.py\", line 156, in main\n    raise ValueError(\"Preparation differs from first audit; register a separate protocol\")\nValueError: Preparation differs from first audit; register a separate protocol\n",
+  "scope": "Infrastructure diagnostic, not a score or an additional hypothesis test",
+  "drivendata_requests": 0
+}
+

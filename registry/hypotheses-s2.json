@@ -1,0 +1,99 @@
+{
+  "registration": "research/preregistration-h21-s2.md",
+  "registration_commit": "452c21c",
+  "registration_sha256": "e919a3fa18272b3a3162c8d04bb7c3242b6283bb5593e63e538d50ac6ae998bd",
+  "new_family_size": 4,
+  "cumulative_correction_family_size": 8,
+  "fresh_evaluation_available": false,
+  "clean_current_best_available": false,
+  "novelty_scope": "Compared with inspected GEMSDOE21 and pinned H19 physical-transform code; not worldwide or private-group novelty",
+  "candidates": [
+    {
+      "id": "H21-5",
+      "rank": 1,
+      "name": "Signed cross-normal step topology",
+      "mechanism": "Fault displacement juxtaposes density/magnetic-property blocks; buried minor strands may leave concentrated step-shaped field profiles without a prominent scarp.",
+      "layers": "Isostatic gravity band 13, RTP band 2, existing terrain summaries in the paired clean control",
+      "signature": "Concentrated monotone cross-gradient profiles, step-compatible opposing normal-curvature lobes, and within-field persistence at Gaussian sigma 1 and 3 pixels; six extra channels",
+      "missing_fault_rationale": "Can target covered or subtle strands without requiring both gravity and magnetics to respond. This is a hypothesis, not a catalogue-gap truth label.",
+      "novelty": "Within-field signed profile topology, not H19 magnitude-only worms or H21-1 cross-field axial agreement",
+      "confounder": "Intrusive/depositional contacts, basin margins without a surface trace, remanence and gridding seams",
+      "expected_dense_delta": 0.006,
+      "expected_sparse_delta": 0.002,
+      "expected_recovery_delta": 0.008,
+      "expected_fp_relative_change": -0.02,
+      "cost": "Medium / CPU; no new predictor data",
+      "source_ids": [
+        "S01",
+        "S03",
+        "S23",
+        "S24"
+      ],
+      "status": "REJECTED FOR PROMOTION: all four forecasts missed; 2/4 dense wins; 8/8 converged; no clean best/fresh confirmation; zero slots"
+    },
+    {
+      "id": "H21-6",
+      "rank": 2,
+      "name": "Cross-scarp radiometric compositional continuity",
+      "mechanism": "Displaced surface materials may produce a repeated signed compositional jump across a terrain breakline.",
+      "layers": "Pinned GeoDAWN radiometric channels/ratio derivatives and terrain normals",
+      "signature": "Positive-support log-ratio difference across ±2 pixels with along-strike sign consistency at ±5 pixels; channel-unit reconstruction must precede implementation",
+      "missing_fault_rationale": "Low scarps inside broadly mapped units might separate materials overlooked in regional fault catalogues.",
+      "novelty": "Directional continuity across a scarp, not absolute/local K/Th alteration amplitude",
+      "confounder": "Weathering, soil/alluvial provenance, moisture and survey boundaries; radiometric ranks are not physical concentration ratios",
+      "expected_dense_delta": 0.004,
+      "expected_sparse_delta": 0.001,
+      "expected_recovery_delta": 0.004,
+      "expected_fp_relative_change": -0.02,
+      "cost": "Medium; physical-unit/schema audit required",
+      "source_ids": [
+        "S09",
+        "S25"
+      ],
+      "status": "DEFERRED / UNTESTED; uint8 quantization does not preserve ratio units"
+    },
+    {
+      "id": "H21-7",
+      "rank": 3,
+      "name": "Conductive-side structural asymmetry",
+      "mechanism": "Altered/fractured sediment-side material may be more conductive on the less-dense/less-magnetic side of a structure.",
+      "layers": "Conductivity band 17, gravity band 13 and RTP band 2",
+      "signature": "Signed cross-normal conductivity residual sidedness relative to physical-property contrasts, not simple amplitude coincidence",
+      "missing_fault_rationale": "Covered strands may have no large scarp or surface thermal manifestation; directional context could distinguish competing material boundaries.",
+      "novelty": "Explicit edge sidedness rather than existing clay-conduit/demagnetization amplitude products",
+      "confounder": "Cold saline lake sediments, impermeable clay, nonfault contacts and coarse MT resolution; no direct inference of permeability or vents",
+      "expected_dense_delta": 0.003,
+      "expected_sparse_delta": 0.001,
+      "expected_recovery_delta": 0.003,
+      "expected_fp_relative_change": -0.03,
+      "cost": "Low–medium; existing layers",
+      "source_ids": [
+        "S01",
+        "S11"
+      ],
+      "status": "DEFERRED / UNTESTED; resolution/physical interpretation still needs audit"
+    },
+    {
+      "id": "H21-8",
+      "rank": 4,
+      "name": "Time-persistent, depth-coherent earthquake planes",
+      "mechanism": "Recurrent slip may produce a depth-coherent hypocentral plane with persistent strike across disjoint time periods.",
+      "layers": "USGS ComCat event origins, depths, horizontal/depth errors and event type, plus physical fields",
+      "signature": "Uncertainty-aware local covariance and time-split orientation consistency, not pregridded earthquake density",
+      "missing_fault_rationale": "Active concealed structures can generate hypocentres without an obvious mapped surface trace; aseismic faults remain undetectable by this mechanism.",
+      "novelty": "Event-depth/time/uncertainty geometry instead of density/strain rasters",
+      "confounder": "Aftershock swarms, operations, quarry blasts, hypocentre errors and the nonunique projection to a 100m surface trace",
+      "expected_dense_delta": 0.002,
+      "expected_sparse_delta": 0.0005,
+      "expected_recovery_delta": 0.002,
+      "expected_fp_relative_change": -0.01,
+      "cost": "High; new official event catalogue needed",
+      "source_ids": [
+        "S26",
+        "S27"
+      ],
+      "status": "CONDITIONAL / UNTESTED; only a 100-event schema probe obtained, 54 lack horizontal uncertainty"
+    }
+  ],
+  "first_result": "evidence/h21-5-results.json"
+}

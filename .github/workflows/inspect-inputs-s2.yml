@@ -1,0 +1,35 @@
+name: Inspect S2 input lineage only — zero model fits
+on:
+  workflow_dispatch:
+  push:
+    branches: ['arena/**']
+    paths: ['.github/workflows/inspect-inputs-s2.yml']
+permissions:
+  contents: write
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GEMS_DATA_DIR: ${{ github.workspace }}/.cache/data
+      OPENBLAS_NUM_THREADS: '2'
+      OMP_NUM_THREADS: '2'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements-dev.txt
+      - run: bash scripts/download_competition_data.sh
+      - run: python scripts/fetch_research_inputs.py --output .cache/data/official-s2
+      - name: Inspect differences/schema ONLY; no evaluate.py/evaluate_s2.py call
+        run: python scripts/inspect_s2_inputs.py
+      - name: Preserve input-only diagnostic in release metadata
+        run: |
+          gh release create h21-s2-input-only-probe --target "$GITHUB_SHA" --notes-file .cache/s2-input-only-probe.json --title "S2 input-only diagnostic — zero model fits/scores" --prerelease
+      - uses: actions/upload-artifact@v4
+        with:
+          name: s2-input-only-diagnostic
+          path: .cache/s2-input-only-probe.json
+          retention-days: 30

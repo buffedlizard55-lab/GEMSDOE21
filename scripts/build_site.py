@@ -54,7 +54,19 @@ def main():
     result = load("evidence/h21-1-results.json")
     if result["disposition"] != "REJECTED" or result["gate"]["submission_eligible"]:
         raise ValueError("Site language is only valid for the recorded rejected experiment")
+    s2 = load("evidence/h21-5-results.json")
+    from gems.locks import verify_file
+
+    verify_file(ROOT, "evidence/h21-5-results.json")
+    if s2["gate"]["submission_eligible"]:
+        raise ValueError("This delivery remains historical: no newly qualified entry")
     context = {
+        "s2": s2,
+        "s2_control": s2["summary"]["C21-S2-PU"],
+        "s2_candidate": s2["summary"]["H21-5"],
+        "s2_hypotheses": load("registry/hypotheses-s2.json")["candidates"],
+        "s2_review": load("evidence/h21-5-protocol-review.json"),
+        "knowledge": load("registry/knowledge-s2.json")["claims"],
         "sub": sub,
         "primary": next(f for f in sub["files"] if f["role"] == "primary"),
         "submission_json": json.dumps(sub).replace("<", "\\u003c"),
@@ -102,9 +114,19 @@ def main():
             "decisions.json",
             "irregularities.json",
             "leaderboard-snapshot.json",
+            "hypotheses-s2.json",
+            "knowledge-s2.json",
         ],
         "evidence": [
             "h21-1-results.json",
+            "h21-5-results.json",
+            "h21-5-protocol-review.json",
+            "h21-5-recovery-receipt.json",
+            "h21-s2-input-only-probe.json",
+            "h21-s2-prefit-failure.json",
+            "official-inputs-s2.json",
+            "baseline-recovery-s2.json",
+            "radiometric-units-s2.json",
             "data-verification.json",
             "download-verification.json",
             "submission-validation.json",

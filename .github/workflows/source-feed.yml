@@ -4,7 +4,7 @@ on:
     - cron: '17 6 * * *'
   workflow_dispatch:
   push:
-    branches: [main, arena/01a0f45d-gemsdoe21]
+    branches: [main, 'arena/**']
     paths:
       - registry/sources.json
       - scripts/refresh_sources.py
@@ -35,7 +35,7 @@ jobs:
           if gh release view source-feed --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
             gh release edit source-feed --repo "$GITHUB_REPOSITORY" --notes-file source-health.json --title "Permitted source health — not leaderboard scores"
           else
-            gh release create source-feed --repo "$GITHUB_REPOSITORY" --target arena/01a0f45d-gemsdoe21 --notes-file source-health.json --title "Permitted source health — not leaderboard scores" --prerelease
+            gh release create source-feed --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --notes-file source-health.json --title "Permitted source health — not leaderboard scores" --prerelease
           fi
       - uses: actions/upload-artifact@v4
         if: always()
