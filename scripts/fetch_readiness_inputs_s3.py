@@ -114,16 +114,34 @@ def vector_schema(path, reserve=False):
     records = []
     for layer in fiona.listlayers(str(path)):
         with fiona.open(path, layer=layer) as src:
+            feature_count = len(src)
+            geometry = src.schema["geometry"]
+            bounds = None
+            bounds_error = None
+            if feature_count and geometry not in (None, "None"):
+                try:
+                    bounds = list(src.bounds)
+                except Exception as exc:
+                    # Empty/attribute-only layers or drivers without extent metadata
+                    # must not erase independently verified transport/other schemas.
+                    bounds_error = f"{type(exc).__name__}: {exc}"
             rec = {
                 "layer": layer,
-                "features": len(src),
+                "features": feature_count,
                 "crs": str(src.crs),
-                "geometry": src.schema["geometry"],
+                "geometry": geometry,
                 "fields": dict(src.schema["properties"]),
-                "bounds": list(src.bounds),
+                "bounds": bounds,
+                "bounds_error": bounds_error,
                 "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth",
             }
-            if reserve and src.crs:
+            if (
+                reserve
+                and src.crs
+                and feature_count
+                and geometry not in (None, "None")
+                and bounds is not None
+            ):
                 bbox = transform_bounds("EPSG:4326", src.crs, *BOX, densify_pts=41)
                 # Fiona bbox is an envelope intersection, NOT an exact geometry count.
                 rec["features_with_envelope_intersecting_reserved_box"] = sum(
