@@ -186,5 +186,13 @@
       "New PR/merge/Pages live publication while GitHub auth is blocked"
     ],
     "publication_auth_diagnostic": "gh GraphQL and REST401 Bad credentials; git ls-remote failed credential lookup; no credentials requested or stored"
+  },
+  "publication_resume": {
+    "started_utc": "2026-10-01T13:59:11.089711+00:00",
+    "pr": 6,
+    "push_successful": true,
+    "github_read_write_access_restored": true,
+    "merge_or_live_not_yet_claimed": true,
+    "scope": "User requested PR/merge only; no new scientific experiment"
   }
 }

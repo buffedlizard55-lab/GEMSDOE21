@@ -363,13 +363,28 @@
     "geological_scores_observed": 0,
     "new_eligible_tiffs": 0,
     "weekly_slots_spent": 0,
-    "publication": "PENDING/BLOCKED: GitHub401 and git credential lookup rejected after local review; no new PR/merge/live publication claimed",
+    "publication": "RESUMED: saved work pushed; PR6 open; merge/live pending",
     "remaining_blocks": [
       "Original H19 producer/clean same-split comparator",
       "Complete compatible unobserved external fit/control/whole-system provenance protocol",
       "Native-resolution/unit/classification/rights review",
-      "No competition acceptance or improved hidden score",
-      "GitHub connection needs attention for publication"
+      "No competition acceptance or improved hidden score"
     ]
+  },
+  "publication_resume": {
+    "started_utc": "2026-10-01T13:59:11.089711+00:00",
+    "branch": "arena/01a0f57b-gemsdoe21",
+    "pr": 6,
+    "fresh_local_tests_passed": 155,
+    "fresh_local_tests_skipped": 0,
+    "ruff_format_files": 64,
+    "static_pages": 6,
+    "local_links": 219,
+    "downloads": 3,
+    "field_fits": 0,
+    "geological_scores": 0,
+    "merge_verified": false,
+    "pages_verified": false,
+    "live_bytes_verified": false
   }
 }

@@ -1,9 +1,9 @@
 {
-  "generated_utc": "2026-10-01T04:45:55.321326+00:00",
-  "status": "S3 LOCAL REVIEW COMPLETE; PR/MERGE/LIVE PUBLICATION BLOCKED BY GITHUB AUTHENTICATION",
+  "generated_utc": "2026-10-01T13:59:11.089711+00:00",
+  "status": "S3 PR6 OPEN; push successful; merge/Pages/live verification pending",
   "session_branch": "arena/01a0f57b-gemsdoe21",
   "local_research_implementation_review_complete": true,
-  "requested_PR_created": false,
+  "requested_PR_created": true,
   "requested_merge_complete": false,
   "new_site_main_published": false,
   "new_site_live_bytes_verified": false,
@@ -36,14 +36,13 @@
     "fresh_complete_confirmation": "BLOCKED",
     "competition_acceptance": "UNVERIFIED"
   },
-  "blocker": "gh GraphQL/REST return401 Bad credentials; git ls-remote fails noninteractive credential lookup. Reconnect GitHub in Arena; never share passwords/tokens in chat.",
+  "blocker": null,
   "git_push_attempted_after_auth_failure": true,
-  "last_successfully_pushed_session_commit": "6118e81b19cffe8f2f5b3442f8b743362c36c91a",
+  "last_successfully_pushed_session_commit": "5496e73",
   "next_actions": [
-    "Push only existing Arena session branch after connection is restored",
-    "Create PR using gh, wait for current-head checks and merge through GitHub without checkout/push main",
-    "Wait for real Pages deployment and owned verifier:28served content routes +3download format checks expected, not yet executed for this S3 site",
-    "Recover actual live release body and update dated publication evidence; never refit/rescore for delivery"
+    "Wait for current-head PR checks and merge with commit history retained",
+    "Verify native main Pages and28served routes/3actual download format checks",
+    "Record dated publication receipts; never rerun science for delivery"
   ],
   "previous_dated_delivery": {
     "generated_utc": "2026-10-01T03:07:47.916023+00:00",
@@ -244,8 +243,19 @@
     },
     "historical_live_receipt_archive": "evidence/live-verification-s1.json"
   },
-  "scope": "Actual local checks and authentication failure, separate from earlier dated merged/live delivery. No new remote publication or competition acceptance implied.",
-  "git_push_succeeded": false,
-  "git_push_error": "fatal: could not read Username for https://github.com: terminal prompts disabled",
-  "local_implementation_commit": "a6c76dd"
+  "scope": "Publication-only resume: saved S3 files restored onto existing remote session history and pushed. No new fit/score/eligible TIFF. PR merge and actual live checks remain pending.",
+  "git_push_succeeded": true,
+  "git_push_error": null,
+  "local_implementation_commit": "5496e73",
+  "previous_s3_auth_failure": {
+    "generated_utc": "2026-10-01T04:45:55.321326+00:00",
+    "status": "S3 LOCAL REVIEW COMPLETE; PR/MERGE/LIVE PUBLICATION BLOCKED BY GITHUB AUTHENTICATION",
+    "blocker": "gh GraphQL/REST return401 Bad credentials; git ls-remote fails noninteractive credential lookup. Reconnect GitHub in Arena; never share passwords/tokens in chat.",
+    "git_push_error": "fatal: could not read Username for https://github.com: terminal prompts disabled",
+    "local_implementation_commit": "a6c76dd",
+    "last_successfully_pushed_session_commit": "6118e81b19cffe8f2f5b3442f8b743362c36c91a"
+  },
+  "github_access_restored_utc": "2026-10-01T13:59:11.089711+00:00",
+  "pull_request_number": 6,
+  "pull_request_url": "https://github.com/buffedlizard55-lab/GEMSDOE21/pull/6"
 }
