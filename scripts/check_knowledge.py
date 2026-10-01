@@ -23,7 +23,7 @@ def check():
     sources = load("registry/sources.json")["sources"]
     ids = {s["id"] for s in sources}
     assert len(ids) == len(sources)
-    claims = load("registry/knowledge-s2.json")["claims"]
+    claims = load("registry/knowledge-s2.json")["claims"] + load("registry/knowledge-s3.json")["claims"]
     assert len({c["id"] for c in claims}) == len(claims)
     for row in claims:
         assert row["kind"] and row["claim"] and row["boundary"]
@@ -85,6 +85,29 @@ def check():
             for name in ("C21-S2-PU", "H21-5"):
                 total = sum(f["models"][name]["dense"][key] for f in result["folds"])
                 assert np.isclose(total, result["summary"][name][key]), key
+    verify_file(ROOT, "research/preregistration-h21-s3.md")
+    s3 = load("registry/hypotheses-s3.json")
+    assert s3["registration_sha256"] == sha256(ROOT / s3["registration"])
+    assert s3["cumulative_planned_correction_family_size"] == 12
+    assert len(s3["candidates"]) == 4 and s3["historical_scored_attempts"] == 2
+    assert s3["candidates"][0]["expected_dense_delta"] == 0.005
+    assert all(c["observed_dense_delta"] is None and not c["submission_eligible"] for c in s3["candidates"])
+    assert all(set(c["source_ids"]) <= ids for c in s3["candidates"])
+    readiness = load("evidence/research-readiness-s3.json")
+    assert readiness["dimensions"]["phase"] == "INPUT_ONLY"
+    assert not readiness["dimensions"]["field_fit_permission"]["authorized"]
+    assert not readiness["dimensions"]["new_submission_eligibility"]["eligible"]
+    assert not readiness["dimensions"]["competition_acceptance"]["verified"]
+    assert readiness["cumulative_planned_family_size"] == 12
+    for key in (
+        "field_maps_computed_s3",
+        "field_model_fits_s3",
+        "geological_scores_observed_s3",
+        "weekly_slots_spent_s3",
+    ):
+        assert readiness[key] == 0
+    for path, digest in readiness["input_evidence_bindings"].items():
+        assert sha256(ROOT / path) == digest, path
     print(
         f"Knowledge consistency passed: {len(claims)} typed claims, {len(sources)} sources; no universal/hidden-score certification"
     )

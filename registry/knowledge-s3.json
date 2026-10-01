@@ -1,0 +1,54 @@
+{
+  "reviewed_utc_date": "2026-10-01",
+  "scope": "S3 additions to the unchanged historical claim ledger. Input obtainability, research forecasts, synthetic invariants and scientific permission remain distinct.",
+  "claims": [
+    {
+      "id": "K18",
+      "kind": "PREREGISTERED FORECAST, NOT OBSERVED RESULT",
+      "claim": "Four additional physical mechanisms are ranked before implementation. H21-9 forecasts dense +.005, sparse +.002, recovery +.006 and FP -2%; the cumulative planned family is 12, without rewriting prior 4/8-family outcomes.",
+      "source_ids": ["S29", "S24", "S31", "S08"],
+      "evidence": "research/preregistration-h21-s3.md",
+      "boundary": "No S3 field fit, geological score, forecast success or submission eligibility is established."
+    },
+    {
+      "id": "K19",
+      "kind": "COMPUTED STATIC SOURCE AUDIT",
+      "claim": "Five public-branch-reachable H19 commits and 77 recognized text blobs were content-address checked. Literal/arm-symbol search and paginated PR/comment/release/artifact inventory did not recover the original arm producer or a clean same-split current-best refit.",
+      "source_ids": ["S18"],
+      "evidence": "evidence/baseline-history-s3.json",
+      "boundary": "Not semantic proof that no dynamically named, private, untracked or expired generator exists. The +.0039 hidden-score difference remains causally unidentified."
+    },
+    {
+      "id": "K20",
+      "kind": "OFFICIAL FULL BYTES + COMPUTED INPUT SUPPORT",
+      "claim": "Eastern numeric magnetic archive and XML match official MD5/size. Actual grids are single-band float32, EPSG32611, 40m cells; the RTP reserved-box envelope has about 69.2% support. Acquisition has 200m flight-line spacing; western GeoDAWN Area 2 has 400m spacing.",
+      "source_ids": ["S32", "S30", "S09", "S35"],
+      "evidence": "evidence/official-inputs-s3.json",
+      "boundary": "Support is an envelope/input count, not polygon-exact coverage, native 40m resolution, a predictor-label comparison or complete independent confirmation. Units/processing compatibility remain gated."
+    },
+    {
+      "id": "K21",
+      "kind": "ACTUAL VECTOR OBTAINABILITY / SOURCE-FRESHNESS LIMIT",
+      "claim": "The full national QFaults and CGS Atlas archives are CRC/safety/schema checked; 558 national source-feature envelopes intersect the reserved box. GDR's actual paleo source has 709 NAD83 point records and deposit/source fields. Raw archives stay outside Git and server asset digests match source SHA256.",
+      "source_ids": ["S33", "S34", "S08", "S35"],
+      "evidence": "evidence/input-recovery-s3.json",
+      "boundary": "558 is not 558 independent faults. New publication/download is not new independent 100m truth. Paleo classification/duplicates/ages and rights/lineage require review. No fault geometry is a predictor."
+    },
+    {
+      "id": "K22",
+      "kind": "SYNTHETIC NUMERICAL CHECK, NOT GEOLOGICAL EVIDENCE",
+      "claim": "H21-9's fixed texture-break prototype passes constant/ramp/uniform-roughness, sign/offset/transpose and missing-support invariants. Initial synthetic failures and numerical corrections are retained; no geological scale/forecast or tolerance was selected from field outcomes.",
+      "source_ids": ["S29", "S24"],
+      "evidence": "evidence/prototype-s3.json",
+      "boundary": "Toy success does not support burial-depth causality, geothermal activity or a DTI gain; no field-map/evaluator/submission path exists in the S3 prototype command."
+    },
+    {
+      "id": "K23",
+      "kind": "BOUND WORKFLOW READINESS AND LOCAL FORMAT AUDIT",
+      "claim": "S3 separates verified input transport from scientific readiness, field-fit permission, new submission eligibility and competition acceptance. Field fits and new submissions remain blocked even when input checks succeed; the published primary remains exact historical H19-4 bytes.",
+      "source_ids": ["S01", "S03", "S06", "S18", "S35"],
+      "evidence": "evidence/research-readiness-s3.json",
+      "boundary": "A JSON ready flag, local template comparison or live-site download is not sufficient to unlock a fit, authenticate organizer provenance or verify competition acceptance/score."
+    }
+  ]
+}

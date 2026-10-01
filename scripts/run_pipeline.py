@@ -67,6 +67,9 @@ def main():
     run("audit_upstream.py")
     run("audit_group.py")
     run("build_submissions.py")
+    if (ROOT / "research/preregistration-h21-s3.md").exists():
+        # Delivery never reruns even the toy transform. Read its preserved bound receipt.
+        run("build_readiness_s3.py")  # source bindings, byte/format checks and blocked scientific gates
     if args.refresh_sources or not (ROOT / "docs/data/source-health.json").exists():
         run("refresh_sources.py")
     run("check_knowledge.py")

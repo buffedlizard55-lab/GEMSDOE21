@@ -24,11 +24,12 @@ def test_delivery_only_never_calls_any_prepare_fit_inference_or_score(monkeypatc
         "audit_upstream.py",
         "audit_group.py",
         "build_submissions.py",
+        "build_readiness_s3.py",  # bound metadata/byte-format checks only; not even toy inference
         "check_knowledge.py",
         "build_site.py",
         "check_site.py",
     ]
-    assert not any("prepare" in s or "evaluate" in s for s in calls)
+    assert not any("prepare" in s or "evaluate" in s or "prototype" in s for s in calls)
 
 
 def test_delivery_only_cannot_be_misused_for_a_replication():

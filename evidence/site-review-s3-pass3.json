@@ -1,0 +1,33 @@
+{
+  "generated_utc": "2026-10-01T04:39:16+00:00",
+  "static": {
+    "passed": true,
+    "pages": 6,
+    "local_links": 219,
+    "downloads": 3,
+    "prompt_unchanged": true
+  },
+  "browser": {
+    "passed": true,
+    "scenarios": [
+      "desktop: index.html",
+      "desktop: executive-summary.html",
+      "desktop: research.html",
+      "desktop: readiness.html",
+      "desktop: sources.html",
+      "source feed rendering + ledger search",
+      "real SHA-verified download + Python preflight + clipboard",
+      "local file recognizes known bytes; rejects corrupt/unknown",
+      "fail-closed truncated/HTTP-error downloads",
+      "mobile: index.html",
+      "mobile: executive-summary.html",
+      "mobile: research.html",
+      "mobile: readiness.html",
+      "mobile: sources.html",
+      "legacy Pages root/base assets",
+      "no-JavaScript direct download fallback"
+    ],
+    "javascript_errors": [],
+    "browser": "Chromium"
+  }
+}

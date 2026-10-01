@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-30T23:07:20+00:00",
+  "generated_utc": "2026-10-01T04:04:39+00:00",
   "role": "historical reference; NOT a novel hypothesis or new score",
   "content_id": "691e4dfa",
   "source_repository": "buffedlizard55-lab/19GEMSDOE",
@@ -20,6 +20,10 @@
       "preflight": {
         "passed": true,
         "checks": {
+          "template_single_float32_band": true,
+          "template_epsg32611": true,
+          "template_north_up_100m": true,
+          "template_nonempty_footprint": true,
           "single_band": true,
           "float32": true,
           "crs_exact": true,
@@ -74,6 +78,10 @@
       "preflight": {
         "passed": true,
         "checks": {
+          "template_single_float32_band": true,
+          "template_epsg32611": true,
+          "template_north_up_100m": true,
+          "template_nonempty_footprint": true,
           "single_band": true,
           "float32": true,
           "crs_exact": true,

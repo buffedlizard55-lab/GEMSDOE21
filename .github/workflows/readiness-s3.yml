@@ -1,0 +1,47 @@
+name: S3 official data readiness (input-only, no model or score)
+on:
+  workflow_dispatch:
+  push:
+    branches: ['arena/**']
+    paths:
+      - scripts/fetch_readiness_inputs_s3.py
+      - src/gems/archives.py
+      # Workflow publication changes alone must not re-download identical source data.
+permissions:
+  contents: write
+concurrency:
+  group: s3-official-readiness-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  acquire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: |
+            requirements.txt
+            requirements-research.txt
+      - run: pip install -r requirements-research.txt
+      - name: Full official bytes, numeric raster/schema and prospective coverage only
+        run: python scripts/fetch_readiness_inputs_s3.py --output-dir .cache/official-s3
+      - name: Preserve dated source receipt and raw official assets outside Git
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Separate run-specific release prevents silent replacement of source bytes/receipts.
+          TAG="research-readiness-s3-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          python scripts/package_readiness_receipt.py .cache/official-s3/receipt.json .cache/readiness-notes.json
+          gh release create "$TAG" .cache/official-s3/* --repo "$GITHUB_REPOSITORY" \
+            --target "$GITHUB_SHA" --notes-file .cache/readiness-notes.json \
+            --title "S3 official source bytes and input-only receipt (not a geological test)" --prerelease
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: official-readiness-s3
+          path: .cache/official-s3/
+          retention-days: 30
+          if-no-files-found: error

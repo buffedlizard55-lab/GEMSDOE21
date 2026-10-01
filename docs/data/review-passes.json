@@ -192,5 +192,199 @@
       }
     ],
     "publication_verified_utc": "2026-10-01T03:03:36+00:00"
+  },
+  "session_3": {
+    "reviewed_utc": "2026-10-01T04:28:42.303079+00:00",
+    "phase": "INPUT_ONLY",
+    "registration_commit": "689160f54af40f8b5a65dc660da5e9b64465a1f0",
+    "registration_sha256": "7353bfbdabe48637bdd549722cbefaa70da1bb5ca62f4c1ee80332c23e9145a8",
+    "pass_1": {
+      "scope": "Implement/verify full-history source audit, official input acquisition/recovery, synthetic-only prototype and delivery/readiness site",
+      "full_suite": {
+        "tests": 150,
+        "failures": 1,
+        "errors": 0,
+        "skipped": 1
+      },
+      "passed_tests": 148,
+      "not_presented_as_all_passing": true,
+      "site": {
+        "generated_utc": "2026-10-01T04:06:02+00:00",
+        "static": {
+          "passed": true,
+          "pages": 6,
+          "local_links": 218,
+          "downloads": 3,
+          "prompt_unchanged": true
+        },
+        "browser": {
+          "passed": true,
+          "scenarios": [
+            "desktop: index.html",
+            "desktop: executive-summary.html",
+            "desktop: research.html",
+            "desktop: readiness.html",
+            "desktop: sources.html",
+            "source feed rendering + ledger search",
+            "real SHA-verified download + Python preflight + clipboard",
+            "local file recognizes known bytes; rejects corrupt/unknown",
+            "fail-closed truncated/HTTP-error downloads",
+            "mobile: index.html",
+            "mobile: executive-summary.html",
+            "mobile: research.html",
+            "mobile: readiness.html",
+            "mobile: sources.html",
+            "legacy Pages root/base assets",
+            "no-JavaScript direct download fallback"
+          ],
+          "javascript_errors": [],
+          "browser": "Chromium"
+        }
+      },
+      "initial_numerical_failures": "research/implementation-notes-s3.md",
+      "issue_found": "Delivery-only expected-command regression; wrapper was rerunning even the toy prototype"
+    },
+    "pass_2": {
+      "scope": "Bug/assumption/missing-requirement/edge-case repair",
+      "full_suite": {
+        "tests": 155,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "passed_tests": 155,
+      "site": {
+        "generated_utc": "2026-10-01T04:15:10+00:00",
+        "static": {
+          "passed": true,
+          "pages": 6,
+          "local_links": 218,
+          "downloads": 3,
+          "prompt_unchanged": true
+        },
+        "browser": {
+          "passed": true,
+          "scenarios": [
+            "desktop: index.html",
+            "desktop: executive-summary.html",
+            "desktop: research.html",
+            "desktop: readiness.html",
+            "desktop: sources.html",
+            "source feed rendering + ledger search",
+            "real SHA-verified download + Python preflight + clipboard",
+            "local file recognizes known bytes; rejects corrupt/unknown",
+            "fail-closed truncated/HTTP-error downloads",
+            "mobile: index.html",
+            "mobile: executive-summary.html",
+            "mobile: research.html",
+            "mobile: readiness.html",
+            "mobile: sources.html",
+            "legacy Pages root/base assets",
+            "no-JavaScript direct download fallback"
+          ],
+          "javascript_errors": [],
+          "browser": "Chromium"
+        }
+      },
+      "fixes": [
+        "Removed toy transformation from delivery-only; only preserved prototype plus bound metadata/byte checks",
+        "New CLI entrypoints reject unknown field fit/data arguments",
+        "Malformed/empty references, pre-cast overshoots, complex/text inputs and no-infinity checks",
+        "Atomic independent staging, reference/ZIP overwrite protection, safe CRC-checked one-TIFF bundles and cross-platform filenames",
+        "Empty/nonspatial vector extent repair; losses/publication failures retained; lossless official source and server digest binding",
+        "Deepened only the existing session branch to remove a historical-lock skip; S3 registration-before-code test added"
+      ]
+    },
+    "pass_3": {
+      "scope": "Full original-request reread and requirement-by-requirement accuracy/reliability/completeness/quality check",
+      "full_original_prompt_reread": true,
+      "request_review": "research/request-audit-s3.md",
+      "full_suite": {
+        "tests": 155,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "passed_tests": 155,
+      "site": {
+        "generated_utc": "2026-10-01T04:39:16+00:00",
+        "static": {
+          "passed": true,
+          "pages": 6,
+          "local_links": 219,
+          "downloads": 3,
+          "prompt_unchanged": true
+        },
+        "browser": {
+          "passed": true,
+          "scenarios": [
+            "desktop: index.html",
+            "desktop: executive-summary.html",
+            "desktop: research.html",
+            "desktop: readiness.html",
+            "desktop: sources.html",
+            "source feed rendering + ledger search",
+            "real SHA-verified download + Python preflight + clipboard",
+            "local file recognizes known bytes; rejects corrupt/unknown",
+            "fail-closed truncated/HTTP-error downloads",
+            "mobile: index.html",
+            "mobile: executive-summary.html",
+            "mobile: research.html",
+            "mobile: readiness.html",
+            "mobile: sources.html",
+            "legacy Pages root/base assets",
+            "no-JavaScript direct download fallback"
+          ],
+          "javascript_errors": [],
+          "browser": "Chromium"
+        }
+      },
+      "desktop_mobile_screenshots_visually_reviewed": true,
+      "ruff_lint": "passed",
+      "ruff_format_files": 64,
+      "git_diff_check": "passed",
+      "source_records": 35,
+      "typed_claims": 23,
+      "flags": 30,
+      "historical_group_rows": 37,
+      "accuracy_repairs": [
+        "Guide leaderboard date1October; latest input work distinct from last field experiment",
+        "Original4/8-family results preserved; new planned12 family is prospective only",
+        "Unequal QFaults representations and uninterpreted Atlas topology diagnostics flagged, no invented geometry/errors interpretation",
+        "Counter scope explicitly excludes identical historical delivery rendering; no new candidate field maps/fits/scores",
+        "Five readiness dimensions and remaining source/label/units/full-control/comparator/acceptance blocks exposed",
+        "Pinned already-pushed registration and locally mirrored correction/request notes; pending publication does not require broken main links in preview"
+      ]
+    },
+    "warnings": "37 upstream Affine pending-deprecation warnings; not suppressed or counted as failures",
+    "local_review_complete": true,
+    "scientific_goal_achieved": false,
+    "field_model_fits": 0,
+    "geological_scores_observed": 0,
+    "new_eligible_tiffs": 0,
+    "weekly_slots_spent": 0,
+    "publication": "RESUMED: saved work pushed; PR6 open; merge/live pending",
+    "remaining_blocks": [
+      "Original H19 producer/clean same-split comparator",
+      "Complete compatible unobserved external fit/control/whole-system provenance protocol",
+      "Native-resolution/unit/classification/rights review",
+      "No competition acceptance or improved hidden score"
+    ]
+  },
+  "publication_resume": {
+    "started_utc": "2026-10-01T13:59:11.089711+00:00",
+    "branch": "arena/01a0f57b-gemsdoe21",
+    "pr": 6,
+    "fresh_local_tests_passed": 155,
+    "fresh_local_tests_skipped": 0,
+    "ruff_format_files": 64,
+    "static_pages": 6,
+    "local_links": 219,
+    "downloads": 3,
+    "field_fits": 0,
+    "geological_scores": 0,
+    "merge_verified": false,
+    "pages_verified": false,
+    "live_bytes_verified": false
   }
 }

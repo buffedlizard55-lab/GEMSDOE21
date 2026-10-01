@@ -1,0 +1,91 @@
+{
+  "kind": "S3-research-readiness-NOT-a-scientific-result",
+  "generated_utc": "2026-10-01T04:23:03+00:00",
+  "registration": "research/preregistration-h21-s3.md",
+  "registration_sha256": "7353bfbdabe48637bdd549722cbefaa70da1bb5ca62f4c1ee80332c23e9145a8",
+  "registration_commit": "689160f54af40f8b5a65dc660da5e9b64465a1f0",
+  "cumulative_planned_family_size": 12,
+  "historical_scored_attempts": 2,
+  "field_maps_computed_s3": 0,
+  "field_model_fits_s3": 0,
+  "geological_scores_observed_s3": 0,
+  "new_scientific_tiffs_s3": 0,
+  "weekly_slots_spent_s3": 0,
+  "dimensions": {
+    "phase": "INPUT_ONLY",
+    "input_transport": {
+      "eastern_magnetics": {
+        "status": "VERIFIED FULL TRANSPORT AND INPUT SCHEMA",
+        "full_bytes_with_sha_recorded": true,
+        "crc_and_member_safety_checked": true,
+        "numeric_or_vector_schema_recorded": true
+      },
+      "national_qfaults": {
+        "status": "VERIFIED FULL TRANSPORT AND INPUT SCHEMA",
+        "full_bytes_with_sha_recorded": true,
+        "crc_and_member_safety_checked": true,
+        "numeric_or_vector_schema_recorded": true
+      },
+      "paleo_geothermal": {
+        "status": "VERIFIED FULL TRANSPORT AND INPUT SCHEMA",
+        "full_bytes_with_sha_recorded": true,
+        "crc_and_member_safety_checked": true,
+        "numeric_or_vector_schema_recorded": true
+      },
+      "sierra_atlas": {
+        "status": "VERIFIED FULL TRANSPORT AND INPUT SCHEMA",
+        "full_bytes_with_sha_recorded": true,
+        "crc_and_member_safety_checked": true,
+        "numeric_or_vector_schema_recorded": true
+      }
+    },
+    "scientific_readiness": {
+      "ready": false,
+      "blocking_requirements": [
+        "original_H19_arm_producer_and_clean_same_split_refit",
+        "complete_compatible_external_predictors",
+        "separately_locked_prospective_fit_split_control_protocol",
+        "unobserved_whole_system_label_provenance_and_cross_domain_links",
+        "native_acquisition_texture_resolution_and_raster_units"
+      ],
+      "caveat": "40/100m output cells and new publication dates do not establish effective resolution or fresh labels"
+    },
+    "field_fit_permission": {
+      "authorized": false,
+      "reason": "Immutable S3 registration permits input and synthetic prototype only; no S3 field scorer/exporter exists"
+    },
+    "new_submission_eligibility": {
+      "eligible": false,
+      "reason": "No new geological outcome, corrected promotion result, clean current-best win or fresh confirmation"
+    },
+    "historical_delivery": {
+      "locally_format_verified": true,
+      "new_scientific_model": false,
+      "new_submission_recommended": false,
+      "note": "GEMS21 | H19-4 historical reference | id 691e4dfa | same predictions, not a new experiment"
+    },
+    "competition_acceptance": {
+      "verified": false,
+      "status": "UNTESTED ON COMPETITION PLATFORM",
+      "scope": "Local or live-site format/byte checks are not a platform acceptance/score receipt"
+    }
+  },
+  "reserved_box_wgs84": [
+    -115.8,
+    38.8,
+    -114.8,
+    39.8
+  ],
+  "reserved_box_outside_competition_rectangle": true,
+  "label_outcomes_viewed_in_reserved_box": false,
+  "input_evidence_bindings": {
+    "evidence/official-inputs-s3.json": "eff4040b49563031fe0cf23965dbf5736e67ecaf7a96461013be6ae52ad3a01a",
+    "evidence/input-recovery-s3.json": "3582301b77933933e1a9038efdd6e57ebee1cccc4a27160aa206206d6bb392cb",
+    "evidence/baseline-history-s3.json": "739bbf0c9d569f589687a557cb11efac9cb1d2c2d453abdfe28603b035908c60",
+    "evidence/prototype-s3.json": "25f9f8db600614ef4f8e64c8b20fb0e27766dc749ba6bf91330ced5be525b284",
+    "evidence/submission-validation.json": "40f46a4f6dac801a4b0cd235136ce433993ba9e9fb257463f10d80f58565f5af",
+    "docs/data/template-mask.tif": "c467bbdff23d2585b4e444cb239bbd45bc6d6372cff713aa8f7670ec86908697"
+  },
+  "count_scope": "New S3 candidate field maps/fits/geological DTI only; historical delivery byte/pixel audits and identical overview rendering are excluded",
+  "scope": "Transport/schema/coverage, synthetic invariants and historical byte-format delivery. No fresh geological evidence, new DTI gain, prize promise or competition acceptance."
+}

@@ -1,0 +1,49 @@
+{
+  "generated_utc": "2026-10-01T03:55:05.023640+00:00",
+  "kind": "S3-input-receipt-and-public-asset-binding",
+  "original_acquisition_run": 36811664161,
+  "original_acquisition_commit": "1637294247782ae91affc0dfddb7ef2825107772",
+  "original_acquisition_publication_failed": true,
+  "intermediate_recovery_run": 36812145117,
+  "final_recovery_run": 36812447269,
+  "final_recovery_release": "https://github.com/buffedlizard55-lab/GEMSDOE21/releases/tag/research-readiness-s3-recovered-36812447269-1",
+  "raw_asset_release": "https://github.com/buffedlizard55-lab/GEMSDOE21/releases/tag/research-readiness-s3-36811364343-1",
+  "decoded_receipt_sha256": "eff4040b49563031fe0cf23965dbf5736e67ecaf7a96461013be6ae52ad3a01a",
+  "decoded_receipt_bytes": 128520,
+  "lossless_envelope_sha256_matched": true,
+  "official_archive_assets_matched": true,
+  "archive_bindings": {
+    "eastern_magnetics": {
+      "asset": "magnetic_grids.7z",
+      "bytes": 210814683,
+      "sha256": "a851d6e502d2304b2649dc6d3dbe17cd242ff349af296c9bc17e75a5493aa35d",
+      "github_asset_digest_matched": true,
+      "source_url": "https://www.sciencebase.gov/catalog/file/get/68c9d87fd4be0274ff4be93e?f=__disk__80%2Fd5%2F2e%2F80d52ec9a27baa4946af580fa1c173c7bb91e0ab"
+    },
+    "national_qfaults": {
+      "asset": "Qfaults_GIS.zip",
+      "bytes": 32371696,
+      "sha256": "447eadc5926256710d988c30e5996ba540604caa0154f9746c48bad637926893",
+      "github_asset_digest_matched": true,
+      "source_url": "https://earthquake.usgs.gov/static/lfs/nshm/qfaults/Qfaults_GIS.zip"
+    },
+    "paleo_geothermal": {
+      "asset": "paleo_geothermal_regional.zip",
+      "bytes": 84008,
+      "sha256": "faffcf697f32dbbf6cbb317cd1effb3e305538ce38eb239d72d0c6fa071e91ca",
+      "github_asset_digest_matched": true,
+      "source_url": "https://gdr.openei.org/files/1391/paleo_geothermal_regional.zip"
+    },
+    "sierra_atlas": {
+      "asset": "GDM_009-SNESA-Data.zip",
+      "bytes": 38073921,
+      "sha256": "2afab5c0ae19e3d2c7449f56078d4172bfee16edac63232cf40ee01783341610",
+      "github_asset_digest_matched": true,
+      "source_url": "https://www.conservation.ca.gov/cgs/documents/publications/geologic-data-maps/GDM_009-SNESA-Data.zip"
+    }
+  },
+  "field_model_fits": 0,
+  "geological_scores_observed": 0,
+  "competition_uploads": 0,
+  "scope": "Lossless source-receipt recovery and GitHub full-asset digest binding, not faults/score validation. No dataset re-download or model re-run during final recovery."
+}

@@ -1,0 +1,2596 @@
+{
+  "generated_utc": "2026-10-01T03:58:38+00:00",
+  "repository": "buffedlizard55-lab/19GEMSDOE",
+  "branches": [
+    {
+      "name": "arena/01a0f3d1-19gemsdoe",
+      "sha": "1a8624961dc4de630ab239321832611fcb3fbd71"
+    },
+    {
+      "name": "main",
+      "sha": "a3aca62fdb2be428f4245e22570cbc54082b2c15"
+    }
+  ],
+  "reachable_commit_count": 5,
+  "history_inventory": {
+    "1a8624961dc4de630ab239321832611fcb3fbd71": {
+      "message": "Implement 19GEMSDOE: Power-Law Scaling (H19-1), Backward Thermal/Geochem Inversion (H19-2), 1m/10m 3DEP DEM Openness/LRM (H19-3), and 4-Line Corroborated Submissions (H19-4/H19-5)",
+      "parents": [
+        "beb6d8e944b871b3b8cdbf4bc65ffc02cd63c600"
+      ],
+      "tracked_files": 120,
+      "inspected_text_paths": [
+        ".github/workflows/external-verification.yml",
+        ".gitignore",
+        "AGENTS.md",
+        "README.md",
+        "docs/archive/README.md",
+        "docs/data/backward_thermal_geochem_report.json",
+        "docs/data/candidate_corroboration_ledger.json",
+        "docs/data/dem1m_tile_audit.json",
+        "docs/data/external_verification.json",
+        "docs/data/footprint.json",
+        "docs/data/forensics.json",
+        "docs/data/group_scan.json",
+        "docs/data/hypothesis_h18_exploratory.json",
+        "docs/data/hypothesis_h18_sensitivity.json",
+        "docs/data/hypothesis_h18_sgmc_exploratory.json",
+        "docs/data/hypothesis_h18_validation.json",
+        "docs/data/leaderboard.json",
+        "docs/data/power_law_scaling_report.json",
+        "docs/data/source_health.json",
+        "docs/data/spatial_holdout_results.json",
+        "docs/data/submissions.json",
+        "docs/js/check.js",
+        "docs/js/check_cli.js",
+        "docs/js/gems-tiff.js",
+        "docs/js/site.js",
+        "docs/knowledge/knowledge_base.md",
+        "docs/research/hypothesis_register.md",
+        "docs/research/preregistration_h18.md",
+        "evidence/backward_thermal_geochem_report.json",
+        "evidence/candidate_corroboration_ledger.json",
+        "evidence/ci/dem1m_tile_audit.json",
+        "evidence/ci/external_verification.json",
+        "evidence/data_verification.json",
+        "evidence/dem10_fetch_verification.json",
+        "evidence/feature_profile.json",
+        "evidence/hypothesis_corroboration_table.json",
+        "evidence/hypothesis_h17_1_validation.json",
+        "evidence/hypothesis_h18_exploratory.json",
+        "evidence/hypothesis_h18_sensitivity.json",
+        "evidence/hypothesis_h18_sgmc_exploratory.json",
+        "evidence/hypothesis_h18_validation.json",
+        "evidence/lb_signal_attribution.json",
+        "evidence/power_law_scaling_report.json",
+        "evidence/proxy_calibration_vs_lb.json",
+        "evidence/spatial_holdout_results.json",
+        "evidence/submission_similarity.json",
+        "evidence/submission_validation_report.json",
+        "registry/irregularities.json",
+        "registry/sources.json",
+        "registry/submissions.json",
+        "requirements.txt",
+        "scripts/build_footprint_payload.py",
+        "scripts/build_site.py",
+        "scripts/calibrate_proxies_vs_lb.py",
+        "scripts/check_site.py",
+        "scripts/ci_external_verify.py",
+        "scripts/download_competition_data.sh",
+        "scripts/evaluate_h19_and_build_submissions.py",
+        "scripts/fetch_dem10.py",
+        "scripts/forensic_audit.py",
+        "scripts/lb_signal_attribution.py",
+        "scripts/prepare_data.py",
+        "scripts/profile_features.py",
+        "scripts/record_score.py",
+        "scripts/run_spatial_holdout_and_build.py",
+        "scripts/scan_group_repos.py",
+        "scripts/source_health.py",
+        "src/gems/__init__.py",
+        "src/gems/footprint.py",
+        "src/gems/forensics.py",
+        "src/gems/holdout.py",
+        "src/gems/hypotheses.py",
+        "src/gems/metric.py",
+        "src/gems/paths.py",
+        "src/gems/submission.py",
+        "src/gems/validator.py",
+        "tests/browser/e2e_checker.mjs",
+        "tests/conftest.py",
+        "tests/test_footprint.py",
+        "tests/test_forensics.py",
+        "tests/test_h19_corroboration.py",
+        "tests/test_holdout.py",
+        "tests/test_metric.py",
+        "tests/test_scan_group_repos.py",
+        "tests/test_site_integrity.py",
+        "tests/test_site_js.py",
+        "tests/test_submission.py"
+      ]
+    },
+    "2d9d2449107f105a99350dd89e12f07ccf9e1a7f": {
+      "message": "Initial commit",
+      "parents": [],
+      "tracked_files": 1,
+      "inspected_text_paths": [
+        "README.md"
+      ]
+    },
+    "588010d94957312afe0bf006d34a1e86643ccf92": {
+      "message": "feat(ci): add external verification, GDR 1391 table extraction, and 1m DEM Openness/LRM pipeline",
+      "parents": [
+        "2d9d2449107f105a99350dd89e12f07ccf9e1a7f"
+      ],
+      "tracked_files": 3,
+      "inspected_text_paths": [
+        ".github/workflows/external-verification.yml",
+        "README.md",
+        "scripts/ci_external_verify.py"
+      ]
+    },
+    "a3aca62fdb2be428f4245e22570cbc54082b2c15": {
+      "message": "Merge pull request #1 from buffedlizard55-lab/arena/01a0f3d1-19gemsdoe",
+      "parents": [
+        "2d9d2449107f105a99350dd89e12f07ccf9e1a7f",
+        "1a8624961dc4de630ab239321832611fcb3fbd71"
+      ],
+      "tracked_files": 120,
+      "inspected_text_paths": [
+        ".github/workflows/external-verification.yml",
+        ".gitignore",
+        "AGENTS.md",
+        "README.md",
+        "docs/archive/README.md",
+        "docs/data/backward_thermal_geochem_report.json",
+        "docs/data/candidate_corroboration_ledger.json",
+        "docs/data/dem1m_tile_audit.json",
+        "docs/data/external_verification.json",
+        "docs/data/footprint.json",
+        "docs/data/forensics.json",
+        "docs/data/group_scan.json",
+        "docs/data/hypothesis_h18_exploratory.json",
+        "docs/data/hypothesis_h18_sensitivity.json",
+        "docs/data/hypothesis_h18_sgmc_exploratory.json",
+        "docs/data/hypothesis_h18_validation.json",
+        "docs/data/leaderboard.json",
+        "docs/data/power_law_scaling_report.json",
+        "docs/data/source_health.json",
+        "docs/data/spatial_holdout_results.json",
+        "docs/data/submissions.json",
+        "docs/js/check.js",
+        "docs/js/check_cli.js",
+        "docs/js/gems-tiff.js",
+        "docs/js/site.js",
+        "docs/knowledge/knowledge_base.md",
+        "docs/research/hypothesis_register.md",
+        "docs/research/preregistration_h18.md",
+        "evidence/backward_thermal_geochem_report.json",
+        "evidence/candidate_corroboration_ledger.json",
+        "evidence/ci/dem1m_tile_audit.json",
+        "evidence/ci/external_verification.json",
+        "evidence/data_verification.json",
+        "evidence/dem10_fetch_verification.json",
+        "evidence/feature_profile.json",
+        "evidence/hypothesis_corroboration_table.json",
+        "evidence/hypothesis_h17_1_validation.json",
+        "evidence/hypothesis_h18_exploratory.json",
+        "evidence/hypothesis_h18_sensitivity.json",
+        "evidence/hypothesis_h18_sgmc_exploratory.json",
+        "evidence/hypothesis_h18_validation.json",
+        "evidence/lb_signal_attribution.json",
+        "evidence/power_law_scaling_report.json",
+        "evidence/proxy_calibration_vs_lb.json",
+        "evidence/spatial_holdout_results.json",
+        "evidence/submission_similarity.json",
+        "evidence/submission_validation_report.json",
+        "registry/irregularities.json",
+        "registry/sources.json",
+        "registry/submissions.json",
+        "requirements.txt",
+        "scripts/build_footprint_payload.py",
+        "scripts/build_site.py",
+        "scripts/calibrate_proxies_vs_lb.py",
+        "scripts/check_site.py",
+        "scripts/ci_external_verify.py",
+        "scripts/download_competition_data.sh",
+        "scripts/evaluate_h19_and_build_submissions.py",
+        "scripts/fetch_dem10.py",
+        "scripts/forensic_audit.py",
+        "scripts/lb_signal_attribution.py",
+        "scripts/prepare_data.py",
+        "scripts/profile_features.py",
+        "scripts/record_score.py",
+        "scripts/run_spatial_holdout_and_build.py",
+        "scripts/scan_group_repos.py",
+        "scripts/source_health.py",
+        "src/gems/__init__.py",
+        "src/gems/footprint.py",
+        "src/gems/forensics.py",
+        "src/gems/holdout.py",
+        "src/gems/hypotheses.py",
+        "src/gems/metric.py",
+        "src/gems/paths.py",
+        "src/gems/submission.py",
+        "src/gems/validator.py",
+        "tests/browser/e2e_checker.mjs",
+        "tests/conftest.py",
+        "tests/test_footprint.py",
+        "tests/test_forensics.py",
+        "tests/test_h19_corroboration.py",
+        "tests/test_holdout.py",
+        "tests/test_metric.py",
+        "tests/test_scan_group_repos.py",
+        "tests/test_site_integrity.py",
+        "tests/test_site_js.py",
+        "tests/test_submission.py"
+      ]
+    },
+    "beb6d8e944b871b3b8cdbf4bc65ffc02cd63c600": {
+      "message": "ci: external verification, GDR tables & 1m DEM openness/LRM [skip ci]",
+      "parents": [
+        "588010d94957312afe0bf006d34a1e86643ccf92"
+      ],
+      "tracked_files": 10,
+      "inspected_text_paths": [
+        ".github/workflows/external-verification.yml",
+        "README.md",
+        "evidence/ci/dem1m_tile_audit.json",
+        "evidence/ci/external_verification.json",
+        "scripts/ci_external_verify.py"
+      ]
+    }
+  },
+  "all_reachable_parents_present": true,
+  "unique_text_blobs_inspected": 77,
+  "text_blob_hashes": [
+    {
+      "git_blob_sha": "03e248f226908b6b6e1f2280fc9a68d677d03d3f",
+      "sha256": "fd959a5ecbb6242d577627a516709d62695919dc91f7f3f94c46f671ff43eb71",
+      "bytes": 31699,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "README.md"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "README.md"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "04a35593854d9862d818f5f492fd0ccf3ea7394a",
+      "sha256": "ebd8f992efaa82b009818ea14da39f589ac77f47ff54f8416367a0ad254b95cf",
+      "bytes": 6559,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "scripts/download_competition_data.sh"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "scripts/download_competition_data.sh"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "09079b175c464d13b6c345e4aab03abb8a5af799",
+      "sha256": "fba4209486cf05e40e7eb9b0e9e37774fd04f2b409a9282637bd3d3824e29767",
+      "bytes": 8459,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "evidence/data_verification.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "evidence/data_verification.json"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "0d1bb61243e6439064e7bd87416260da6b420f1c",
+      "sha256": "564dd8251274addfb0eccb9e9a185b410d1a3359110c0048b8118146a33712d2",
+      "bytes": 138,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "requirements.txt"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "requirements.txt"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "0d9df61b91a65f41ff46c3824316e050f64abb22",
+      "sha256": "98fa1a49eebaf5d7bd87bbb308a30e3a615a4ddffb78145969a8ffff8d74ce69",
+      "bytes": 3600,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "tests/test_metric.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "tests/test_metric.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "0f3145ea21b25e3c1235e9b22d28dc4c8fa02545",
+      "sha256": "1777acae024d480a19031a115db13e3e083f34f232e2dab5cc5c50c2dade6fd4",
+      "bytes": 35538,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "scripts/ci_external_verify.py"
+        },
+        {
+          "commit": "588010d94957312afe0bf006d34a1e86643ccf92",
+          "path": "scripts/ci_external_verify.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "scripts/ci_external_verify.py"
+        },
+        {
+          "commit": "beb6d8e944b871b3b8cdbf4bc65ffc02cd63c600",
+          "path": "scripts/ci_external_verify.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "1180b9ac989e624fc92e0167850a480fb04f3d44",
+      "sha256": "6d581da648810d159ba00b95c7dc37e32d63795deaec06ca4bcc15d982dc729a",
+      "bytes": 11041,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "scripts/scan_group_repos.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "scripts/scan_group_repos.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "15b9a8698c1e93ce1d7a951e47d5ea2547891f44",
+      "sha256": "66e49eef129b0de98dbef4c92e46c6984cdd1e15baded351fc5561db66ae6f9f",
+      "bytes": 54131,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "docs/data/spatial_holdout_results.json"
+        },
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "evidence/spatial_holdout_results.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "docs/data/spatial_holdout_results.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "evidence/spatial_holdout_results.json"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "172082de0272c370654e602dd2502badbe89c20a",
+      "sha256": "947876549920622a71cde4feb9ae7c355763d1d354f27b37e334ba23c924839f",
+      "bytes": 6111,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "scripts/calibrate_proxies_vs_lb.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "scripts/calibrate_proxies_vs_lb.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "195c5cd99cb497c1b6be3297394efc6e0f9163a5",
+      "sha256": "2dd85e5fb19253bd882c769e4fc50d74a4ff6a6a0839fd54969593f514dc34b9",
+      "bytes": 5840,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "src/gems/forensics.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "src/gems/forensics.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "2032b29cf3aff8cd5c61f5ae4f1089e064a7eac1",
+      "sha256": "c723dc39855cd9c7b07c9665e1891223e20e6542edaa2e29c577a04c4606bc8c",
+      "bytes": 148,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": ".gitignore"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": ".gitignore"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "20756d32f7af35853961f80087354e7b1fd1529f",
+      "sha256": "fbf1957b81e718d72359ce24ae2417c93c9e219f887ffab46a3bf19b27d55e82",
+      "bytes": 2493,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "AGENTS.md"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "AGENTS.md"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "2b4b20a67d91ec15d54d08199a03ab7cf87c350d",
+      "sha256": "08f1bf301e31ea465eb8982db313b8eb7bf119eebadb33aeb4ffaed5edec4ab4",
+      "bytes": 1838,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "scripts/build_footprint_payload.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "scripts/build_footprint_payload.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "30f411b8c17aeec47951c77634acef6d0008a019",
+      "sha256": "e0506d5706fb6e3c9a6774df6f0fd646148394aac97a950d09e0eba0505e15c9",
+      "bytes": 11299,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "evidence/hypothesis_corroboration_table.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "evidence/hypothesis_corroboration_table.json"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "345e89ff9e5deb0f4b6278bbd3312fa638e29cd4",
+      "sha256": "30aa418a2eacbd75a96cd2f0c4fc7eb1c9d6034301f0c24d3906b45d60be49be",
+      "bytes": 9400,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "docs/data/power_law_scaling_report.json"
+        },
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "evidence/power_law_scaling_report.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "docs/data/power_law_scaling_report.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "evidence/power_law_scaling_report.json"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "377f133f0cac7e6ea87476d3a30686b5f6e39245",
+      "sha256": "aa3d31dff53447385b86f9ee29a78f31ab59d184870bae2121118e6bb2c32906",
+      "bytes": 49410,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "scripts/build_site.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "scripts/build_site.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "3acf6345efd8f800ce9a6352c66a74fa25034345",
+      "sha256": "b87f4c555d28888d2f91ff68344e60eefc14eb304f3e6626c693e00348e7941d",
+      "bytes": 19276,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "registry/irregularities.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "registry/irregularities.json"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "3ea4f43fb902c0818cb625ec8e326cd576f80665",
+      "sha256": "d0236d040bee50e14bf2479916a92dc7a13c241f9c075aee647803a8761ad576",
+      "bytes": 11,
+      "references": [
+        {
+          "commit": "2d9d2449107f105a99350dd89e12f07ccf9e1a7f",
+          "path": "README.md"
+        },
+        {
+          "commit": "588010d94957312afe0bf006d34a1e86643ccf92",
+          "path": "README.md"
+        },
+        {
+          "commit": "beb6d8e944b871b3b8cdbf4bc65ffc02cd63c600",
+          "path": "README.md"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "40d92aa595d26a1cb5fd0207c28d71bdfa388762",
+      "sha256": "3a7153660b7ddf97c649ed13ba738b6f557a7eab33fbb0eab9c2b53cf9e685b5",
+      "bytes": 21940,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "docs/data/submissions.json"
+        },
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "evidence/submission_validation_report.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "docs/data/submissions.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "evidence/submission_validation_report.json"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "43ea564f30d560a5ccf2506b58172ceaef3cdc71",
+      "sha256": "cbc3b1b7e34ee70082187a10169b3fc2d83395d9d40bc36f58a472a7a6510d97",
+      "bytes": 5597,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "evidence/hypothesis_h17_1_validation.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "evidence/hypothesis_h17_1_validation.json"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "48ba0dcbb968ef9923d29c7b6181f56060fdd640",
+      "sha256": "be34d983218d248e850d5bf1cb520e57d3d51d16ad3c27c6cce6347acebc1828",
+      "bytes": 1936,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "docs/js/site.js"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "docs/js/site.js"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "4b474b55e08238febc007b2d2e55c69f82a963af",
+      "sha256": "baac7bafdd12131db07beda61f72bcc49d57d63a90847c705088378c7c02240b",
+      "bytes": 3470,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "tests/test_site_js.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "tests/test_site_js.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "4b5bd574335da1f2934d28e3ac0ed30fe057165e",
+      "sha256": "d4c9dff1acac450c157b15b1d636cdb90c858ac0124996c4f6682c6cee7f837e",
+      "bytes": 36899,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "docs/data/forensics.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "docs/data/forensics.json"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "532898a10c222bb60ade5c6480c5f2fd5938be39",
+      "sha256": "eb689d90ba26e2c0d21d2d28355ef0e57749d53996c0f33c7455f943d3768945",
+      "bytes": 8209,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "docs/knowledge/knowledge_base.md"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "docs/knowledge/knowledge_base.md"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "56168f79b7995dcdda13c7ccd2804f49c0ceef22",
+      "sha256": "72c38e53fae14d804201060ed58c5009b0dca6e85490c5743de576d86160366c",
+      "bytes": 10510,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "tests/test_site_integrity.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "tests/test_site_integrity.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "5672944398b875660cfa239a8e376c19e6aed385",
+      "sha256": "acf2f79756506b26f8e61b605fd4652c6985ab6c2335402784fed5d6ebcbd380",
+      "bytes": 1207,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "src/gems/paths.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "src/gems/paths.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "571944e11393d563217648b1f2cde6ce17785460",
+      "sha256": "ff581a417a2fffd7cd6748b380918c01d5a8d69c308cc1682e127d38eaee78bf",
+      "bytes": 3564,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "docs/js/check.js"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "docs/js/check.js"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "584b0f1dfa4d518cf9ed68804966c3b958289f92",
+      "sha256": "f9bfc50527fcefd5e518c3f28b4570ceebb0148d59bc9ef2fb674d0484e8168a",
+      "bytes": 15094,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "docs/js/gems-tiff.js"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "docs/js/gems-tiff.js"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "5e751adbf94f4fa87d8268692f36231085f9b330",
+      "sha256": "6156feb774d7a74e57fb615ab27fa8bfecdd7919fea6e41081c00941988f1aa0",
+      "bytes": 24720,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "registry/sources.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "registry/sources.json"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "600ba66f1e55f56b7f980a2d2a9657b34cdd1a68",
+      "sha256": "c30807f85a2e5ff7c5090fd5cfb87fa611031bfa1c37b2b1e0696eca073360b8",
+      "bytes": 30631,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "docs/data/external_verification.json"
+        },
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "evidence/ci/external_verification.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "docs/data/external_verification.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "evidence/ci/external_verification.json"
+        },
+        {
+          "commit": "beb6d8e944b871b3b8cdbf4bc65ffc02cd63c600",
+          "path": "evidence/ci/external_verification.json"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "60b8d3c738dbfd437edfff496fdf73e6469f6eca",
+      "sha256": "f67fac655d8d90ba4032b5e7cee5271d92f9847ba89b984ffb41c3f9c350e6f5",
+      "bytes": 4132,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "scripts/fetch_dem10.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "scripts/fetch_dem10.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "62fc5944b10ef33a0c70b22bb02b8169eeec1950",
+      "sha256": "1ff930a731bf975871fe701eb2334bad48e659a76c01e19f74075896537a91fd",
+      "bytes": 546,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "docs/data/footprint.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "docs/data/footprint.json"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "64af1b7c0704cd10fa7b3a5d79ebac305dbcd586",
+      "sha256": "a7370693cb0576c84cb164830410c5dab1941c84a66e2ac7d1b8283fd1f2d803",
+      "bytes": 1885,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "src/gems/footprint.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "src/gems/footprint.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "65b551bf47000c5d20c944c40a76fee4a9916f5b",
+      "sha256": "e998593eaa35d4bdeef3814214c1b25bc0ecd4f22e2a94e7c7c43dd0248a4b68",
+      "bytes": 3277,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "scripts/profile_features.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "scripts/profile_features.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "6bcc7f699aadf215327e7874c390117c80503c59",
+      "sha256": "8ba16f2e593c14d87b76b3cebedb0987fcf54f8cef5bd65fc8d066695dd4974f",
+      "bytes": 5337,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "docs/data/hypothesis_h18_validation.json"
+        },
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "evidence/hypothesis_h18_validation.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "docs/data/hypothesis_h18_validation.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "evidence/hypothesis_h18_validation.json"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "72fb9a6d3149df58102f3ed88e292c59e74930ca",
+      "sha256": "b30e3b65189de63f6ca401f80af916e87dad52650c30f78e89d789c0284697bd",
+      "bytes": 16929,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "docs/research/hypothesis_register.md"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "docs/research/hypothesis_register.md"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "7430b3c9aebb5e52d6d1af4d95282dea9dde2058",
+      "sha256": "29ca96ad7c8ef3b5a340dd416d02cbfcbababcead55266ae7119098fe0ccea19",
+      "bytes": 4180,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "scripts/lb_signal_attribution.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "scripts/lb_signal_attribution.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "754295d1a26367f069144f1e45d9516bf6b0760c",
+      "sha256": "e05d6d85d5c9175a810f8eac14a8e76fa260b3435577544ed89d499443b58fc3",
+      "bytes": 941,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "tests/test_footprint.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "tests/test_footprint.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "7eb3d464cd9316fc3a24b4c27366d9c6284b05e7",
+      "sha256": "cab7ac8bc7033e734a77a3b136327a39eb149ec43f0584c4a4d59efb0daa0439",
+      "bytes": 6717,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "scripts/prepare_data.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "scripts/prepare_data.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "83cfecb5feebab3c2fddfa31b6e520b620dbf7a2",
+      "sha256": "d80c3c48e35ce95be8c05fb35602f99116d37d670a0ffd298fcd0398575c8076",
+      "bytes": 2378,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "docs/data/hypothesis_h18_exploratory.json"
+        },
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "evidence/hypothesis_h18_exploratory.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "docs/data/hypothesis_h18_exploratory.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "evidence/hypothesis_h18_exploratory.json"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "8c96df957ceea060f8f431cd1a8d3d24b5e8a921",
+      "sha256": "a32858701fe9ab1ce63f1ef7ac543c6abdc0be090283fdfff83ba762b99ec155",
+      "bytes": 4168,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "evidence/lb_signal_attribution.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "evidence/lb_signal_attribution.json"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "8e9a79367655d4e32b1bb934c79dc44acd332a45",
+      "sha256": "9d71d0628e15cd924bc1b7cee9a4ed034a254ae5d06d5d9713addc9b3c3977b9",
+      "bytes": 29227,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "scripts/run_spatial_holdout_and_build.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "scripts/run_spatial_holdout_and_build.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "8ea032059f0a197412605094c6258ac21429e034",
+      "sha256": "d3d145e3ea4eb04f6e4bc65b0c24867a149e1976ebcfcfdf1f3675ad1ddbb1a4",
+      "bytes": 7568,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "src/gems/submission.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "src/gems/submission.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "953171da29f7db7fec67e82e2877319b199e2f58",
+      "sha256": "69005a28011850d0700127c1bd5117d96d736b520cd59a163f985f28198bd643",
+      "bytes": 3710,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "docs/research/preregistration_h18.md"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "docs/research/preregistration_h18.md"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "980983dbb2041baf02e21b1736e3ea29aef32497",
+      "sha256": "0b458b83ad65d052e0fb8c7bec8bdc31d8592e158ef69ebd7e6927b7e484ab47",
+      "bytes": 2898,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "scripts/source_health.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "scripts/source_health.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "9869be3e255136ace64871f68659931f69812db9",
+      "sha256": "b97a9712a62a94882b8cc85948816355ba3396cccfafc84b0c757150b3b171a1",
+      "bytes": 2616,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "tests/test_holdout.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "tests/test_holdout.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "9d65efcb787c815b84eb3aa40319461be647fc86",
+      "sha256": "67ea595f046de8f626ebce3210f2723e4ff2c3eddc003d63e57850bcdfc1fb84",
+      "bytes": 6346,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "evidence/dem10_fetch_verification.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "evidence/dem10_fetch_verification.json"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "9d7b2ab516c6631f95abd281427173c424349d4a",
+      "sha256": "a3e0885184c2a4099e8a3de2bafe1f2eba7defca88ed16e0306a57e32e32ecfd",
+      "bytes": 17013,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "docs/data/candidate_corroboration_ledger.json"
+        },
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "evidence/candidate_corroboration_ledger.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "docs/data/candidate_corroboration_ledger.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "evidence/candidate_corroboration_ledger.json"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "9db37cf166ef7d17a6fa53de85dd41adb669b92d",
+      "sha256": "cc439ec785f41fc0121a5f82bafe06f95f6f02047a1b920dd02fd010ff16535b",
+      "bytes": 6957,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "src/gems/metric.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "src/gems/metric.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "a61dce77406be46e30aee332eb10fd228ffc17d7",
+      "sha256": "ab4d4fd9d5543d7f43fe055aee106887d781d1809e2cb1ccef6df4cbdea82997",
+      "bytes": 750,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "docs/js/check_cli.js"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "docs/js/check_cli.js"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "a6a3d6ecff5228f365701eaf85a098cdd158947f",
+      "sha256": "6c6276031e9a9f4785f0f96628fe30db660d55f16e66631c1320a42356c65cf9",
+      "bytes": 326,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "src/gems/__init__.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "src/gems/__init__.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "ad18f5e75c1dc9814b45f6e4757404c97587bee7",
+      "sha256": "ac1064d86906a10387dd76383d76fc111e8bfc740075ff744a6bb89f5da9e487",
+      "bytes": 2690,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "scripts/record_score.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "scripts/record_score.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "aea2206a67682941bbaafa2abf4b291d735e18f2",
+      "sha256": "ea6ae7fca3c40b1605d8d443f2bd2faf42da3a974eb1b413a0ebb714a2c94327",
+      "bytes": 8078,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "docs/data/source_health.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "docs/data/source_health.json"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "afb2ee5e6027d816220773856b11d84045f8a673",
+      "sha256": "f03a15b22a8cd1b9ff8115c2a0e672e63d5bf39a37455002ea091f28e3def50e",
+      "bytes": 2694,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "tests/browser/e2e_checker.mjs"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "tests/browser/e2e_checker.mjs"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "bfd6a8467e118edb17c1014e5510d605f262eb58",
+      "sha256": "def1ee96cecf43905c742910b20d002d139818212b65b690a69ae002e97e7bc1",
+      "bytes": 39951,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "scripts/evaluate_h19_and_build_submissions.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "scripts/evaluate_h19_and_build_submissions.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "c299fe141ef6b9b898d055308a0566b37e6f31c2",
+      "sha256": "6bdf695d83527709dcd7ba9ce6eb8838215421ddac909a16e78609c9bbc5ae97",
+      "bytes": 2437,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "scripts/check_site.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "scripts/check_site.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "c6088557143a3a1486880c7addf84ef8a1ae101d",
+      "sha256": "24185726e15cbc294076667d563f0d784444e6c3333ece8d0f09eb97707094fd",
+      "bytes": 13071,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "registry/submissions.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "registry/submissions.json"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "c857b46c271adbe0b1f919af37292d7593cf1cb6",
+      "sha256": "09ff4a21ba6a3dddf9cde9214e66c524c8e6c5ed60d32cf5b8d0cc5b9fcdc7ca",
+      "bytes": 4612,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "docs/data/hypothesis_h18_sensitivity.json"
+        },
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "evidence/hypothesis_h18_sensitivity.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "docs/data/hypothesis_h18_sensitivity.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "evidence/hypothesis_h18_sensitivity.json"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "c931fdfb4c2da4d09fce137e411e87a5a96a68f3",
+      "sha256": "c754979b8005e479d6a660533fe2c26a62b02c50386ce40abc3241e3d450c64c",
+      "bytes": 2116,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "tests/test_forensics.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "tests/test_forensics.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "cb6ad88d348a677aa7cf1fd446bc39dfcf16434b",
+      "sha256": "33def546df2aa2cae23094103c461882bb708c26f9f0e9232a170a60e17856ab",
+      "bytes": 7483,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "docs/data/dem1m_tile_audit.json"
+        },
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "evidence/ci/dem1m_tile_audit.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "docs/data/dem1m_tile_audit.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "evidence/ci/dem1m_tile_audit.json"
+        },
+        {
+          "commit": "beb6d8e944b871b3b8cdbf4bc65ffc02cd63c600",
+          "path": "evidence/ci/dem1m_tile_audit.json"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "cb8266efde2cb5ba86ffa1653f8de8ba6403ce44",
+      "sha256": "32e062897a9ad97b58acbbeb9732617ac87df03022b9d41222809c27f6430db7",
+      "bytes": 395,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "src/gems/validator.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "src/gems/validator.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "d13fb60b2394fec43e6265e05792ef7568b45977",
+      "sha256": "5230366b7e5432bbaf58f0587c8f01a5783eec1e1ba6cd5948cfafa8cf8b9110",
+      "bytes": 5520,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "tests/test_submission.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "tests/test_submission.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "d1da1e95f15cc8200f40e484c1ef6feebf19dfb1",
+      "sha256": "d92c60b7ee6f25f1905676e6a52c8b96c0363e4f93fdd77392d662b9f9c2bff0",
+      "bytes": 11769,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "scripts/forensic_audit.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "scripts/forensic_audit.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "d21354b40f878267feecbf11bb6e190e5313e74b",
+      "sha256": "4ba9c98764780ba0c6a2205f54378b6725fb81cb01107ccf6242309cdbef1a43",
+      "bytes": 11434,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "tests/test_scan_group_repos.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "tests/test_scan_group_repos.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "d3607b9836dd09271c7f8c391abf0166d536dffd",
+      "sha256": "040d844d6df6cfad837b655795310c68868426fdafae2b18fda44d207fdc0821",
+      "bytes": 5772,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "tests/test_h19_corroboration.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "tests/test_h19_corroboration.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "d45bd0581e32607f6d13ad30f7fac383b5b233f9",
+      "sha256": "d1513502595a6115283a967eb862b0a809b6a282512a61020f14ee221c4e30c9",
+      "bytes": 6784,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "evidence/proxy_calibration_vs_lb.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "evidence/proxy_calibration_vs_lb.json"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "d918e0f301c90a448f05d170cfbc3b7304933714",
+      "sha256": "cc6ceaff9e9960ba14aecad3bbf6aa5b196796e82f7449b553f4b621047a79c5",
+      "bytes": 2618,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "docs/data/leaderboard.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "docs/data/leaderboard.json"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "dac8262aae2c1652478e51c259cfd3a82cc4a455",
+      "sha256": "63de4569f410d38305ee110ee9513ae6737bf42e1794ed6ff74dcdb90b8d59b4",
+      "bytes": 7921,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "src/gems/holdout.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "src/gems/holdout.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "de3b240f78cf4dd7ef67ad25b3751ec1a83de615",
+      "sha256": "a8e152ac24393778c04863b4dc41d66345f93028a3eed62429e455c6204f498a",
+      "bytes": 7717,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "evidence/feature_profile.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "evidence/feature_profile.json"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "ded6013eef28e6156595dc140c08464e0628b8be",
+      "sha256": "96d3d91ff33f2b884ff33ad1aafc96e9d422580d90b3b90592f9ee5a06a9c540",
+      "bytes": 2008,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "docs/data/backward_thermal_geochem_report.json"
+        },
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "evidence/backward_thermal_geochem_report.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "docs/data/backward_thermal_geochem_report.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "evidence/backward_thermal_geochem_report.json"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "e23c7a50bfacc20a85ec75906aef5fffe6b6b476",
+      "sha256": "fb9488921dd7663e3867a1ce17b4622896cd30a300e7cb98575eefa18f33b337",
+      "bytes": 20790,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "docs/data/group_scan.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "docs/data/group_scan.json"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "e4187d6e928f32df18f0192cfa6120083d5fb352",
+      "sha256": "25da970d24fda0287ea5fc8fe5f4bb2719340216307e6182e5fe2f33930eaa5f",
+      "bytes": 521,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "docs/archive/README.md"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "docs/archive/README.md"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "e5e35957c6e55af48d1efa95bdf9e4f92f2e8ed6",
+      "sha256": "51726022982570fdb773a82d1f717d204873fcdcb9941ff90e304760178063e0",
+      "bytes": 1739,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": ".github/workflows/external-verification.yml"
+        },
+        {
+          "commit": "588010d94957312afe0bf006d34a1e86643ccf92",
+          "path": ".github/workflows/external-verification.yml"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": ".github/workflows/external-verification.yml"
+        },
+        {
+          "commit": "beb6d8e944b871b3b8cdbf4bc65ffc02cd63c600",
+          "path": ".github/workflows/external-verification.yml"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "eea63f2789712c36a22b5fe2c3f5acfb60637b01",
+      "sha256": "5532dc0cb062c29f46789e59422359321e554d9d56d1ab84cc8eeb0e30db66de",
+      "bytes": 128135,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "evidence/submission_similarity.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "evidence/submission_similarity.json"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "f49745b4012265dc8dbcd3dd9d3ad882ecf27693",
+      "sha256": "928047d0e7b6d077dfc99a8025308a005a8969238bc84d6b4fe68ad418fa1cc2",
+      "bytes": 1243,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "tests/conftest.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "tests/conftest.py"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "fc9294678a9f87e8ab07271207f2dfcc948fab6c",
+      "sha256": "b22edd6b43e78d8f268f23e44cb56b0b44d43de07da5278d5f895e6b0823e16a",
+      "bytes": 3175,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "docs/data/hypothesis_h18_sgmc_exploratory.json"
+        },
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "evidence/hypothesis_h18_sgmc_exploratory.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "docs/data/hypothesis_h18_sgmc_exploratory.json"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "evidence/hypothesis_h18_sgmc_exploratory.json"
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "fe15f3c1c3fd7aec44b2a4bb3b616a4cbec6d16b",
+      "sha256": "70e8a0761bb9f891d89c611d1b6255f759027966b8f8bc96ffc679fc27a6b0ea",
+      "bytes": 21506,
+      "references": [
+        {
+          "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+          "path": "src/gems/hypotheses.py"
+        },
+        {
+          "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+          "path": "src/gems/hypotheses.py"
+        }
+      ]
+    }
+  ],
+  "tracked_target_cache": [],
+  "source_findings": [
+    {
+      "path": "README.md",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 91,
+      "kind": "arm-symbol mention",
+      "excerpt": "| `H19_1_PowerLaw_TipStepover` | `2/4` | \u2714 | \u2716 | \u2716 | \u2714 | `0.16240` (`-0.05032`, `0/4`) | `0.06348` (`-0.02193`, `0/4`) | `FAIL` | **COMPONENT ONLY** (`+0.00353` Dense over 19-band baseline; feeds `H19-4`) |",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/README.md#L91"
+    },
+    {
+      "path": "README.md",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 92,
+      "kind": "arm-symbol mention",
+      "excerpt": "| `H19_2_Backward_ThermalGeochem` | `2/4` | \u2716 | \u2714 | \u2716 | \u2714 | `0.16201` (`-0.05071`, `0/4`) | `0.06387` (`-0.02154`, `0/4`) | `FAIL` | **COMPONENT ONLY** (Beats `H16-4` by `+0.00205` Dense / `+0.00088` Sparse; feeds `H19-4`) |",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/README.md#L92"
+    },
+    {
+      "path": "README.md",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 94,
+      "kind": "arm-symbol mention",
+      "excerpt": "| `H19_3_Openness_LRM_Pure` | `1/4` | \u2716 | \u2716 | \u2714 | \u2716 | `0.20330` (`-0.00942`, `1/4`) | `0.08267` (`-0.00274`, `1/4`) | `FAIL` | **DISCARDED Standalone** (Single-Layer Match; beats `H16-3` Pure by `+0.00155` Dense) |",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/README.md#L94"
+    },
+    {
+      "path": "README.md",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 96,
+      "kind": "arm-symbol mention",
+      "excerpt": "| `H19_3_Openness_LRM_AntiPiedmont` | `2/4` | \u2716 | \u2716 | \u2714 | \u2714 | `0.20551` (`-0.00721`, `1/4`) | `0.08211` (`-0.00330`, `1/4`) | `FAIL` | **COMPONENT ONLY** (Beats `H16-3` AntiPiedmont by `+0.00240` Dense / `+0.00263` Sparse) |",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/README.md#L96"
+    },
+    {
+      "path": "README.md",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 91,
+      "kind": "arm-symbol mention",
+      "excerpt": "| `H19_1_PowerLaw_TipStepover` | `2/4` | \u2714 | \u2716 | \u2716 | \u2714 | `0.16240` (`-0.05032`, `0/4`) | `0.06348` (`-0.02193`, `0/4`) | `FAIL` | **COMPONENT ONLY** (`+0.00353` Dense over 19-band baseline; feeds `H19-4`) |",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/README.md#L91"
+    },
+    {
+      "path": "README.md",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 92,
+      "kind": "arm-symbol mention",
+      "excerpt": "| `H19_2_Backward_ThermalGeochem` | `2/4` | \u2716 | \u2714 | \u2716 | \u2714 | `0.16201` (`-0.05071`, `0/4`) | `0.06387` (`-0.02154`, `0/4`) | `FAIL` | **COMPONENT ONLY** (Beats `H16-4` by `+0.00205` Dense / `+0.00088` Sparse; feeds `H19-4`) |",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/README.md#L92"
+    },
+    {
+      "path": "README.md",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 94,
+      "kind": "arm-symbol mention",
+      "excerpt": "| `H19_3_Openness_LRM_Pure` | `1/4` | \u2716 | \u2716 | \u2714 | \u2716 | `0.20330` (`-0.00942`, `1/4`) | `0.08267` (`-0.00274`, `1/4`) | `FAIL` | **DISCARDED Standalone** (Single-Layer Match; beats `H16-3` Pure by `+0.00155` Dense) |",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/README.md#L94"
+    },
+    {
+      "path": "README.md",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 96,
+      "kind": "arm-symbol mention",
+      "excerpt": "| `H19_3_Openness_LRM_AntiPiedmont` | `2/4` | \u2716 | \u2716 | \u2714 | \u2714 | `0.20551` (`-0.00721`, `1/4`) | `0.08211` (`-0.00330`, `1/4`) | `FAIL` | **COMPONENT ONLY** (Beats `H16-3` AntiPiedmont by `+0.00240` Dense / `+0.00263` Sparse) |",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/README.md#L96"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 173,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_1_PowerLaw_TipStepover\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/docs/data/spatial_holdout_results.json#L173"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 180,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_2_Backward_ThermalGeochem\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/docs/data/spatial_holdout_results.json#L180"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 194,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_Pure\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/docs/data/spatial_holdout_results.json#L194"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 208,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_AntiPiedmont\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/docs/data/spatial_holdout_results.json#L208"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 280,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_1_PowerLaw_TipStepover\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/docs/data/spatial_holdout_results.json#L280"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 287,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_2_Backward_ThermalGeochem\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/docs/data/spatial_holdout_results.json#L287"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 301,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_Pure\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/docs/data/spatial_holdout_results.json#L301"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 315,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_AntiPiedmont\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/docs/data/spatial_holdout_results.json#L315"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 387,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_1_PowerLaw_TipStepover\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/docs/data/spatial_holdout_results.json#L387"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 394,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_2_Backward_ThermalGeochem\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/docs/data/spatial_holdout_results.json#L394"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 408,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_Pure\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/docs/data/spatial_holdout_results.json#L408"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 422,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_AntiPiedmont\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/docs/data/spatial_holdout_results.json#L422"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 494,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_1_PowerLaw_TipStepover\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/docs/data/spatial_holdout_results.json#L494"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 501,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_2_Backward_ThermalGeochem\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/docs/data/spatial_holdout_results.json#L501"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 515,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_Pure\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/docs/data/spatial_holdout_results.json#L515"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 529,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_AntiPiedmont\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/docs/data/spatial_holdout_results.json#L529"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 742,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_1_PowerLaw_TipStepover\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/docs/data/spatial_holdout_results.json#L742"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 784,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_2_Backward_ThermalGeochem\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/docs/data/spatial_holdout_results.json#L784"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 868,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_Pure\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/docs/data/spatial_holdout_results.json#L868"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 952,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_AntiPiedmont\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/docs/data/spatial_holdout_results.json#L952"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 1304,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"candidate\": \"H19_1_PowerLaw_TipStepover\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/docs/data/spatial_holdout_results.json#L1304"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 1329,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"candidate\": \"H19_2_Backward_ThermalGeochem\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/docs/data/spatial_holdout_results.json#L1329"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 1379,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"candidate\": \"H19_3_Openness_LRM_Pure\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/docs/data/spatial_holdout_results.json#L1379"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 1429,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"candidate\": \"H19_3_Openness_LRM_AntiPiedmont\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/docs/data/spatial_holdout_results.json#L1429"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 173,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_1_PowerLaw_TipStepover\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/evidence/spatial_holdout_results.json#L173"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 180,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_2_Backward_ThermalGeochem\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/evidence/spatial_holdout_results.json#L180"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 194,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_Pure\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/evidence/spatial_holdout_results.json#L194"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 208,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_AntiPiedmont\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/evidence/spatial_holdout_results.json#L208"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 280,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_1_PowerLaw_TipStepover\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/evidence/spatial_holdout_results.json#L280"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 287,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_2_Backward_ThermalGeochem\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/evidence/spatial_holdout_results.json#L287"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 301,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_Pure\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/evidence/spatial_holdout_results.json#L301"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 315,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_AntiPiedmont\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/evidence/spatial_holdout_results.json#L315"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 387,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_1_PowerLaw_TipStepover\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/evidence/spatial_holdout_results.json#L387"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 394,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_2_Backward_ThermalGeochem\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/evidence/spatial_holdout_results.json#L394"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 408,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_Pure\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/evidence/spatial_holdout_results.json#L408"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 422,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_AntiPiedmont\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/evidence/spatial_holdout_results.json#L422"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 494,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_1_PowerLaw_TipStepover\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/evidence/spatial_holdout_results.json#L494"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 501,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_2_Backward_ThermalGeochem\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/evidence/spatial_holdout_results.json#L501"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 515,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_Pure\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/evidence/spatial_holdout_results.json#L515"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 529,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_AntiPiedmont\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/evidence/spatial_holdout_results.json#L529"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 742,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_1_PowerLaw_TipStepover\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/evidence/spatial_holdout_results.json#L742"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 784,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_2_Backward_ThermalGeochem\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/evidence/spatial_holdout_results.json#L784"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 868,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_Pure\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/evidence/spatial_holdout_results.json#L868"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 952,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_AntiPiedmont\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/evidence/spatial_holdout_results.json#L952"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 1304,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"candidate\": \"H19_1_PowerLaw_TipStepover\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/evidence/spatial_holdout_results.json#L1304"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 1329,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"candidate\": \"H19_2_Backward_ThermalGeochem\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/evidence/spatial_holdout_results.json#L1329"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 1379,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"candidate\": \"H19_3_Openness_LRM_Pure\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/evidence/spatial_holdout_results.json#L1379"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 1429,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"candidate\": \"H19_3_Openness_LRM_AntiPiedmont\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/evidence/spatial_holdout_results.json#L1429"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 173,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_1_PowerLaw_TipStepover\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/docs/data/spatial_holdout_results.json#L173"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 180,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_2_Backward_ThermalGeochem\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/docs/data/spatial_holdout_results.json#L180"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 194,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_Pure\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/docs/data/spatial_holdout_results.json#L194"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 208,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_AntiPiedmont\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/docs/data/spatial_holdout_results.json#L208"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 280,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_1_PowerLaw_TipStepover\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/docs/data/spatial_holdout_results.json#L280"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 287,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_2_Backward_ThermalGeochem\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/docs/data/spatial_holdout_results.json#L287"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 301,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_Pure\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/docs/data/spatial_holdout_results.json#L301"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 315,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_AntiPiedmont\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/docs/data/spatial_holdout_results.json#L315"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 387,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_1_PowerLaw_TipStepover\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/docs/data/spatial_holdout_results.json#L387"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 394,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_2_Backward_ThermalGeochem\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/docs/data/spatial_holdout_results.json#L394"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 408,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_Pure\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/docs/data/spatial_holdout_results.json#L408"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 422,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_AntiPiedmont\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/docs/data/spatial_holdout_results.json#L422"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 494,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_1_PowerLaw_TipStepover\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/docs/data/spatial_holdout_results.json#L494"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 501,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_2_Backward_ThermalGeochem\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/docs/data/spatial_holdout_results.json#L501"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 515,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_Pure\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/docs/data/spatial_holdout_results.json#L515"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 529,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_AntiPiedmont\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/docs/data/spatial_holdout_results.json#L529"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 742,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_1_PowerLaw_TipStepover\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/docs/data/spatial_holdout_results.json#L742"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 784,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_2_Backward_ThermalGeochem\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/docs/data/spatial_holdout_results.json#L784"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 868,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_Pure\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/docs/data/spatial_holdout_results.json#L868"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 952,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_AntiPiedmont\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/docs/data/spatial_holdout_results.json#L952"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 1304,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"candidate\": \"H19_1_PowerLaw_TipStepover\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/docs/data/spatial_holdout_results.json#L1304"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 1329,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"candidate\": \"H19_2_Backward_ThermalGeochem\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/docs/data/spatial_holdout_results.json#L1329"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 1379,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"candidate\": \"H19_3_Openness_LRM_Pure\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/docs/data/spatial_holdout_results.json#L1379"
+    },
+    {
+      "path": "docs/data/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 1429,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"candidate\": \"H19_3_Openness_LRM_AntiPiedmont\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/docs/data/spatial_holdout_results.json#L1429"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 173,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_1_PowerLaw_TipStepover\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/evidence/spatial_holdout_results.json#L173"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 180,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_2_Backward_ThermalGeochem\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/evidence/spatial_holdout_results.json#L180"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 194,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_Pure\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/evidence/spatial_holdout_results.json#L194"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 208,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_AntiPiedmont\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/evidence/spatial_holdout_results.json#L208"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 280,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_1_PowerLaw_TipStepover\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/evidence/spatial_holdout_results.json#L280"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 287,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_2_Backward_ThermalGeochem\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/evidence/spatial_holdout_results.json#L287"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 301,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_Pure\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/evidence/spatial_holdout_results.json#L301"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 315,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_AntiPiedmont\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/evidence/spatial_holdout_results.json#L315"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 387,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_1_PowerLaw_TipStepover\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/evidence/spatial_holdout_results.json#L387"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 394,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_2_Backward_ThermalGeochem\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/evidence/spatial_holdout_results.json#L394"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 408,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_Pure\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/evidence/spatial_holdout_results.json#L408"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 422,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_AntiPiedmont\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/evidence/spatial_holdout_results.json#L422"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 494,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_1_PowerLaw_TipStepover\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/evidence/spatial_holdout_results.json#L494"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 501,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_2_Backward_ThermalGeochem\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/evidence/spatial_holdout_results.json#L501"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 515,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_Pure\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/evidence/spatial_holdout_results.json#L515"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 529,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_AntiPiedmont\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/evidence/spatial_holdout_results.json#L529"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 742,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_1_PowerLaw_TipStepover\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/evidence/spatial_holdout_results.json#L742"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 784,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_2_Backward_ThermalGeochem\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/evidence/spatial_holdout_results.json#L784"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 868,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_Pure\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/evidence/spatial_holdout_results.json#L868"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 952,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_AntiPiedmont\": {",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/evidence/spatial_holdout_results.json#L952"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 1304,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"candidate\": \"H19_1_PowerLaw_TipStepover\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/evidence/spatial_holdout_results.json#L1304"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 1329,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"candidate\": \"H19_2_Backward_ThermalGeochem\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/evidence/spatial_holdout_results.json#L1329"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 1379,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"candidate\": \"H19_3_Openness_LRM_Pure\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/evidence/spatial_holdout_results.json#L1379"
+    },
+    {
+      "path": "evidence/spatial_holdout_results.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 1429,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"candidate\": \"H19_3_Openness_LRM_AntiPiedmont\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/evidence/spatial_holdout_results.json#L1429"
+    },
+    {
+      "path": "evidence/hypothesis_corroboration_table.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 103,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"candidate\": \"H19_1_PowerLaw_TipStepover\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/evidence/hypothesis_corroboration_table.json#L103"
+    },
+    {
+      "path": "evidence/hypothesis_corroboration_table.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 128,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"candidate\": \"H19_2_Backward_ThermalGeochem\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/evidence/hypothesis_corroboration_table.json#L128"
+    },
+    {
+      "path": "evidence/hypothesis_corroboration_table.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 178,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"candidate\": \"H19_3_Openness_LRM_Pure\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/evidence/hypothesis_corroboration_table.json#L178"
+    },
+    {
+      "path": "evidence/hypothesis_corroboration_table.json",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 228,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"candidate\": \"H19_3_Openness_LRM_AntiPiedmont\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/evidence/hypothesis_corroboration_table.json#L228"
+    },
+    {
+      "path": "evidence/hypothesis_corroboration_table.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 103,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"candidate\": \"H19_1_PowerLaw_TipStepover\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/evidence/hypothesis_corroboration_table.json#L103"
+    },
+    {
+      "path": "evidence/hypothesis_corroboration_table.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 128,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"candidate\": \"H19_2_Backward_ThermalGeochem\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/evidence/hypothesis_corroboration_table.json#L128"
+    },
+    {
+      "path": "evidence/hypothesis_corroboration_table.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 178,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"candidate\": \"H19_3_Openness_LRM_Pure\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/evidence/hypothesis_corroboration_table.json#L178"
+    },
+    {
+      "path": "evidence/hypothesis_corroboration_table.json",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 228,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"candidate\": \"H19_3_Openness_LRM_AntiPiedmont\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/evidence/hypothesis_corroboration_table.json#L228"
+    },
+    {
+      "path": "scripts/evaluate_h19_and_build_submissions.py",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 220,
+      "kind": "literal reader",
+      "excerpt": "oof_19 = np.load(DATA_DIR / \"cache\" / \"oof_probs_h19_arms.npz\")",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/scripts/evaluate_h19_and_build_submissions.py#L220"
+    },
+    {
+      "path": "scripts/evaluate_h19_and_build_submissions.py",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 230,
+      "kind": "arm-symbol mention",
+      "excerpt": "p_h19_1 = oof_19[\"H19_1_PowerLaw_TipStepover\"]",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/scripts/evaluate_h19_and_build_submissions.py#L230"
+    },
+    {
+      "path": "scripts/evaluate_h19_and_build_submissions.py",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 231,
+      "kind": "arm-symbol mention",
+      "excerpt": "p_h19_2 = oof_19[\"H19_2_Backward_ThermalGeochem\"]",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/scripts/evaluate_h19_and_build_submissions.py#L231"
+    },
+    {
+      "path": "scripts/evaluate_h19_and_build_submissions.py",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 232,
+      "kind": "arm-symbol mention",
+      "excerpt": "p_h19_3_pure = oof_19[\"H19_3_Openness_LRM_Pure\"]",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/scripts/evaluate_h19_and_build_submissions.py#L232"
+    },
+    {
+      "path": "scripts/evaluate_h19_and_build_submissions.py",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 233,
+      "kind": "arm-symbol mention",
+      "excerpt": "p_h19_3_anti = oof_19[\"H19_3_Openness_LRM_AntiPiedmont\"]",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/scripts/evaluate_h19_and_build_submissions.py#L233"
+    },
+    {
+      "path": "scripts/evaluate_h19_and_build_submissions.py",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 301,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_1_PowerLaw_TipStepover\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/scripts/evaluate_h19_and_build_submissions.py#L301"
+    },
+    {
+      "path": "scripts/evaluate_h19_and_build_submissions.py",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 309,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_2_Backward_ThermalGeochem\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/scripts/evaluate_h19_and_build_submissions.py#L309"
+    },
+    {
+      "path": "scripts/evaluate_h19_and_build_submissions.py",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 325,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_Pure\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/scripts/evaluate_h19_and_build_submissions.py#L325"
+    },
+    {
+      "path": "scripts/evaluate_h19_and_build_submissions.py",
+      "commit": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "line": 341,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_AntiPiedmont\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/1a8624961dc4de630ab239321832611fcb3fbd71/scripts/evaluate_h19_and_build_submissions.py#L341"
+    },
+    {
+      "path": "scripts/evaluate_h19_and_build_submissions.py",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 220,
+      "kind": "literal reader",
+      "excerpt": "oof_19 = np.load(DATA_DIR / \"cache\" / \"oof_probs_h19_arms.npz\")",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/scripts/evaluate_h19_and_build_submissions.py#L220"
+    },
+    {
+      "path": "scripts/evaluate_h19_and_build_submissions.py",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 230,
+      "kind": "arm-symbol mention",
+      "excerpt": "p_h19_1 = oof_19[\"H19_1_PowerLaw_TipStepover\"]",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/scripts/evaluate_h19_and_build_submissions.py#L230"
+    },
+    {
+      "path": "scripts/evaluate_h19_and_build_submissions.py",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 231,
+      "kind": "arm-symbol mention",
+      "excerpt": "p_h19_2 = oof_19[\"H19_2_Backward_ThermalGeochem\"]",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/scripts/evaluate_h19_and_build_submissions.py#L231"
+    },
+    {
+      "path": "scripts/evaluate_h19_and_build_submissions.py",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 232,
+      "kind": "arm-symbol mention",
+      "excerpt": "p_h19_3_pure = oof_19[\"H19_3_Openness_LRM_Pure\"]",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/scripts/evaluate_h19_and_build_submissions.py#L232"
+    },
+    {
+      "path": "scripts/evaluate_h19_and_build_submissions.py",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 233,
+      "kind": "arm-symbol mention",
+      "excerpt": "p_h19_3_anti = oof_19[\"H19_3_Openness_LRM_AntiPiedmont\"]",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/scripts/evaluate_h19_and_build_submissions.py#L233"
+    },
+    {
+      "path": "scripts/evaluate_h19_and_build_submissions.py",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 301,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_1_PowerLaw_TipStepover\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/scripts/evaluate_h19_and_build_submissions.py#L301"
+    },
+    {
+      "path": "scripts/evaluate_h19_and_build_submissions.py",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 309,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_2_Backward_ThermalGeochem\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/scripts/evaluate_h19_and_build_submissions.py#L309"
+    },
+    {
+      "path": "scripts/evaluate_h19_and_build_submissions.py",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 325,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_Pure\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/scripts/evaluate_h19_and_build_submissions.py#L325"
+    },
+    {
+      "path": "scripts/evaluate_h19_and_build_submissions.py",
+      "commit": "a3aca62fdb2be428f4245e22570cbc54082b2c15",
+      "line": 341,
+      "kind": "arm-symbol mention",
+      "excerpt": "\"H19_3_Openness_LRM_AntiPiedmont\",",
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/blob/a3aca62fdb2be428f4245e22570cbc54082b2c15/scripts/evaluate_h19_and_build_submissions.py#L341"
+    }
+  ],
+  "literal_writer_hits": [],
+  "pull_request_inventory": [
+    {
+      "number": 1,
+      "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/pull/1",
+      "head": "1a8624961dc4de630ab239321832611fcb3fbd71",
+      "body_sha256": "32ac209d9dba80484c896c3331b8b9bb246f02945d3da2490601610f0774a6ac",
+      "public_comment_count": 0,
+      "public_review_comment_count": 0,
+      "cache_literal_mentions": 0,
+      "limit": "PR descriptions are claims, not an original trainer or execution receipt"
+    }
+  ],
+  "release_inventory": [],
+  "artifact_inventory": [
+    {
+      "id": 11127658607,
+      "name": "github-pages",
+      "size_in_bytes": 10254367,
+      "expired": false
+    }
+  ],
+  "original_producer_recovered": false,
+  "clean_current_best_refittable": false,
+  "status": "BLOCKED",
+  "blockers": [
+    "No audited original H19 arm producer with reproducible execution lineage is recovered",
+    "Legacy negative targets/full-catalogue collar and sparse scoring assumptions are not the clean protocol",
+    "No independently refitted same-split current-best comparator exists"
+  ],
+  "scope": "All public-branch-reachable recognized .py/.sh/.yml/.yaml/.js/.mjs/.md/.json/.toml/.txt and .gitignore blobs, plus paginated PR/comments/releases/artifact indexes at this dated read; literal/arm-symbol static search, NOT a proof no dynamically named, other-extension, private, untracked or expired generator exists",
+  "field_model_fits": 0,
+  "geological_scores_observed": 0,
+  "causal_hidden_score_attribution": "UNIDENTIFIED"
+}

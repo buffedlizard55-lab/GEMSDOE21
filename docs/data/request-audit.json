@@ -18,7 +18,7 @@
       "evidence": "2dfc5de immutable registration, fc809c8 pre-results implementation"
     },
     {
-      "requirement": "Rank 3\u20135 distinct geological hypotheses with mechanisms/layers/confounders/cost/forecast",
+      "requirement": "Rank 3–5 distinct geological hypotheses with mechanisms/layers/confounders/cost/forecast",
       "status": "DONE / FOUR",
       "evidence": "registry/hypotheses.json; research/preregistration-h21.md"
     },
@@ -75,7 +75,7 @@
       "limit": ".1894 and .1855 file associations are user-reported; no controlled hidden-label ablation."
     },
     {
-      "requirement": "Autonomous data placement \u2192 prepare \u2192 train/infer \u2192 validation",
+      "requirement": "Autonomous data placement → prepare → train/infer → validation",
       "status": "EXECUTED CPU PIPELINE + EXACT FIXED REPLICATION",
       "evidence": "Pinned downloaded bytes; preparation/lineage reports; eight first fits + eight identical fixed replication fits; run_pipeline.py",
       "limit": "No GPU U-Net or new eligible model claimed. Datasets/caches ignored."
@@ -164,5 +164,35 @@
     ],
     "no_new_scores_after_first_outcome": true,
     "publication_verified_utc": "2026-10-01T03:03:36+00:00"
+  },
+  "session_3": {
+    "reviewed_utc": "2026-10-01T04:28:42.303079+00:00",
+    "full_prompt_reread": true,
+    "notes": "research/request-audit-s3.md",
+    "all_scientific_objectives_achieved": false,
+    "completed_authorized_work": [
+      "Four hypotheses preregistered before code",
+      "Full reachable recognized-text H19 audit with scoped limits",
+      "Four official archives with full-byte/CRC/schema/support/server-digest binding",
+      "Synthetic-only H21-9 numerical contract",
+      "Strengthened range/template/ZIP/atomic delivery validation",
+      "Download-first guide/readiness UI and reusable source/claim/flag tables",
+      "Three actual local test/browser/review passes"
+    ],
+    "not_completed": [
+      "Clean current-best/fresh top-candidate geological validation",
+      "New validated winning/eligible TIFF",
+      "Competition upload/acceptance/hidden-score certification",
+      "New PR/merge/Pages live publication while GitHub auth is blocked"
+    ],
+    "publication_auth_diagnostic": "gh GraphQL and REST401 Bad credentials; git ls-remote failed credential lookup; no credentials requested or stored"
+  },
+  "publication_resume": {
+    "started_utc": "2026-10-01T13:59:11.089711+00:00",
+    "pr": 6,
+    "push_successful": true,
+    "github_read_write_access_restored": true,
+    "merge_or_live_not_yet_claimed": true,
+    "scope": "User requested PR/merge only; no new scientific experiment"
   }
 }

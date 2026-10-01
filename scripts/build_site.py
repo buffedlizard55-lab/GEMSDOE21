@@ -14,7 +14,7 @@ import rasterio
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-from gems.io import data_dir  # noqa: E402
+from gems.io import data_dir, sha256  # noqa: E402
 
 
 def load(path):
@@ -60,13 +60,27 @@ def main():
     verify_file(ROOT, "evidence/h21-5-results.json")
     if s2["gate"]["submission_eligible"]:
         raise ValueError("This delivery remains historical: no newly qualified entry")
+    readiness = load("evidence/research-readiness-s3.json")
+    verify_file(ROOT, "research/preregistration-h21-s3.md")
+    for path, digest in readiness["input_evidence_bindings"].items():
+        if sha256(ROOT / path) != digest:
+            raise ValueError(f"Stale readiness evidence: {path}")
+    if (
+        readiness["dimensions"]["field_fit_permission"]["authorized"]
+        or readiness["dimensions"]["new_submission_eligibility"]["eligible"]
+    ):
+        raise ValueError("S3 site is input-only and cannot claim an eligible candidate")
     context = {
+        "s3_readiness": readiness,
+        "s3_receipt": load("evidence/official-inputs-s3.json"),
+        "s3_hypotheses": load("registry/hypotheses-s3.json")["candidates"],
         "s2": s2,
         "s2_control": s2["summary"]["C21-S2-PU"],
         "s2_candidate": s2["summary"]["H21-5"],
         "s2_hypotheses": load("registry/hypotheses-s2.json")["candidates"],
         "s2_review": load("evidence/h21-5-protocol-review.json"),
-        "knowledge": load("registry/knowledge-s2.json")["claims"],
+        "knowledge": load("registry/knowledge-s2.json")["claims"]
+        + load("registry/knowledge-s3.json")["claims"],
         "sub": sub,
         "primary": next(f for f in sub["files"] if f["role"] == "primary"),
         "submission_json": json.dumps(sub).replace("<", "\\u003c"),
@@ -93,6 +107,7 @@ def main():
         ("guide.html", "executive-summary.html", "guide", "Executive submission guide"),
         ("research.html", "research.html", "research", "Registered research"),
         ("sources.html", "sources.html", "sources", "Official source ledger"),
+        ("readiness.html", "readiness.html", "readiness", "Input readiness and next scientific gates"),
     ]
     for template, dest, page, title in pages:
         html = env.get_template(template).render(**context, page=page, title=title)
@@ -116,7 +131,10 @@ def main():
             "leaderboard-snapshot.json",
             "hypotheses-s2.json",
             "knowledge-s2.json",
+            "hypotheses-s3.json",
+            "knowledge-s3.json",
         ],
+        "research": ["preregistration-h21-s3.md", "implementation-notes-s3.md", "request-audit-s3.md"],
         "evidence": [
             "h21-1-results.json",
             "h21-5-results.json",
@@ -138,6 +156,12 @@ def main():
             "fixed-replication.json",
             "delivery-status.json",
             "live-verification.json",
+            "baseline-history-s3.json",
+            "official-inputs-s3-first-attempt.json",
+            "official-inputs-s3.json",
+            "input-recovery-s3.json",
+            "prototype-s3.json",
+            "research-readiness-s3.json",
         ],
     }.items():
         for file in files:
@@ -147,7 +171,7 @@ def main():
             shutil.copyfile(src, docs / "data" / file)
     for path in (ROOT / ".nojekyll", docs / ".nojekyll"):
         path.touch()
-    print("Built 4 static pages + legacy root entry; historical reference only")
+    print("Built 5 static pages + legacy root entry; S3 input-only and historical reference delivery")
 
 
 if __name__ == "__main__":

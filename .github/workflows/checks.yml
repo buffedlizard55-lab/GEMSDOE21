@@ -22,6 +22,7 @@ jobs:
           cache-dependency-path: |
             requirements.txt
             requirements-dev.txt
+            requirements-research.txt
       - run: pip install -r requirements-dev.txt
       - run: ruff check src scripts tests && ruff format --check src scripts tests
       - run: python -m pytest -q

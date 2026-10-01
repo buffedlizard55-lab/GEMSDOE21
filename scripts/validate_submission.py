@@ -6,47 +6,33 @@ import argparse
 import json
 from pathlib import Path
 import sys
-import tempfile
 import zipfile
 from rasterio.errors import RasterioError
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 from gems.io import sha256  # noqa: E402
-from gems.submission import validate  # noqa: E402
+from gems.submission import validate_bundle  # noqa: E402
 
 
 def check(path: Path, template: Path, expected_sha: str | None = None):
+    path, template = Path(path), Path(template)
+    if path.suffix.lower() not in (".tif", ".zip"):
+        raise ValueError("Expected .tif or one-GeoTIFF .zip, not a report or image")
+    # CLI SHA authenticates the input container bytes, not organizer provenance.
     if expected_sha and sha256(path) != expected_sha:
         return {"passed": False, "error": "Input SHA256 does not match expected bytes"}
+    result = validate_bundle(path, template, expected_sha if path.suffix.lower() != ".zip" else None)
     if path.suffix.lower() == ".zip":
-        with zipfile.ZipFile(path) as z:
-            members = z.infolist()
-            if len(members) != 1:
-                raise ValueError("ZIP must contain exactly one GeoTIFF and nothing else")
-            entry = members[0]
-            name = entry.filename
-            if Path(name).name != name or "\\" in name or not name.lower().endswith(".tif"):
-                raise ValueError("ZIP member must be a safe root-level .tif filename")
-            if entry.file_size > 256 * 1024 * 1024 or entry.flag_bits & 1:
-                raise ValueError("Encrypted/over-256MiB ZIP member is unsupported")
-            # Validate CRC while reading; never extract to a caller-controlled path.
-            with tempfile.TemporaryDirectory(prefix="gems21-preflight-") as tmp:
-                tif = Path(tmp) / "prediction.tif"
-                tif.write_bytes(z.read(entry))
-                result = validate(tif, template)
-            result.update({"archive_sha256": sha256(path), "zip_member": name, "zip_single_member": True})
-            return result
-    if path.suffix.lower() != ".tif":
-        raise ValueError("Expected .tif or one-GeoTIFF .zip, not a report or image")
-    return validate(path, template, expected_sha)
+        result.update({"archive_sha256": sha256(path), "zip_single_member": True})
+    return result
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("file", type=Path)
     parser.add_argument("--template", type=Path, default=ROOT / "docs/data/template-mask.tif")
-    parser.add_argument("--expected-sha")
+    parser.add_argument("--expected-sha", help="Expected SHA256 of the input TIFF or ZIP container")
     args = parser.parse_args()
     try:
         result = check(args.file, args.template, args.expected_sha)

@@ -1,0 +1,73 @@
+name: Recover complete S3 input receipt (no new acquisition or score)
+on:
+  workflow_dispatch:
+  push:
+    branches: ['arena/**']
+    paths: [.github/workflows/recover-readiness-s3.yml]
+permissions:
+  actions: read
+  contents: write
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - name: Recover existing lossless metadata envelope, not another raw-data download
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p .cache/recover-s3
+          cat > .cache/recover-s3/recover.sh <<'SH'
+          set -e
+          SOURCE_RUN=36812145117
+          SOURCE_SHA=a77f027062d8f7556ebbaf6e4efa8533d0d0105b
+          ACTUAL_SHA=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$SOURCE_RUN" --jq .head_sha)
+          test "$ACTUAL_SHA" = "$SOURCE_SHA"
+          ARTIFACT=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$SOURCE_RUN/artifacts" --jq '.artifacts[]|select(.name=="recovered-readiness-s3" and .expired==false)|.id')
+          test -n "$ARTIFACT"
+          gh api "repos/$GITHUB_REPOSITORY/actions/artifacts/$ARTIFACT/zip" > .cache/recover-s3/envelope.zip
+          python - <<'PY'
+          from pathlib import Path
+          import sys
+          sys.path.insert(0,'src')
+          from gems.archives import unpack
+          unpack(Path('.cache/recover-s3/envelope.zip'),Path('.cache/recover-s3/metadata'))
+          PY
+          NOTES=$(find .cache/recover-s3/metadata -name notes.json -type f)
+          test -n "$NOTES"
+          python scripts/package_readiness_receipt.py "$NOTES" .cache/recover-s3/receipt.json --decode
+          gh release create "research-readiness-s3-recovered-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}" \
+            --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --notes-file "$NOTES" \
+            --title "Complete S3 official-input receipt — not a geological test" --prerelease
+          SH
+          set +e
+          bash .cache/recover-s3/recover.sh > .cache/recover-s3/recovery.log 2>&1
+          RESULT=$?
+          cat .cache/recover-s3/recovery.log
+          python - <<'PY'
+          from pathlib import Path
+          import os
+          text=Path('.cache/recover-s3/recovery.log').read_text(errors='replace')[-8000:]
+          token=os.environ.get('GH_TOKEN')
+          if token: text=text.replace(token,'[REDACTED]')
+          Path('.cache/recover-s3/status.txt').write_text('Input-only recovery diagnostic; no fit/score/upload.\n'+text)
+          PY
+          # Diagnostic-only release at default main: no claim its target executed acquisition.
+          gh release create "s3-recovery-status-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}" \
+            --repo "$GITHUB_REPOSITORY" --notes-file .cache/recover-s3/status.txt \
+            --title "S3 receipt recovery diagnostic" --prerelease
+          exit "$RESULT"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: recovered-readiness-s3
+          path: |
+            .cache/recover-s3/receipt.json
+            .cache/recover-s3/status.txt
+          if-no-files-found: warn
+          retention-days: 30
