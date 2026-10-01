@@ -1,5 +1,5 @@
 {
-  "reviewed_utc_date": "2026-09-30",
+  "reviewed_utc_date": "2026-10-01",
   "flags": [
     {
       "id": "F01",
@@ -14,9 +14,9 @@
       "id": "F02",
       "severity": "high",
       "title": "H19 best comparator is not fully reproducible from its source snapshot",
-      "status": "STILL BLOCKS PROMOTION: current main/original PR Python unchanged; no public OOF generator",
-      "finding": "Exporter reads oof_probs_h19_arms.npz. Its pinned tree lacks that cache, and committed Python only reads it, not generates it.",
-      "evidence": "evidence/upstream-audit.json A08; evidence/baseline-recovery-s2.json",
+      "status": "STILL BLOCKED AFTER FULL PUBLIC REACHABLE-HISTORY AUDIT",
+      "finding": "Exporter reads oof_probs_h19_arms.npz. Its pinned tree lacks that cache, and committed Python only reads it, not generates it. S3 content-address checked five reachable commits / 77 recognized text blobs and public PR/comment/release/artifact indexes; no original clean arm refit recovered. Static search does not prove no private/dynamic/expired producer exists.",
+      "evidence": "evidence/upstream-audit.json A08; evidence/baseline-recovery-s2.json; evidence/baseline-history-s3.json",
       "action": "Recover original arm-generation source/provenance, then refit without hidden labels before claiming improvement over H19-4."
     },
     {
@@ -225,6 +225,51 @@
       "action": "Audit complete frozen-window coverage, paging, magnitude/network completeness, event type and errors before implementation. Keep H21-8 conditional.",
       "evidence": "evidence/official-inputs-s2.json; S26",
       "status": "SCHEMA OBTAINABLE; SCIENTIFIC VIABILITY UNESTABLISHED"
+    },
+    {
+      "id": "F26",
+      "severity": "high",
+      "title": "Verified eastern pixels do not unlock fresh confirmation",
+      "status": "INPUTS OBTAINED / SCIENCE STILL BLOCKED",
+      "finding": "Four actual float32 magnetic grids have 40m cells but 200m flight lines; about 69% of the preregistered box has support. A complete compatible control/current-best predictor set and locked fresh whole-system protocol are absent.",
+      "evidence": "evidence/official-inputs-s3.json; evidence/research-readiness-s3.json",
+      "action": "Keep no-data missing and reserve the box without looking at label outcomes. Verify units/native sampling, whole-system cross-domain links and training-only controls before any separately preregistered field evaluation."
+    },
+    {
+      "id": "F27",
+      "severity": "high",
+      "title": "Current QFaults and 2026 CGS compilation are not independently new truth",
+      "status": "PROVENANCE/FRESHNESS GATE OPEN",
+      "finding": "Actual archives and schemas are obtainable, but 558 national geometry-feature envelopes are not independent whole fault systems. CGS is a 1:400,000 compilation with DataSources; a publication date does not date every mapped strand. Actual main representations have 112,809 shapefile rows versus 112,944 GDB rows globally; equal 558 box-envelope counts do not prove geometric identity. The Atlas also contains T_1_PointErrors(4,477) and T_1_LineErrors(1) diagnostic layers whose semantics/affected features were not established.",
+      "evidence": "evidence/official-inputs-s3.json; registry/sources.json S33/S34",
+      "action": "Audit original mapping dates, citations, identities, cross-domain links and rights. Fault geometry remains split/scorer-only, never an input to the candidate. Select/audit the canonical representation from provenance before outcomes; review topology rules/source lineage without assuming every diagnostic point is a bad fault."
+    },
+    {
+      "id": "F28",
+      "severity": "medium",
+      "title": "Input receipt publication failed before lossless recovery",
+      "status": "RECOVERED; FAILURES RETAINED",
+      "finding": "The repaired full receipt is 128,520 bytes. Acquisition completed, but its publisher and first recovery publisher failed. The small lossless envelope was recovered in run36812447269; all four raw public asset digests match receipt SHA. Original publisher error causes were not authenticated from their logs.",
+      "evidence": "evidence/official-inputs-s3-first-attempt.json; evidence/input-recovery-s3.json",
+      "action": "Preserve first failures and bound decoded bytes; never truncate the audit into an invented success. Future publishers use bounded lossless envelopes; no new model or source download was needed in final recovery."
+    },
+    {
+      "id": "F29",
+      "severity": "medium",
+      "title": "H21-9 numerical invariants are not geological validation",
+      "status": "SYNTHETIC ONLY / NO PROMOTION",
+      "finding": "First synthetic tests had two numerical failures. Fixed datum removal, float64 roundoff guard and direct local RMS convolution repaired them without changing registered scientific scales or test tolerances. No field output was observed.",
+      "evidence": "research/implementation-notes-s3.md; evidence/prototype-s3.json",
+      "action": "Keep toy success separate from physical causality and score forecasts; no field evaluator/exporter until a new full prospective protocol is reviewed."
+    },
+    {
+      "id": "F30",
+      "severity": "medium",
+      "title": "Vector bounds and deposit schemas have limited meaning",
+      "status": "EMPTY/NONSPATIAL HANDLING REPAIRED; DEPOSIT QUALITY OPEN",
+      "finding": "First QFaults/CGS audit failed at bounds for empty/nonspatial layers. Repair records null extents, not invented bounds. Paleo has 709 point records and Deposit_ty, not verified class quality or independent sites.",
+      "evidence": "evidence/official-inputs-s3-first-attempt.json; evidence/official-inputs-s3.json",
+      "action": "Do not merge attribute-only tables as geometry or assume lake tufa is geothermal; review source lineage, duplicates, classes, ages and matching field support before H21-12 viability."
     }
   ],
   "last_updated_utc_date": "2026-10-01"

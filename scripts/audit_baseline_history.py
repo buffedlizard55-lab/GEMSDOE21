@@ -189,7 +189,7 @@ def audit():
             "Legacy negative targets/full-catalogue collar and sparse scoring assumptions are not the clean protocol",
             "No independently refitted same-split current-best comparator exists",
         ],
-        "scope": "All public-branch-reachable text blobs and paginated PR/comments/releases/artifact indexes at this dated read; literal/arm-symbol static search, NOT a proof no dynamic, private, untracked or expired generator exists",
+        "scope": "All public-branch-reachable recognized .py/.sh/.yml/.yaml/.js/.mjs/.md/.json/.toml/.txt and .gitignore blobs, plus paginated PR/comments/releases/artifact indexes at this dated read; literal/arm-symbol static search, NOT a proof no dynamically named, other-extension, private, untracked or expired generator exists",
         "field_model_fits": 0,
         "geological_scores_observed": 0,
         "causal_hidden_score_attribution": "UNIDENTIFIED",

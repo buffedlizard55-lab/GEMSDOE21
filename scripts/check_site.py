@@ -43,7 +43,21 @@ def static_checks():
 
     locked = verify_file(ROOT, "research/preregistration-h21.md")
     verify_file(ROOT, "research/preregistration-h21-s2.md")
+    verify_file(ROOT, "research/preregistration-h21-s3.md")
     verify_file(ROOT, "evidence/h21-1-results.json")
+    readiness = json.loads((docs / "data/research-readiness-s3.json").read_text())
+    assert not readiness["dimensions"]["field_fit_permission"]["authorized"]
+    assert not readiness["dimensions"]["new_submission_eligibility"]["eligible"]
+    assert readiness["field_model_fits_s3"] == readiness["geological_scores_observed_s3"] == 0
+    for path in (
+        "research-readiness-s3.json",
+        "official-inputs-s3.json",
+        "prototype-s3.json",
+        "input-recovery-s3.json",
+        "baseline-history-s3.json",
+    ):
+        assert sha256(ROOT / "evidence" / path) == sha256(docs / "data" / path)
+    assert (docs / "readiness.html").is_file()
     assert hashlib.sha256(locked).hexdigest() == result["registration_sha256"]
     verify_prompt(ROOT / "README.md")
     pages = list(docs.glob("*.html")) + [ROOT / "index.html"]
@@ -148,7 +162,13 @@ def browser_checks():
             page = context.new_page()
             page.on("pageerror", lambda error: errors.append(str(error)))
             base = f"http://127.0.0.1:{server.server_port}"
-            for name in ["index.html", "executive-summary.html", "research.html", "sources.html"]:
+            for name in [
+                "index.html",
+                "executive-summary.html",
+                "research.html",
+                "readiness.html",
+                "sources.html",
+            ]:
                 page.goto(f"{base}/docs/{name}", wait_until="networkidle")
                 expect(page.locator("h1")).to_be_visible()
                 assert page.evaluate("document.documentElement.scrollWidth <= window.innerWidth+1"), (
@@ -210,7 +230,13 @@ def browser_checks():
             assert not downloads
             page.unroute(pattern)
             completed.append("fail-closed truncated/HTTP-error downloads")
-            for name in ["index.html", "executive-summary.html", "research.html", "sources.html"]:
+            for name in [
+                "index.html",
+                "executive-summary.html",
+                "research.html",
+                "readiness.html",
+                "sources.html",
+            ]:
                 page.set_viewport_size({"width": 390, "height": 844})
                 page.goto(f"{base}/docs/{name}", wait_until="networkidle")
                 assert page.evaluate("document.documentElement.scrollWidth <= window.innerWidth+1"), (

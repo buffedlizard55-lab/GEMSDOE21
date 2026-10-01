@@ -1,0 +1,483 @@
+{
+  "kind": "S3-input-only-official-obtainability",
+  "generated_utc": "2026-10-01T03:37:50+00:00",
+  "code_commit": "bcbdee358913f825b9eabd286be5dda21936529f",
+  "actions_run_id": "36811364343",
+  "registration_sha256": "7353bfbdabe48637bdd549722cbefaa70da1bb5ca62f4c1ee80332c23e9145a8",
+  "reserved_box_wgs84": [
+    -115.8,
+    38.8,
+    -114.8,
+    39.8
+  ],
+  "competition_outer_bounds_wgs84": [
+    -120.03717095080793,
+    37.33119286569775,
+    -116.14092181157623,
+    40.727878674222175
+  ],
+  "reserved_box_outside_competition_rectangle": true,
+  "field_model_fits": 0,
+  "geological_scores_observed": 0,
+  "drivendata_requests": 0,
+  "competition_uploads": 0,
+  "sources": {
+    "eastern_magnetics": {
+      "status": "VERIFIED FULL TRANSPORT AND INPUT SCHEMA",
+      "doi": "https://doi.org/10.5066/P13VSMZ3",
+      "license": "CC0 1.0 as stated by USGS parent release",
+      "transport": {
+        "url": "https://www.sciencebase.gov/catalog/file/get/68c9d87fd4be0274ff4be93e?f=__disk__80%2Fd5%2F2e%2F80d52ec9a27baa4946af580fa1c173c7bb91e0ab",
+        "bytes": 210814683,
+        "sha256": "a851d6e502d2304b2649dc6d3dbe17cd242ff349af296c9bc17e75a5493aa35d",
+        "http_status": 200,
+        "md5": "b5faee39106a9421579cb97fa799cce8",
+        "official_metadata_md5_matched": true,
+        "official_metadata_bytes_matched": true
+      },
+      "official_item_transport": {
+        "url": "https://www.sciencebase.gov/catalog/item/68c9d87fd4be0274ff4be93e?format=json",
+        "bytes": 18341,
+        "sha256": "7149a185f59ba4d25494f3dd2c31fafe4c558dfd5c563b9191c0d9df8956d15e",
+        "http_status": 200,
+        "md5": "79694f4b006cc0d1c5f921a94f38f8b2",
+        "official_metadata_md5_matched": false,
+        "official_metadata_bytes_matched": false
+      },
+      "metadata_xml_transport": {
+        "url": "https://www.sciencebase.gov/catalog/file/get/68c9d87fd4be0274ff4be93e?f=__disk__cd%2F31%2F7c%2Fcd317ce112240b9de9e643533b7267e10c00184a",
+        "bytes": 25110,
+        "sha256": "c9acd10fe1c4fbf1658864a013589c2ec08bdac757dd302eedbd7ab6abe5af92",
+        "http_status": 200,
+        "md5": "b61572ccf8f506ace056588c0fc15771",
+        "official_metadata_md5_matched": true,
+        "official_metadata_bytes_matched": true
+      },
+      "metadata_unit_context": [
+        {
+          "tag": "abstract",
+          "text": "This data release provides vector flight-line (point) and raster data for a high-resolution airborne magnetic and radiometric survey over a part of the eastern Great Basin, Nevada. The survey was acquired as part of the USGS Earth Mapping Resource Initiative (Earth MRI) to improve our understanding of the fundamental geologic framework of the region with applications to evaluating natural resources and geologic hazards. The survey traverses a region in east central Nevada that is part of the eastern Great Basin and includes the towns of Ely and Eureka. The survey area hosts multiple known and potential mineralizing systems including Carlin type deposits, porphyry deposits (copper, molybdenum, silver), intrusion related gold deposits, rare metal granites, and lacustrine evaporites that contain critical minerals.\n\nData for this survey were acquired and processed by New Resolution Geophysics (NRG) under contract to Woolpert Inc. and the USGS. The survey was flown from August 2024 to May 2025 by  helicopter to best acquire data over areas with mountainous topography. Pre-planned flight lines were flown in an E-W direction with 200-m line spacing; N-S tie-lines were flown with 2000-m line spacing. The nominal flight height of 100 meters (m) above ground, with areas having higher population densities flown at a nominal height of 330 m above ground for safety reasons.  A total of approximately 126,000 linear kilometers of data were collected covering an area that is 170 km E-W and 220 km N-S at its widest dimensions. Areas excluded from data collection are tribal lands and wilderness areas. Following acquisition, NRG also performed extensive post-processing of the data and delivered the final databases, grids, and images. Details regarding the flights and data processing are described in the contractor report provided in this release"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "enttypd",
+          "text": "3-band color TIF images of the Total Magnetic Intensity, Reduced to Pole, and Vertical Derivative magnetic datasets.\nTMI = total magnetic intensity anomaly\nRTP = reduced to pole magnetic anomaly\nVD1 = vertical derivative magnetic anomaly\nRTP-VD1 = vertical derivative of the RTP magnetic anomaly"
+        },
+        {
+          "tag": "enttypd",
+          "text": "Raster magnetic datasets in both Geosoft (.grd) and geotif (.tif) formats\nTMI = total magnetic intensity anomaly\nRTP = reduced to pole magnetic anomaly\nVD1 = vertical derivative magnetic anomaly\nRTP-VD1 = vertical derivative of the RTP magnetic anomaly"
+        }
+      ],
+      "archive": {
+        "members": [
+          {
+            "name": "NVGB_RTP_VD1.tfw",
+            "bytes": 92,
+            "special": false
+          },
+          {
+            "name": "NVGB_RTP_VD1.tif",
+            "bytes": 100938941,
+            "special": false
+          },
+          {
+            "name": "NVGB_VD1.tfw",
+            "bytes": 92,
+            "special": false
+          },
+          {
+            "name": "NVGB_VD1.tif",
+            "bytes": 100938941,
+            "special": false
+          },
+          {
+            "name": "NVGB_TMI.tif",
+            "bytes": 131206389,
+            "special": false
+          },
+          {
+            "name": "NVGB_RTP.tfw",
+            "bytes": 92,
+            "special": false
+          },
+          {
+            "name": "NVGB_RTP.tif",
+            "bytes": 100938941,
+            "special": false
+          }
+        ],
+        "uncompressed_bytes": 434023488,
+        "crc_verified": true
+      },
+      "rasters": [
+        {
+          "name": "NVGB_RTP.tif",
+          "sha256": "e1054589d8a28948f6dc5f5a7151aaebae6d7378844da919d24a666aeb28957e",
+          "bytes": 100938941,
+          "count": 1,
+          "dtypes": [
+            "float32"
+          ],
+          "color_interpretation": [
+            "gray"
+          ],
+          "crs": "EPSG:32611",
+          "shape": [
+            5573,
+            4375
+          ],
+          "resolution": [
+            40.0,
+            40.0
+          ],
+          "bounds": [
+            537663.3384090001,
+            4226239.68728,
+            712663.3384090001,
+            4449159.68728
+          ],
+          "nodata": -1.0000000331813535e+32,
+          "units": [
+            null
+          ],
+          "descriptions": [
+            null
+          ],
+          "numeric_single_band_not_color_image": true,
+          "scope": "Input support/metadata only; numeric values are not visualized or evaluated against faults",
+          "reserved_box_outer_window_cells": 6215520,
+          "reserved_box_supported_cells": 4301130,
+          "reserved_box_support_fraction": 0.6919984168661673,
+          "support_count_not_prediction_vs_label": true,
+          "reserved_box_bounds_wgs84": [
+            -115.8,
+            38.8,
+            -114.8,
+            39.8
+          ],
+          "support_scope": "Envelope transformed to source grid; not polygon-exact coverage or independent acquisition resolution"
+        },
+        {
+          "name": "NVGB_RTP_VD1.tif",
+          "sha256": "4a29e823be6100adb76132f661c0a509e82a3c438fb9b480bdd4df05ad3c9efe",
+          "bytes": 100938941,
+          "count": 1,
+          "dtypes": [
+            "float32"
+          ],
+          "color_interpretation": [
+            "gray"
+          ],
+          "crs": "EPSG:32611",
+          "shape": [
+            5573,
+            4375
+          ],
+          "resolution": [
+            40.0,
+            40.0
+          ],
+          "bounds": [
+            537663.3384090001,
+            4226239.68728,
+            712663.3384090001,
+            4449159.68728
+          ],
+          "nodata": -1.0000000331813535e+32,
+          "units": [
+            null
+          ],
+          "descriptions": [
+            null
+          ],
+          "numeric_single_band_not_color_image": true,
+          "scope": "Input support/metadata only; numeric values are not visualized or evaluated against faults",
+          "reserved_box_outer_window_cells": 6215520,
+          "reserved_box_supported_cells": 4301130,
+          "reserved_box_support_fraction": 0.6919984168661673,
+          "support_count_not_prediction_vs_label": true,
+          "reserved_box_bounds_wgs84": [
+            -115.8,
+            38.8,
+            -114.8,
+            39.8
+          ],
+          "support_scope": "Envelope transformed to source grid; not polygon-exact coverage or independent acquisition resolution"
+        },
+        {
+          "name": "NVGB_TMI.tif",
+          "sha256": "edb5934eb8cef0d2d31336ba7ccb988797bfc7657e8c0bdc3fc5881531275105",
+          "bytes": 131206389,
+          "count": 1,
+          "dtypes": [
+            "float32"
+          ],
+          "color_interpretation": [
+            "gray"
+          ],
+          "crs": "EPSG:32611",
+          "shape": [
+            5573,
+            4375
+          ],
+          "resolution": [
+            40.0,
+            40.0
+          ],
+          "bounds": [
+            537663.338,
+            4226239.69,
+            712663.338,
+            4449159.69
+          ],
+          "nodata": -999999.0,
+          "units": [
+            null
+          ],
+          "descriptions": [
+            null
+          ],
+          "numeric_single_band_not_color_image": true,
+          "scope": "Input support/metadata only; numeric values are not visualized or evaluated against faults",
+          "reserved_box_outer_window_cells": 6215520,
+          "reserved_box_supported_cells": 4330968,
+          "reserved_box_support_fraction": 0.6967989806162638,
+          "support_count_not_prediction_vs_label": true,
+          "reserved_box_bounds_wgs84": [
+            -115.8,
+            38.8,
+            -114.8,
+            39.8
+          ],
+          "support_scope": "Envelope transformed to source grid; not polygon-exact coverage or independent acquisition resolution"
+        },
+        {
+          "name": "NVGB_VD1.tif",
+          "sha256": "d848361f71bb4c099a01578aced907b90e4a5b679ae7c3027a9127c9913547c6",
+          "bytes": 100938941,
+          "count": 1,
+          "dtypes": [
+            "float32"
+          ],
+          "color_interpretation": [
+            "gray"
+          ],
+          "crs": "EPSG:32611",
+          "shape": [
+            5573,
+            4375
+          ],
+          "resolution": [
+            40.0,
+            40.0
+          ],
+          "bounds": [
+            537663.338409,
+            4226239.687277,
+            712663.338409,
+            4449159.687277
+          ],
+          "nodata": -1.0000000331813535e+32,
+          "units": [
+            null
+          ],
+          "descriptions": [
+            null
+          ],
+          "numeric_single_band_not_color_image": true,
+          "scope": "Input support/metadata only; numeric values are not visualized or evaluated against faults",
+          "reserved_box_outer_window_cells": 6215520,
+          "reserved_box_supported_cells": 4301130,
+          "reserved_box_support_fraction": 0.6919984168661673,
+          "support_count_not_prediction_vs_label": true,
+          "reserved_box_bounds_wgs84": [
+            -115.8,
+            38.8,
+            -114.8,
+            39.8
+          ],
+          "support_scope": "Envelope transformed to source grid; not polygon-exact coverage or independent acquisition resolution"
+        }
+      ],
+      "candidate_validation_viable": false,
+      "limitations": [
+        "Support window is only input coverage, not hide-and-recover evaluation",
+        "200m flight lines / nominal 100m clearance differ from western GeoDAWN Area 2",
+        "No matching full 31-channel control, original H19 arms or locked fresh-fit protocol available",
+        "Units/processing/source compatibility and whole-system cross-domain links need review before transfer"
+      ]
+    },
+    "national_qfaults": {
+      "status": "BLOCKED / REQUIRES REVIEW",
+      "error_type": "DriverError",
+      "error": "Driver was not able to calculate bounds",
+      "not_evidence_of_global_unavailability": true
+    },
+    "paleo_geothermal": {
+      "status": "VERIFIED FULL TRANSPORT AND INPUT SCHEMA",
+      "transport": {
+        "url": "https://gdr.openei.org/files/1391/paleo_geothermal_regional.zip",
+        "bytes": 84008,
+        "sha256": "faffcf697f32dbbf6cbb317cd1effb3e305538ce38eb239d72d0c6fa071e91ca",
+        "http_status": 200,
+        "md5": "8a370f1867986f243182547734bc8b19",
+        "official_metadata_md5_matched": false,
+        "official_metadata_bytes_matched": false
+      },
+      "archive": {
+        "members": [
+          {
+            "name": "Paleo_geothermal_final.cpg",
+            "bytes": 5,
+            "special": false
+          },
+          {
+            "name": "Paleo_geothermal_final.csv",
+            "bytes": 105551,
+            "special": false
+          },
+          {
+            "name": "Paleo_geothermal_final.dbf",
+            "bytes": 1115579,
+            "special": false
+          },
+          {
+            "name": "Paleo_geothermal_final.prj",
+            "bytes": 167,
+            "special": false
+          },
+          {
+            "name": "Paleo_geothermal_final.sbn",
+            "bytes": 7116,
+            "special": false
+          },
+          {
+            "name": "Paleo_geothermal_final.sbx",
+            "bytes": 476,
+            "special": false
+          },
+          {
+            "name": "Paleo_geothermal_final.shp",
+            "bytes": 19952,
+            "special": false
+          },
+          {
+            "name": "Paleo_geothermal_final.shx",
+            "bytes": 5772,
+            "special": false
+          }
+        ],
+        "uncompressed_bytes": 1254618,
+        "crc_verified": true
+      },
+      "schemas": [
+        {
+          "layer": "Paleo_geothermal_final",
+          "features": 709,
+          "crs": "EPSG:4269",
+          "geometry": "Point",
+          "fields": {
+            "FID_": "int:10",
+            "Long_deg": "float:19.11",
+            "Lat_deg": "float:19.11",
+            "Location": "str:254",
+            "State": "str:254",
+            "Deposit_ty": "str:254",
+            "Map_unit": "str:254",
+            "Ref_source": "str:254",
+            "Comments": "str:254"
+          },
+          "bounds": [
+            -121.975747,
+            35.14071299,
+            -111.2084502,
+            44.892754
+          ],
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        }
+      ],
+      "new_label_freshness_established": false,
+      "model_input": false,
+      "caveat": "A new download/publication date is not evidence of independent new labels; source lineage, mapping scale and rights require review"
+    },
+    "sierra_atlas": {
+      "status": "BLOCKED / REQUIRES REVIEW",
+      "error_type": "DriverError",
+      "error": "Driver was not able to calculate bounds",
+      "not_evidence_of_global_unavailability": true
+    }
+  },
+  "scope": "Official full-byte transport/schema/coverage metadata only. NOT scientific validation, new fault discovery or eligible submission."
+}
+

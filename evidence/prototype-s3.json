@@ -1,0 +1,29 @@
+{
+  "generated_utc": "2026-10-01T04:04:39+00:00",
+  "kind": "S3-H21-9-SYNTHETIC-ONLY",
+  "phase_policy": {
+    "phase": "INPUT_ONLY",
+    "activity": "synthetic-prototype",
+    "authorized": true
+  },
+  "registration_sha256": "7353bfbdabe48637bdd549722cbefaa70da1bb5ca62f4c1ee80332c23e9145a8",
+  "prototype_sha256": "3f8ca1803385a5851a6b869a00628390f835a65c8e9d73a9f1ba6077004c5c28",
+  "checks": {
+    "constant_interior_zero": true,
+    "linear_ramp_interior_zero": true,
+    "uniform_roughness_interior_zero": true,
+    "toy_side_contrast_detected": true,
+    "offset_invariant": true,
+    "sign_invariant": true,
+    "transpose_invariant": true,
+    "missing_strip_not_a_contact": true,
+    "all_outputs_finite": true
+  },
+  "passed": true,
+  "field_maps_computed": 0,
+  "field_model_fits": 0,
+  "geological_scores_observed": 0,
+  "new_submission_tiffs": 0,
+  "scope": "Numerical/support invariants only. Strength is neither a calibrated probability nor evidence of faults, hydrothermal flow or a DTI gain.",
+  "initial_synthetic_failures_retained_in_notes": "research/implementation-notes-s3.md"
+}

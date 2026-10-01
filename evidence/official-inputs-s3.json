@@ -1,0 +1,3545 @@
+{
+  "kind": "S3-input-only-official-obtainability",
+  "generated_utc": "2026-10-01T03:41:41+00:00",
+  "code_commit": "1637294247782ae91affc0dfddb7ef2825107772",
+  "actions_run_id": "36811664161",
+  "registration_sha256": "7353bfbdabe48637bdd549722cbefaa70da1bb5ca62f4c1ee80332c23e9145a8",
+  "reserved_box_wgs84": [
+    -115.8,
+    38.8,
+    -114.8,
+    39.8
+  ],
+  "competition_outer_bounds_wgs84": [
+    -120.03717095080793,
+    37.33119286569775,
+    -116.14092181157623,
+    40.727878674222175
+  ],
+  "reserved_box_outside_competition_rectangle": true,
+  "field_model_fits": 0,
+  "geological_scores_observed": 0,
+  "drivendata_requests": 0,
+  "competition_uploads": 0,
+  "sources": {
+    "eastern_magnetics": {
+      "status": "VERIFIED FULL TRANSPORT AND INPUT SCHEMA",
+      "doi": "https://doi.org/10.5066/P13VSMZ3",
+      "license": "CC0 1.0 as stated by USGS parent release",
+      "transport": {
+        "url": "https://www.sciencebase.gov/catalog/file/get/68c9d87fd4be0274ff4be93e?f=__disk__80%2Fd5%2F2e%2F80d52ec9a27baa4946af580fa1c173c7bb91e0ab",
+        "bytes": 210814683,
+        "sha256": "a851d6e502d2304b2649dc6d3dbe17cd242ff349af296c9bc17e75a5493aa35d",
+        "http_status": 200,
+        "md5": "b5faee39106a9421579cb97fa799cce8",
+        "official_metadata_md5_matched": true,
+        "official_metadata_bytes_matched": true
+      },
+      "official_item_transport": {
+        "url": "https://www.sciencebase.gov/catalog/item/68c9d87fd4be0274ff4be93e?format=json",
+        "bytes": 18341,
+        "sha256": "7149a185f59ba4d25494f3dd2c31fafe4c558dfd5c563b9191c0d9df8956d15e",
+        "http_status": 200,
+        "md5": "79694f4b006cc0d1c5f921a94f38f8b2",
+        "official_metadata_md5_matched": false,
+        "official_metadata_bytes_matched": false
+      },
+      "metadata_xml_transport": {
+        "url": "https://www.sciencebase.gov/catalog/file/get/68c9d87fd4be0274ff4be93e?f=__disk__cd%2F31%2F7c%2Fcd317ce112240b9de9e643533b7267e10c00184a",
+        "bytes": 25110,
+        "sha256": "c9acd10fe1c4fbf1658864a013589c2ec08bdac757dd302eedbd7ab6abe5af92",
+        "http_status": 200,
+        "md5": "b61572ccf8f506ace056588c0fc15771",
+        "official_metadata_md5_matched": true,
+        "official_metadata_bytes_matched": true
+      },
+      "metadata_unit_context": [
+        {
+          "tag": "abstract",
+          "text": "This data release provides vector flight-line (point) and raster data for a high-resolution airborne magnetic and radiometric survey over a part of the eastern Great Basin, Nevada. The survey was acquired as part of the USGS Earth Mapping Resource Initiative (Earth MRI) to improve our understanding of the fundamental geologic framework of the region with applications to evaluating natural resources and geologic hazards. The survey traverses a region in east central Nevada that is part of the eastern Great Basin and includes the towns of Ely and Eureka. The survey area hosts multiple known and potential mineralizing systems including Carlin type deposits, porphyry deposits (copper, molybdenum, silver), intrusion related gold deposits, rare metal granites, and lacustrine evaporites that contain critical minerals.\n\nData for this survey were acquired and processed by New Resolution Geophysics (NRG) under contract to Woolpert Inc. and the USGS. The survey was flown from August 2024 to May 2025 by  helicopter to best acquire data over areas with mountainous topography. Pre-planned flight lines were flown in an E-W direction with 200-m line spacing; N-S tie-lines were flown with 2000-m line spacing. The nominal flight height of 100 meters (m) above ground, with areas having higher population densities flown at a nominal height of 330 m above ground for safety reasons.  A total of approximately 126,000 linear kilometers of data were collected covering an area that is 170 km E-W and 220 km N-S at its widest dimensions. Areas excluded from data collection are tribal lands and wilderness areas. Following acquisition, NRG also performed extensive post-processing of the data and delivered the final databases, grids, and images. Details regarding the flights and data processing are described in the contractor report provided in this release"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "attrunit",
+          "text": "nanoteslas"
+        },
+        {
+          "tag": "enttypd",
+          "text": "3-band color TIF images of the Total Magnetic Intensity, Reduced to Pole, and Vertical Derivative magnetic datasets.\nTMI = total magnetic intensity anomaly\nRTP = reduced to pole magnetic anomaly\nVD1 = vertical derivative magnetic anomaly\nRTP-VD1 = vertical derivative of the RTP magnetic anomaly"
+        },
+        {
+          "tag": "enttypd",
+          "text": "Raster magnetic datasets in both Geosoft (.grd) and geotif (.tif) formats\nTMI = total magnetic intensity anomaly\nRTP = reduced to pole magnetic anomaly\nVD1 = vertical derivative magnetic anomaly\nRTP-VD1 = vertical derivative of the RTP magnetic anomaly"
+        }
+      ],
+      "archive": {
+        "members": [
+          {
+            "name": "NVGB_RTP_VD1.tfw",
+            "bytes": 92,
+            "special": false
+          },
+          {
+            "name": "NVGB_RTP_VD1.tif",
+            "bytes": 100938941,
+            "special": false
+          },
+          {
+            "name": "NVGB_VD1.tfw",
+            "bytes": 92,
+            "special": false
+          },
+          {
+            "name": "NVGB_VD1.tif",
+            "bytes": 100938941,
+            "special": false
+          },
+          {
+            "name": "NVGB_TMI.tif",
+            "bytes": 131206389,
+            "special": false
+          },
+          {
+            "name": "NVGB_RTP.tfw",
+            "bytes": 92,
+            "special": false
+          },
+          {
+            "name": "NVGB_RTP.tif",
+            "bytes": 100938941,
+            "special": false
+          }
+        ],
+        "uncompressed_bytes": 434023488,
+        "crc_verified": true
+      },
+      "rasters": [
+        {
+          "name": "NVGB_RTP.tif",
+          "sha256": "e1054589d8a28948f6dc5f5a7151aaebae6d7378844da919d24a666aeb28957e",
+          "bytes": 100938941,
+          "count": 1,
+          "dtypes": [
+            "float32"
+          ],
+          "color_interpretation": [
+            "gray"
+          ],
+          "crs": "EPSG:32611",
+          "shape": [
+            5573,
+            4375
+          ],
+          "resolution": [
+            40.0,
+            40.0
+          ],
+          "bounds": [
+            537663.3384090001,
+            4226239.68728,
+            712663.3384090001,
+            4449159.68728
+          ],
+          "nodata": -1.0000000331813535e+32,
+          "units": [
+            null
+          ],
+          "descriptions": [
+            null
+          ],
+          "numeric_single_band_not_color_image": true,
+          "scope": "Input support/metadata only; numeric values are not visualized or evaluated against faults",
+          "reserved_box_outer_window_cells": 6215520,
+          "reserved_box_supported_cells": 4301130,
+          "reserved_box_support_fraction": 0.6919984168661673,
+          "support_count_not_prediction_vs_label": true,
+          "reserved_box_bounds_wgs84": [
+            -115.8,
+            38.8,
+            -114.8,
+            39.8
+          ],
+          "support_scope": "Envelope transformed to source grid; not polygon-exact coverage or independent acquisition resolution"
+        },
+        {
+          "name": "NVGB_RTP_VD1.tif",
+          "sha256": "4a29e823be6100adb76132f661c0a509e82a3c438fb9b480bdd4df05ad3c9efe",
+          "bytes": 100938941,
+          "count": 1,
+          "dtypes": [
+            "float32"
+          ],
+          "color_interpretation": [
+            "gray"
+          ],
+          "crs": "EPSG:32611",
+          "shape": [
+            5573,
+            4375
+          ],
+          "resolution": [
+            40.0,
+            40.0
+          ],
+          "bounds": [
+            537663.3384090001,
+            4226239.68728,
+            712663.3384090001,
+            4449159.68728
+          ],
+          "nodata": -1.0000000331813535e+32,
+          "units": [
+            null
+          ],
+          "descriptions": [
+            null
+          ],
+          "numeric_single_band_not_color_image": true,
+          "scope": "Input support/metadata only; numeric values are not visualized or evaluated against faults",
+          "reserved_box_outer_window_cells": 6215520,
+          "reserved_box_supported_cells": 4301130,
+          "reserved_box_support_fraction": 0.6919984168661673,
+          "support_count_not_prediction_vs_label": true,
+          "reserved_box_bounds_wgs84": [
+            -115.8,
+            38.8,
+            -114.8,
+            39.8
+          ],
+          "support_scope": "Envelope transformed to source grid; not polygon-exact coverage or independent acquisition resolution"
+        },
+        {
+          "name": "NVGB_TMI.tif",
+          "sha256": "edb5934eb8cef0d2d31336ba7ccb988797bfc7657e8c0bdc3fc5881531275105",
+          "bytes": 131206389,
+          "count": 1,
+          "dtypes": [
+            "float32"
+          ],
+          "color_interpretation": [
+            "gray"
+          ],
+          "crs": "EPSG:32611",
+          "shape": [
+            5573,
+            4375
+          ],
+          "resolution": [
+            40.0,
+            40.0
+          ],
+          "bounds": [
+            537663.338,
+            4226239.69,
+            712663.338,
+            4449159.69
+          ],
+          "nodata": -999999.0,
+          "units": [
+            null
+          ],
+          "descriptions": [
+            null
+          ],
+          "numeric_single_band_not_color_image": true,
+          "scope": "Input support/metadata only; numeric values are not visualized or evaluated against faults",
+          "reserved_box_outer_window_cells": 6215520,
+          "reserved_box_supported_cells": 4330968,
+          "reserved_box_support_fraction": 0.6967989806162638,
+          "support_count_not_prediction_vs_label": true,
+          "reserved_box_bounds_wgs84": [
+            -115.8,
+            38.8,
+            -114.8,
+            39.8
+          ],
+          "support_scope": "Envelope transformed to source grid; not polygon-exact coverage or independent acquisition resolution"
+        },
+        {
+          "name": "NVGB_VD1.tif",
+          "sha256": "d848361f71bb4c099a01578aced907b90e4a5b679ae7c3027a9127c9913547c6",
+          "bytes": 100938941,
+          "count": 1,
+          "dtypes": [
+            "float32"
+          ],
+          "color_interpretation": [
+            "gray"
+          ],
+          "crs": "EPSG:32611",
+          "shape": [
+            5573,
+            4375
+          ],
+          "resolution": [
+            40.0,
+            40.0
+          ],
+          "bounds": [
+            537663.338409,
+            4226239.687277,
+            712663.338409,
+            4449159.687277
+          ],
+          "nodata": -1.0000000331813535e+32,
+          "units": [
+            null
+          ],
+          "descriptions": [
+            null
+          ],
+          "numeric_single_band_not_color_image": true,
+          "scope": "Input support/metadata only; numeric values are not visualized or evaluated against faults",
+          "reserved_box_outer_window_cells": 6215520,
+          "reserved_box_supported_cells": 4301130,
+          "reserved_box_support_fraction": 0.6919984168661673,
+          "support_count_not_prediction_vs_label": true,
+          "reserved_box_bounds_wgs84": [
+            -115.8,
+            38.8,
+            -114.8,
+            39.8
+          ],
+          "support_scope": "Envelope transformed to source grid; not polygon-exact coverage or independent acquisition resolution"
+        }
+      ],
+      "candidate_validation_viable": false,
+      "limitations": [
+        "Support window is only input coverage, not hide-and-recover evaluation",
+        "200m flight lines / nominal 100m clearance differ from western GeoDAWN Area 2",
+        "No matching full 31-channel control, original H19 arms or locked fresh-fit protocol available",
+        "Units/processing/source compatibility and whole-system cross-domain links need review before transfer"
+      ]
+    },
+    "national_qfaults": {
+      "status": "VERIFIED FULL TRANSPORT AND INPUT SCHEMA",
+      "transport": {
+        "url": "https://earthquake.usgs.gov/static/lfs/nshm/qfaults/Qfaults_GIS.zip",
+        "bytes": 32371696,
+        "sha256": "447eadc5926256710d988c30e5996ba540604caa0154f9746c48bad637926893",
+        "http_status": 200,
+        "md5": "e30bf7f7eb70bdd633cb47147017666c",
+        "official_metadata_md5_matched": false,
+        "official_metadata_bytes_matched": false
+      },
+      "archive": {
+        "members": [
+          {
+            "name": "SHP/ca_offshore.cpg",
+            "bytes": 5,
+            "special": false
+          },
+          {
+            "name": "SHP/ca_offshore.dbf",
+            "bytes": 1577713,
+            "special": false
+          },
+          {
+            "name": "SHP/ca_offshore.prj",
+            "bytes": 145,
+            "special": false
+          },
+          {
+            "name": "SHP/ca_offshore.sbn",
+            "bytes": 11052,
+            "special": false
+          },
+          {
+            "name": "SHP/ca_offshore.sbx",
+            "bytes": 484,
+            "special": false
+          },
+          {
+            "name": "SHP/ca_offshore.shp",
+            "bytes": 251068,
+            "special": false
+          },
+          {
+            "name": "SHP/ca_offshore.shp.xml",
+            "bytes": 24513,
+            "special": false
+          },
+          {
+            "name": "SHP/ca_offshore.shx",
+            "bytes": 8844,
+            "special": false
+          },
+          {
+            "name": "SHP/citations.xls",
+            "bytes": 2734080,
+            "special": false
+          },
+          {
+            "name": "SHP/fault_areas.cpg",
+            "bytes": 5,
+            "special": false
+          },
+          {
+            "name": "SHP/fault_areas.dbf",
+            "bytes": 25847,
+            "special": false
+          },
+          {
+            "name": "SHP/fault_areas.prj",
+            "bytes": 145,
+            "special": false
+          },
+          {
+            "name": "SHP/fault_areas.sbn",
+            "bytes": 492,
+            "special": false
+          },
+          {
+            "name": "SHP/fault_areas.sbx",
+            "bytes": 140,
+            "special": false
+          },
+          {
+            "name": "SHP/fault_areas.shp",
+            "bytes": 252024,
+            "special": false
+          },
+          {
+            "name": "SHP/fault_areas.shp.xml",
+            "bytes": 19414,
+            "special": false
+          },
+          {
+            "name": "SHP/fault_areas.shx",
+            "bytes": 396,
+            "special": false
+          },
+          {
+            "name": "SHP/fault_citation_keys.xls",
+            "bytes": 1569792,
+            "special": false
+          },
+          {
+            "name": "SHP/Qfaults_US_Database.cpg",
+            "bytes": 5,
+            "special": false
+          },
+          {
+            "name": "SHP/Qfaults_US_Database.dbf",
+            "bytes": 203395365,
+            "special": false
+          },
+          {
+            "name": "SHP/Qfaults_US_Database.prj",
+            "bytes": 145,
+            "special": false
+          },
+          {
+            "name": "SHP/Qfaults_US_Database.sbn",
+            "bytes": 1044060,
+            "special": false
+          },
+          {
+            "name": "SHP/Qfaults_US_Database.sbx",
+            "bytes": 11036,
+            "special": false
+          },
+          {
+            "name": "SHP/Qfaults_US_Database.shp",
+            "bytes": 22211872,
+            "special": false
+          },
+          {
+            "name": "SHP/Qfaults_US_Database.shp.xml",
+            "bytes": 82073,
+            "special": false
+          },
+          {
+            "name": "SHP/Qfaults_US_Database.shx",
+            "bytes": 902572,
+            "special": false
+          },
+          {
+            "name": "Symbology/Fault Areas.lyr",
+            "bytes": 13312,
+            "special": false
+          },
+          {
+            "name": "Symbology/fault_symbology.lyr",
+            "bytes": 16384,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/",
+            "bytes": 0,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000001.freelist",
+            "bytes": 4440,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000001.gdbindexes",
+            "bytes": 110,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000001.gdbtable",
+            "bytes": 503,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000001.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000001.TablesByName.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000002.gdbtable",
+            "bytes": 2055,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000002.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000003.gdbindexes",
+            "bytes": 42,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000003.gdbtable",
+            "bytes": 758,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000003.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000004.CatItemsByPhysicalName.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000004.CatItemsByType.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000004.FDO_UUID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000004.freelist",
+            "bytes": 37208,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000004.gdbindexes",
+            "bytes": 310,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000004.gdbtable",
+            "bytes": 354954,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000004.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000004.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000004.spx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000005.CatItemTypesByName.atx",
+            "bytes": 12310,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000005.CatItemTypesByParentTypeID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000005.CatItemTypesByUUID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000005.gdbindexes",
+            "bytes": 296,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000005.gdbtable",
+            "bytes": 2071,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000005.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000006.CatRelsByDestinationID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000006.CatRelsByOriginID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000006.CatRelsByType.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000006.FDO_UUID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000006.freelist",
+            "bytes": 4440,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000006.gdbindexes",
+            "bytes": 318,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000006.gdbtable",
+            "bytes": 993,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000006.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000007.CatRelTypesByBackwardLabel.atx",
+            "bytes": 12310,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000007.CatRelTypesByDestItemTypeID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000007.CatRelTypesByForwardLabel.atx",
+            "bytes": 12310,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000007.CatRelTypesByName.atx",
+            "bytes": 12310,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000007.CatRelTypesByOriginItemTypeID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000007.CatRelTypesByUUID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000007.gdbindexes",
+            "bytes": 602,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000007.gdbtable",
+            "bytes": 3626,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000007.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000009.GDB_3_r_num.atx",
+            "bytes": 57366,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000009.gdbindexes",
+            "bytes": 120,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000009.gdbtable",
+            "bytes": 1809002,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000009.gdbtablx",
+            "bytes": 35872,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a0000000a.GDB_4_ref_id.atx",
+            "bytes": 12283926,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a0000000a.gdbindexes",
+            "bytes": 174,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a0000000a.gdbtable",
+            "bytes": 48728409,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a0000000a.gdbtablx",
+            "bytes": 568352,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a0000000a.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a0000000a.spx",
+            "bytes": 1622038,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a0000000c.GDB_6_ref_num.atx",
+            "bytes": 245782,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a0000000c.GDB_6_reference_id.atx",
+            "bytes": 569366,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a0000000c.gdbindexes",
+            "bytes": 190,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a0000000c.gdbtable",
+            "bytes": 447100,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a0000000c.gdbtablx",
+            "bytes": 122912,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a0000000d.GDB_7_ref_id.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a0000000d.gdbindexes",
+            "bytes": 174,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a0000000d.gdbtable",
+            "bytes": 121369,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a0000000d.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a0000000d.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a0000000d.spx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a0000000e.gdbindexes",
+            "bytes": 66,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a0000000e.gdbtable",
+            "bytes": 350598,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a0000000e.gdbtablx",
+            "bytes": 122912,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a0000000f.freelist",
+            "bytes": 217432,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a0000000f.GDB_9_ref_num.atx",
+            "bytes": 245782,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a0000000f.GDB_9_reference_id.atx",
+            "bytes": 569366,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a0000000f.gdbindexes",
+            "bytes": 190,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a0000000f.gdbtable",
+            "bytes": 784652,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a0000000f.gdbtablx",
+            "bytes": 122912,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000010.gdbindexes",
+            "bytes": 116,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000010.gdbtable",
+            "bytes": 409394,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000010.gdbtablx",
+            "bytes": 10272,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000010.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/a00000010.spx",
+            "bytes": 20502,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/gdb",
+            "bytes": 4,
+            "special": false
+          },
+          {
+            "name": "GDB/Qfaults_2020_WGS84.gdb/timestamps",
+            "bytes": 400,
+            "special": false
+          }
+        ],
+        "uncompressed_bytes": 304188931,
+        "crc_verified": true
+      },
+      "schemas": [
+        {
+          "layer": "Qfaults_US_Database",
+          "features": 112809,
+          "crs": "EPSG:4326",
+          "geometry": "LineString",
+          "fields": {
+            "fault_name": "str:100",
+            "section_na": "str:100",
+            "fault_id": "str:10",
+            "section_id": "str:1",
+            "Location": "str:100",
+            "linetype": "str:50",
+            "age": "str:50",
+            "dip_direct": "str:50",
+            "slip_rate": "str:100",
+            "slip_sense": "str:50",
+            "scale": "str:50",
+            "class": "str:50",
+            "certainty": "str:200",
+            "strike": "str:50",
+            "fault_leng": "int:10",
+            "cooperator": "str:200",
+            "earthquake": "str:200",
+            "review_dat": "date",
+            "fault_url": "str:254",
+            "symbology": "str:100",
+            "ref_id": "str:50",
+            "Shape_Leng": "float:19.11"
+          },
+          "bounds": [
+            -179.99998854118687,
+            18.76622709367897,
+            179.99998854118684,
+            70.75169850497407
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth",
+          "features_with_envelope_intersecting_reserved_box": 558,
+          "reserved_box_bounds_wgs84": [
+            -115.8,
+            38.8,
+            -114.8,
+            39.8
+          ],
+          "labels_used_in_model_or_score": false
+        },
+        {
+          "layer": "ca_offshore",
+          "features": 1093,
+          "crs": "EPSG:4326",
+          "geometry": "LineString",
+          "fields": {
+            "FAULT_NAME": "str:100",
+            "FAULT_ZONE": "str:100",
+            "SECTION_NA": "str:100",
+            "OTHER_NAME": "str:100",
+            "FAULT_ID": "str:25",
+            "FLT_AGE": "str:100",
+            "SLIP_RATE": "str:20",
+            "SLIP_SENSE": "str:20",
+            "SHAPE_LENG": "float:13.11",
+            "MAPPED_SCA": "str:50",
+            "LINE_TYPE": "str:50",
+            "EXPRESSION": "str:250",
+            "FLT_SOURCE": "str:250",
+            "Location": "str:254",
+            "Section_ID": "str:10"
+          },
+          "bounds": [
+            -124.44440333028425,
+            32.33548862207963,
+            -117.11708008089252,
+            40.27689773331813
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth",
+          "features_with_envelope_intersecting_reserved_box": 0,
+          "reserved_box_bounds_wgs84": [
+            -115.8,
+            38.8,
+            -114.8,
+            39.8
+          ],
+          "labels_used_in_model_or_score": false
+        },
+        {
+          "layer": "fault_areas",
+          "features": 37,
+          "crs": "EPSG:4326",
+          "geometry": "Polygon",
+          "fields": {
+            "fault_id": "int:10",
+            "section_id": "str:1",
+            "name": "str:254",
+            "age": "str:50",
+            "slipsense": "str:25",
+            "cooperator": "str:100",
+            "url": "str:200",
+            "ref_id": "str:10",
+            "Shape_Leng": "float:19.11",
+            "Shape_Area": "float:19.11"
+          },
+          "bounds": [
+            -156.0180649797712,
+            18.92951391587932,
+            -70.80589947035827,
+            65.59143981705472
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth",
+          "features_with_envelope_intersecting_reserved_box": 0,
+          "reserved_box_bounds_wgs84": [
+            -115.8,
+            38.8,
+            -114.8,
+            39.8
+          ],
+          "labels_used_in_model_or_score": false
+        },
+        {
+          "layer": "citations",
+          "features": 6431,
+          "crs": "",
+          "geometry": "None",
+          "fields": {
+            "year": "str:50",
+            "author": "str:1000",
+            "citation": "str:1000",
+            "r_num": "int32",
+            "r_num_text": "str:255"
+          },
+          "bounds": null,
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "Qfaults_2020",
+          "features": 112944,
+          "crs": "EPSG:4326",
+          "geometry": "MultiLineString",
+          "fields": {
+            "fault_name": "str:100",
+            "section_name": "str:100",
+            "fault_id": "str:10",
+            "section_id": "str:1",
+            "Location": "str:100",
+            "linetype": "str:50",
+            "age": "str:50",
+            "dip_direction": "str:50",
+            "slip_rate": "str:100",
+            "slip_sense": "str:50",
+            "mapped_scale": "str:50",
+            "class": "str:50",
+            "mapped_certainty": "str:200",
+            "strike": "str:50",
+            "total_fault_length": "int32",
+            "cooperators": "str:200",
+            "earthquake": "str:200",
+            "last_review": "datetime",
+            "fault_url": "str:500",
+            "symbology": "str:100",
+            "ref_id": "str:50",
+            "Fault_ID_num": "int32",
+            "Shape_Length": "float"
+          },
+          "bounds": [
+            -179.99998854099996,
+            18.766227094000044,
+            179.9999885410001,
+            70.75169850500004
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth",
+          "features_with_envelope_intersecting_reserved_box": 558,
+          "reserved_box_bounds_wgs84": [
+            -115.8,
+            38.8,
+            -114.8,
+            39.8
+          ],
+          "labels_used_in_model_or_score": false
+        },
+        {
+          "layer": "fault_areas",
+          "features": 37,
+          "crs": "EPSG:4326",
+          "geometry": "MultiPolygon",
+          "fields": {
+            "fault_id": "int32",
+            "section_id": "str:1",
+            "fault_area_name": "str:500",
+            "age": "str:50",
+            "slipsense": "str:25",
+            "cooperator": "str:100",
+            "url": "str:200",
+            "ref_id": "str:10",
+            "Shape_Length": "float",
+            "Shape_Area": "float"
+          },
+          "bounds": [
+            -156.01806497999996,
+            18.929513916000076,
+            -70.80589946999999,
+            65.59143981700004
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth",
+          "features_with_envelope_intersecting_reserved_box": 0,
+          "reserved_box_bounds_wgs84": [
+            -115.8,
+            38.8,
+            -114.8,
+            39.8
+          ],
+          "labels_used_in_model_or_score": false
+        },
+        {
+          "layer": "ref_id_to_citation_id",
+          "features": 24126,
+          "crs": "",
+          "geometry": "None",
+          "fields": {
+            "reference_number": "str:20",
+            "reference_id": "str:6"
+          },
+          "bounds": null,
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "California_Offshore",
+          "features": 1093,
+          "crs": "EPSG:4326",
+          "geometry": "MultiLineString",
+          "fields": {
+            "FAULT_NAME": "str:100",
+            "FAULT_ZONE": "str:100",
+            "SECTION_NA": "str:100",
+            "OTHER_NAME": "str:100",
+            "FAULT_ID": "str:25",
+            "FLT_AGE": "str:100",
+            "SLIP_RATE": "str:20",
+            "SLIP_SENSE": "str:20",
+            "MAPPED_SCA": "str:50",
+            "LINE_TYPE": "str:50",
+            "EXPRESSION": "str:250",
+            "FLT_SOURCE": "str:250",
+            "Location": "str:255",
+            "Section_ID": "str:10",
+            "Shape_Length": "float"
+          },
+          "bounds": [
+            -124.44440332999994,
+            32.33548862200007,
+            -117.11708008099998,
+            40.276897733000055
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth",
+          "features_with_envelope_intersecting_reserved_box": 0,
+          "reserved_box_bounds_wgs84": [
+            -115.8,
+            38.8,
+            -114.8,
+            39.8
+          ],
+          "labels_used_in_model_or_score": false
+        },
+        {
+          "layer": "Qfaults_2020_citations",
+          "features": 24126,
+          "crs": "",
+          "geometry": "None",
+          "fields": {
+            "reference_id": "str:6",
+            "reference_number": "str:20",
+            "ref_num": "int32"
+          },
+          "bounds": null,
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "fault_areas_citations",
+          "features": 24126,
+          "crs": "",
+          "geometry": "None",
+          "fields": {
+            "reference_number": "str:20",
+            "reference_id": "str:6",
+            "ref_num": "int32"
+          },
+          "bounds": null,
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        }
+      ],
+      "new_label_freshness_established": false,
+      "model_input": false,
+      "caveat": "A new download/publication date is not evidence of independent new labels; source lineage, mapping scale and rights require review"
+    },
+    "paleo_geothermal": {
+      "status": "VERIFIED FULL TRANSPORT AND INPUT SCHEMA",
+      "transport": {
+        "url": "https://gdr.openei.org/files/1391/paleo_geothermal_regional.zip",
+        "bytes": 84008,
+        "sha256": "faffcf697f32dbbf6cbb317cd1effb3e305538ce38eb239d72d0c6fa071e91ca",
+        "http_status": 200,
+        "md5": "8a370f1867986f243182547734bc8b19",
+        "official_metadata_md5_matched": false,
+        "official_metadata_bytes_matched": false
+      },
+      "archive": {
+        "members": [
+          {
+            "name": "Paleo_geothermal_final.cpg",
+            "bytes": 5,
+            "special": false
+          },
+          {
+            "name": "Paleo_geothermal_final.csv",
+            "bytes": 105551,
+            "special": false
+          },
+          {
+            "name": "Paleo_geothermal_final.dbf",
+            "bytes": 1115579,
+            "special": false
+          },
+          {
+            "name": "Paleo_geothermal_final.prj",
+            "bytes": 167,
+            "special": false
+          },
+          {
+            "name": "Paleo_geothermal_final.sbn",
+            "bytes": 7116,
+            "special": false
+          },
+          {
+            "name": "Paleo_geothermal_final.sbx",
+            "bytes": 476,
+            "special": false
+          },
+          {
+            "name": "Paleo_geothermal_final.shp",
+            "bytes": 19952,
+            "special": false
+          },
+          {
+            "name": "Paleo_geothermal_final.shx",
+            "bytes": 5772,
+            "special": false
+          }
+        ],
+        "uncompressed_bytes": 1254618,
+        "crc_verified": true
+      },
+      "schemas": [
+        {
+          "layer": "Paleo_geothermal_final",
+          "features": 709,
+          "crs": "EPSG:4269",
+          "geometry": "Point",
+          "fields": {
+            "FID_": "int:10",
+            "Long_deg": "float:19.11",
+            "Lat_deg": "float:19.11",
+            "Location": "str:254",
+            "State": "str:254",
+            "Deposit_ty": "str:254",
+            "Map_unit": "str:254",
+            "Ref_source": "str:254",
+            "Comments": "str:254"
+          },
+          "bounds": [
+            -121.975747,
+            35.14071299,
+            -111.2084502,
+            44.892754
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        }
+      ],
+      "new_label_freshness_established": false,
+      "model_input": false,
+      "caveat": "A new download/publication date is not evidence of independent new labels; source lineage, mapping scale and rights require review"
+    },
+    "sierra_atlas": {
+      "status": "VERIFIED FULL TRANSPORT AND INPUT SCHEMA",
+      "transport": {
+        "url": "https://www.conservation.ca.gov/cgs/documents/publications/geologic-data-maps/GDM_009-SNESA-Data.zip",
+        "bytes": 38073921,
+        "sha256": "2afab5c0ae19e3d2c7449f56078d4172bfee16edac63232cf40ee01783341610",
+        "http_status": 200,
+        "md5": "d239bc4bae3fc010040dc25fed72d12e",
+        "official_metadata_md5_matched": false,
+        "official_metadata_bytes_matched": false
+      },
+      "archive": {
+        "members": [
+          {
+            "name": "GDM_09-Data/",
+            "bytes": 0,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/",
+            "bytes": 0,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/CarbonatePoints.csv",
+            "bytes": 76436,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/FossilPoints.csv",
+            "bytes": 56796,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/",
+            "bytes": 0,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000001.gdbindexes",
+            "bytes": 110,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000001.gdbtable",
+            "bytes": 1189,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000001.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000001.TablesByName.atx",
+            "bytes": 16406,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000002.gdbtable",
+            "bytes": 2055,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000002.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000003.gdbindexes",
+            "bytes": 42,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000003.gdbtable",
+            "bytes": 1081,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000003.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000004.CatItemsByPhysicalName.atx",
+            "bytes": 16406,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000004.CatItemsByType.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000004.FDO_UUID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000004.gdbindexes",
+            "bytes": 310,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000004.gdbtable",
+            "bytes": 1877742,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000004.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000004.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000004.spx",
+            "bytes": 61462,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000005.CatItemTypesByName.atx",
+            "bytes": 12310,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000005.CatItemTypesByParentTypeID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000005.CatItemTypesByUUID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000005.gdbindexes",
+            "bytes": 296,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000005.gdbtable",
+            "bytes": 2071,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000005.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000006.CatRelsByDestinationID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000006.CatRelsByOriginID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000006.CatRelsByType.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000006.FDO_UUID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000006.gdbindexes",
+            "bytes": 318,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000006.gdbtable",
+            "bytes": 7410,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000006.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000007.CatRelTypesByBackwardLabel.atx",
+            "bytes": 12310,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000007.CatRelTypesByDestItemTypeID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000007.CatRelTypesByForwardLabel.atx",
+            "bytes": 12310,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000007.CatRelTypesByName.atx",
+            "bytes": 12310,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000007.CatRelTypesByOriginItemTypeID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000007.CatRelTypesByUUID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000007.gdbindexes",
+            "bytes": 602,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000007.gdbtable",
+            "bytes": 3626,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000007.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000009.EditingTemplatesByDatasetGUID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000009.EditingTemplatesByName.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000009.EditingTemplatesByType.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000009.FDO_GlobalID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000009.gdbindexes",
+            "bytes": 378,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000009.gdbtable",
+            "bytes": 334,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000009.gdbtablx",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000000a.EditingTemplateRelsByDestinationID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000000a.EditingTemplateRelsByOriginID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000000a.EditingTemplateRelsByType.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000000a.gdbindexes",
+            "bytes": 344,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000000a.gdbtable",
+            "bytes": 127,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000000a.gdbtablx",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000000b.gdbindexes",
+            "bytes": 116,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000000b.gdbtable",
+            "bytes": 866285,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000000b.gdbtablx",
+            "bytes": 15392,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000000b.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000000b.spx",
+            "bytes": 36886,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000000c.gdbindexes",
+            "bytes": 116,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000000c.gdbtable",
+            "bytes": 10682,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000000c.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000000c.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000000c.spx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000000d.gdbindexes",
+            "bytes": 116,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000000d.gdbtable",
+            "bytes": 15809701,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000000d.gdbtablx",
+            "bytes": 51232,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000000d.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000000d.spx",
+            "bytes": 151574,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000000e.gdbindexes",
+            "bytes": 116,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000000e.gdbtable",
+            "bytes": 45505,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000000e.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000000e.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000000e.spx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000011.gdbindexes",
+            "bytes": 116,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000011.gdbtable",
+            "bytes": 2046915,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000011.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000011.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000011.spx",
+            "bytes": 16406,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000012.freelist",
+            "bytes": 24920,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000012.gdbtable",
+            "bytes": 34481,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000012.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000012.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000012.spx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000013.gdbindexes",
+            "bytes": 116,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000013.gdbtable",
+            "bytes": 6461480,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000013.gdbtablx",
+            "bytes": 122912,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000013.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000013.spx",
+            "bytes": 446486,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000014.gdbindexes",
+            "bytes": 116,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000014.gdbtable",
+            "bytes": 53525,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000014.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000014.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000014.spx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000016.gdbindexes",
+            "bytes": 116,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000016.gdbtable",
+            "bytes": 369815,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000016.gdbtablx",
+            "bytes": 20512,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000016.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000016.spx",
+            "bytes": 49174,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000017.gdbindexes",
+            "bytes": 116,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000017.gdbtable",
+            "bytes": 4398127,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000017.gdbtablx",
+            "bytes": 15392,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000017.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000017.spx",
+            "bytes": 36886,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000019.gdbindexes",
+            "bytes": 116,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000019.gdbtable",
+            "bytes": 36468,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000019.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000019.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000019.spx",
+            "bytes": 12310,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000001a.gdbindexes",
+            "bytes": 116,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000001a.gdbtable",
+            "bytes": 6415525,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000001a.gdbtablx",
+            "bytes": 35872,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000001a.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000001a.spx",
+            "bytes": 114710,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000001c.gdbindexes",
+            "bytes": 116,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000001c.gdbtable",
+            "bytes": 82748,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000001c.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000001c.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000001c.spx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000001d.gdbindexes",
+            "bytes": 116,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000001d.gdbtable",
+            "bytes": 1156713,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000001d.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000001d.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000001d.spx",
+            "bytes": 16406,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000001f.gdbindexes",
+            "bytes": 116,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000001f.gdbtable",
+            "bytes": 764605,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000001f.gdbtablx",
+            "bytes": 15392,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000001f.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000001f.spx",
+            "bytes": 53270,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000020.gdbindexes",
+            "bytes": 116,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000020.gdbtable",
+            "bytes": 7241,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000020.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000020.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000020.spx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000021.gdbindexes",
+            "bytes": 116,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000021.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000021.spx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000021tmp.freelist",
+            "bytes": 4440,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000021tmp.gdbtable",
+            "bytes": 11274,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000021tmp.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000022.gdbindexes",
+            "bytes": 116,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000022.gdbtable",
+            "bytes": 5842,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000022.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000022.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000022.spx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000023.gdbindexes",
+            "bytes": 116,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000023.gdbtable",
+            "bytes": 3677,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000023.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000023.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000023.spx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000038.gdbindexes",
+            "bytes": 66,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000038.gdbtable",
+            "bytes": 336935,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000038.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000039.freelist",
+            "bytes": 37208,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000039.gdbindexes",
+            "bytes": 66,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000039.gdbtable",
+            "bytes": 26295,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000039.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000003b.FDO_Source.atx",
+            "bytes": 53270,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000003b.gdbindexes",
+            "bytes": 120,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000003b.gdbtable",
+            "bytes": 84856,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000003b.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000051.gdbindexes",
+            "bytes": 256,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000051.gdbtable",
+            "bytes": 10544073,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000051.gdbtablx",
+            "bytes": 35872,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000051.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000051.I96AnnotationCla.atx",
+            "bytes": 57366,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000051.I96Status.atx",
+            "bytes": 49174,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000051.spx",
+            "bytes": 245782,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000052.gdbindexes",
+            "bytes": 116,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000052.gdbtable",
+            "bytes": 231015,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000052.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000052.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000052.spx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000053.gdbindexes",
+            "bytes": 116,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000053.gdbtable",
+            "bytes": 117592,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000053.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000053.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000053.spx",
+            "bytes": 12310,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000054.gdbindexes",
+            "bytes": 116,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000054.gdbtable",
+            "bytes": 129470,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000054.gdbtablx",
+            "bytes": 10272,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000054.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000054.spx",
+            "bytes": 73750,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000055.gdbindexes",
+            "bytes": 116,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000055.gdbtable",
+            "bytes": 50266,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000055.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000055.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a00000055.spx",
+            "bytes": 12310,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005a.gdbindexes",
+            "bytes": 206,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005a.gdbtable",
+            "bytes": 1266,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005a.gdbtablx",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005a.GDB_108_IsRetired.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005a.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005a.spx",
+            "bytes": 106518,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005b.G109multi.DestClassID.atx",
+            "bytes": 40982,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005b.G109multi.DestID.atx",
+            "bytes": 40982,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005b.G109multi.OriginClassID.atx",
+            "bytes": 40982,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005b.G109multi.OriginID.atx",
+            "bytes": 40982,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005b.G109multi.TopoRuleID.atx",
+            "bytes": 40982,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005b.G109multi.TopoRuleType.atx",
+            "bytes": 40982,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005b.gdbindexes",
+            "bytes": 388,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005b.gdbtable",
+            "bytes": 211765,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005b.gdbtablx",
+            "bytes": 25632,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005b.GDB_109_IsException.atx",
+            "bytes": 40982,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005b.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005b.spx",
+            "bytes": 61462,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005c.G110multi.DestClassID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005c.G110multi.DestID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005c.G110multi.OriginClassID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005c.G110multi.OriginID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005c.G110multi.TopoRuleID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005c.G110multi.TopoRuleType.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005c.gdbindexes",
+            "bytes": 388,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005c.gdbtable",
+            "bytes": 10013,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005c.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005c.GDB_110_IsException.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005c.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005c.spx",
+            "bytes": 57366,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005d.G111multi.DestClassID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005d.G111multi.DestID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005d.G111multi.OriginClassID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005d.G111multi.OriginID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005d.G111multi.TopoRuleID.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005d.G111multi.TopoRuleType.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005d.gdbindexes",
+            "bytes": 388,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005d.gdbtable",
+            "bytes": 1402,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005d.gdbtablx",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005d.GDB_111_IsException.atx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005d.horizon",
+            "bytes": 32,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000005d.spx",
+            "bytes": 4118,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000006d.gdbindexes",
+            "bytes": 66,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000006d.gdbtable",
+            "bytes": 16446,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000006d.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000006e.gdbindexes",
+            "bytes": 66,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000006e.gdbtable",
+            "bytes": 34902,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/a0000006e.gdbtablx",
+            "bytes": 5152,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/gdb",
+            "bytes": 4,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.gdb/timestamps",
+            "bytes": 400,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GDM_9_SierraNevadaEarthScienceAtlas_v1.mapx",
+            "bytes": 1086300,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/GeochronPoints.csv",
+            "bytes": 897827,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/resources/",
+            "bytes": 0,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/resources/AeromagneticAnomalyLines.lyrx",
+            "bytes": 16926,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/resources/CarbonatesPoints.lyrx",
+            "bytes": 42997,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/resources/CartographicLines.lyrx",
+            "bytes": 15762,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/resources/CartographicPoint.lyrx",
+            "bytes": 28044,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/resources/CompleteBouguerAnomalyLines.lyrx",
+            "bytes": 16956,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/resources/ContactsAndFaultLabels.lyrx",
+            "bytes": 7745,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/resources/ContactsAndFaults.lyrx",
+            "bytes": 91308,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/resources/FossilPoints.lyrx",
+            "bytes": 20563,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/resources/GeochronPoints.lyrx",
+            "bytes": 15383,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/resources/HistoricSeismicityPoints.lyrx",
+            "bytes": 21427,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/resources/IsostaticGravityAnomalyLines.lyrx",
+            "bytes": 16954,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/resources/LandslideOverlayPolys.lyrx",
+            "bytes": 17100,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/resources/MapUnitLines.lyrx",
+            "bytes": 17291,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/resources/MapUnitPolys.lyrx",
+            "bytes": 617621,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/resources/MetallogenicBeltsPolys.lyrx",
+            "bytes": 17303,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/resources/PseudogravityLines.lyrx",
+            "bytes": 16854,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/resources/QuaternaryActiveFaults.lyrx",
+            "bytes": 18630,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/resources/RepresentativeMinesPoints.lyrx",
+            "bytes": 20656,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/resources/ThermalSpringsPoints.lyrx",
+            "bytes": 19761,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/resources/VolcanicPolys.lyrx",
+            "bytes": 17014,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/CA_2022_SierraNevadaAtlas-database/resources/VolcanoPoints.lyrx",
+            "bytes": 20327,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/geophysical_data_geotiffs/",
+            "bytes": 0,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/geophysical_data_geotiffs/cba.tfw",
+            "bytes": 93,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/geophysical_data_geotiffs/cba.tif",
+            "bytes": 5050481,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/geophysical_data_geotiffs/cba.tif.aux.xml",
+            "bytes": 2158,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/geophysical_data_geotiffs/iso.tfw",
+            "bytes": 93,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/geophysical_data_geotiffs/iso.tif",
+            "bytes": 5050479,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/geophysical_data_geotiffs/iso.tif.aux.xml",
+            "bytes": 2080,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/geophysical_data_geotiffs/mag.tfw",
+            "bytes": 95,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/geophysical_data_geotiffs/mag.tif",
+            "bytes": 1575515,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/geophysical_data_geotiffs/mag.tif.aux.xml",
+            "bytes": 1775,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/geophysical_data_geotiffs/psgr.tfw",
+            "bytes": 95,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/geophysical_data_geotiffs/psgr.tif",
+            "bytes": 1576223,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/geophysical_data_geotiffs/psgr.tif.aux.xml",
+            "bytes": 1840,
+            "special": false
+          },
+          {
+            "name": "GDM_09-Data/geophysical_data_geotiffs/sierra_nevada_tif_metadata_into_review_v2.xml",
+            "bytes": 88127,
+            "special": false
+          }
+        ],
+        "uncompressed_bytes": 71658297,
+        "crc_verified": true
+      },
+      "schemas": [
+        {
+          "layer": "GeochronPoints",
+          "features": 2711,
+          "crs": "EPSG:3310",
+          "geometry": "Point",
+          "fields": {
+            "Type": "str:254",
+            "FieldSampleID": "str:254",
+            "AlternateSampleID": "str:254",
+            "GeologicUnit": "str:255",
+            "Lithology": "str:255",
+            "MaterialAnalyzed": "str:254",
+            "AgeUnits": "str:50",
+            "ErrorMeasure": "str:254",
+            "NumericAgeType": "str:255",
+            "NumericAgeUncertaintyQualifer": "str:255",
+            "GeologicAge": "str:255",
+            "MapUnit": "str:10",
+            "Symbol": "str:254",
+            "Label": "str:50",
+            "LocationSourceID": "str:50",
+            "AnalysisSourceID": "str:50",
+            "Notes": "str:500",
+            "GeochronPoints_ID": "str:50",
+            "SourceSampleUID": "str:10",
+            "StationsID": "str:50"
+          },
+          "bounds": [
+            -132979.40919999965,
+            -351448.12659999914,
+            269011.70299999975,
+            284938.17339999974
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "LandslideOverlayPolys",
+          "features": 13,
+          "crs": "EPSG:3310",
+          "geometry": "MultiPolygon",
+          "fields": {
+            "Type": "str:254",
+            "IdentityConfidence": "str:50",
+            "Label": "str:50",
+            "Symbol": "str:254",
+            "DataSourceID": "str:50",
+            "Notes": "str:254",
+            "LandslideOverlayPolys_ID": "str:50",
+            "InterpretationSourceID": "str:50",
+            "Shape_Length": "float",
+            "Shape_Area": "float"
+          },
+          "bounds": [
+            85358.4793999996,
+            -199613.12780000083,
+            186574.63179999968,
+            -39563.487299999164
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "AeromagneticAnomalyLines",
+          "features": 9932,
+          "crs": "EPSG:3310",
+          "geometry": "MultiLineString",
+          "fields": {
+            "Type": "str:254",
+            "ValueUnits": "str:50",
+            "Symbol": "str:254",
+            "Label": "str:50",
+            "DataSourceID": "str:50",
+            "Notes": "str:254",
+            "AeromagneticAnomalyLines_ID": "str:50",
+            "Shape_Length": "float"
+          },
+          "bounds": [
+            -168215.46980000008,
+            -368359.84979999997,
+            210671.19930000044,
+            268598.5247000009
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "CarbonatesPoints",
+          "features": 283,
+          "crs": "EPSG:3310",
+          "geometry": "Point",
+          "fields": {
+            "Type": "str:254",
+            "DepositSize": "str:255",
+            "DepositStatus": "str:255",
+            "Label": "str:50",
+            "Symbol": "str:254",
+            "MapUnit": "str:10",
+            "StationsID": "str:50",
+            "LocationSourceID": "str:50",
+            "DataSourceID": "str:50",
+            "Notes": "str:254",
+            "CarbonatesPoints_ID": "str:50",
+            "RockType": "str:255"
+          },
+          "bounds": [
+            -134148.47970000003,
+            -353223.7234000005,
+            208853.27419999987,
+            226749.16200000048
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "CompleteBouguerAnomalyLines",
+          "features": 746,
+          "crs": "EPSG:3310",
+          "geometry": "MultiLineString",
+          "fields": {
+            "Type": "str:254",
+            "ValueUnits": "str:50",
+            "Symbol": "str:254",
+            "Label": "str:50",
+            "DataSourceID": "str:50",
+            "Notes": "str:254",
+            "CompleteBouguerAnomalyLines_ID": "str:50",
+            "Shape_Length": "float"
+          },
+          "bounds": [
+            -168705.28149999958,
+            -368447.01290000044,
+            210565.81759999972,
+            268605.7873999998
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "ContactsAndFaults",
+          "features": 24283,
+          "crs": "EPSG:3310",
+          "geometry": "MultiLineString",
+          "fields": {
+            "Type": "str:254",
+            "IsConcealed": "str:1",
+            "ExistenceConfidence": "str:50",
+            "IdentityConfidence": "str:50",
+            "FaultActivity": "str:50",
+            "Symbol": "str:254",
+            "Label": "str:50",
+            "DataSourceID": "str:50",
+            "InterpretationSourceID": "str:50",
+            "Notes": "str:254",
+            "ContactsAndFaults_ID": "str:50",
+            "FaultName": "str:255",
+            "Shape_Length": "float"
+          },
+          "bounds": [
+            -169220.5466,
+            -368483.0918000005,
+            210690.50650000013,
+            268739.8849999998
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "FossilPoints",
+          "features": 187,
+          "crs": "EPSG:3310",
+          "geometry": "Point",
+          "fields": {
+            "Type": "str:254",
+            "StationsID": "str:50",
+            "MapUnit": "str:10",
+            "Label": "str:50",
+            "Symbol": "str:254",
+            "FieldSampleID": "str:254",
+            "AlternateSampleID": "str:254",
+            "MaterialAnalyzed": "str:254",
+            "FossilForms": "str:3000",
+            "FossilAge": "str:254",
+            "LocationSourceID": "str:50",
+            "FossilFormsSourceID": "str:50",
+            "FossilAgeSourceID": "str:50",
+            "Notes": "str:500",
+            "FossilPoints_ID": "str:50"
+          },
+          "bounds": [
+            -132979.40919999965,
+            -203028.3842999991,
+            105847.09769999981,
+            256879.0332999993
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "HistoricSeismicityPoints",
+          "features": 3461,
+          "crs": "EPSG:3310",
+          "geometry": "Point",
+          "fields": {
+            "Type": "str:254",
+            "RecordedMagnitude": "float",
+            "MagnitudeType": "str:255",
+            "RecordedDepthKm": "float",
+            "EventDate": "datetime",
+            "EventTime": "str:255",
+            "Symbol": "str:254",
+            "Label": "str:50",
+            "MapUnit": "str:10",
+            "LocationSourceID": "str:50",
+            "DataSourceID": "str:50",
+            "Notes": "str:254",
+            "HistoricSeismicityPoints_ID": "str:50",
+            "EventYear": "int16",
+            "StationsID": "str:50"
+          },
+          "bounds": [
+            -166046.1989000002,
+            -371952.19889999926,
+            217991.9014999997,
+            276353.8398000002
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "IsostaticGravityAnomalyLines",
+          "features": 2340,
+          "crs": "EPSG:3310",
+          "geometry": "MultiLineString",
+          "fields": {
+            "Type": "str:254",
+            "ValueUnits": "str:50",
+            "Symbol": "str:254",
+            "Label": "str:50",
+            "DataSourceID": "str:50",
+            "Notes": "str:254",
+            "IsostaticGravityAnomalyLines_ID": "str:50",
+            "Shape_Length": "float"
+          },
+          "bounds": [
+            -168996.86060000025,
+            -368462.6190000009,
+            210662.62980000023,
+            268690.84530000016
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "MapUnitLines",
+          "features": 307,
+          "crs": "EPSG:3310",
+          "geometry": "MultiLineString",
+          "fields": {
+            "MapUnit": "str:10",
+            "IsConcealed": "str:1",
+            "ExistenceConfidence": "str:50",
+            "IdentityConfidence": "str:50",
+            "Label": "str:50",
+            "Symbol": "str:254",
+            "DataSourceID": "str:50",
+            "Notes": "str:254",
+            "MapUnitLines_ID": "str:50",
+            "Shape_Length": "float"
+          },
+          "bounds": [
+            28259.510099999607,
+            -194253.74799999967,
+            178335.90220000036,
+            18421.67120000075
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "MapUnitPolys",
+          "features": 6221,
+          "crs": "EPSG:3310",
+          "geometry": "MultiPolygon",
+          "fields": {
+            "MapUnit": "str:10",
+            "IdentityConfidence": "str:50",
+            "Label": "str:50",
+            "Symbol": "str:254",
+            "DataSourceID": "str:50",
+            "Notes": "str:254",
+            "MapUnitPolys_ID": "str:50",
+            "InterpretationSourceID": "str:50",
+            "Shape_Length": "float",
+            "Shape_Area": "float"
+          },
+          "bounds": [
+            -169220.5466,
+            -368483.0918000005,
+            210690.50650000013,
+            268739.8849999998
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "MetallogenicBeltsPolys",
+          "features": 98,
+          "crs": "EPSG:3310",
+          "geometry": "MultiPolygon",
+          "fields": {
+            "Type": "str:254",
+            "Commodity": "str:1000",
+            "IdentityConfidence": "str:50",
+            "Label": "str:50",
+            "Symbol": "str:254",
+            "DataSourceID": "str:50",
+            "Notes": "str:254",
+            "MetallogenicBeltsPolys_ID": "str:50",
+            "OreDepositType": "str:255",
+            "Shape_Length": "float",
+            "Shape_Area": "float"
+          },
+          "bounds": [
+            -153864.95949999988,
+            -327981.34809999913,
+            209636.6673999997,
+            268739.8849999998
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "PseudogravityLines",
+          "features": 826,
+          "crs": "EPSG:3310",
+          "geometry": "MultiLineString",
+          "fields": {
+            "Type": "str:254",
+            "ValueUnits": "str:50",
+            "Symbol": "str:254",
+            "Label": "str:50",
+            "DataSourceID": "str:50",
+            "Notes": "str:254",
+            "PseudogravityLines_ID": "str:50",
+            "Shape_Length": "float"
+          },
+          "bounds": [
+            -168455.9173999997,
+            -367774.1085000001,
+            210617.3808000004,
+            268591.2324999999
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "QuaternaryActiveFaults",
+          "features": 2115,
+          "crs": "EPSG:3310",
+          "geometry": "MultiLineString",
+          "fields": {
+            "Type": "str:254",
+            "FaultActivity": "str:50",
+            "IsConcealed": "str:1",
+            "LocationConfidenceMeters": "int16",
+            "ExistenceConfidence": "str:50",
+            "IdentityConfidence": "str:50",
+            "DipDirection": "str:255",
+            "SlipSense": "str:255",
+            "SlipRate": "str:255",
+            "FaultName": "str:255",
+            "Symbol": "str:254",
+            "Label": "str:50",
+            "MappingScale": "str:255",
+            "MappingConstraint": "str:255",
+            "DataSourceID": "str:255",
+            "InterpretationSourceID": "str:50",
+            "Notes": "str:254",
+            "QuaternaryActiveFaults_ID": "str:50",
+            "Shape_Length": "float"
+          },
+          "bounds": [
+            -166727.03060000017,
+            -375051.9101999998,
+            218711.98830000017,
+            276729.44579999935
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "RepresentativeMinesPoints",
+          "features": 28,
+          "crs": "EPSG:3310",
+          "geometry": "Point",
+          "fields": {
+            "MineName": "str:255",
+            "Type": "str:254",
+            "Commodity": "str:255",
+            "DepositAge": "str:255",
+            "HostLithology": "str:255",
+            "HostStructure": "str:255",
+            "Symbol": "str:254",
+            "Label": "str:50",
+            "MapUnit": "str:10",
+            "LocationSourceID": "str:50",
+            "DataSourceID": "str:1000",
+            "Notes": "str:254",
+            "RepresentativeMinesPoints_ID": "str:50",
+            "OreDepositType": "str:255",
+            "StationsID": "str:50"
+          },
+          "bounds": [
+            -122098.90809999965,
+            -161866.73340000026,
+            197298.7494000001,
+            245241.9598999992
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "VolcanicPolys",
+          "features": 6,
+          "crs": "EPSG:3310",
+          "geometry": "MultiPolygon",
+          "fields": {
+            "Type": "str:254",
+            "IdentityConfidence": "str:50",
+            "Label": "str:50",
+            "Symbol": "str:254",
+            "DataSourceID": "str:50",
+            "Notes": "str:254",
+            "VolcanicPolys_ID": "str:50",
+            "InterpretationSourceID": "str:50",
+            "Shape_Length": "float",
+            "Shape_Area": "float"
+          },
+          "bounds": [
+            76546.59920000006,
+            -227569.3328000009,
+            199412.86699999962,
+            3541.7394999992102
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "VolcanoPoints",
+          "features": 10,
+          "crs": "EPSG:3310",
+          "geometry": "Point",
+          "fields": {
+            "Type": "str:254",
+            "RockType": "str:255",
+            "TectonicSetting": "str:255",
+            "ActivityEvidence": "str:255",
+            "LastKnownEruption": "str:255",
+            "Symbol": "str:254",
+            "Label": "str:50",
+            "MapUnit": "str:10",
+            "LocationSourceID": "str:50",
+            "DataSourceID": "str:50",
+            "Notes": "str:254",
+            "VolcanoPoints_ID": "str:50",
+            "FullReference": "str:128",
+            "StationsID": "str:50"
+          },
+          "bounds": [
+            -139829.11710000038,
+            -217625.69659999944,
+            195792.92119999975,
+            275603.7577999998
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "DescriptionOfMapUnits",
+          "features": 325,
+          "crs": "",
+          "geometry": "None",
+          "fields": {
+            "MapUnit": "str:25",
+            "Name": "str:254",
+            "FullName": "str:254",
+            "Age": "str:254",
+            "Description": "str:5199",
+            "HierarchyKey": "str:254",
+            "ParagraphStyle": "str:254",
+            "Label": "str:30",
+            "Symbol": "str:254",
+            "AreaFillRGB": "str:254",
+            "AreaFillPatternDescription": "str:254",
+            "DescriptionSourceID": "str:50",
+            "GeoMaterial": "str:254",
+            "GeoMaterialConfidence": "str:254",
+            "DescriptionOfMapUnits_ID": "str:50"
+          },
+          "bounds": null,
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "DataSources",
+          "features": 304,
+          "crs": "",
+          "geometry": "None",
+          "fields": {
+            "Source": "str:500",
+            "Citation": "str:1000",
+            "Notes": "str:1000",
+            "URL": "str:300",
+            "DataSources_ID": "str:50"
+          },
+          "bounds": null,
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "MapUnitLabels",
+          "features": 6422,
+          "crs": "EPSG:3310",
+          "geometry": "MultiPolygon",
+          "fields": {
+            "FeatureID": "int32",
+            "ZOrder": "int32",
+            "AnnotationClassID": "int32",
+            "Element": "bytes",
+            "SymbolID": "int32",
+            "Status": "int16",
+            "TextString": "str:255",
+            "FontName": "str:255",
+            "FontSize": "float",
+            "Underline": "int16",
+            "VerticalAlignment": "int16",
+            "HorizontalAlignment": "int16",
+            "XOffset": "float",
+            "YOffset": "float",
+            "Angle": "float",
+            "FontLeading": "float",
+            "WordSpacing": "float",
+            "CharacterWidth": "float",
+            "CharacterSpacing": "float",
+            "FlipAngle": "float",
+            "Override": "int32",
+            "FontStyle": "str:255",
+            "SHAPE_Length": "float",
+            "SHAPE_Area": "float"
+          },
+          "bounds": [
+            -168576.16170000006,
+            -362734.54140000045,
+            213695.73440000034,
+            270320.63450000004
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "FaultLabels",
+          "features": 71,
+          "crs": "EPSG:3310",
+          "geometry": "MultiPolygon",
+          "fields": {
+            "FeatureID": "int32",
+            "ZOrder": "int32",
+            "AnnotationClassID": "int32",
+            "Element": "bytes",
+            "SymbolID": "int32",
+            "Status": "int16",
+            "TextString": "str:255",
+            "FontName": "str:255",
+            "FontStyle": "str:255",
+            "FontSize": "float",
+            "Underline": "int16",
+            "VerticalAlignment": "int16",
+            "HorizontalAlignment": "int16",
+            "XOffset": "float",
+            "YOffset": "float",
+            "Angle": "float",
+            "FontLeading": "float",
+            "WordSpacing": "float",
+            "CharacterWidth": "float",
+            "CharacterSpacing": "float",
+            "FlipAngle": "float",
+            "Override": "int32",
+            "SHAPE_Length": "float",
+            "SHAPE_Area": "float"
+          },
+          "bounds": [
+            -162878.48819999956,
+            -365907.5591000002,
+            203875.3722000002,
+            267600.6206
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "QuaternaryActiveFaultLabels",
+          "features": 54,
+          "crs": "EPSG:3310",
+          "geometry": "MultiPolygon",
+          "fields": {
+            "FeatureID": "int32",
+            "ZOrder": "int32",
+            "AnnotationClassID": "int32",
+            "Element": "bytes",
+            "SymbolID": "int32",
+            "Status": "int16",
+            "TextString": "str:255",
+            "FontName": "str:255",
+            "FontStyle": "str:255",
+            "FontSize": "float",
+            "Underline": "int16",
+            "VerticalAlignment": "int16",
+            "HorizontalAlignment": "int16",
+            "XOffset": "float",
+            "YOffset": "float",
+            "Angle": "float",
+            "FontLeading": "float",
+            "WordSpacing": "float",
+            "CharacterWidth": "float",
+            "CharacterSpacing": "float",
+            "FlipAngle": "float",
+            "Override": "int32",
+            "SHAPE_Length": "float",
+            "SHAPE_Area": "float"
+          },
+          "bounds": [
+            -158175.4447999997,
+            -362532.27380000055,
+            203781.34080000035,
+            268419.11730000004
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "CartographicLines",
+          "features": 1511,
+          "crs": "EPSG:3310",
+          "geometry": "MultiLineString",
+          "fields": {
+            "Type": "str:254",
+            "Symbol": "str:254",
+            "Label": "str:50",
+            "DataSourceID": "str:50",
+            "Notes": "str:254",
+            "CartographicLines_ID": "str:50",
+            "Shape_Length": "float"
+          },
+          "bounds": [
+            -163379.94660000037,
+            -362007.33110000007,
+            211930.2880999999,
+            269581.3267999999
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "CartographicPoints",
+          "features": 554,
+          "crs": "EPSG:3310",
+          "geometry": "3D Point",
+          "fields": {
+            "Type": "str:255",
+            "Symbol": "str:255",
+            "FaultActivity": "str:50",
+            "DataSourceID": "str:255",
+            "Notes": "str:255",
+            "CartographicPoints_ID": "str:255",
+            "Label": "str:255"
+          },
+          "bounds": [
+            -132974.57930000033,
+            -359058.0441999994,
+            209036.91789999977,
+            267677.4668000005
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "T_1_DirtyAreas",
+          "features": 0,
+          "crs": "EPSG:3310",
+          "geometry": "MultiPolygon",
+          "fields": {
+            "IsRetired": "int32",
+            "DirtyArea_Length": "float",
+            "DirtyArea_Area": "float"
+          },
+          "bounds": null,
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "T_1_PointErrors",
+          "features": 4477,
+          "crs": "EPSG:3310",
+          "geometry": "Point",
+          "fields": {
+            "OriginClassID": "int32",
+            "OriginID": "int32",
+            "DestClassID": "int32",
+            "DestID": "int32",
+            "TopoRuleType": "int32",
+            "TopoRuleID": "int32",
+            "IsException": "int32"
+          },
+          "bounds": [
+            -161625.76539999992,
+            -362354.56460000016,
+            210648.69460000005,
+            268331.72279999964
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "T_1_LineErrors",
+          "features": 1,
+          "crs": "EPSG:3310",
+          "geometry": "MultiLineString",
+          "fields": {
+            "OriginClassID": "int32",
+            "OriginID": "int32",
+            "DestClassID": "int32",
+            "DestID": "int32",
+            "TopoRuleType": "int32",
+            "TopoRuleID": "int32",
+            "IsException": "int32",
+            "Shape_Length": "float"
+          },
+          "bounds": [
+            -169220.5466,
+            -368483.0918000005,
+            210690.50650000002,
+            268739.8849999994
+          ],
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "T_1_PolyErrors",
+          "features": 0,
+          "crs": "EPSG:3310",
+          "geometry": "MultiPolygon",
+          "fields": {
+            "OriginClassID": "int32",
+            "OriginID": "int32",
+            "DestClassID": "int32",
+            "DestID": "int32",
+            "TopoRuleType": "int32",
+            "TopoRuleID": "int32",
+            "IsException": "int32",
+            "Shape_Length": "float",
+            "Shape_Area": "float"
+          },
+          "bounds": null,
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "Glossary",
+          "features": 103,
+          "crs": "",
+          "geometry": "None",
+          "fields": {
+            "Term": "str:254",
+            "Definition": "str:3000",
+            "DefinitionSourceID": "str:50",
+            "Glossary_ID": "str:50"
+          },
+          "bounds": null,
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        },
+        {
+          "layer": "GeoMaterialDict",
+          "features": 101,
+          "crs": "",
+          "geometry": "None",
+          "fields": {
+            "HierarchyKey": "str:8000",
+            "GeoMaterial": "str:8000",
+            "IndentedName": "str:8000",
+            "Definition": "str:8000"
+          },
+          "bounds": null,
+          "bounds_error": null,
+          "role": "source schema / future split/scorer metadata, NOT predictor or new confirmed truth"
+        }
+      ],
+      "new_label_freshness_established": false,
+      "model_input": false,
+      "caveat": "A new download/publication date is not evidence of independent new labels; source lineage, mapping scale and rights require review"
+    }
+  },
+  "scope": "Official full-byte transport/schema/coverage metadata only. NOT scientific validation, new fault discovery or eligible submission."
+}

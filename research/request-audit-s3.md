@@ -1,0 +1,34 @@
+# S3 original-request review — 2026-10-01 UTC
+
+The entire README and preserved original request were reread during the third pass. Its immutable prompt hash remains checked by `gems.locks.verify_prompt`. This is a requirement-by-requirement audit, **not a declaration the prize/scientific goal is achieved**.
+
+| Request | Actual implementation / evidence | Current disposition |
+|---|---|---|
+| Prioritize previous-session bottlenecks | Five public-branch-reachable H19 commits / 77 recognized text blobs, paginated PR/comment/release/artifact indexes; official prospective inputs acquired and source digests bound | Progress, original H19 arm producer/clean same-split comparator still blocked |
+| Explain .1894 vs .1855 | Scarp blend/gap mapping/35% attenuation and exact pixel changes retained; +.0039 arithmetic, user-reported file association | Mechanics verified; hidden-score causality unidentified, no invented ablation |
+| Rank 3–5 untried geological hypotheses before code | Immutable registration689160f, H21-9–12 layers/transform/mechanism/missed-fault rationale/novelty/confounders/forecast/cost; registry and readiness page | Four registered, not worldwide novelty or measured gain |
+| Validate top candidate exclusively buffered whole known segments | H21-9 deterministic synthetic prototype only; independent eastern box reserved from metadata; no field-evaluator path | **Not completed:** missing refittable current best, complete compatible fresh predictors, units/resampling/whole-system lineage and separately locked fit/control protocol; no same-holdout rescue |
+| Unlabeled is not negative; exact official .2/.8 DTI | Existing PU/whole-system/exact-mask metric tests and locked results remain unchanged; future conditions listed | No new fit/score here; PU assumptions/incomplete reference and expert-selection differences remain limits |
+| Forecast first; correct multiplicity; retain rejections | Four new forecasts add cumulative planned family12; old4/8-family analyses unchanged; all unscored dispositions and both rejected outcomes retained | Complete as governance, not a promotion result |
+| Free official external data verified obtainable | Full eastern numeric 7z/XML, national QFaults, CGS Atlas and GDR paleo bytes, CRC/safe members, actual numeric/vector schema and source support; public asset digests match | Obtainability verified; physical resolution, classifications, rights/lineage and fresh independent labels not blanket-certified |
+| Download/place/prepare/train autonomously | Core/derivative mirrors restored and pinned hashes checked; source-only acquisitions/recovery on hosted runner; no manual input or credential requests | Old CPU research already exists; **no new preparation/model fit** authorized in S3; no fabricated GPU pipeline |
+| Obvious downloadable compliant TIFF / unique name / short note | Primary unchanged SHA89109a3b…; strict dtype/grid/range/template/ZIP checks, header download and executive guide preserved; real browser saved actual bytes | Local format/byte compliance verified, not new winner or server acceptance; do not re-upload same field |
+| Fix range error | Reject invalid footprint values before float32 rounding; reject malformed/empty references, complex/text arrays and infinity; safe one-TIFF ZIP; atomic writers preserve existing outputs | Actual primary passes [0,1]; exact old failing file/cause and fallback acceptance remain unknown |
+| Exact submission procedure, no manual research input | Guide names File to submit, optional identifying note, one-TIFF ZIP alternative, rolling allowance, final same-entry selection, AI/rights/eligibility obligations | Research/publication autonomous; final entrant certification/upload is not automated under Terms/no authorized API |
+| Clean UI / reusable auditable official knowledge / dated feed | Five static pages + real root entry; 35 sources, 23 typed claims,30 flags; daily16 permitted data endpoints/21 repository heads only | Metadata health is not full-file integrity/science; leaderboard stays dated .3168 snapshot, never polled |
+| Preserve full prompt / core values | Original prompt content hash retained; README/handoff/source ledger qualify all claims | Maximize P(Win) = protect fresh tests; Own the Outcome = repair/recover/publish without buying scores |
+| Three real passes, PR then merge, live verification | Pass1 discovered command-list regression; pass2 removed toy computation from delivery, added CLI/ZIP/registration guards and restored shallow history; pass3 reread full request and audited implementation | Review receipts contain actual runs; PR/merge/live publication separately recorded, never inferred from local build |
+| Aim above group best / .3049 brief and leaderboard | .3168 is dated inspected leader; no new validated improvement, eligible TIFF, slot or prize guarantee | **Scientific goal remains unmet.** Required next steps: original comparator + complete prospective independent control/labels + resolution/lineage review, then preregistered evaluation |
+
+## Third-pass accuracy/quality repairs
+
+* Clarified delivery-only contract: only historical pixel/hash/format and bound readiness metadata checks; not even synthetic transformation is rerun. New command entrypoints reject unknown field-fit/data arguments.
+* Added regression for the actual S3 registration commit preceding implementation, not just matching text today. Deepened **only the session branch's** existing history to remove a local historical-lock skip; CI already checks full history.
+* Rejected Windows drive-relative/control-character ZIP names and preserved unknown/missing readiness as blocked.
+* Updated the guide's leaderboard date to **1 October 2026**, separated last field experiment from latest input work, and retained historical correction families/results rather than silently updating them to12.
+* Published source bytes stay in cited public release storage, not Git. Lossless receipt/asset binding remains separate from scientific truth or execution permission.
+* Flag unequal QFaults representation counts and uninterpreted Atlas topology diagnostic layers; do not assume equal bbox counts mean identical geometry or that diagnostics are bad faults.
+* Pin the registration link to already-pushed immutable689160f; mirror correction/request notes locally so the preview is usable even while main publication is blocked.
+* Expose every substantive remaining block. Do not call synthetic passing tests, reachability, new-publication compilations or a served historical TIFF a new fault discovery or winning model.
+
+Warnings from installed transitive Affine3 are upstream pending-deprecation warnings, not suppressed test failures. Final verified test/browser counts and publication outcome live in `evidence/review-passes.json`, `evidence/delivery-status.json` and the dated `delivery-verification` release.

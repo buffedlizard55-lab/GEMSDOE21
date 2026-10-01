@@ -1,5 +1,5 @@
 {
-  "reviewed_utc_date": "2026-09-30",
+  "reviewed_utc_date": "2026-10-01",
   "method": "Source-specific research reads, claim locators (paraphrases unless literal excerpt identified), and local computed evidence; not blanket certification.",
   "sources": [
     {
@@ -117,12 +117,12 @@
       "kind": "OFFICIAL",
       "url": "https://doi.org/10.5066/P93LGLVQ",
       "excerpt": "GeoDAWN: Airborne Magnetic and Radiometric Surveys of the Northwestern Great Basin, Nevada and California",
-      "supports": "Magnetic and radiometric surveys for geological mapping; cited as reference 3 in the official prize rules.",
+      "supports": "Area 1 uses 200m flight lines, Area 2 400m; output raster cells do not establish independent acquisition resolution.",
       "limits": "Geophysical edges may reflect lithology, magnetization or acquisition seams, not displacement.",
-      "verification": "Read official ScienceBase release at 657e1d85d34e23d3533209f7, including summary and attached-file table; official rules citation also matches.",
+      "verification": "Read ScienceBase metadata/attached-file table including line spacing and clearance. No raw GeoDAWN grid archive downloaded this session.",
       "monitor_url": "https://www.sciencebase.gov/catalog/item/657e1d85d34e23d3533209f7?format=json",
       "locator_is_verbatim": false,
-      "reviewed_utc_date": "2026-09-30"
+      "reviewed_utc_date": "2026-10-01"
     },
     {
       "id": "S10",
@@ -243,8 +243,8 @@
       "url": "https://github.com/buffedlizard55-lab/19GEMSDOE/tree/a3aca62fdb2be428f4245e22570cbc54082b2c15",
       "excerpt": "H19-4 source snapshot and serialized prediction",
       "supports": "Observed blend weights, missing H19 cache generator, training/metric assumptions; exact SHA of the artifact.",
-      "limits": "Published reasoning is not independent geological verification or a DrivenData submission receipt.",
-      "verification": "Pinned public main and original PR head Python audited; current main unchanged. See evidence/baseline-recovery-s2.json.",
+      "limits": "Static recognized-text search is not semantic proof that no dynamically named, private, untracked or expired producer exists. No original clean same-split arm refit recovered; hidden-score cause remains unidentified.",
+      "verification": "Public-branch-reachable 5-commit / 77 recognized-text-blob inventory, content-address and literal/arm-symbol reader/producer search; paginated PR/comments/releases/artifact indexes. See evidence/baseline-history-s3.json.",
       "locator_is_verbatim": false,
       "reviewed_utc_date": "2026-10-01"
     },
@@ -385,6 +385,98 @@
       "monitor_url": null,
       "reviewed_utc_date": "2026-10-01",
       "locator_is_verbatim": false
+    },
+    {
+      "id": "S29",
+      "title": "1976 Surprise Valley gravity and magnetic case study (OFR76-260)",
+      "authority": "USGS",
+      "kind": "OFFICIAL-HOSTED PRELIMINARY LITERATURE",
+      "url": "https://pubs.usgs.gov/of/1976/0260/report.pdf",
+      "excerpt": "Magnetic profiles / gravity interpretation: short-wavelength roughness, magnetic boulders/man-made sources and probable alluvial cementation.",
+      "supports": "Motivates H21-9 burial-depth texture contrast and H21-10 positive density ridge, including competing explanations.",
+      "limits": "Preliminary truck-profile case study; not evidence a modern regional raster resolves 150–300m anomalies, our transform works or a vent/reservoir exists.",
+      "verification": "Read both returned chunks before registration; mechanism/forecast distinctions locked in research/preregistration-h21-s3.md.",
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-10-01"
+    },
+    {
+      "id": "S30",
+      "title": "Eastern Great Basin official magnetic metadata XML",
+      "authority": "USGS",
+      "kind": "OFFICIAL FULL-BYTE METADATA",
+      "url": "https://www.sciencebase.gov/catalog/file/get/68c9d87fd4be0274ff4be93e?f=__disk__cd%2F31%2F7c%2Fcd317ce112240b9de9e643533b7267e10c00184a",
+      "excerpt": "Raster magnetic datasets in both Geosoft (.grd) and geotif (.tif) formats; separate 3-band color images.",
+      "supports": "Resource-type/processing identity and source unit context; actual magnetic_grids.7z contains four single-band float32 grids, not RGB images.",
+      "limits": "Point-attribute nanotesla declarations do not by themselves assign physical units to every derived raster; actual GeoTIFF units metadata is unset.",
+      "verification": "Full 25,110 XML bytes match official MD5 b61572ccf8f506ace056588c0fc15771; exact context stored in evidence/official-inputs-s3.json.",
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-10-01"
+    },
+    {
+      "id": "S31",
+      "title": "Bear River fault lidar mapping and geomorphic alternatives (SIM3430)",
+      "authority": "USGS",
+      "kind": "OFFICIAL-HOSTED GEOLOGICAL LITERATURE",
+      "url": "https://pubs.usgs.gov/sim/3430/sim3430_pamphlet.pdf",
+      "excerpt": "Introduction / Big Burn and Lily Lake discussion: antithetic scarp, glacial morphology and folding.",
+      "supports": "Motivates paired-scarp H21-11 and its glacial/folding falsifiers.",
+      "limits": "Different terrain/geology; lidar recognition elsewhere does not validate a paired-trough transform in the competition footprint.",
+      "verification": "Read returned chunks 0/1 before registration, not all map sheets/appendices.",
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-10-01"
+    },
+    {
+      "id": "S32",
+      "title": "Eastern Great Basin 2024–2025 airborne survey, released 2026",
+      "authority": "USGS Earth MRI / ScienceBase",
+      "kind": "OFFICIAL DATA RELEASE",
+      "url": "https://www.sciencebase.gov/catalog/item/68c990a3d4be0274ff4998e8",
+      "excerpt": "200m E–W flight lines; nominal 100m clearance; tribal/wilderness omissions; DOI 10.5066/P13VSMZ3.",
+      "supports": "CC0 public official source; pinned 210,814,683-byte numeric grid archive matches MD5 b5faee39106a9421579cb97fa799cce8. Actual raster cells are 40m.",
+      "limits": "About 69% reserved-envelope support is not complete fresh confirmation. Native flight spacing, units/resampling, label provenance and full compatible predictors remain scientific gates.",
+      "verification": "Read parent/child metadata before registration; hosted full-byte/CRC/safety/raster-schema/support audit, bound lossless receipt and GitHub asset digests.",
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-10-01",
+      "monitor_url": "https://www.sciencebase.gov/catalog/item/68c9d87fd4be0274ff4be93e?format=json"
+    },
+    {
+      "id": "S33",
+      "title": "USGS national Quaternary fault and fold GIS download",
+      "authority": "USGS Earthquake Hazards",
+      "kind": "OFFICIAL SOURCE ARCHIVE",
+      "url": "https://earthquake.usgs.gov/static/lfs/nshm/qfaults/Qfaults_GIS.zip",
+      "excerpt": "Archive includes Qfaults_US_Database and Qfaults_2020 geometry plus citation tables.",
+      "supports": "Actual 32,371,696-byte archive safely CRC-checked; 558 source geometry-feature envelopes intersect reserved box in each main geometry representation.",
+      "limits": "558 is not a count of independent whole fault systems. Updated download is not independently new truth; IDs/aliases/citations/rights and cross-domain whole-system links require audit. Split/scorer-only.",
+      "verification": "Official full archive SHA/schema and public-asset digest bound in evidence/official-inputs-s3.json and input-recovery-s3.json; no map, model input or geological score.",
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-10-01"
+    },
+    {
+      "id": "S34",
+      "title": "Sierra Nevada Earth Science Atlas 2026 data package",
+      "authority": "California Geological Survey",
+      "kind": "OFFICIAL REGIONAL COMPILATION",
+      "url": "https://www.conservation.ca.gov/cgs/sierra-nevada-atlas",
+      "excerpt": "GDM9, 1:400,000 compilation; exact GDM_009-SNESA-Data.zip package.",
+      "supports": "Actual 38,073,921 bytes CRC/safety/schema audited; GDB has ContactsAndFaults, QuaternaryActiveFaults and DataSources tables.",
+      "limits": "Regional scale and 2026 publication do not establish fresh independent 100m labels. Some GDB layers are empty/nonspatial; null extents are not fabricated. Source rights/lineage review still needed.",
+      "verification": "Landing page read before registration; hosted full-file audit and GitHub digest match preserved in evidence/official-inputs-s3.json.",
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-10-01"
+    },
+    {
+      "id": "S35",
+      "title": "Losslessly recovered S3 official-input execution receipt",
+      "authority": "Owned GitHub-hosted job / computed evidence",
+      "kind": "COMPUTED INPUT AUDIT, NOT OFFICIAL GEOLOGY",
+      "url": "https://github.com/buffedlizard55-lab/GEMSDOE21/releases/tag/research-readiness-s3-recovered-36812447269-1",
+      "excerpt": "Original acquisition run 36811664161; final receipt recovery 36812447269; decoded receipt 128,520 bytes.",
+      "supports": "Four full source archives/CRC/schema obtained; official magnetic MD5/size checked; raw assets remain outside Git in a cited release and server digests match source SHA256.",
+      "limits": "This verifies transport/schema and metadata support only: 0 field maps/fits/scores/slots. Publisher failures and first bounds errors retained, no source/global viability claim from failure.",
+      "verification": "Lossless base64-gzip envelope hash/byte binding; evidence/input-recovery-s3.json binds decoded receipt and actual public asset digests.",
+      "locator_is_verbatim": false,
+      "reviewed_utc_date": "2026-10-01"
     }
   ],
   "last_updated_utc_date": "2026-10-01"

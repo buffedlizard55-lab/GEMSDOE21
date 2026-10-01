@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-30T23:07:15+00:00",
+  "generated_utc": "2026-10-01T04:04:34+00:00",
   "scores_source": "Full user prompt stored verbatim in README; no automated DrivenData calls",
   "inherited_file_map_source": "buffedlizard55-lab/19GEMSDOE@a3aca62fdb2be428f4245e22570cbc54082b2c15:registry/submissions.json",
   "entries": [
@@ -506,9 +506,9 @@
       "account_named_by_owner": null,
       "score_provenance": "USER-REPORTED; not an independently authenticated file-score receipt",
       "artifact_association": "Pinned upstream registry attribution; source file bytes checked here",
-      "snapshot_head": "08ed86465ef94e7a0cc49fa9de47150fc8a7c7c5",
-      "file_link": "https://github.com/buffedlizard55-lab/13GEMSDOE/blob/08ed86465ef94e7a0cc49fa9de47150fc8a7c7c5/docs/downloads/13gems-composite-plus-20260929T183249Z_allfinite.tif",
-      "current_path_matches_inherited_blob": true,
+      "snapshot_head": "498180b13a07470557dbaf99c7b0475d3b1cbb76",
+      "file_link": "https://github.com/buffedlizard55-lab/13GEMSDOE/blob/498180b13a07470557dbaf99c7b0475d3b1cbb76/docs/downloads/13gems-composite-plus-20260929T183249Z_allfinite.tif",
+      "current_path_matches_inherited_blob": false,
       "byte_identity_verified": true,
       "sha256": "2b6d871239a886121f3531c33f6b904bc146e3c2a004f4c1f6bd8b1c0d11c137",
       "grid_matches": true,

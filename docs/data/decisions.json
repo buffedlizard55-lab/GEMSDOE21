@@ -95,5 +95,38 @@
   ],
   "session_2_registration_commit": "452c21c",
   "session_2_scientific_run": "36801939888",
-  "session_2_first_result_sha256": "8979d1b93ba33bfb5fd0712198bc5953b97850baac42572b56a1d384a764e75d"
+  "session_2_first_result_sha256": "8979d1b93ba33bfb5fd0712198bc5953b97850baac42572b56a1d384a764e75d",
+  "session_3_registration_commit": "689160f54af40f8b5a65dc660da5e9b64465a1f0",
+  "session_3_phase": "INPUT_ONLY",
+  "session_3_cumulative_planned_family_size": 12,
+  "session_3_decisions": [
+    {
+      "id": "H21-9",
+      "disposition": "SYNTHETIC PROTOTYPE ONLY / FIELD VALIDATION BLOCKED",
+      "reason": "No original clean H19 comparator or separately locked complete fresh fit/control protocol; 40/100m cells do not verify 200/400m-flight-line texture resolution",
+      "observed_dense_delta": null,
+      "submission_eligible": false
+    },
+    {
+      "id": "H21-10",
+      "disposition": "DEFERRED / NATIVE GRAVITY RESOLUTION UNVERIFIED",
+      "reason": "Regional gridding cannot be assumed to resolve the 1976 road-profile 150–300m anomalies; no field transform or score",
+      "observed_dense_delta": null,
+      "submission_eligible": false
+    },
+    {
+      "id": "H21-11",
+      "disposition": "DEFERRED / RAW TILE AND AGGREGATION COVERAGE UNVERIFIED",
+      "reason": "Pinned terrain derivatives are not raw paired-breakline geometry; raw tile obtainability/coverage must be verified before viability",
+      "observed_dense_delta": null,
+      "submission_eligible": false
+    },
+    {
+      "id": "H21-12",
+      "disposition": "OFFICIAL BYTES / POINT SCHEMA OBTAINED; SCIENTIFIC VIABILITY DEFERRED",
+      "reason": "709-row source schema verified, not class quality, duplicate sites, ages, matching edge support or predictive gain",
+      "observed_dense_delta": null,
+      "submission_eligible": false
+    }
+  ]
 }

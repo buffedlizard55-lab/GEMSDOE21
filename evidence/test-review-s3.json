@@ -1,0 +1,25 @@
+{
+  "generated_utc": "2026-10-01T04:28:42.303079+00:00",
+  "pass1": {
+    "tests": 150,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 1
+  },
+  "pass2": {
+    "tests": 155,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "pass3": {
+    "tests": 155,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "final_passed": 155,
+  "final_skipped": 0,
+  "warnings": 37,
+  "scope": "Automated synthetic/helper/format/provenance checks, NOT new geological scores"
+}

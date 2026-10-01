@@ -72,6 +72,7 @@ def main():
         "executive-summary.html",
         "research.html",
         "sources.html",
+        "readiness.html",
         "assets/site.css",
         "assets/site.js",
         "data/submissions.json",
@@ -81,6 +82,16 @@ def main():
         "data/hypotheses-s2.json",
         "data/knowledge-s2.json",
         "data/sources.json",
+        "data/hypotheses-s3.json",
+        "data/knowledge-s3.json",
+        "data/research-readiness-s3.json",
+        "data/official-inputs-s3.json",
+        "data/input-recovery-s3.json",
+        "data/prototype-s3.json",
+        "data/baseline-history-s3.json",
+        "data/preregistration-h21-s3.md",
+        "data/implementation-notes-s3.md",
+        "data/request-audit-s3.md",
     ]:
         routes["docs/" + path] = docs / path
     for spec in manifest["files"]:
