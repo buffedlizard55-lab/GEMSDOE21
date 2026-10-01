@@ -31,6 +31,7 @@ PERMITTED_EXACT = {
     "ngmdb.usgs.gov",
     "downloadsb.usgs.gov",
     "data.usgs.gov",
+    "earthquake.usgs.gov",
 }
 
 

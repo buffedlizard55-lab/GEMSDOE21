@@ -1,7 +1,7 @@
 name: Verified research and download checks
 on:
   push:
-    branches: [main, arena/01a0f45d-gemsdoe21]
+    branches: [main, 'arena/**']
   pull_request:
     branches: [main]
   workflow_dispatch:

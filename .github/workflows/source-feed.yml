@@ -4,7 +4,7 @@ on:
     - cron: '17 6 * * *'
   workflow_dispatch:
   push:
-    branches: [main, arena/01a0f45d-gemsdoe21]
+    branches: [main, 'arena/**']
     paths:
       - registry/sources.json
       - scripts/refresh_sources.py

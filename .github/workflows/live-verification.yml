@@ -5,7 +5,7 @@ on:
     workflows: ['pages build and deployment', 'pages-build-deployment']
     types: [completed]
   push:
-    branches: [arena/01a0f45d-gemsdoe21]
+    branches: ['arena/**']
     paths:
       - scripts/verify_live.py
       - .github/workflows/live-verification.yml
