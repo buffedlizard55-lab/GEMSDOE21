@@ -363,13 +363,44 @@
     "geological_scores_observed": 0,
     "new_eligible_tiffs": 0,
     "weekly_slots_spent": 0,
-    "publication": "RESUMED: saved work pushed; PR6 open; merge/live pending",
+    "publication": "VERIFIED: PR6 merged, native Pages and actual28routes/3download preflights passed",
     "remaining_blocks": [
       "Original H19 producer/clean same-split comparator",
       "Complete compatible unobserved external fit/control/whole-system provenance protocol",
       "Native-resolution/unit/classification/rights review",
       "No competition acceptance or improved hidden score"
-    ]
+    ],
+    "remote_delivery": {
+      "pull_request": 6,
+      "pull_request_url": "https://github.com/buffedlizard55-lab/GEMSDOE21/pull/6",
+      "state": "MERGED",
+      "merged_utc": "2026-10-01T14:01:36Z",
+      "merged_head": "e8f7e75de3f2fda575e7bc735ea899532cc7a00d",
+      "main_merge_commit": "917afce6c2b8dfb654e4f9d234b9ffecbfd0a360",
+      "pages_build": {
+        "run_id": 36873124526,
+        "conclusion": "success",
+        "head_sha": "917afce6c2b8dfb654e4f9d234b9ffecbfd0a360",
+        "url": "https://github.com/buffedlizard55-lab/GEMSDOE21/actions/runs/36873124526"
+      },
+      "main_ci": {
+        "run_id": 36873126551,
+        "conclusion": "success",
+        "head_sha": "917afce6c2b8dfb654e4f9d234b9ffecbfd0a360"
+      },
+      "live_download_check": {
+        "run_id": 36873272537,
+        "conclusion": "success",
+        "head_sha": "917afce6c2b8dfb654e4f9d234b9ffecbfd0a360",
+        "url": "https://github.com/buffedlizard55-lab/GEMSDOE21/actions/runs/36873272537",
+        "verified_utc": "2026-10-01T14:03:21+00:00",
+        "served_content_routes": 28,
+        "full_download_preflights": 3
+      },
+      "snapshot": "evidence/live-verification.json",
+      "snapshot_sha256": "66ec9e828207a13bba23f907a015f4b5c6b3168003462106a016f26e248afa17",
+      "scope": "Dated PR6 core publication and actually served bytes. Fixed delivery-verification release independently checks subsequent receipt-only deployments; not a competition acceptance or score."
+    }
   },
   "publication_resume": {
     "started_utc": "2026-10-01T13:59:11.089711+00:00",
@@ -383,8 +414,43 @@
     "downloads": 3,
     "field_fits": 0,
     "geological_scores": 0,
-    "merge_verified": false,
-    "pages_verified": false,
-    "live_bytes_verified": false
+    "merge_verified": true,
+    "pages_verified": true,
+    "live_bytes_verified": true,
+    "remote_delivery": {
+      "pull_request": 6,
+      "pull_request_url": "https://github.com/buffedlizard55-lab/GEMSDOE21/pull/6",
+      "state": "MERGED",
+      "merged_utc": "2026-10-01T14:01:36Z",
+      "merged_head": "e8f7e75de3f2fda575e7bc735ea899532cc7a00d",
+      "main_merge_commit": "917afce6c2b8dfb654e4f9d234b9ffecbfd0a360",
+      "pages_build": {
+        "run_id": 36873124526,
+        "conclusion": "success",
+        "head_sha": "917afce6c2b8dfb654e4f9d234b9ffecbfd0a360",
+        "url": "https://github.com/buffedlizard55-lab/GEMSDOE21/actions/runs/36873124526"
+      },
+      "main_ci": {
+        "run_id": 36873126551,
+        "conclusion": "success",
+        "head_sha": "917afce6c2b8dfb654e4f9d234b9ffecbfd0a360"
+      },
+      "live_download_check": {
+        "run_id": 36873272537,
+        "conclusion": "success",
+        "head_sha": "917afce6c2b8dfb654e4f9d234b9ffecbfd0a360",
+        "url": "https://github.com/buffedlizard55-lab/GEMSDOE21/actions/runs/36873272537",
+        "verified_utc": "2026-10-01T14:03:21+00:00",
+        "served_content_routes": 28,
+        "full_download_preflights": 3
+      },
+      "snapshot": "evidence/live-verification.json",
+      "snapshot_sha256": "66ec9e828207a13bba23f907a015f4b5c6b3168003462106a016f26e248afa17",
+      "scope": "Dated PR6 core publication and actually served bytes. Fixed delivery-verification release independently checks subsequent receipt-only deployments; not a competition acceptance or score."
+    },
+    "ci_notices": [
+      "Node20 actions currently forced to Node24 by GitHub",
+      "ubuntu-latest migration to Ubuntu26 announced for19October2026; no failure observed"
+    ]
   }
 }

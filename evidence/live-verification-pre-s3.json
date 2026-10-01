@@ -1,54 +1,46 @@
 {
   "kind": "owned-pages-live-download-verification",
-  "generated_utc": "2026-10-01T14:03:21+00:00",
+  "generated_utc": "2026-10-01T03:03:36+00:00",
   "passed": true,
   "site": "https://buffedlizard55-lab.github.io/GEMSDOE21/",
   "records": [
     {
       "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/",
       "http_status": 200,
-      "bytes": 13637,
-      "sha256": "4a572f3615d6737d18a9fca9f0489ce91c71d486edc4777c16982086b5f7bb4b",
+      "bytes": 13271,
+      "sha256": "c73979ed3b670938b8ec13fc3ca9fb9f4a7919986886501e4a3d337b6dbc54f0",
       "expected_bytes_equal": true,
       "content_type": "text/html; charset=utf-8"
     },
     {
       "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/index.html",
       "http_status": 200,
-      "bytes": 13615,
-      "sha256": "9f348a76d5e7076750d2a7cb850a43364fe56d911cffa9997456216c8a5a69af",
+      "bytes": 13249,
+      "sha256": "0097a282e68a42165ccb551434f230b5c7322b960c541bba7cc4c8a2375f852a",
       "expected_bytes_equal": true,
       "content_type": "text/html; charset=utf-8"
     },
     {
       "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/executive-summary.html",
       "http_status": 200,
-      "bytes": 15087,
-      "sha256": "4762ada5172eed409026f581eae452b840348be5c2b076ba55f6f6c8ef5f29d1",
+      "bytes": 14774,
+      "sha256": "f3ef4b7fc220be1de486759bdce40de5a4ff80878126ee6d74ed607497b228ed",
       "expected_bytes_equal": true,
       "content_type": "text/html; charset=utf-8"
     },
     {
       "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/research.html",
       "http_status": 200,
-      "bytes": 37602,
-      "sha256": "16496442b05039b1df80e30914ef0f9744327a9d498f7d2c2e7d9ca95506b15f",
+      "bytes": 36901,
+      "sha256": "cb4a0ca185e4d198ace53072cbf710236d5e244f1d3c9fc523e83f0a0678c676",
       "expected_bytes_equal": true,
       "content_type": "text/html; charset=utf-8"
     },
     {
       "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/sources.html",
       "http_status": 200,
-      "bytes": 94959,
-      "sha256": "09732b05eb27b328bbc7a5ec4c881e88776fa3e505debb15b4b520ac40266d2b",
-      "expected_bytes_equal": true,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/readiness.html",
-      "http_status": 200,
-      "bytes": 18634,
-      "sha256": "f8d108d4faf92fdc190d5b601cac10acde2e00c689710cec2090b298a104b4ec",
+      "bytes": 78530,
+      "sha256": "e39a725ace1295b31f3b3fce3d7b9e1f2b061b7459ed957b08618bbb2b1ec46f",
       "expected_bytes_equal": true,
       "content_type": "text/html; charset=utf-8"
     },
@@ -71,8 +63,8 @@
     {
       "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/data/submissions.json",
       "http_status": 200,
-      "bytes": 4851,
-      "sha256": "40f46a4f6dac801a4b0cd235136ce433993ba9e9fb257463f10d80f58565f5af",
+      "bytes": 4501,
+      "sha256": "b4c5fb5aa6df3be125b1fde5fa270cd5b51bc7d5cd855e48cc20e36e573a1fed",
       "expected_bytes_equal": true,
       "content_type": "application/json; charset=utf-8"
     },
@@ -119,90 +111,10 @@
     {
       "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/data/sources.json",
       "http_status": 200,
-      "bytes": 32959,
-      "sha256": "c22e3b8456f44f934ebe9a6170f5d1707fc4682ee1303a350b4398bef4f1f41b",
+      "bytes": 25712,
+      "sha256": "1ba1929e332d1e371494451f7e91b7154a388715e30aa4cc3e8f78ba8915cb8f",
       "expected_bytes_equal": true,
       "content_type": "application/json; charset=utf-8"
-    },
-    {
-      "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/data/hypotheses-s3.json",
-      "http_status": 200,
-      "bytes": 6360,
-      "sha256": "a1b8b6410ef02e84c710870927826f117ad7dbc4ee2ef88d2325c1b520c8d061",
-      "expected_bytes_equal": true,
-      "content_type": "application/json; charset=utf-8"
-    },
-    {
-      "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/data/knowledge-s3.json",
-      "http_status": 200,
-      "bytes": 4218,
-      "sha256": "8111e7037ff66cf6fd9100fcc167d64809aae551e02147d60f7a005f40bb45f7",
-      "expected_bytes_equal": true,
-      "content_type": "application/json; charset=utf-8"
-    },
-    {
-      "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/data/research-readiness-s3.json",
-      "http_status": 200,
-      "bytes": 4195,
-      "sha256": "5021571d76d81eb77fe0c775b1bc8afdab9627b5080c1dcc7bdf9a4d1d75c153",
-      "expected_bytes_equal": true,
-      "content_type": "application/json; charset=utf-8"
-    },
-    {
-      "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/data/official-inputs-s3.json",
-      "http_status": 200,
-      "bytes": 128520,
-      "sha256": "eff4040b49563031fe0cf23965dbf5736e67ecaf7a96461013be6ae52ad3a01a",
-      "expected_bytes_equal": true,
-      "content_type": "application/json; charset=utf-8"
-    },
-    {
-      "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/data/input-recovery-s3.json",
-      "http_status": 200,
-      "bytes": 2487,
-      "sha256": "3582301b77933933e1a9038efdd6e57ebee1cccc4a27160aa206206d6bb392cb",
-      "expected_bytes_equal": true,
-      "content_type": "application/json; charset=utf-8"
-    },
-    {
-      "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/data/prototype-s3.json",
-      "http_status": 200,
-      "bytes": 1102,
-      "sha256": "25f9f8db600614ef4f8e64c8b20fb0e27766dc749ba6bf91330ced5be525b284",
-      "expected_bytes_equal": true,
-      "content_type": "application/json; charset=utf-8"
-    },
-    {
-      "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/data/baseline-history-s3.json",
-      "http_status": 200,
-      "bytes": 105248,
-      "sha256": "739bbf0c9d569f589687a557cb11efac9cb1d2c2d453abdfe28603b035908c60",
-      "expected_bytes_equal": true,
-      "content_type": "application/json; charset=utf-8"
-    },
-    {
-      "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/data/preregistration-h21-s3.md",
-      "http_status": 200,
-      "bytes": 16967,
-      "sha256": "7353bfbdabe48637bdd549722cbefaa70da1bb5ca62f4c1ee80332c23e9145a8",
-      "expected_bytes_equal": true,
-      "content_type": "text/markdown; charset=utf-8"
-    },
-    {
-      "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/data/implementation-notes-s3.md",
-      "http_status": 200,
-      "bytes": 5520,
-      "sha256": "8d92d7f4232f9f2916bee076fa482d1483be26a26b7513e3dc7692d4c114d950",
-      "expected_bytes_equal": true,
-      "content_type": "text/markdown; charset=utf-8"
-    },
-    {
-      "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/data/request-audit-s3.md",
-      "http_status": 200,
-      "bytes": 6872,
-      "sha256": "7e5f4174b1576582f49c7e88e4984a59422ef2fcbde7e66a69de6044283ad836",
-      "expected_bytes_equal": true,
-      "content_type": "text/markdown; charset=utf-8"
     },
     {
       "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/downloads/gems21-h19-4-reference-20260930-691e4dfa.tif",
@@ -233,10 +145,6 @@
       "live_preflight": {
         "passed": true,
         "checks": {
-          "template_single_float32_band": true,
-          "template_epsg32611": true,
-          "template_north_up_100m": true,
-          "template_nonempty_footprint": true,
           "single_band": true,
           "float32": true,
           "crs_exact": true,
@@ -281,10 +189,6 @@
       "live_preflight": {
         "passed": true,
         "checks": {
-          "template_single_float32_band": true,
-          "template_epsg32611": true,
-          "template_north_up_100m": true,
-          "template_nonempty_footprint": true,
           "single_band": true,
           "float32": true,
           "crs_exact": true,
@@ -321,11 +225,8 @@
         "raw_all_pixels_finite": false,
         "positive_footprint_pixels": 123779,
         "validator_scope": "local official-format checks; not platform acceptance or score verification",
-        "container_sha256": "0a4106d8cd4d77f9439b03b7137252798df92ef695bd9a6c6a50255a4979c9ee",
-        "container_bytes": 503887,
-        "zip_member": "gems21-h19-4-reference-20260930-691e4dfa.tif",
-        "zip_exactly_one_tiff_crc_verified": true,
         "archive_sha256": "0a4106d8cd4d77f9439b03b7137252798df92ef695bd9a6c6a50255a4979c9ee",
+        "zip_member": "gems21-h19-4-reference-20260930-691e4dfa.tif",
         "zip_single_member": true
       }
     },
@@ -334,10 +235,6 @@
       "live_preflight": {
         "passed": true,
         "checks": {
-          "template_single_float32_band": true,
-          "template_epsg32611": true,
-          "template_north_up_100m": true,
-          "template_nonempty_footprint": true,
           "single_band": true,
           "float32": true,
           "crs_exact": true,
@@ -378,9 +275,9 @@
       }
     }
   ],
-  "main_commit_at_check": "917afce6c2b8dfb654e4f9d234b9ffecbfd0a360",
-  "verification_code_commit": "917afce6c2b8dfb654e4f9d234b9ffecbfd0a360",
-  "actions_run_id": "36873272537",
+  "main_commit_at_check": "cdc8b8d8f3167117ca4f4e343b055b800c79bce6",
+  "verification_code_commit": "cdc8b8d8f3167117ca4f4e343b055b800c79bce6",
+  "actions_run_id": "36808713031",
   "drivendata_requests": 0,
   "platform_submission": false,
   "score_verified": false,

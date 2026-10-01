@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2026-10-01T13:59:11.089711+00:00",
-  "status": "S3 PR6 OPEN; push successful; merge/Pages/live verification pending",
+  "generated_utc": "2026-10-01T14:05:18.523564+00:00",
+  "status": "VERIFIED: PR6 merged; native main Pages and actual served-byte/download-format checks passed",
   "session_branch": "arena/01a0f57b-gemsdoe21",
   "local_research_implementation_review_complete": true,
   "requested_PR_created": true,
-  "requested_merge_complete": false,
-  "new_site_main_published": false,
-  "new_site_live_bytes_verified": false,
-  "preview": "Updated staged site served on0.0.0.0:3000; local preview is not new Pages publication proof",
+  "requested_merge_complete": true,
+  "new_site_main_published": true,
+  "new_site_live_bytes_verified": true,
+  "preview": "Native GitHub Pages publication verified; local preview not required for proof",
   "checks": {
     "pytest_passed": 155,
     "pytest_skipped": 0,
@@ -40,9 +40,8 @@
   "git_push_attempted_after_auth_failure": true,
   "last_successfully_pushed_session_commit": "5496e73",
   "next_actions": [
-    "Wait for current-head PR checks and merge with commit history retained",
-    "Verify native main Pages and28served routes/3actual download format checks",
-    "Record dated publication receipts; never rerun science for delivery"
+    "Scientific work remains gated: original H19 producer/clean same-split comparator and complete prospective independent controls/labels",
+    "Use latest delivery-verification release for subsequent receipt-only publication checks; no model re-fit/re-score"
   ],
   "previous_dated_delivery": {
     "generated_utc": "2026-10-01T03:07:47.916023+00:00",
@@ -243,7 +242,7 @@
     },
     "historical_live_receipt_archive": "evidence/live-verification-s1.json"
   },
-  "scope": "Publication-only resume: saved S3 files restored onto existing remote session history and pushed. No new fit/score/eligible TIFF. PR merge and actual live checks remain pending.",
+  "scope": "Dated PR6 core publication and actually served bytes. Fixed delivery-verification release independently checks subsequent receipt-only deployments; not a competition acceptance or score.",
   "git_push_succeeded": true,
   "git_push_error": null,
   "local_implementation_commit": "5496e73",
@@ -257,5 +256,36 @@
   },
   "github_access_restored_utc": "2026-10-01T13:59:11.089711+00:00",
   "pull_request_number": 6,
-  "pull_request_url": "https://github.com/buffedlizard55-lab/GEMSDOE21/pull/6"
+  "pull_request_url": "https://github.com/buffedlizard55-lab/GEMSDOE21/pull/6",
+  "remote_delivery": {
+    "pull_request": 6,
+    "pull_request_url": "https://github.com/buffedlizard55-lab/GEMSDOE21/pull/6",
+    "state": "MERGED",
+    "merged_utc": "2026-10-01T14:01:36Z",
+    "merged_head": "e8f7e75de3f2fda575e7bc735ea899532cc7a00d",
+    "main_merge_commit": "917afce6c2b8dfb654e4f9d234b9ffecbfd0a360",
+    "pages_build": {
+      "run_id": 36873124526,
+      "conclusion": "success",
+      "head_sha": "917afce6c2b8dfb654e4f9d234b9ffecbfd0a360",
+      "url": "https://github.com/buffedlizard55-lab/GEMSDOE21/actions/runs/36873124526"
+    },
+    "main_ci": {
+      "run_id": 36873126551,
+      "conclusion": "success",
+      "head_sha": "917afce6c2b8dfb654e4f9d234b9ffecbfd0a360"
+    },
+    "live_download_check": {
+      "run_id": 36873272537,
+      "conclusion": "success",
+      "head_sha": "917afce6c2b8dfb654e4f9d234b9ffecbfd0a360",
+      "url": "https://github.com/buffedlizard55-lab/GEMSDOE21/actions/runs/36873272537",
+      "verified_utc": "2026-10-01T14:03:21+00:00",
+      "served_content_routes": 28,
+      "full_download_preflights": 3
+    },
+    "snapshot": "evidence/live-verification.json",
+    "snapshot_sha256": "66ec9e828207a13bba23f907a015f4b5c6b3168003462106a016f26e248afa17",
+    "scope": "Dated PR6 core publication and actually served bytes. Fixed delivery-verification release independently checks subsequent receipt-only deployments; not a competition acceptance or score."
+  }
 }
