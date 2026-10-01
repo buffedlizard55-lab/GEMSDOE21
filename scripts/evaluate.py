@@ -8,7 +8,6 @@ os.environ.setdefault("OPENBLAS_NUM_THREADS", "2")
 os.environ.setdefault("OMP_NUM_THREADS", "2")
 
 import json
-import subprocess
 import sys
 import time
 from pathlib import Path
@@ -51,9 +50,9 @@ def main():
         if sha256(vec / f"{name}.npy") != spec["sha256"]:
             raise ValueError(f"Prepared feature changed: {name}")
     registration = ROOT / "research/preregistration-h21.md"
-    locked = subprocess.check_output(["git", "show", "2dfc5de:research/preregistration-h21.md"], cwd=ROOT)
-    if locked != registration.read_bytes():
-        raise ValueError("Registration changed after its pre-results commit")
+    from gems.locks import verify_file
+
+    verify_file(ROOT, "research/preregistration-h21.md")
     fp = np.load(vec / "footprint.npy")
     cat = np.load(vec / "catalogue.npy")
     idx = np.flatnonzero(fp)

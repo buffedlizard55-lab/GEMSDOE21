@@ -7,7 +7,7 @@ on:
       - scripts/fetch_research_inputs.py
       - .github/workflows/research-inputs.yml
 permissions:
-  contents: read
+  contents: write
 concurrency:
   group: official-research-inputs-${{ github.ref }}
   cancel-in-progress: false
@@ -23,6 +23,16 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Retrieve pinned official vectors and limited public event schema probe
         run: python scripts/fetch_research_inputs.py --output-dir .cache/official-s2
+      - name: Preserve official bytes outside Git in a cited research-input release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view research-inputs-h21-s2 --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release edit research-inputs-h21-s2 --repo "$GITHUB_REPOSITORY" --notes-file .cache/official-s2/receipt.json
+          else
+            gh release create research-inputs-h21-s2 --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --notes-file .cache/official-s2/receipt.json --title "Official INGENIOUS vectors and limited ComCat probe — CC BY attribution in receipt" --prerelease
+          fi
+          gh release upload research-inputs-h21-s2 .cache/official-s2/* --repo "$GITHUB_REPOSITORY" --clobber
       - uses: actions/upload-artifact@v4
         if: always()
         with:

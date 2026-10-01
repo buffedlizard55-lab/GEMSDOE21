@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-import subprocess
 import sys
 
 import numpy as np
@@ -34,16 +33,14 @@ def verify():
         if sha256(prepared / f"{name}.npy") != spec["sha256"]:
             raise ValueError(f"Prepared feature changed: {name}")
     registered = ROOT / "research/preregistration-h21.md"
-    if registered.read_bytes() != subprocess.check_output(
-        ["git", "show", "2dfc5de:research/preregistration-h21.md"], cwd=ROOT
-    ):
-        raise ValueError("Immutable registration changed")
+    from gems.locks import verify_file
+
+    verify_file(ROOT, "research/preregistration-h21.md")
     first = ROOT / "evidence/h21-1-results.json"
     if first.exists():
         result = json.loads(first.read_text())
-        frozen_bytes = subprocess.check_output(
-            ["git", "show", "fc809c8:evidence/data-verification.json"], cwd=ROOT
-        )
+        verify_file(ROOT, "evidence/h21-1-results.json")
+        frozen_bytes = verify_file(ROOT, "evidence/data-verification.json")
         import hashlib
 
         if hashlib.sha256(frozen_bytes).hexdigest() != result["source_manifest_sha256"]:

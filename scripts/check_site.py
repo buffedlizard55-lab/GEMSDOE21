@@ -39,15 +39,13 @@ def static_checks():
     result = json.loads((docs / "data/h21-1-results.json").read_text())
     assert result["disposition"] == "REJECTED" and not result["gate"]["submission_eligible"]
     assert sha256(ROOT / "evidence/h21-1-results.json") == sha256(docs / "data/h21-1-results.json")
-    locked = subprocess.check_output(["git", "show", "2dfc5de:research/preregistration-h21.md"], cwd=ROOT)
+    from gems.locks import verify_file, verify_prompt
+
+    locked = verify_file(ROOT, "research/preregistration-h21.md")
+    verify_file(ROOT, "research/preregistration-h21-s2.md")
+    verify_file(ROOT, "evidence/h21-1-results.json")
     assert hashlib.sha256(locked).hexdigest() == result["registration_sha256"]
-    assert locked == (ROOT / "research/preregistration-h21.md").read_bytes()
-    original = subprocess.check_output(["git", "show", "2dfc5de:README.md"], cwd=ROOT).decode()
-
-    def prompt(text):
-        return text.split("```text\n", 1)[1].split("\n```", 1)[0]
-
-    assert prompt(original) == prompt((ROOT / "README.md").read_text()), "Full original prompt changed"
+    verify_prompt(ROOT / "README.md")
     pages = list(docs.glob("*.html")) + [ROOT / "index.html"]
     links_checked = 0
     for page in pages:

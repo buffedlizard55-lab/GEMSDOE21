@@ -18,8 +18,11 @@ def strict_emit(score, domain, known, physical_strength, budget=0.025):
     strength = np.asarray(physical_strength)
     score = np.asarray(score)
     known = np.asarray(known, dtype=bool)
-    if any(a.shape != domain.shape for a in (score, known, strength)):
-        raise ValueError("All emission arrays must match the domain shape")
+    if domain.ndim != 2 or any(a.shape != domain.shape for a in (score, known, strength)):
+        raise ValueError("All emission arrays must be 2D and match the domain shape")
+    values = score[domain]
+    if not np.isfinite(values).all() or (values < 0).any() or (values > 1).any():
+        raise ValueError("Scores must be finite and in range [0, 1] throughout the domain")
     if not 0 <= budget <= 1:
         raise ValueError("Budget must lie in [0,1]")
     if not np.isfinite(strength[domain]).all() or (strength[domain] < 0).any():
