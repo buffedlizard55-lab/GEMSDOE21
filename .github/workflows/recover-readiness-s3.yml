@@ -1,0 +1,49 @@
+name: Recover complete S3 input receipt (no new acquisition or score)
+on:
+  workflow_dispatch:
+  push:
+    branches: ['arena/**']
+    paths: [.github/workflows/recover-readiness-s3.yml]
+permissions:
+  actions: read
+  contents: write
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements-research.txt
+      - name: Recover already-acquired owned-run bytes; no field computation
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          SOURCE_RUN=36811664161
+          SOURCE_SHA=1637294247782ae91affc0dfddb7ef2825107772
+          ACTUAL_SHA=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$SOURCE_RUN" --jq .head_sha)
+          test "$ACTUAL_SHA" = "$SOURCE_SHA"
+          ARTIFACT=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$SOURCE_RUN/artifacts" --jq '.artifacts[]|select(.name=="official-readiness-s3" and .expired==false)|.id')
+          test -n "$ARTIFACT"
+          mkdir -p .cache/recover-s3
+          gh api "repos/$GITHUB_REPOSITORY/actions/artifacts/$ARTIFACT/zip" > .cache/recover-s3/source-artifact.zip
+          python - <<'PY'
+          from pathlib import Path
+          import sys
+          sys.path.insert(0,'src')
+          from gems.archives import unpack
+          unpack(Path('.cache/recover-s3/source-artifact.zip'),Path('.cache/recover-s3/official'))
+          PY
+          python scripts/package_readiness_receipt.py .cache/recover-s3/official/receipt.json .cache/recover-s3/notes.json
+          gh release create "research-readiness-s3-recovered-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}" .cache/recover-s3/official/* \
+            --repo "$GITHUB_REPOSITORY" --target "$SOURCE_SHA" --notes-file .cache/recover-s3/notes.json \
+            --title "Recovered S3 official inputs and lossless receipt — not a geological test" --prerelease
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: recovered-readiness-s3
+          path: .cache/recover-s3/notes.json
+          if-no-files-found: warn
+          retention-days: 30

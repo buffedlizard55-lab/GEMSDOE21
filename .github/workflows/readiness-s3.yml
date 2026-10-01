@@ -6,7 +6,7 @@ on:
     paths:
       - scripts/fetch_readiness_inputs_s3.py
       - src/gems/archives.py
-      - .github/workflows/readiness-s3.yml
+      # Workflow publication changes alone must not re-download identical source data.
 permissions:
   contents: write
 concurrency:
@@ -34,8 +34,9 @@ jobs:
         run: |
           # Separate run-specific release prevents silent replacement of source bytes/receipts.
           TAG="research-readiness-s3-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          python scripts/package_readiness_receipt.py .cache/official-s3/receipt.json .cache/readiness-notes.json
           gh release create "$TAG" .cache/official-s3/* --repo "$GITHUB_REPOSITORY" \
-            --target "$GITHUB_SHA" --notes-file .cache/official-s3/receipt.json \
+            --target "$GITHUB_SHA" --notes-file .cache/readiness-notes.json \
             --title "S3 official source bytes and input-only receipt (not a geological test)" --prerelease
       - uses: actions/upload-artifact@v4
         if: always()
