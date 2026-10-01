@@ -1,54 +1,54 @@
 {
   "kind": "owned-pages-live-download-verification",
-  "generated_utc": "2026-09-30T23:30:20+00:00",
+  "generated_utc": "2026-10-01T03:03:36+00:00",
   "passed": true,
   "site": "https://buffedlizard55-lab.github.io/GEMSDOE21/",
   "records": [
     {
       "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/",
       "http_status": 200,
-      "bytes": 13169,
-      "sha256": "2a1d86bd0c28e4d3f4edbe45ff44e5a0d310e4b0e878470f089aa5dd61ea31af",
+      "bytes": 13271,
+      "sha256": "c73979ed3b670938b8ec13fc3ca9fb9f4a7919986886501e4a3d337b6dbc54f0",
       "expected_bytes_equal": true,
       "content_type": "text/html; charset=utf-8"
     },
     {
       "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/index.html",
       "http_status": 200,
-      "bytes": 13147,
-      "sha256": "f6809fda1a6d69f5c345f143b9b840f4d3fd9e0d9a5b8f598d17aa160fe6d68c",
+      "bytes": 13249,
+      "sha256": "0097a282e68a42165ccb551434f230b5c7322b960c541bba7cc4c8a2375f852a",
       "expected_bytes_equal": true,
       "content_type": "text/html; charset=utf-8"
     },
     {
       "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/executive-summary.html",
       "http_status": 200,
-      "bytes": 14356,
-      "sha256": "555038466e31e1be95f9ba6bae4f5a6a2f740ae745c0edaffe6ed1bbeebf8848",
+      "bytes": 14774,
+      "sha256": "f3ef4b7fc220be1de486759bdce40de5a4ff80878126ee6d74ed607497b228ed",
       "expected_bytes_equal": true,
       "content_type": "text/html; charset=utf-8"
     },
     {
       "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/research.html",
       "http_status": 200,
-      "bytes": 22237,
-      "sha256": "e58e28b1d62f17c586be9ff6ed7acd535bf5db70fb4d0c5428c864e45c21e148",
+      "bytes": 36901,
+      "sha256": "cb4a0ca185e4d198ace53072cbf710236d5e244f1d3c9fc523e83f0a0678c676",
       "expected_bytes_equal": true,
       "content_type": "text/html; charset=utf-8"
     },
     {
       "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/sources.html",
       "http_status": 200,
-      "bytes": 57057,
-      "sha256": "ef67d7e7a785b82c641bacc644e4d56551d75156f9f949f0ab59f80cf693ffbd",
+      "bytes": 78530,
+      "sha256": "e39a725ace1295b31f3b3fce3d7b9e1f2b061b7459ed957b08618bbb2b1ec46f",
       "expected_bytes_equal": true,
       "content_type": "text/html; charset=utf-8"
     },
     {
       "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/assets/site.css",
       "http_status": 200,
-      "bytes": 15044,
-      "sha256": "0fb8bdd5623177bc413132c0713579cef776f541b44888dae4d85c7ebaf07507",
+      "bytes": 15562,
+      "sha256": "16abc92f244fdc0973d5ee8e3ef97cfea7d4a2c8db686720984e73109dfcce9d",
       "expected_bytes_equal": true,
       "content_type": "text/css; charset=utf-8"
     },
@@ -75,6 +75,46 @@
       "sha256": "c467bbdff23d2585b4e444cb239bbd45bc6d6372cff713aa8f7670ec86908697",
       "expected_bytes_equal": true,
       "content_type": "image/tiff"
+    },
+    {
+      "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/data/h21-5-results.json",
+      "http_status": 200,
+      "bytes": 65266,
+      "sha256": "8979d1b93ba33bfb5fd0712198bc5953b97850baac42572b56a1d384a764e75d",
+      "expected_bytes_equal": true,
+      "content_type": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/data/h21-5-protocol-review.json",
+      "http_status": 200,
+      "bytes": 2670,
+      "sha256": "8fa5d326f3254cdd6d0886bf73352f881e39107d20e9b70998b11a91b2dde414",
+      "expected_bytes_equal": true,
+      "content_type": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/data/hypotheses-s2.json",
+      "http_status": 200,
+      "bytes": 5884,
+      "sha256": "39a47843005ede19bb360a466bc042306465039b03f2f2af15af4903c2d0da14",
+      "expected_bytes_equal": true,
+      "content_type": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/data/knowledge-s2.json",
+      "http_status": 200,
+      "bytes": 8934,
+      "sha256": "e18cde180ffa573c02c3810768fd101c1b439569aeb81f4bf2dcfd6d4f03ad2e",
+      "expected_bytes_equal": true,
+      "content_type": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/data/sources.json",
+      "http_status": 200,
+      "bytes": 25712,
+      "sha256": "1ba1929e332d1e371494451f7e91b7154a388715e30aa4cc3e8f78ba8915cb8f",
+      "expected_bytes_equal": true,
+      "content_type": "application/json; charset=utf-8"
     },
     {
       "url": "https://buffedlizard55-lab.github.io/GEMSDOE21/docs/downloads/gems21-h19-4-reference-20260930-691e4dfa.tif",
@@ -235,9 +275,9 @@
       }
     }
   ],
-  "main_commit_at_check": "27f930e5900e4c5328981b04a2dcc6e2531cff80",
-  "verification_code_commit": "e2f01e30d8da4bc7739f5732e94a829be9db650c",
-  "actions_run_id": "36791384129",
+  "main_commit_at_check": "cdc8b8d8f3167117ca4f4e343b055b800c79bce6",
+  "verification_code_commit": "cdc8b8d8f3167117ca4f4e343b055b800c79bce6",
+  "actions_run_id": "36808713031",
   "drivendata_requests": 0,
   "platform_submission": false,
   "score_verified": false,
