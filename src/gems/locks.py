@@ -14,6 +14,7 @@ LOCKED_FILES = {
     "research/preregistration-h21.md": "63618210601d87197a9cc88f17c7f70c103a8c224ac7cbde5e559ece312555fa",
     "research/preregistration-h21-s2.md": "e919a3fa18272b3a3162c8d04bb7c3242b6283bb5593e63e538d50ac6ae998bd",
     "evidence/h21-1-results.json": "ee3a52c471720dd5d6692a9fb849d21979111de2c3ecf57d6130f8dab66c6c67",
+    "evidence/h21-5-results.json": "8979d1b93ba33bfb5fd0712198bc5953b97850baac42572b56a1d384a764e75d",
     "evidence/data-verification.json": "e4b27401fac136dcf05effbf202cfb38da140579f3a8eeb6372d812de7de21ef",
 }
 ORIGINAL_PROMPT_SHA = "3dc7b31b359dd6a0f8f992c75e26f3daf8faa37b69699493a6a17cf358086a02"

@@ -1,0 +1,32 @@
+{
+  "generated_utc": "2026-10-01T01:40:43+00:00",
+  "kind": "INSPECTED PINNED DERIVED-PRODUCT METADATA, not an official full-file acquisition",
+  "source": "buffedlizard55-lab/7GEMSDOE@9d8b5d55b674629f7b0e0e486269917c0fa2dade:external/geodawn_rad/geodawn_rad.json",
+  "metadata_sha256": "d917fd08f89c160d2a0ba91af9c3321c8c8b5677fcdba39b10e684384cbc7488",
+  "channels": [
+    "K",
+    "Th",
+    "U",
+    "TC"
+  ],
+  "grid": {
+    "width": 3292,
+    "height": 3730,
+    "crs": "EPSG:32611",
+    "transform": [
+      100.0,
+      0.0,
+      243350.0,
+      0.0,
+      -100.0,
+      4508550.0
+    ],
+    "dtype": "uint8",
+    "nodata": 0
+  },
+  "encoding": {
+    "quantisation": "uint8 1..255 over per-channel 1st..99th pct after area mosaic; 0=nodata"
+  },
+  "source_doi": "10.5066/P93LGLVQ",
+  "disposition": "Independently quantized uint8 ranks do not reconstruct physical ratios; H21-6 not implemented or scored"
+}

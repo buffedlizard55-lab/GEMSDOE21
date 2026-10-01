@@ -1,0 +1,64 @@
+{
+  "generated_utc": "2026-10-01T01:50:50+00:00",
+  "first_result_sha256": "8979d1b93ba33bfb5fd0712198bc5953b97850baac42572b56a1d384a764e75d",
+  "post_result_only": true,
+  "new_fits": 0,
+  "new_scores": 0,
+  "review": "Minor literal-maximum budget deviation, no rescoring or result replacement",
+  "emission_budget_audit": [
+    {
+      "fold": "NW",
+      "domain_pixels": 1154738,
+      "actual_emitted_pixels_per_arm": 28868,
+      "nominal_budget": 28868.45,
+      "strict_integer_max": 28868,
+      "excess_over_strict_integer_max": 0,
+      "fraction": 0.024999610301211183
+    },
+    {
+      "fold": "NE",
+      "domain_pixels": 1427727,
+      "actual_emitted_pixels_per_arm": 35693,
+      "nominal_budget": 35693.175,
+      "strict_integer_max": 35693,
+      "excess_over_strict_integer_max": 0,
+      "fraction": 0.024999877427547425
+    },
+    {
+      "fold": "SW",
+      "domain_pixels": 1428627,
+      "actual_emitted_pixels_per_arm": 35716,
+      "nominal_budget": 35715.675,
+      "strict_integer_max": 35715,
+      "excess_over_strict_integer_max": 1,
+      "fraction": 0.025000227491150596
+    },
+    {
+      "fold": "SE",
+      "domain_pixels": 1156281,
+      "actual_emitted_pixels_per_arm": 28907,
+      "nominal_budget": 28907.025,
+      "strict_integer_max": 28907,
+      "excess_over_strict_integer_max": 0,
+      "fraction": 0.024999978378958055
+    }
+  ],
+  "fully_literal_budget_compliant": false,
+  "other_emission_invariants": "Strict ridge subset, finite [0,1] inputs, positive physical strength and no non-ridge padding were pre-tested and executed; only integer rounding is flagged here",
+  "unnamed_linked_trace_groups": {
+    "UNIDENTIFIED-TRACE-892": 3023,
+    "UNIDENTIFIED-TRACE-1040": 3180
+  },
+  "interpretation": "Zero UNLINKED raster-component proxies does not mean every trace has an official NUM. Two linked groups use explicitly unnamed source-trace IDs. No perfect physical fault-system identity claimed.",
+  "conditioning_diagnostic": {
+    "kind": "UNTESTED EXPLANATION, not causal proof or tuning authority",
+    "gravity_feature_maxima": {
+      "gravity_step100": 0.0017729179235175252,
+      "gravity_step300": 0.008081349544227123,
+      "gravity_step_persistent": 0.002415091497823596
+    },
+    "nnpu_IQR_scale_floor": 0.01,
+    "note": "All three gravity maxima are below the robust scale floor; this can reduce their scaled influence. No learned coefficients/scalers were saved, and no rescale/retest is authorized."
+  },
+  "disposition": "Original already rejected. Future helper uses floor rather than round; new registered protocol/fresh data required. Do not use changed helper to reproduce the first masks."
+}

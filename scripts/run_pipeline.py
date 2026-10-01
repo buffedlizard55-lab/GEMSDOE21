@@ -28,7 +28,14 @@ def main():
     parser.add_argument(
         "--refresh-sources", action="store_true", help="Refresh permitted health probes, not leaderboard"
     )
+    parser.add_argument(
+        "--delivery-only",
+        action="store_true",
+        help="Rebuild historical audited delivery/site without preparing, fitting or scoring any model",
+    )
     args = parser.parse_args()
+    if args.delivery_only and args.replicate:
+        parser.error("--delivery-only cannot request a scientific replication")
     env = dict(os.environ, OPENBLAS_NUM_THREADS="2", OMP_NUM_THREADS="2")
 
     def run(script, *extra):
@@ -37,28 +44,36 @@ def main():
         )
 
     run("download_data.py")
-    if not (data_dir() / "prepared/manifest.json").exists():
-        run("prepare_data.py")
-    run("verify_prepared.py")
-    if not (ROOT / "evidence/h21-1-results.json").exists():
-        run("evaluate.py")
-    elif args.replicate:
-        out = data_dir() / f"research/H21-1-replication-{datetime.now(timezone.utc):%Y%m%dT%H%M%S%fZ}.json"
-        run("evaluate.py", "--replication-output", out)
+    if not args.delivery_only:
+        if not (data_dir() / "prepared/manifest.json").exists():
+            run("prepare_data.py")
+        run("verify_prepared.py")
+        if not (ROOT / "evidence/h21-1-results.json").exists():
+            run("evaluate.py")
+        elif args.replicate:
+            out = (
+                data_dir() / f"research/H21-1-replication-{datetime.now(timezone.utc):%Y%m%dT%H%M%S%fZ}.json"
+            )
+            run("evaluate.py", "--replication-output", out)
+        else:
+            print(
+                "Preserving/using first registered result; --replicate performs the fixed train/inference/validation again.",
+                flush=True,
+            )
     else:
         print(
-            "Preserving/using first registered result; --replicate performs the fixed train/inference/validation again.",
-            flush=True,
+            "Delivery-only: no feature preparation, training, inference, replication or new score", flush=True
         )
     run("audit_upstream.py")
     run("audit_group.py")
     run("build_submissions.py")
     if args.refresh_sources or not (ROOT / "docs/data/source-health.json").exists():
         run("refresh_sources.py")
+    run("check_knowledge.py")
     run("build_site.py")
     run("check_site.py")
     print(
-        "Pipeline complete. H21-1 rejected; published historical reference is NOT a new scientific submission.",
+        "Pipeline complete. First outcomes preserved; published historical reference is NOT a new scientific submission.",
         flush=True,
     )
 

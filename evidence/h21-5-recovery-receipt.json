@@ -1,0 +1,22 @@
+{
+  "assets": [
+    {
+      "digest": "sha256:12bbfa3bb18b444e91f82eba6564a5892b275a65e22c8c5c3655a3711d0481b5",
+      "name": "h21-5-research-caches.tar.gz",
+      "size": 39344795
+    },
+    {
+      "digest": "sha256:8979d1b93ba33bfb5fd0712198bc5953b97850baac42572b56a1d384a764e75d",
+      "name": "h21-5-results.json",
+      "size": 65266
+    }
+  ],
+  "created_at": "2026-10-01T01:36:51Z",
+  "tag_name": "h21-5-first-result",
+  "target_commitish": "69fdde699defa8defcc207a6ce2c13784a0d9f90",
+  "generated_utc": "2026-10-01T01:50:50+00:00",
+  "retrieval": "Scientific JSON recovered by canonical reserialization of GitHub release body; exact byte length AND SHA256 match uploaded asset digest. Binary assets inaccessible from sandbox.",
+  "run_id": "36801939888",
+  "release": "https://github.com/buffedlizard55-lab/GEMSDOE21/releases/tag/h21-5-first-result",
+  "first_result_sha256": "8979d1b93ba33bfb5fd0712198bc5953b97850baac42572b56a1d384a764e75d"
+}

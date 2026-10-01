@@ -23,6 +23,7 @@ PERMITTED_EXACT = {
     "hydro.nationalmap.gov",
     "mrdata.usgs.gov",
     "www.usgs.gov",
+    "pubs.usgs.gov",
     "www.osti.gov",
     "prd-tnm.s3.amazonaws.com",
     "www.sciencebase.gov",

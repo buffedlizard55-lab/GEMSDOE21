@@ -14,9 +14,9 @@
       "id": "F02",
       "severity": "high",
       "title": "H19 best comparator is not fully reproducible from its source snapshot",
-      "status": "BLOCKS NEW SUBMISSION PROMOTION",
+      "status": "STILL BLOCKS PROMOTION: current main/original PR Python unchanged; no public OOF generator",
       "finding": "Exporter reads oof_probs_h19_arms.npz. Its pinned tree lacks that cache, and committed Python only reads it, not generates it.",
-      "evidence": "evidence/upstream-audit.json A08",
+      "evidence": "evidence/upstream-audit.json A08; evidence/baseline-recovery-s2.json",
       "action": "Recover original arm-generation source/provenance, then refit without hidden labels before claiming improvement over H19-4."
     },
     {
@@ -167,10 +167,65 @@
       "id": "F19",
       "severity": "high",
       "title": "First emitter soft-prioritizes NMS rather than strictly excluding non-ridges",
-      "status": "REPAIRED HELPER; NOT RETESTED OR PROMOTED",
+      "status": "H21-1 PRESERVED; STRICT SUBSET USED IN SEPARATE EXPLORATORY H21-5, NOT A H21-1 RESCUE",
       "finding": "Pre-result emit() boosts ridge ranks but fills the budget from other positive scores. Its evidence mask is data support, not an explicit positive physical-amplitude check; a constant prior score can emit pixels in a toy flat field. This is weaker than the registered strict-NMS/nonzero-evidence wording.",
       "evidence": "src/gems/inference.py@fc809c8; tests/test_emission_guard.py; research/protocol-review.md",
-      "action": "Preserve first results/legacy emitter for exact replication; corrected strict_emit() requires physical signal strength and returns only NMS ridges with no padding. Register its use on fresh validation data before any new score or entry. Do not reinterpret the first result as fully confirmatory."
+      "action": "Do not overwrite/re-evaluate H21-1. S2 uses strict subset/positive strength under its own pre-registration; its minor integer-quota deviation is separately retained as F24."
+    },
+    {
+      "id": "F20",
+      "severity": "medium",
+      "title": "Three discarded feature hashes differ across hosted preparation",
+      "finding": "Input-only probe identified exactly the three unused H21-1 orientation SHA fields. All 31 consumed S2 hashes and other manifest metadata match; original full preparation guard still refuses it as an H21-1 replication.",
+      "action": "Keep exact consumed-byte/mask/support checks. No blanket numeric tolerance or old-result rescue; exact numerical cause of discarded differences remains unproved.",
+      "evidence": "evidence/h21-s2-input-only-probe.json; research/input-compatibility-amendment-s2.md",
+      "status": "ISOLATED BEFORE FIRST S2 SCORE"
+    },
+    {
+      "id": "F21",
+      "severity": "high",
+      "title": "All available in-footprint evaluation geography has been scored already",
+      "finding": "NUM regrouping, strict emission, different seeds or optimizer caps cannot make previously observed quadrants fresh confirmation. The new tiny positive dense effect is an exploratory diagnostic, not independent confirmation.",
+      "action": "Require genuinely unobserved external/new labels or a separately registered independent geography; no resampling/rebranding of existing quadrants.",
+      "evidence": "research/preregistration-h21-s2.md; evidence/h21-5-results.json",
+      "status": "FRESH-CONFIRMATION GATE FALSE"
+    },
+    {
+      "id": "F22",
+      "severity": "medium",
+      "title": "Binary assets/log archives are inaccessible from this sandbox",
+      "finding": "Direct official TLS, Azure artifact/log transport, release-assets download and uploads.github.com cache upload failed here. Hosted official retrieval and result publication succeeded. The exact 65,266-byte result was recovered through release metadata and matches the uploaded asset SHA.",
+      "action": "Use authenticated metadata/hosted receipts; keep arrays outside Git. Empty prepared-cache release is unavailable, not a usable remote cache. Do not relabel this as global source failure.",
+      "evidence": "evidence/h21-5-recovery-receipt.json; evidence/h21-s2-prefit-failure.json",
+      "status": "HOSTED EXECUTION / EXACT METADATA RECOVERY VERIFIED"
+    },
+    {
+      "id": "F23",
+      "severity": "medium",
+      "title": "NUM alias and unnamed-trace geometry is not perfect geological identity",
+      "finding": "3,199 raster components became 149 conservative groups. All 60,988 labels link within one cell, with zero unlinked components, but two linked groups use unnamed source-trace IDs; 87 in-grid-boundary records lack NUM, and four linked NUMs have inconsistent names.",
+      "action": "Report unnamed and unlinked proxies separately; do not invent physical IDs or resolve aliases from scores. Geometry/labels receive 15px training purges; scoring stays pixel-exact.",
+      "evidence": "evidence/h21-5-results.json grouping_audit; evidence/h21-5-protocol-review.json",
+      "status": "AUDITED; GEOLOGICAL ID AMBIGUITY RETAINED"
+    },
+    {
+      "id": "F24",
+      "severity": "medium",
+      "title": "Rounded first S2 quota exceeds literal maximum by one SW pixel",
+      "finding": "The first paired SW models each emit 35,716 pixels for 1,428,627 domain cells: 2.50002275%. round() exceeds the literal floor maximum of 35,715 by one pixel. Other folds and total stay below 2.5%. First scores/masks are preserved.",
+      "action": "Future strict helper uses floor, with a synthetic regression test. Do not recalculate first scores or claim fully literal-budget compliance; the candidate already fails its forecasts, statistical and promotion gates.",
+      "evidence": "evidence/h21-5-protocol-review.json; tests/test_s2_outcome.py",
+      "status": "FUTURE FIX TESTED; NO RESCORING"
+    },
+    {
+      "id": "F25",
+      "severity": "medium",
+      "title": "Event-query obtainability is not catalogue completeness",
+      "finding": "The official historical rectangular query returned only the first 100 magnitude≥2 earthquakes; 54 lack horizontal error. It is not clipped to the irregular footprint and cannot validate event-plane or 100m surface-trace inference.",
+      "action": "Audit complete frozen-window coverage, paging, magnitude/network completeness, event type and errors before implementation. Keep H21-8 conditional.",
+      "evidence": "evidence/official-inputs-s2.json; S26",
+      "status": "SCHEMA OBTAINABLE; SCIENTIFIC VIABILITY UNESTABLISHED"
     }
-  ]
+  ],
+  "last_updated_utc_date": "2026-10-01"
 }
